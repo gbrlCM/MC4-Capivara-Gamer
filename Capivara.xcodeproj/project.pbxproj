@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
+		5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBE274C047400BB90F1 /* TabBarScreen.swift */; };
+		5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */; };
+		5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BC5274C054600BB90F1 /* UserProfileView.swift */; };
+		5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BC9274C056900BB90F1 /* SearchView.swift */; };
+		5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCD274C08B000BB90F1 /* View+TabBarLabel.swift */; };
+		5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */; };
+		5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD2274C0E3B00BB90F1 /* UserProfileAvatar.swift */; };
+		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
+		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
 		5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C522748415800036C35 /* CapivaraApp.swift */; };
 		5BD88C552748415800036C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C542748415800036C35 /* ContentView.swift */; };
 		5BD88C572748415A00036C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD88C562748415A00036C35 /* Assets.xcassets */; };
@@ -34,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		5B0D3BBE274C047400BB90F1 /* TabBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreen.swift; sourceTree = "<group>"; };
+		5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsView.swift; sourceTree = "<group>"; };
+		5B0D3BC5274C054600BB90F1 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		5B0D3BC9274C056900BB90F1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		5B0D3BCD274C08B000BB90F1 /* View+TabBarLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TabBarLabel.swift"; sourceTree = "<group>"; };
+		5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+BackgroundColor.swift"; sourceTree = "<group>"; };
+		5B0D3BD2274C0E3B00BB90F1 /* UserProfileAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileAvatar.swift; sourceTree = "<group>"; };
+		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
+		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
 		5BD88C4F2748415800036C35 /* Capivara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capivara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C522748415800036C35 /* CapivaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraApp.swift; sourceTree = "<group>"; };
 		5BD88C542748415800036C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +91,125 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B0D3BB5274C03C300BB90F1 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		5B0D3BB6274C03CB00BB90F1 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BC7274C054F00BB90F1 /* Search */,
+				5B0D3BC0274C050E00BB90F1 /* MyEvents */,
+				5B0D3BB8274C041B00BB90F1 /* Root */,
+				5B0D3BB7274C03E400BB90F1 /* UserProfile */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5B0D3BB7274C03E400BB90F1 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BC4274C053900BB90F1 /* Views */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		5B0D3BB8274C041B00BB90F1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BBB274C043100BB90F1 /* Models */,
+				5B0D3BB9274C042400BB90F1 /* Views */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5B0D3BB9274C042400BB90F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BBC274C044300BB90F1 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B0D3BBB274C043100BB90F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BBE274C047400BB90F1 /* TabBarScreen.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B0D3BC0274C050E00BB90F1 /* MyEvents */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BC1274C051700BB90F1 /* Views */,
+			);
+			path = MyEvents;
+			sourceTree = "<group>";
+		};
+		5B0D3BC1274C051700BB90F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B0D3BC4274C053900BB90F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BD1274C0D5A00BB90F1 /* Components */,
+				5B0D3BC5274C054600BB90F1 /* UserProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B0D3BC7274C054F00BB90F1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BC8274C055900BB90F1 /* Views */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5B0D3BC8274C055900BB90F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BC9274C056900BB90F1 /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B0D3BCB274C089900BB90F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BCC274C08A100BB90F1 /* Views */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B0D3BCC274C08A100BB90F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BCD274C08B000BB90F1 /* View+TabBarLabel.swift */,
+				5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */,
+				5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B0D3BD1274C0D5A00BB90F1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BD2274C0E3B00BB90F1 /* UserProfileAvatar.swift */,
+				5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		5BD88C462748415800036C35 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +233,9 @@
 		5BD88C512748415800036C35 /* Capivara */ = {
 			isa = PBXGroup;
 			children = (
+				5B0D3BCB274C089900BB90F1 /* Extensions */,
+				5B0D3BB6274C03CB00BB90F1 /* Screen */,
+				5B0D3BB5274C03C300BB90F1 /* Storage */,
 				5BD88C522748415800036C35 /* CapivaraApp.swift */,
 				5BD88C542748415800036C35 /* ContentView.swift */,
 				5BD88C562748415A00036C35 /* Assets.xcassets */,
@@ -258,7 +400,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD88C552748415800036C35 /* ContentView.swift in Sources */,
+				5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */,
+				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
+				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
+				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
+				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
+				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
+				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
+				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
+				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
+				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
