@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct MyEventsView: View {
+    
+    @State private var searchText = ""
+    
     var body: some View {
-        Text("My events view")
-            .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
+        NavigationView {
+            
+            VStack {
+                Text(searchText)
+            }.toolbar{
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {} , label: {
+                            Image(systemName: "plus")
+                        })
+                    }
+            }.navigationTitle("Eventos")
+                .searchable(text: $searchText)
+        }
+        
+        .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
     }
+    
 }
 
 struct MyEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        MyEventsView()
+        TabView {
+            MyEventsView()
+        }
     }
 }
