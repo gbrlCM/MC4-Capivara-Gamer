@@ -17,6 +17,11 @@
 		5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD2274C0E3B00BB90F1 /* UserProfileAvatar.swift */; };
 		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
 		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
+		5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		5B898030274EC67500CE92BF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89802F274EC67500CE92BF /* Address.swift */; };
+		5B898032274EC6A600CE92BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898031274EC6A600CE92BF /* User.swift */; };
+		5B898034274EC6ED00CE92BF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898033274EC6ED00CE92BF /* Game.swift */; };
+		5B898039274ECAA200CE92BF /* EventMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898038274ECAA200CE92BF /* EventMock.swift */; };
 		5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C522748415800036C35 /* CapivaraApp.swift */; };
 		5BD88C552748415800036C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C542748415800036C35 /* ContentView.swift */; };
 		5BD88C572748415A00036C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD88C562748415A00036C35 /* Assets.xcassets */; };
@@ -54,6 +59,11 @@
 		5B0D3BD2274C0E3B00BB90F1 /* UserProfileAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileAvatar.swift; sourceTree = "<group>"; };
 		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
 		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
+		5B0D3BD9274C239F00BB90F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5B89802F274EC67500CE92BF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		5B898031274EC6A600CE92BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5B898033274EC6ED00CE92BF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5B898038274ECAA200CE92BF /* EventMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMock.swift; sourceTree = "<group>"; };
 		5BD88C4F2748415800036C35 /* Capivara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capivara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C522748415800036C35 /* CapivaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraApp.swift; sourceTree = "<group>"; };
 		5BD88C542748415800036C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +104,8 @@
 		5B0D3BB5274C03C300BB90F1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				5B898035274EC78900CE92BF /* Mocks */,
+				5B0D3BD8274C238200BB90F1 /* Models */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -208,6 +220,25 @@
 				5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		5B0D3BD8274C238200BB90F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B0D3BD9274C239F00BB90F1 /* Event.swift */,
+				5B89802F274EC67500CE92BF /* Address.swift */,
+				5B898031274EC6A600CE92BF /* User.swift */,
+				5B898033274EC6ED00CE92BF /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B898035274EC78900CE92BF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5B898038274ECAA200CE92BF /* EventMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		5BD88C462748415800036C35 = {
@@ -405,12 +436,17 @@
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
+				5B898030274EC67500CE92BF /* Address.swift in Sources */,
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
+				5B898032274EC6A600CE92BF /* User.swift in Sources */,
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
+				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
+				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
+				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
