@@ -15,6 +15,7 @@ enum EventMock {
               description: "Capivara gamer é o gamer mais shanty que existe, ele te dará uma quantidade gigantesta de premios. e conhecerá a coisa mais fofa que existe.",
               game: GameMock.leagueOfLegends,
               creator: UserMock.gamerCapibara,
+              participants: [],
               coverUrl: "https://image-downloader-test.s3.sa-east-1.amazonaws.com/sharkibara.png",
               eventType: .championship,
               eventFormat: .roundRobin,
@@ -42,44 +43,5 @@ enum EventMock {
         }
         
         return events
-    }
-}
-
-enum GameMock {
-    static var leagueOfLegends: Game {
-        Game(name: "League of Legends",
-             types: [.pc],
-             teamCapacity: 5,
-             formats: TournamentFormat.allCases,
-             icon: "https://image-downloader-test.s3.sa-east-1.amazonaws.com/lolIcon.png",
-             cover: "")
-    }
-}
-
-enum UserMock {
-    static var gamerCapibara: User {
-        User(id: UUID().uuidString,
-             username: "capivaraGamer",
-             avatar: "oi",
-             description: "eu sou uma capivara e eu sou gamer",
-             dateOfBirth: Date())
-    }
-}
-
-enum AddressMock {
-    static var onlineAddress: Address {
-        Address(type: .online,
-                city: nil,
-                code: nil,
-                street: nil,
-                number: nil)
-    }
-    
-    static var inPersonAddress: Address {
-        Address(type: .inPerson,
-                city: "Cajazeiras City",
-                code: "0146010",
-                street: "Rua dos bobos",
-                number: 0)
     }
 }

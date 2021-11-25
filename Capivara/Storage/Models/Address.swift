@@ -7,6 +7,10 @@
 
 import Foundation
 
+/**
+ All the types a Event address can be, if a address is Online all the other Address are nil.
+ cases: online, inPerson
+ */
 enum AddressType: String, Codable {
     case online, inPerson
 }
