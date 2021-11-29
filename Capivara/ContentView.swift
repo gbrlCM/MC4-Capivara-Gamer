@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        RootView()
+        //RootView()
+        RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepositoryMock()))
     }
 }
 
