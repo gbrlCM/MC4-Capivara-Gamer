@@ -10,7 +10,7 @@ import SwiftUI
 struct EventInfoView: View {
     var body: some View {
         NavigationView {
-            Form {
+            VStack {
             }.navigationTitle("Informação do Evento")
              .navigationBarTitleDisplayMode(.inline)
         }
