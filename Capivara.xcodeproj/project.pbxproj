@@ -27,10 +27,30 @@
 		5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB4275009FA009F5D5A /* GameRepositoryProtocol.swift */; };
 		5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB627500A14009F5D5A /* UserRepositoryProtocol.swift */; };
 		5B832AB927500A39009F5D5A /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB827500A39009F5D5A /* EventRepository.swift */; };
+		5B832ABF27503057009F5D5A /* RegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ABE27503057009F5D5A /* RegisterEventView.swift */; };
+		5B832AC127516796009F5D5A /* View+NavBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC027516796009F5D5A /* View+NavBarTitle.swift */; };
+		5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC327516F3C009F5D5A /* ColorPalette.swift */; };
+		5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC72751716D009F5D5A /* RegisterEventTab.swift */; };
+		5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC9275171B1009F5D5A /* GeneralRegisterEventView.swift */; };
+		5B832ACC27517270009F5D5A /* RegisterEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ACB27517270009F5D5A /* RegisterEventViewModel.swift */; };
+		5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ACD275180F3009F5D5A /* GameRepositoryMock.swift */; };
 		5B898030274EC67500CE92BF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89802F274EC67500CE92BF /* Address.swift */; };
 		5B898032274EC6A600CE92BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898031274EC6A600CE92BF /* User.swift */; };
 		5B898034274EC6ED00CE92BF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898033274EC6ED00CE92BF /* Game.swift */; };
 		5B898039274ECAA200CE92BF /* EventMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898038274ECAA200CE92BF /* EventMock.swift */; };
+		5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D12275536FF00008B7E /* GeneralRegisterEventGameSection.swift */; };
+		5B9D6D172755385C00008B7E /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D162755385C00008B7E /* Presentable.swift */; };
+		5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D18275568F800008B7E /* RegisterEventButton.swift */; };
+		5B9D6D1D275581A500008B7E /* PlatformSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D1C275581A500008B7E /* PlatformSection.swift */; };
+		5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D1E275581C700008B7E /* EventTypeSection.swift */; };
+		5B9D6D21275581F500008B7E /* ContactTypeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D20275581F500008B7E /* ContactTypeSection.swift */; };
+		5B9D6D232755821500008B7E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D222755821500008B7E /* ContainerView.swift */; };
+		5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */; };
+		5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */; };
+		5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */; };
+		5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02912752FFA800B13D0C /* LoadingCircle.swift */; };
+		5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */; };
+		5BCD0296275301F000B13D0C /* GeneralRegisterEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD0295275301F000B13D0C /* GeneralRegisterEventViewModel.swift */; };
 		5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C522748415800036C35 /* CapivaraApp.swift */; };
 		5BD88C552748415800036C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C542748415800036C35 /* ContentView.swift */; };
 		5BD88C572748415A00036C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD88C562748415A00036C35 /* Assets.xcassets */; };
@@ -78,10 +98,30 @@
 		5B832AB4275009FA009F5D5A /* GameRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryProtocol.swift; sourceTree = "<group>"; };
 		5B832AB627500A14009F5D5A /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
 		5B832AB827500A39009F5D5A /* EventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepository.swift; sourceTree = "<group>"; };
+		5B832ABE27503057009F5D5A /* RegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventView.swift; sourceTree = "<group>"; };
+		5B832AC027516796009F5D5A /* View+NavBarTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavBarTitle.swift"; sourceTree = "<group>"; };
+		5B832AC327516F3C009F5D5A /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		5B832AC72751716D009F5D5A /* RegisterEventTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventTab.swift; sourceTree = "<group>"; };
+		5B832AC9275171B1009F5D5A /* GeneralRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEventView.swift; sourceTree = "<group>"; };
+		5B832ACB27517270009F5D5A /* RegisterEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventViewModel.swift; sourceTree = "<group>"; };
+		5B832ACD275180F3009F5D5A /* GameRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryMock.swift; sourceTree = "<group>"; };
 		5B89802F274EC67500CE92BF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		5B898031274EC6A600CE92BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B898033274EC6ED00CE92BF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5B898038274ECAA200CE92BF /* EventMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMock.swift; sourceTree = "<group>"; };
+		5B9D6D12275536FF00008B7E /* GeneralRegisterEventGameSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEventGameSection.swift; sourceTree = "<group>"; };
+		5B9D6D162755385C00008B7E /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		5B9D6D18275568F800008B7E /* RegisterEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventButton.swift; sourceTree = "<group>"; };
+		5B9D6D1C275581A500008B7E /* PlatformSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformSection.swift; sourceTree = "<group>"; };
+		5B9D6D1E275581C700008B7E /* EventTypeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeSection.swift; sourceTree = "<group>"; };
+		5B9D6D20275581F500008B7E /* ContactTypeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTypeSection.swift; sourceTree = "<group>"; };
+		5B9D6D222755821500008B7E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
+		5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectRegisterEventSection.swift; sourceTree = "<group>"; };
+		5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventGameButton.swift; sourceTree = "<group>"; };
+		5BCD02912752FFA800B13D0C /* LoadingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCircle.swift; sourceTree = "<group>"; };
+		5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraAsyncImage.swift; sourceTree = "<group>"; };
+		5BCD0295275301F000B13D0C /* GeneralRegisterEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEventViewModel.swift; sourceTree = "<group>"; };
 		5BD88C4F2748415800036C35 /* Capivara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capivara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C522748415800036C35 /* CapivaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraApp.swift; sourceTree = "<group>"; };
 		5BD88C542748415800036C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +172,7 @@
 		5B0D3BB6274C03CB00BB90F1 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				5B832ABA27503015009F5D5A /* RegisterEvent */,
 				5B0D3BC7274C054F00BB90F1 /* Search */,
 				5B0D3BC0274C050E00BB90F1 /* MyEvents */,
 				5B0D3BB8274C041B00BB90F1 /* Root */,
@@ -229,6 +270,7 @@
 				5B0D3BCD274C08B000BB90F1 /* View+TabBarLabel.swift */,
 				5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */,
 				5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */,
+				5B832AC027516796009F5D5A /* View+NavBarTitle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				5B832AB22750074B009F5D5A /* EventRepositoryMock.swift */,
+				5B832ACD275180F3009F5D5A /* GameRepositoryMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -289,6 +332,53 @@
 			path = Implementations;
 			sourceTree = "<group>";
 		};
+		5B832ABA27503015009F5D5A /* RegisterEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5B832AC62751715E009F5D5A /* Models */,
+				5B832AC5275170F2009F5D5A /* ViewModels */,
+				5B832ABB27503025009F5D5A /* Views */,
+			);
+			path = RegisterEvent;
+			sourceTree = "<group>";
+		};
+		5B832ABB27503025009F5D5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BCD028D2752FF4D00B13D0C /* Components */,
+				5B832ABE27503057009F5D5A /* RegisterEventView.swift */,
+				5B832AC9275171B1009F5D5A /* GeneralRegisterEventView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B832AC227516EF7009F5D5A /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D6D152755381200008B7E /* Protocols */,
+				5BCD028E2752FF6000B13D0C /* Components */,
+				5B832AC327516F3C009F5D5A /* ColorPalette.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		5B832AC5275170F2009F5D5A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5B832ACB27517270009F5D5A /* RegisterEventViewModel.swift */,
+				5BCD0295275301F000B13D0C /* GeneralRegisterEventViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5B832AC62751715E009F5D5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B832AC72751716D009F5D5A /* RegisterEventTab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5B898035274EC78900CE92BF /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +388,39 @@
 				5B832AAA274FEE0E009F5D5A /* AddressMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5B9D6D152755381200008B7E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D6D162755385C00008B7E /* Presentable.swift */,
+				5B9D6D222755821500008B7E /* ContainerView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5BCD028D2752FF4D00B13D0C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */,
+				5B9D6D12275536FF00008B7E /* GeneralRegisterEventGameSection.swift */,
+				5B9D6D18275568F800008B7E /* RegisterEventButton.swift */,
+				5B9D6D1C275581A500008B7E /* PlatformSection.swift */,
+				5B9D6D1E275581C700008B7E /* EventTypeSection.swift */,
+				5B9D6D20275581F500008B7E /* ContactTypeSection.swift */,
+				5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5BCD028E2752FF6000B13D0C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5BCD02912752FFA800B13D0C /* LoadingCircle.swift */,
+				5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */,
+				5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		5BD88C462748415800036C35 = {
@@ -323,6 +446,7 @@
 		5BD88C512748415800036C35 /* Capivara */ = {
 			isa = PBXGroup;
 			children = (
+				5B832AC227516EF7009F5D5A /* DesignSystem */,
 				5B0D3BCB274C089900BB90F1 /* Extensions */,
 				5B0D3BB6274C03CB00BB90F1 /* Screen */,
 				5B0D3BB5274C03C300BB90F1 /* Storage */,
@@ -489,32 +613,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9D6D21275581F500008B7E /* ContactTypeSection.swift in Sources */,
+				5B832AC127516796009F5D5A /* View+NavBarTitle.swift in Sources */,
 				5B832AAE274FEE94009F5D5A /* EventRepositoryProtocol.swift in Sources */,
 				5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */,
 				5B832AB32750074B009F5D5A /* EventRepositoryMock.swift in Sources */,
 				5BD88C552748415800036C35 /* ContentView.swift in Sources */,
+				5B832ABF27503057009F5D5A /* RegisterEventView.swift in Sources */,
 				5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */,
+				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
+				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
 				5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
 				064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */,
+				5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */,
 				5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */,
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
+				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
+				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
+				5BCD0296275301F000B13D0C /* GeneralRegisterEventViewModel.swift in Sources */,
+				5B9D6D1D275581A500008B7E /* PlatformSection.swift in Sources */,
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
+				5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */,
+				5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */,
+				5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */,
 				5B898030274EC67500CE92BF /* Address.swift in Sources */,
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
 				5B832AB927500A39009F5D5A /* EventRepository.swift in Sources */,
+				5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */,
 				5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */,
+				5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */,
+				5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */,
 				5B898032274EC6A600CE92BF /* User.swift in Sources */,
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
+				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
+				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
+				5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */,
+				5B832ACC27517270009F5D5A /* RegisterEventViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
