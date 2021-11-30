@@ -9,18 +9,32 @@ import SwiftUI
 
 struct EventCardView: View {
     var text: String
+    var tileImage: Image
+    var streamImage: Image
+    var gameImage: Image
     
     var body: some View{
         ZStack{
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.gray)
+            tileImage
+                .resizable()
+                .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
+                .cornerRadius(10)
             VStack(alignment: .trailing){
-                Rectangle()
-                    .fill(Color.black)
-                    .frame(width: 50, height: 50)
-                    .opacity(0.6)
-                    .cornerRadius(10 ,corners: .topRight)
-                    .cornerRadius(30 ,corners: .bottomLeft)
+                ZStack (alignment: .trailing){
+                    Rectangle()
+                        .fill(Color.black)
+                        .frame(width: 50, height: 50)
+                        .opacity(0.6)
+                        .cornerRadius(10 ,corners: .topRight)
+                    .cornerRadius(70 ,corners: .bottomLeft)
+                    streamImage
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .clipShape(Circle())
+                        .fixedSize(horizontal: true, vertical: true)
+                        .padding(.trailing, 7.5)
+                    
+                }
                 Spacer()
                 ZStack(alignment: .leading){
                     Rectangle()
@@ -28,6 +42,7 @@ struct EventCardView: View {
                         .opacity(0.6)
                         .frame(maxWidth: .infinity, minHeight: 60, maxHeight: 60)
                         .cornerRadius(10, corners: [.bottomLeft,.bottomRight])
+
                     HStack{
                         VStack(alignment: .leading){
                             Text(text)
@@ -39,15 +54,17 @@ struct EventCardView: View {
                                 .foregroundColor(Color.blue)
                         }
                         Spacer()
-                        Circle()
-                            .fill(Color.blue)
+                        gameImage
+                            .resizable()
                             .frame(width: 30, height: 30)
-                            .padding(.trailing)
-
+                            .clipShape(Circle())
+                            .fixedSize(horizontal: true, vertical: true)
+                            .padding(.trailing, 7.5)
                     }
                 }
             }
-        }
+        }.backgroundColor(ColorPalette.backgroundColor)
+
     }
 }
 
@@ -66,15 +83,13 @@ extension View{
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View{
         clipShape(RoundedCorner(radius: radius, corners: corners))
     }
-    
 }
 
 struct EventCardView_Previews: PreviewProvider {
     static var previews: some View {
         TabView {
-            EventCardView(text: "oi")
+            EventCardView(text: "Título", tileImage: Image("COD"),streamImage: Image("LOL"), gameImage: Image("Freefire")).frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
         }
-        .previewLayout(.fixed(width: 275, height: 155))
 
     }
 }

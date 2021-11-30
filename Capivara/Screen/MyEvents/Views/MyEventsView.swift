@@ -10,24 +10,20 @@ import SwiftUI
 struct MyEventsView: View {
     
     @State private var searchText = ""
-    @State private var content = ["aa", "bb", "cc", "dd", "ee", "paçoquinha", "pudim"]
+    @State private var content = ["COD", "LOL", "cc", "dd", "ee", "paçoquinha", "pudim"]
     
     var body: some View {
         NavigationView {
             
             List {
                 ForEach(searchResults, id: \.self){ content in
-                    EventCardView(text: content)
+                    EventCardView(text: content, tileImage: Image("COD"), streamImage: Image("LOL"), gameImage: Image("Freefire"))
                         .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
-                    
-                    
-                    
+                        .listRowBackground(ColorPalette.backgroundColor)
                 }.listRowSeparator(.hidden)
             }
             .listStyle(.plain)
-            
-            
-            
+            .backgroundColor(ColorPalette.backgroundColor)
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {} , label: {
@@ -36,6 +32,7 @@ struct MyEventsView: View {
                 }
             }
             .navigationTitle("Eventos")
+            .navigationBarTitleColor(ColorPalette.primaryText)
             
         }.searchable(text: $searchText)
             .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
