@@ -11,7 +11,8 @@ struct EventInfoView: View {
     var body: some View {
         NavigationView {
             VStack {
-            }.navigationTitle("Informação do Evento")
+            }.backgroundColor(ColorPalette.backgroundColor)
+             .navigationTitle("Informação do Evento").navigationBarTitleColor(ColorPalette.primaryText)
              .navigationBarTitleDisplayMode(.inline)
         }
     }
