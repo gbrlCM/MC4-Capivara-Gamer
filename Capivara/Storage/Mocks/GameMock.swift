@@ -9,11 +9,12 @@ import Foundation
 
 enum GameMock {
     static var leagueOfLegends: Game {
-        Game(name: "League of Legends",
+        Game(id: UUID().uuidString,
+             name: "League of Legends",
              types: [.pc],
              teamCapacity: 5,
              formats: TournamentFormat.allCases,
              icon: "https://image-downloader-test.s3.sa-east-1.amazonaws.com/lolIcon.png",
-             cover: "")
+             cover: "https://image-downloader-test.s3.sa-east-1.amazonaws.com/sharkibara.png")
     }
 }
