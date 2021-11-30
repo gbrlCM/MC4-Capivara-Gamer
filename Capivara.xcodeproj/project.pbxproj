@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
 		5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBE274C047400BB90F1 /* TabBarScreen.swift */; };
 		5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		5B0D3BBE274C047400BB90F1 /* TabBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreen.swift; sourceTree = "<group>"; };
 		5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */,
+				064170A02756AFA400E5B7F2 /* EventCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
+				064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */,
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
