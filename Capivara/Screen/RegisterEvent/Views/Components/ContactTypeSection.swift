@@ -13,7 +13,7 @@ struct ContactTypeSection: View {
     var body: some View {
         SingleSelectRegisterEventSection(title: "Comunicação", isMandatory: true) {
             ForEach(contactTypes, id: \.self) { contactType in
-                RegisterEventButton(content: contactType, isSelected: false)
+                RegisterEventButton(content: contactType, isSelected: false).padding(.trailing, 8)
             }
         }
     }

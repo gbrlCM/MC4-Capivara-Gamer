@@ -12,6 +12,4 @@ class GameRepositoryMock: GameRepositoryProtocol {
     func fetchAllGames() async throws -> [Game] {
         [GameMock.leagueOfLegends]
     }
-    
-    
 }
