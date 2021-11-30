@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Game: Codable, Equatable {
+struct Game: Codable, Equatable, Identifiable {
+    let id: String
     let name: String
     let types: [GameType]
     let teamCapacity: Int
@@ -17,5 +18,5 @@ struct Game: Codable, Equatable {
 }
 
 enum GameType: String, Codable, CaseIterable {
-    case mobile, pc, console
+    case mobile, pc, xbox, playstation
 }

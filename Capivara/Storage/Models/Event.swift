@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Event: Codable, Equatable, Identifiable {
     let id: String?
