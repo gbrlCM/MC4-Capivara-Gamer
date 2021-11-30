@@ -10,37 +10,57 @@ import SwiftUI
 struct UserProfileView: View {
     var body: some View {
         NavigationView {
-            VStack {
+            ScrollView {
                 userIdentificationSection
-                Spacer()
+                    .background(ColorPalette.secondaryBackground)
+                    .padding()
+                
                 navigationSection
-                Spacer()
+                    .padding()
+            
                 actionsSection
+                    .background(ColorPalette.secondaryBackground)
+                    .padding()
+                
             }
-            .backgroundColor(Color(uiColor: .secondarySystemBackground))
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar{ ToolbarItem(placement: .navigationBarTrailing) { EditButton() }}
+            .backgroundColor(ColorPalette.backgroundColor)
+            .navigationTitle("Configurações")
+            .navigationBarTitleColor(ColorPalette.primaryText)
+            .foregroundColor(ColorPalette.primaryText)
+            
+            
         }
         .tabBarLabel(text: "CapivaraGamer", systemImage: "person.fill")
     }
     
     @ViewBuilder
     var userIdentificationSection: some View {
-        VStack {
-            UserProfileAvatar(imageURL: .constant(URL(string: "https://image-downloader-test.s3.sa-east-1.amazonaws.com/sharkibara.png")))
-            Text("Capivara Gamer")
-                .font(.title.bold())
-            Text("12/02/2001")
-        }
+        NavigationLink.init(destination: {Text("tela de edição do usuário")}, label: {
+            HStack {
+                UserProfileAvatar(imageURL: .constant(URL(string: "pudim")))
+                VStack(alignment: .leading) {
+                    Text("Capivara Gamer")
+                        .font(.title2.bold())
+                    Text("12/02/2001")
+
+                }
+
+                Spacer()
+            } .padding()
+                
+        })
     }
     
     @ViewBuilder
     var navigationSection: some View {
-        List {
-            NavigationLink(destination: Text("Termos de consetimento")) {
+        NavigationLink(destination: Text("Termos de consetimento")) {
+            
+            HStack {
                 Text("Termos de consentimento")
-            }.listRowBackground(Color(uiColor: .tertiarySystemBackground))
-        }.backgroundColor(.clear)
+                Spacer()
+            }.padding()
+              
+        }
     }
     
     @ViewBuilder
@@ -61,6 +81,6 @@ struct UserProfileView: View {
 struct UserProfileView_Previews: PreviewProvider {
     static var previews: some View {
         UserProfileView()
-        .preferredColorScheme(.dark)
+        .preferredColorScheme(.light)
     }
 }

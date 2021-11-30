@@ -12,11 +12,8 @@ struct UserProfileAvatar: View {
     var imageURL: URL?
     
     var body: some View {
-        AsyncImage(url: imageURL) { image in
-            image.resizable().scaledToFill().clipShape(Circle())
-        } placeholder: {
-            Capsule().fill(Color.pink)
-        }
-        .frame(width: 200, height: 200, alignment: .center)
+        CapybaraAsyncImage(url: imageURL)
+            .clipShape(Circle())
+        .frame(width: 100, height: 100, alignment: .center)
     }
 }
