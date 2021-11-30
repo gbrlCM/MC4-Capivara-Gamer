@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol EventRepositoryProtocol: Actor {
+protocol EventRepositoryProtocol {
     func fetchUserEvents(of user: User) async throws -> [Event]
     func fetchHotEvents() async throws -> [Event]
     func fetchGameEvents(of game: Game) async throws -> [Event]

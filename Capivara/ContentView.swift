@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
-        RootView()
+        //RootView()
+        RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepositoryMock()))
     }
 }
 
@@ -20,6 +23,7 @@ struct ContentView_Previews: PreviewProvider {
             ContentView()
                 .previewDevice("iPhone 8")
             ContentView()
-            .previewDevice("iPhone SE (2nd generation)")        }
+            .previewDevice("iPhone SE (2nd generation)")
+        }
     }
 }

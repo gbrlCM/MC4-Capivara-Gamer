@@ -7,7 +7,8 @@
 
 import Foundation
 
-actor EventRepositoryMock: EventRepositoryProtocol {
+@MainActor
+class EventRepositoryMock: EventRepositoryProtocol {
     var allEvents = EventMock.events
     
     func fetchUserEvents(of user: User) async throws -> [Event] {
