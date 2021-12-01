@@ -12,21 +12,22 @@ struct UserProfileView: View {
         NavigationView {
             ScrollView {
                 userIdentificationSection
+                    .foregroundColor(ColorPalette.primaryText)
                     .background(ColorPalette.secondaryBackground)
+                    .cornerRadius(10)
                     .padding()
+                    
                 
                 navigationSection
                     .padding()
-            
+                   
                 actionsSection
-                    .background(ColorPalette.secondaryBackground)
                     .padding()
                 
             }
             .backgroundColor(ColorPalette.backgroundColor)
             .navigationTitle("Configurações")
             .navigationBarTitleColor(ColorPalette.primaryText)
-            .foregroundColor(ColorPalette.primaryText)
             
             
         }
@@ -42,23 +43,30 @@ struct UserProfileView: View {
                     Text("Capivara Gamer")
                         .font(.title2.bold())
                     Text("12/02/2001")
+                        
 
                 }
+                
 
                 Spacer()
             } .padding()
                 
         })
+            
     }
     
     @ViewBuilder
     var navigationSection: some View {
-        NavigationLink(destination: Text("Termos de consetimento")) {
+        NavigationLink(destination: Text("Termos de consentimento")) {
             
             HStack {
                 Text("Termos de consentimento")
+                    .font(.headline.bold())
+                    
                 Spacer()
             }.padding()
+                .background(ColorPalette.secondaryBackground)
+                .cornerRadius(10)
               
         }
     }
@@ -68,13 +76,22 @@ struct UserProfileView: View {
         VStack {
             Button {} label: {
                 UserProfileActionLabel(text: "Logout")
+                    .font(.headline.bold())
+
             }.buttonStyle(.bordered)
+                .background(ColorPalette.secondaryBackground)
+                .cornerRadius(10)
             
             Button(role: .destructive) {} label: {
                 UserProfileActionLabel(text: "Deletar minha conta")
+                    .font(.headline.bold())
+
             }.buttonStyle(.bordered)
+                .background(ColorPalette.secondaryBackground)
+                .cornerRadius(10)
+        }.padding()
+            .padding(.horizontal, -15)
             
-        }.padding(.all, 16)
     }
 }
 
