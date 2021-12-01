@@ -17,7 +17,7 @@ struct RootView: View {
                 .tag(TabBarScreen.events)
             SearchView()
                 .tag(TabBarScreen.search)
-            UserProfileView()
+            UserProfileView(viewModel: UserProfileViewModel())
                 .tag(TabBarScreen.profile)
         }
     }

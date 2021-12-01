@@ -9,10 +9,10 @@ import SwiftUI
 
 struct UserProfileAvatar: View {
     @Binding
-    var imageURL: URL?
+    var imageURL: String
     
     var body: some View {
-        CapybaraAsyncImage(url: imageURL)
+        CapybaraAsyncImage(url: URL(string: imageURL))
             .clipShape(Circle())
         .frame(width: 100, height: 100, alignment: .center)
     }

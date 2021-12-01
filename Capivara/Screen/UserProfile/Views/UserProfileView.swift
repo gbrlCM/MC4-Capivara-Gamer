@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UserProfileView: View {
+    @ObservedObject var viewModel: UserProfileViewModel
     var body: some View {
         NavigationView {
             ScrollView {
@@ -38,21 +39,16 @@ struct UserProfileView: View {
     var userIdentificationSection: some View {
         NavigationLink.init(destination: {Text("tela de edição do usuário")}, label: {
             HStack {
-                UserProfileAvatar(imageURL: .constant(URL(string: "pudim")))
+                UserProfileAvatar(imageURL: $viewModel.user.avatar)
                 VStack(alignment: .leading) {
-                    Text("Capivara Gamer")
+                    Text(viewModel.user.username)
                         .font(.title2.bold())
-                    Text("12/02/2001")
-                        
-
+                    Text(viewModel.user.dateOfBirth, style: .date)
                 }
                 
-
                 Spacer()
             } .padding()
-                
         })
-            
     }
     
     @ViewBuilder
@@ -97,7 +93,7 @@ struct UserProfileView: View {
 
 struct UserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfileView()
+        UserProfileView(viewModel: UserProfileViewModel())
         .preferredColorScheme(.light)
     }
 }
