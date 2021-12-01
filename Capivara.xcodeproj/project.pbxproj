@@ -57,6 +57,7 @@
 		5BD88C642748415A00036C35 /* CapivaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C632748415A00036C35 /* CapivaraTests.swift */; };
 		5BD88C6E2748415A00036C35 /* CapivaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */; };
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
+		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		5BD88C692748415A00036C35 /* CapivaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapivaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITests.swift; sourceTree = "<group>"; };
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		5B0D3BB7274C03E400BB90F1 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
+				E9C622C22757F458002C5615 /* ViewModels */,
 				5B0D3BC4274C053900BB90F1 /* Views */,
 			);
 			path = UserProfile;
@@ -480,6 +483,14 @@
 			path = CapivaraUITests;
 			sourceTree = "<group>";
 		};
+		E9C622C22757F458002C5615 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E9C622C32757F482002C5615 /* UserProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -633,6 +644,7 @@
 				5B9D6D1D275581A500008B7E /* PlatformSection.swift in Sources */,
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
 				5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */,
+				E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */,
 				5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */,
 				5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */,
 				5B898030274EC67500CE92BF /* Address.swift in Sources */,
