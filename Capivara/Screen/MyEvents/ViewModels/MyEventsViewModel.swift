@@ -12,6 +12,8 @@ final class MyEventsViewModel: ObservableObject{
     @Published private var events: [Event]
     @Published var user: User
     @Published var searchFieldText: String
+    @Published var filterSegmented: MyEventsTab = .all
+    
     
     init(repository: EventRepositoryProtocol, user: User){
         self.repository = repository
@@ -31,9 +33,32 @@ final class MyEventsViewModel: ObservableObject{
     }
     
     
+    
     func fetchEvents() async throws{
         events = try await repository.fetchUserEvents(of: user)
     }
     
+    var filterSegmentedEvents: [Event] {
+        switch filterSegmented {
+        case .all:
+            return searchedEvents
+        case .current:
+            return searchedEvents.filter{
+                $0.date > Date.now
+            }
+        case .created:
+            return searchedEvents.filter{
+                $0.creator == user
+            }
+        case .participated:
+            return searchedEvents.filter{
+                $0.participants.contains(user)
+
+            }
+            
+        }
+        
+    }
 }
+
 

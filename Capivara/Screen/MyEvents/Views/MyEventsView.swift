@@ -7,22 +7,15 @@
 
 import SwiftUI
 
-enum MyEventsTab: String, CaseIterable {
-    case all = "Todos"
-    case current = "Atuais"
-    case created = "Criados"
-    case participated = "Participados"
-}
-
 struct MyEventsView: View {
     
-    @State private var filterSegmented: MyEventsTab = .all
+    
     @ObservedObject var viewModel: MyEventsViewModel
     
     var body: some View {
         NavigationView {
             VStack {
-                Picker("What is your favorite color?", selection: $filterSegmented)
+                Picker("What is your favorite color?", selection: $viewModel.filterSegmented)
                 {
                     ForEach(MyEventsTab.allCases, id: \.self) { tab in
                         Text(tab.rawValue).tag(tab)
@@ -35,7 +28,7 @@ struct MyEventsView: View {
                 .padding()
 
                 List {
-                    ForEach(viewModel.searchedEvents){ content in
+                    ForEach(viewModel.filterSegmentedEvents){ content in
                         ZStack {
                             NavigationLink(destination: {
                                 Text(content.name)
