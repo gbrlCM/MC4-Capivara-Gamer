@@ -22,10 +22,11 @@ struct RegisterEventButton<P: Presentable>: View {
                 if isSelected {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10).fill(ColorPalette.accent.opacity(0.3))
-                        RoundedRectangle(cornerRadius: 10).stroke(ColorPalette.accent, lineWidth: 4)
+                        RoundedRectangle(cornerRadius: 8).stroke(ColorPalette.accent, lineWidth: 2.5)
                     }
                 }
             }
+            .animation(.easeInOut.speed(2), value: isSelected)
     }
 }
 
@@ -36,7 +37,7 @@ struct RegisterEventButton_Previews: PreviewProvider {
                 .padding()
                 .previewLayout(.sizeThatFits)
             .previewInterfaceOrientation(.landscapeLeft)
-            RegisterEventButton(content: GameType.xbox, isSelected: false)
+            RegisterEventButton(content: GameType.xbox, isSelected: true)
                 .padding()
                 .previewLayout(.sizeThatFits)
                 .previewInterfaceOrientation(.landscapeLeft)

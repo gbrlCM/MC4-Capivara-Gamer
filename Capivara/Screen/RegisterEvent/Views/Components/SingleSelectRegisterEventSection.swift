@@ -21,6 +21,7 @@ struct SingleSelectRegisterEventSection<Content: View>: View {
             
             HorizontalScrollView {
                 content()
+                    .padding(.vertical, 2)
             }
         }
         .padding(.bottom,8)

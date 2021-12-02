@@ -10,13 +10,13 @@ import SwiftUI
 struct RegisterEventGameButton: View {
     @Binding
     var game: Game
-    @Binding
-    var selectedID: String?
+    
+    var isSelected: Bool
     
     var body: some View {
         CapybaraAsyncImage(url: URL(string: game.cover))
             .overlay {
-                if let selectedID = selectedID, selectedID == game.id {
+                if isSelected {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(ColorPalette.accent.opacity(0.35))
@@ -27,6 +27,7 @@ struct RegisterEventGameButton: View {
             }
             .cornerRadius(10)
             .clipped()
+            .animation(.easeInOut.speed(1.5), value: isSelected)
             .frame(width: 160, height: 160)
     }
 }
@@ -34,7 +35,7 @@ struct RegisterEventGameButton: View {
 struct RegisterEventGameButtom_PreviewProvider: PreviewProvider {
     static var previews: some View {
         let game = GameMock.leagueOfLegends
-        RegisterEventGameButton(game: .constant(game), selectedID: .constant(game.id))
+        RegisterEventGameButton(game: .constant(game), isSelected: false)
             .previewLayout(.sizeThatFits)
     }
 }

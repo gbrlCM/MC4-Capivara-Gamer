@@ -10,12 +10,23 @@ import Foundation
 @MainActor
 final class RegisterEventViewModel: ObservableObject {
     
+    //MARK: View States
     @Published
     var selectedTab: RegisterEventTab = .general
     @Published
+    var viewState: RegisterEventViewState
+    
+    //MARK: Form Bindings
+    @Published
     var games: [Game]
     @Published
-    var viewState: RegisterEventViewState
+    var selectedGame: Game?
+    @Published
+    var selectedGameType: GameType?
+    @Published
+    var selectedEventType: EventType?
+    @Published
+    var selectedContactType: ContactType?
     
     private var repository: GameRepositoryProtocol
     
@@ -23,6 +34,10 @@ final class RegisterEventViewModel: ObservableObject {
         self.repository = repository
         self.games = []
         self.viewState = .loading
+        self.selectedGame = nil
+        self.selectedGameType = nil
+        self.selectedContactType = nil
+        self.selectedEventType = nil
     }
     
     func fetchAllItems() async {
