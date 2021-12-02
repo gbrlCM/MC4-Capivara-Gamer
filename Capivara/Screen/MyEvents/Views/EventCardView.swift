@@ -8,15 +8,11 @@
 import SwiftUI
 
 struct EventCardView: View {
-    var text: String
-    var tileImage: Image
-    var streamImage: Image
-    var gameImage: Image
+    var event: Event
     
     var body: some View{
         ZStack{
-            tileImage
-                .resizable()
+            CapybaraAsyncImage(url: URL(string: event.coverUrl ?? ""))
                 .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
                 .cornerRadius(10)
             VStack(alignment: .trailing){
@@ -27,12 +23,12 @@ struct EventCardView: View {
                         .opacity(0.6)
                         .cornerRadius(10 ,corners: .topRight)
                     .cornerRadius(70 ,corners: .bottomLeft)
-                    streamImage
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .clipShape(Circle())
-                        .fixedSize(horizontal: true, vertical: true)
-                        .padding(.trailing, 7.5)
+////                    streamImage
+//                        .resizable()
+//                        .frame(width: 30, height: 30)
+//                        .clipShape(Circle())
+//                        .fixedSize(horizontal: true, vertical: true)
+//                        .padding(.trailing, 7.5)
                     
                 }
                 Spacer()
@@ -45,17 +41,16 @@ struct EventCardView: View {
 
                     HStack{
                         VStack(alignment: .leading){
-                            Text(text)
+                            Text(event.name)
                                 .padding(.leading)
-                                .font(.system(size: 24.0))
-                                .foregroundColor(Color.blue)
-                            Text("Data")
+                                .font(.title2.bold())
+                                .foregroundColor(ColorPalette.primaryText)
+                            Text(event.date, style: .date)
                                 .padding(.leading)
-                                .foregroundColor(Color.blue)
+                                .foregroundColor(ColorPalette.primaryText)
                         }
                         Spacer()
-                        gameImage
-                            .resizable()
+                        CapybaraAsyncImage(url: URL(string: event.game.icon))
                             .frame(width: 30, height: 30)
                             .clipShape(Circle())
                             .fixedSize(horizontal: true, vertical: true)
@@ -88,7 +83,7 @@ extension View{
 struct EventCardView_Previews: PreviewProvider {
     static var previews: some View {
         TabView {
-            EventCardView(text: "Título", tileImage: Image("COD"),streamImage: Image("LOL"), gameImage: Image("Freefire")).frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
+            EventCardView(event: EventMock.event)
         }
 
     }

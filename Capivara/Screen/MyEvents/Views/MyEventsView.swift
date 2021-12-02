@@ -7,21 +7,26 @@
 
 import SwiftUI
 
+enum MyEventsTab: String, CaseIterable {
+    case all = "Todos"
+    case current = "Atuais"
+    case created = "Criados"
+    case participated = "Participados"
+}
+
 struct MyEventsView: View {
     
-    @State private var searchText = ""
-    @State private var content = ["COD", "LOL", "cc", "dd", "ee", "paçoquinha", "pudim"]
-    @State private var filterSegmented = 0
+    @State private var filterSegmented: MyEventsTab = .all
+    @ObservedObject var viewModel: MyEventsViewModel
     
     var body: some View {
         NavigationView {
             VStack {
                 Picker("What is your favorite color?", selection: $filterSegmented)
                 {
-                    Text("Todos").tag(0)
-                    Text("Atuais").tag(1)
-                    Text("Criados").tag(2)
-                    Text("Participados").tag(3)
+                    ForEach(MyEventsTab.allCases, id: \.self) { tab in
+                        Text(tab.rawValue).tag(tab)
+                    }
                 }
                 .selectedSegmentTintColor(ColorPalette.accent)
                 .selectedTitleColor(ColorPalette.primaryText)
@@ -29,11 +34,18 @@ struct MyEventsView: View {
                 .pickerStyle(.segmented)
                 .padding()
 
-            List {
-                ForEach(searchResults, id: \.self){ content in
-                    EventCardView(text: content, tileImage: Image("COD"), streamImage: Image("LOL"), gameImage: Image("Freefire"))
-                        .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
-                        .listRowBackground(ColorPalette.backgroundColor)
+                List {
+                    ForEach(viewModel.searchedEvents){ content in
+                        ZStack {
+                            NavigationLink(destination: {
+                                Text(content.name)
+                            }, label: {
+                               EmptyView()
+                        })
+                            EventCardView(event: content)
+                            .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
+                        }.listRowBackground(ColorPalette.backgroundColor)
+
                 }.listRowSeparator(.hidden)
             }
             .listStyle(.plain)
@@ -49,24 +61,23 @@ struct MyEventsView: View {
             .navigationTitle("Eventos")
             .navigationBarTitleColor(ColorPalette.primaryText)
             .backgroundColor(ColorPalette.backgroundColor)
-            
-        }.searchable(text: $searchText)
+            .task{
+                do {
+                    try await viewModel.fetchEvents()
+                } catch  {
+                    
+                }
+            }
+        }.searchable(text: $viewModel.searchFieldText)
             .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
     }
     
-    var searchResults: [String] {
-        if searchText.isEmpty{
-            return content
-        }else{
-            return content.filter{$0.contains(searchText)}
-        }
-    }
 }
 
 struct MyEventsView_Previews: PreviewProvider {
     static var previews: some View {
         TabView {
-            MyEventsView()
+            MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
         }
     }
 }

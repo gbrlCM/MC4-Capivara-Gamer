@@ -29,11 +29,10 @@ enum EventMock {
     }
     
     static var events: [Event] {
-        let baseEvent = EventMock.event
         
-        var events = Array(repeating: baseEvent, count: 15)
+        let events = [EventMock.event, EventMock.event, EventMock.event, EventMock.event, EventMock.event, EventMock.event, EventMock.event, EventMock.event, EventMock.event, EventMock.event, EventMock.event]
         
-        events = events.enumerated().map { (iterator, element) in
+        let newEvents = events.enumerated().map { (iterator, element) -> Event in
             var modElement = element
             modElement.name = "Capivara Gamer \(iterator)"
             modElement.description = "Descrição da Capivara gamer \(iterator)"
@@ -42,6 +41,6 @@ enum EventMock {
             return modElement
         }
         
-        return events
+        return newEvents
     }
 }
