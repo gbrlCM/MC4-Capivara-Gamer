@@ -12,7 +12,9 @@ struct EventInfoView: View {
         NavigationView {
             VStack {
                 ScrollView {
-                    image("")
+                    Image("Celulol")
+                        .resizable()
+                        .frame(height: 200)
                 }
             }.backgroundColor(ColorPalette.backgroundColor)
              .navigationTitle("Informação do Evento").navigationBarTitleColor(ColorPalette.primaryText)
