@@ -67,10 +67,19 @@ struct EventInfoView: View {
                     Button(action:{}) {
                         Image("DiscordRosa")
                             .resizable()
-                            .frame(width: 35, height: 30)
+                            .frame(width: 30, height: 25)
                     }.padding()
                      .background(ColorPalette.accent.opacity(0.4))
                      .cornerRadius(50)
+                    
+                    Button(action:{}) {
+                        Image("TwitchRosa")
+                            .resizable()
+                            .frame(width: 28, height: 30)
+                    }.padding()
+                     .background(ColorPalette.accent.opacity(0.4))
+                     .cornerRadius(50)
+                    
                     Spacer()
                 }
             }.backgroundColor(ColorPalette.backgroundColor)
