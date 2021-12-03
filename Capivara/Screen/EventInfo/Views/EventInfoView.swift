@@ -64,13 +64,18 @@ struct EventInfoView: View {
                         .cornerRadius(10)
                         .padding()
                     
+                    Spacer()
+                    
                     Button(action:{}) {
                         Image("DiscordRosa")
                             .resizable()
                             .frame(width: 30, height: 25)
                     }.padding()
                      .background(ColorPalette.accent.opacity(0.4))
+                     .frame(width: 50, height: 50)
                      .cornerRadius(50)
+                    
+                    Spacer()
                     
                     Button(action:{}) {
                         Image("TwitchRosa")
@@ -78,6 +83,7 @@ struct EventInfoView: View {
                             .frame(width: 28, height: 30)
                     }.padding()
                      .background(ColorPalette.accent.opacity(0.4))
+                     .frame(width: 50, height: 50)
                      .cornerRadius(50)
                     
                     Spacer()
@@ -86,6 +92,14 @@ struct EventInfoView: View {
                 Text("É um jogo eletrônico online gratuito, do gênero batalha multijogador, desenvolvido e publicado pela Riot Games em 2009,[3] para os sistemas Microsoft Windows e Mac OS X, inspirado no modo Defense of the Ancients[4] do jogo Warcraft III: The Frozen Throne.[5]")
                     .foregroundColor(ColorPalette.primaryText)
                     .padding()
+                
+                HStack {
+                    Text("Sobre o Evento")
+                        .foregroundColor(ColorPalette.primaryText)
+                        .font(.subheadline.bold())
+                    
+                    Spacer()
+                }.padding()
 
             }.backgroundColor(ColorPalette.backgroundColor)
                 .navigationTitle("Informação do Evento").navigationBarTitleColor(ColorPalette.primaryText)
