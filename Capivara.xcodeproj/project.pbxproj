@@ -159,6 +159,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06EB1AE8275AA65E0018C9FD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				06EB1AEA275AA67C0018C9FD /* View */,
+				06EB1AE9275AA6730018C9FD /* ViewModel */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		06EB1AE9275AA6730018C9FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		06EB1AEA275AA67C0018C9FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		5B0D3BB5274C03C300BB90F1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +195,7 @@
 		5B0D3BB6274C03CB00BB90F1 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				06EB1AE8275AA65E0018C9FD /* Login */,
 				5B832ABA27503015009F5D5A /* RegisterEvent */,
 				5B0D3BC7274C054F00BB90F1 /* Search */,
 				5B0D3BC0274C050E00BB90F1 /* MyEvents */,
