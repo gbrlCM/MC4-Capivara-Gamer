@@ -18,8 +18,10 @@ struct EditProfileView: View {
             userNameChanger
                 .padding()
             
+            userDateChangerLabel
+            
             userDateChanger
-                
+                .padding(.horizontal)
                
             
             Spacer()
@@ -46,23 +48,48 @@ struct EditProfileView: View {
     var userNameChanger: some View {
         VStack {
             TextField("Username", text: $username)
+                .padding()
                 .foregroundColor(ColorPalette.primaryText)
-                .frame(width: 350, height: 40, alignment: .center)
+                .frame(width: 360, height: 40, alignment: .center)
                 .background(ColorPalette.secondaryBackground)
                 .cornerRadius(10)
+                .colorScheme(.dark)
+            
+//                .textFieldStyle(
+//                            RoundedBorderTextFieldStyle()
+//                        )
+                            
         }
     }
     
     @ViewBuilder
-    var userDateChanger: some View {
+    var userDateChangerLabel: some View {
         HStack() {
             Text("Data de Nascimento")
                 .foregroundColor(ColorPalette.primaryText)
             Spacer()
         }.padding()
-        
-        DatePicker(selection: /*@START_MENU_TOKEN@*/.constant(Date())/*@END_MENU_TOKEN@*/, label: { Text("") })
+    }
+    
+    @ViewBuilder
+    var userDateChanger: some View {
+        HStack{
+        DatePicker("", selection: $viewModel.user.dateOfBirth, displayedComponents: .date)
             .labelsHidden()
+            .colorScheme(.dark)
+            .accentColor(ColorPalette.accent)
+                    .background(RoundedRectangle(cornerRadius: 10)
+                        .fill(ColorPalette.secondaryBackground)
+                        .opacity(2.0))
+                    .datePickerStyle(GraphicalDatePickerStyle())
+        
+//            .datePickerStyle(WheelDatePickerStyle())
+//                         .background(
+//                            RoundedRectangle(cornerRadius: 30)
+//                                .stroke(Color.white, lineWidth: 1)
+//                         )
+//                         .foregroundColor(Color.purple)
+        }
             
     }
 }
