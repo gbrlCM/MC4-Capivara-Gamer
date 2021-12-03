@@ -82,6 +82,11 @@ struct EventInfoView: View {
                     
                     Spacer()
                 }
+                
+                Text("É um jogo eletrônico online gratuito, do gênero batalha multijogador, desenvolvido e publicado pela Riot Games em 2009,[3] para os sistemas Microsoft Windows e Mac OS X, inspirado no modo Defense of the Ancients[4] do jogo Warcraft III: The Frozen Throne.[5]")
+                    .foregroundColor(ColorPalette.primaryText)
+                    .padding()
+
             }.backgroundColor(ColorPalette.backgroundColor)
                 .navigationTitle("Informação do Evento").navigationBarTitleColor(ColorPalette.primaryText)
                 .navigationBarTitleDisplayMode(.inline)
