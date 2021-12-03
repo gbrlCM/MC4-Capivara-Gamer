@@ -58,6 +58,7 @@
 		5BD88C6E2748415A00036C35 /* CapivaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */; };
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
 		E96C62092756B5C1008CF3C5 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C62082756B5C1008CF3C5 /* EventInfoView.swift */; };
+		E9E3E911275AB55F00CE6FF7 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3E910275AB55F00CE6FF7 /* EventInfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITests.swift; sourceTree = "<group>"; };
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E96C62082756B5C1008CF3C5 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
+		E9E3E910275AB55F00CE6FF7 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,9 +496,18 @@
 		E96C62072756B598008CF3C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E9E3E90F275AB52A00CE6FF7 /* Components */,
 				E96C62082756B5C1008CF3C5 /* EventInfoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E9E3E90F275AB52A00CE6FF7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E9E3E910275AB55F00CE6FF7 /* EventInfoTableViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -629,6 +640,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E3E911275AB55F00CE6FF7 /* EventInfoTableViewCell.swift in Sources */,
 				5B9D6D21275581F500008B7E /* ContactTypeSection.swift in Sources */,
 				5B832AC127516796009F5D5A /* View+NavBarTitle.swift in Sources */,
 				5B832AAE274FEE94009F5D5A /* EventRepositoryProtocol.swift in Sources */,

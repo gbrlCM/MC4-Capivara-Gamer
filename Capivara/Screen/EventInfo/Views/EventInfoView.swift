@@ -93,13 +93,54 @@ struct EventInfoView: View {
                     .foregroundColor(ColorPalette.primaryText)
                     .padding()
                 
+                Spacer()
+                
                 HStack {
                     Text("Sobre o Evento")
+                        .padding(.leading)
                         .foregroundColor(ColorPalette.primaryText)
                         .font(.subheadline.bold())
                     
                     Spacer()
-                }.padding()
+                }
+                
+                LazyVStack {
+                    VStack(alignment: .leading) {
+                        Group {
+                            EventInfoTableViewCell(title: "Tipo do Evento", info: "Campeonato")
+                            
+                            Divider()
+                                .background(ColorPalette.secondaryText)
+                            
+                            EventInfoTableViewCell(title: "Formato do Evento", info: "Round Robin")
+                            
+                            Divider()
+                                .background(ColorPalette.secondaryText)
+                            
+                            EventInfoTableViewCell(title: "Formato da Partida", info: "Melhor de 1")
+                            
+                            Divider()
+                                .background(ColorPalette.secondaryText)
+                            
+                            EventInfoTableViewCell(title: "Jogadores", info: "3 times com 3 jogadores em cada")
+                            
+                            Divider()
+                                .background(ColorPalette.secondaryText)
+                            
+                            EventInfoTableViewCell(title: "Entrada no Lobby", info: "15:30")
+                            
+                            Divider()
+                                .background(ColorPalette.secondaryText)
+                        }
+                        
+                        Group {
+                            EventInfoTableViewCell(title: "Início da Primeira Partida", info: "16:00")
+                        }
+                                                
+                    }.foregroundColor(ColorPalette.primaryText)
+                    
+                }.background(RoundedRectangle(cornerRadius: 10).fill(ColorPalette.secondaryBackground))
+                    .padding()
 
             }.backgroundColor(ColorPalette.backgroundColor)
                 .navigationTitle("Informação do Evento").navigationBarTitleColor(ColorPalette.primaryText)
