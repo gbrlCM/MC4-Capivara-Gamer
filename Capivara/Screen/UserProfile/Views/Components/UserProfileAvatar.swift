@@ -9,14 +9,11 @@ import SwiftUI
 
 struct UserProfileAvatar: View {
     @Binding
-    var imageURL: URL?
+    var imageURL: String
     
     var body: some View {
-        AsyncImage(url: imageURL) { image in
-            image.resizable().scaledToFill().clipShape(Circle())
-        } placeholder: {
-            Capsule().fill(Color.pink)
-        }
-        .frame(width: 200, height: 200, alignment: .center)
+        CapybaraAsyncImage(url: URL(string: imageURL))
+            .clipShape(Circle())
+        .frame(width: 100, height: 100, alignment: .center)
     }
 }
