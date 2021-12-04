@@ -14,7 +14,7 @@ enum LinkSectionViewModelFactory {
                              subtitle: "Adicionoe o link do discord que será usado no evento.",
                              placeholder: "discord.gg/link",
                              errorMessage: "Link invalido!",
-                             validator: DiscordValidator())
+                             validator: RegexValidator(regex: .discord))
     }
     
     static func buildForEmail() -> LinkSectionViewModel {
@@ -22,6 +22,6 @@ enum LinkSectionViewModelFactory {
                              subtitle: "Digite aqui o e-mail que jogadores poderão se comunicar com você",
                              placeholder: "capivara@gamer.com",
                              errorMessage: "Email invalido",
-                             validator: EmailValidator())
+                             validator: RegexValidator(regex: .email))
     }
 }

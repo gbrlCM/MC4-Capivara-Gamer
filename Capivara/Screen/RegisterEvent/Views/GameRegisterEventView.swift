@@ -20,7 +20,7 @@ struct GameRegisterEventView: View {
                 EventTypeSection(selectedEventType: $viewModel.selectedEventType)
                 ContactTypeSection(selectedContactType: $viewModel.selectedContactType)
                 StreamSection(hasStreaming: $viewModel.hasStreaming, selectedStreamingPlatform: .constant(.instagram))
-            }.padding(.horizontal, 4)
+            }.padding(.leading, 4)
         }
         .foregroundColor(ColorPalette.primaryText)
         .backgroundColor(ColorPalette.backgroundColor)

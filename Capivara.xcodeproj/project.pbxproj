@@ -46,10 +46,10 @@
 		5B9D6D232755821500008B7E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D222755821500008B7E /* ContainerView.swift */; };
 		5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */; };
 		5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */; };
+		5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4BFAA275AF117009D75E6 /* Regex.swift */; };
 		5BC30FEC2758798F00800DEB /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FEB2758798F00800DEB /* Validator.swift */; };
 		5BC30FEE27587D8100800DEB /* LinkValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */; };
-		5BC30FF127587DD300800DEB /* DiscordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF027587DD300800DEB /* DiscordValidator.swift */; };
-		5BC30FF327588ABD00800DEB /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF227588ABD00800DEB /* EmailValidator.swift */; };
+		5BC30FF327588ABD00800DEB /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF227588ABD00800DEB /* RegexValidator.swift */; };
 		5BC30FF527588D8F00800DEB /* LinkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF427588D8F00800DEB /* LinkSection.swift */; };
 		5BC30FF727588DB600800DEB /* LinkSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF627588DB600800DEB /* LinkSectionViewModel.swift */; };
 		5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */; };
@@ -124,10 +124,10 @@
 		5B9D6D222755821500008B7E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectRegisterEventSection.swift; sourceTree = "<group>"; };
+		5BA4BFAA275AF117009D75E6 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		5BC30FEB2758798F00800DEB /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkValidatedTextField.swift; sourceTree = "<group>"; };
-		5BC30FF027587DD300800DEB /* DiscordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordValidator.swift; sourceTree = "<group>"; };
-		5BC30FF227588ABD00800DEB /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		5BC30FF227588ABD00800DEB /* RegexValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexValidator.swift; sourceTree = "<group>"; };
 		5BC30FF427588D8F00800DEB /* LinkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSection.swift; sourceTree = "<group>"; };
 		5BC30FF627588DB600800DEB /* LinkSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSectionViewModel.swift; sourceTree = "<group>"; };
 		5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventGameButton.swift; sourceTree = "<group>"; };
@@ -426,8 +426,8 @@
 			isa = PBXGroup;
 			children = (
 				5BC30FEB2758798F00800DEB /* Validator.swift */,
-				5BC30FF027587DD300800DEB /* DiscordValidator.swift */,
-				5BC30FF227588ABD00800DEB /* EmailValidator.swift */,
+				5BC30FF227588ABD00800DEB /* RegexValidator.swift */,
+				5BA4BFAA275AF117009D75E6 /* Regex.swift */,
 			);
 			path = TextValidationService;
 			sourceTree = "<group>";
@@ -683,7 +683,6 @@
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
 				5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */,
 				5BF77E8C275A8CC100D253AB /* StreamSection.swift in Sources */,
-				5BC30FF127587DD300800DEB /* DiscordValidator.swift in Sources */,
 				5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */,
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
 				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
@@ -705,12 +704,13 @@
 				5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */,
 				5B898032274EC6A600CE92BF /* User.swift in Sources */,
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
-				5BC30FF327588ABD00800DEB /* EmailValidator.swift in Sources */,
+				5BC30FF327588ABD00800DEB /* RegexValidator.swift in Sources */,
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
+				5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,

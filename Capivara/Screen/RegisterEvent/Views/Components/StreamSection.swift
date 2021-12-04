@@ -16,30 +16,35 @@ struct StreamSection: View {
             VStack(alignment: .leading) {
                 Text("Stream")
                     .font(.title2.bold())
-                Text("O seu evento será transmitidos online?")
+                Text("O seu evento será transmitido online?")
                 CapybaraToggle(isOn: $hasStreaming)
                 
                 if hasStreaming {
-                    HorizontalScrollView {
-                        ForEach(StreamingType.allCases, id: \.self) { streamingType in
-                            RegisterEventButton(content: streamingType, isSelected: selectedStreamingPlatform == streamingType ) {
-                                if selectedStreamingPlatform == streamingType {
-                                    selectedStreamingPlatform = nil
-                                } else {
-                                    selectedStreamingPlatform = streamingType
-                                }
-                            }.padding(.vertical, 2)
-                            .padding(.trailing, 8)
-                        }
-                    }
-                    .padding(.vertical)
-                    .transition(.moveAndFade)
+                    hasStreamingSection
                 }
             }
             .padding(.bottom,8)
         .padding(.horizontal, 12).foregroundColor(ColorPalette.primaryText)
         Spacer()
         }
+    }
+    
+    @ViewBuilder
+    var hasStreamingSection: some View {
+        HorizontalScrollView {
+            ForEach(StreamingType.allCases, id: \.self) { streamingType in
+                RegisterEventButton(content: streamingType, isSelected: selectedStreamingPlatform == streamingType ) {
+                    if selectedStreamingPlatform == streamingType {
+                        selectedStreamingPlatform = nil
+                    } else {
+                        selectedStreamingPlatform = streamingType
+                    }
+                }.padding(.vertical, 2)
+                .padding(.trailing, 8)
+            }
+        }
+        .padding(.vertical)
+        .transition(.moveAndFade)
     }
 }
 
