@@ -24,7 +24,7 @@ struct LinkSection: View {
                                    isContentValid: $isValid,
                                    viewModel: .init(placeholder: viewModel.placeholder,
                                                     errorMessage: viewModel.errorMessage,
-                                                    validator: DiscordValidator()))
+                                                    validator: viewModel.validator))
         }
         .foregroundColor(ColorPalette.primaryText)
     }

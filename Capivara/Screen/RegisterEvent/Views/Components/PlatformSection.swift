@@ -16,14 +16,14 @@ struct PlatformSection: View {
     var body: some View {
         SingleSelectRegisterEventSection(title: "Plataforma", isMandatory: true) {
             ForEach(platforms, id: \.self) { platform in
-                RegisterEventButton(content: platform, isSelected: isSelected(platform: platform)).padding(.trailing, 8)
-                    .onTapGesture {
-                        if selectedPlatform == platform {
-                            selectedPlatform = nil
-                        } else {
-                            selectedPlatform = platform
-                        }
+                RegisterEventButton(content: platform, isSelected: isSelected(platform: platform)) {
+                    if selectedPlatform == platform {
+                        selectedPlatform = nil
+                    } else {
+                        selectedPlatform = platform
                     }
+                }
+                .padding(.trailing, 8)
             }
         }
     }

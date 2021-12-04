@@ -63,7 +63,7 @@ extension EventType: Presentable {
         case .training:
             label = Label("Treino", systemImage: "brain.head.profile")
         case .forFun:
-            label = Label("For fun", systemImage: "face.smilling.fill")
+            label = Label("For fun", systemImage: "face.smiling.fill")
         case .streaming:
             label = Label("Streaming", systemImage: "person.wave.2.fill")
         }
@@ -114,6 +114,22 @@ extension AddressType: Presentable {
         case .inPerson:
             label = Label("Presencial", systemImage: "building.2.fill")
         }
+        return label.font(.headline.weight(.semibold)).foregroundColor(ColorPalette.primaryText)
+    }
+}
+
+extension StreamingType: Presentable {
+    var label: some View {
+        let label: Label<Text, Image>
+        switch self {
+        case .twitch:
+            label = Label("Twitch", systemImage: "twitch.logo")
+        case .youtube:
+            label = Label("Youtube", systemImage: "youtube.logo")
+        case .instagram:
+            label = Label("Instagram", systemImage: "instagram.logo")
+        }
+        
         return label.font(.headline.weight(.semibold)).foregroundColor(ColorPalette.primaryText)
     }
 }

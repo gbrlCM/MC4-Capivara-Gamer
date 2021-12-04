@@ -46,7 +46,6 @@
 		5B9D6D232755821500008B7E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D222755821500008B7E /* ContainerView.swift */; };
 		5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */; };
 		5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */; };
-		5BC30FE82758751E00800DEB /* DiscordLinkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FE72758751E00800DEB /* DiscordLinkSection.swift */; };
 		5BC30FEC2758798F00800DEB /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FEB2758798F00800DEB /* Validator.swift */; };
 		5BC30FEE27587D8100800DEB /* LinkValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */; };
 		5BC30FF127587DD300800DEB /* DiscordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF027587DD300800DEB /* DiscordValidator.swift */; };
@@ -63,6 +62,9 @@
 		5BD88C642748415A00036C35 /* CapivaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C632748415A00036C35 /* CapivaraTests.swift */; };
 		5BD88C6E2748415A00036C35 /* CapivaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */; };
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
+		5BF77E8A275A87AD00D253AB /* LinkSectionViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */; };
+		5BF77E8C275A8CC100D253AB /* StreamSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8B275A8CC100D253AB /* StreamSection.swift */; };
+		5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,7 +124,6 @@
 		5B9D6D222755821500008B7E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectRegisterEventSection.swift; sourceTree = "<group>"; };
-		5BC30FE72758751E00800DEB /* DiscordLinkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordLinkSection.swift; sourceTree = "<group>"; };
 		5BC30FEB2758798F00800DEB /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkValidatedTextField.swift; sourceTree = "<group>"; };
 		5BC30FF027587DD300800DEB /* DiscordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordValidator.swift; sourceTree = "<group>"; };
@@ -142,6 +143,9 @@
 		5BD88C692748415A00036C35 /* CapivaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapivaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITests.swift; sourceTree = "<group>"; };
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSectionViewModelFactory.swift; sourceTree = "<group>"; };
+		5BF77E8B275A8CC100D253AB /* StreamSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamSection.swift; sourceTree = "<group>"; };
+		5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraToggle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +348,7 @@
 		5B832ABA27503015009F5D5A /* RegisterEvent */ = {
 			isa = PBXGroup;
 			children = (
+				5BF77E88275A879800D253AB /* Factories */,
 				5B832AC62751715E009F5D5A /* Models */,
 				5B832AC5275170F2009F5D5A /* ViewModels */,
 				5B832ABB27503025009F5D5A /* Views */,
@@ -444,8 +449,8 @@
 				5B9D6D1E275581C700008B7E /* EventTypeSection.swift */,
 				5B9D6D20275581F500008B7E /* ContactTypeSection.swift */,
 				5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */,
-				5BC30FE72758751E00800DEB /* DiscordLinkSection.swift */,
 				5BC30FF427588D8F00800DEB /* LinkSection.swift */,
+				5BF77E8B275A8CC100D253AB /* StreamSection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */,
 				5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */,
 				5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */,
+				5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -520,6 +526,14 @@
 				5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */,
 			);
 			path = CapivaraUITests;
+			sourceTree = "<group>";
+		};
+		5BF77E88275A879800D253AB /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -655,6 +669,7 @@
 				5B9D6D21275581F500008B7E /* ContactTypeSection.swift in Sources */,
 				5B832AC127516796009F5D5A /* View+NavBarTitle.swift in Sources */,
 				5B832AAE274FEE94009F5D5A /* EventRepositoryProtocol.swift in Sources */,
+				5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */,
 				5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */,
 				5B832AB32750074B009F5D5A /* EventRepositoryMock.swift in Sources */,
 				5BD88C552748415800036C35 /* ContentView.swift in Sources */,
@@ -663,11 +678,11 @@
 				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
 				5BC30FF727588DB600800DEB /* LinkSectionViewModel.swift in Sources */,
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
-				5BC30FE82758751E00800DEB /* DiscordLinkSection.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
 				5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
 				5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */,
+				5BF77E8C275A8CC100D253AB /* StreamSection.swift in Sources */,
 				5BC30FF127587DD300800DEB /* DiscordValidator.swift in Sources */,
 				5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */,
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
@@ -699,6 +714,7 @@
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
+				5BF77E8A275A87AD00D253AB /* LinkSectionViewModelFactory.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
 				5BC30FEE27587D8100800DEB /* LinkValidatedTextField.swift in Sources */,
 				5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */,

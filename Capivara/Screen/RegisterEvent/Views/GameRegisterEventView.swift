@@ -8,24 +8,18 @@
 import SwiftUI
 
 struct GameRegisterEventView: View {
-    @Binding
-    var games: [Game]
-    @Binding
-    var selectedGame: Game?
-    @Binding
-    var selectedGameType: GameType?
-    @Binding
-    var selectedEventType: EventType?
-    @Binding
-    var selectContactType: ContactType?
+    
+    @EnvironmentObject
+    var viewModel: RegisterEventViewModel
     
     var body: some View {
         ScrollView {
             VStack {
-                GeneralRegisterEventGameSection(games: $games, selectedGame: $selectedGame)
-                PlatformSection(selectedPlatform: $selectedGameType)
-                EventTypeSection(selectedEventType: $selectedEventType)
-                ContactTypeSection(selectedContactType: $selectContactType)
+                GeneralRegisterEventGameSection(games: $viewModel.games, selectedGame: $viewModel.selectedGame)
+                PlatformSection(selectedPlatform: $viewModel.selectedGameType)
+                EventTypeSection(selectedEventType: $viewModel.selectedEventType)
+                ContactTypeSection(selectedContactType: $viewModel.selectedContactType)
+                StreamSection(hasStreaming: $viewModel.hasStreaming, selectedStreamingPlatform: .constant(.instagram))
             }.padding(.horizontal, 4)
         }
         .foregroundColor(ColorPalette.primaryText)
@@ -34,17 +28,16 @@ struct GameRegisterEventView: View {
 }
 
 struct GameRegisterEventView_Previews: PreviewProvider {
+    
     static var previews: some View {
+        let vm = RegisterEventViewModel(repository: GameRepositoryMock())
         NavigationView {
-            GameRegisterEventView(games: .constant([GameMock.leagueOfLegends, GameMock.leagueOfLegends, GameMock.leagueOfLegends]),
-                                  selectedGame: .constant(nil),
-                                  selectedGameType: .constant(nil),
-                                  selectedEventType: .constant(nil),
-                                  selectContactType: .constant(nil)
-            )
+            GameRegisterEventView()
                 .navigationTitle(RegisterEventTab.general.title)
                 .navigationBarTitleColor(ColorPalette.primaryText)
         }
+        .environmentObject(vm)
+        .task { await vm.fetchAllItems() }
         .onAppear {
             UINavigationBar.appearance().barTintColor = UIColor(ColorPalette.backgroundColor)
         }

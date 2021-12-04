@@ -12,4 +12,5 @@ struct LinkSectionViewModel {
     let subtitle: String
     let placeholder: String
     let errorMessage: String
+    let validator: Validator
 }

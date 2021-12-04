@@ -18,24 +18,21 @@ struct RegisterEventView: View {
     
     var body: some View {
         NavigationView {
-            GameRegisterEventView(games: $viewModel.games,
-                                  selectedGame: $viewModel.selectedGame,
-                                  selectedGameType: $viewModel.selectedGameType,
-                                  selectedEventType: $viewModel.selectedEventType,
-                                  selectContactType: $viewModel.selectedContactType)
+            GameRegisterEventView()
                 .toolbar {
                     ToolbarItem(placement: .bottomBar, content: { Rectangle().fill(ColorPalette.accent).ignoresSafeArea(.all) })
                 }
                 .navigationTitle(viewModel.selectedTab.title)
                 .backgroundColor(ColorPalette.backgroundColor)
                 .navigationBarTitleColor(ColorPalette.primaryText)
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                .task {
-                    await viewModel.fetchAllItems()
-                }.onAppear {
-                    UIToolbar.appearance().barTintColor = UIColor(ColorPalette.backgroundColor)
-                    UINavigationBar.appearance().barTintColor = UIColor(ColorPalette.backgroundColor)
-                }
+                
+        }
+        .environmentObject(viewModel)
+        .task {
+            await viewModel.fetchAllItems()
+        }.onAppear {
+            UIToolbar.appearance().barTintColor = UIColor(ColorPalette.backgroundColor)
+            UINavigationBar.appearance().barTintColor = UIColor(ColorPalette.backgroundColor)
         }
     }
 }
