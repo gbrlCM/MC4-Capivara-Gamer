@@ -11,8 +11,8 @@ enum UserMock {
     static var gamerCapibara: User {
         User(id: UUID().uuidString,
              username: "capivaraGamer",
-             avatar: "https://image-downloader-test.s3.sa-east-1.amazonaws.com/sharkibara.png",
+             avatar: "oi",
              description: "eu sou uma capivara e eu sou gamer",
-             dateOfBirth: Date(timeIntervalSince1970: 350000000)) 
+             dateOfBirth: Date())
     }
 }
