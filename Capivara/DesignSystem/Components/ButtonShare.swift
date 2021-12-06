@@ -1,5 +1,5 @@
 //
-//  Share.swift
+//  ButtonShare.swift
 //  Capivara
 //
 //  Created by Vitor Cheung on 06/12/21.
@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct Share: View {
-    let TextoCompartido = "Hola 😀 "
+struct ButtonShare: View {
+    
+    var urlLink: String
     
     var body: some View {
         
@@ -22,14 +23,14 @@ struct Share: View {
     }
     
     func actionSheet() {
-           guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
+           guard let urlShare = URL(string: urlLink) else { return }
            let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
            UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
        }
 }
 
-struct Share_Previews: PreviewProvider {
+struct ButtonShare_Previews: PreviewProvider {
     static var previews: some View {
-        Share()
+        ButtonShare(urlLink: "https://developer.apple.com/xcode/swiftui/")
     }
 }
