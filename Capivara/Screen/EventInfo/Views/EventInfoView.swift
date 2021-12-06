@@ -37,6 +37,7 @@ struct EventInfoView: View {
                                 .cornerRadius(21)
                                 .padding()
                         }.background(ColorPalette.backgroundColor.opacity(0.9))
+                            .cornerRadius(20, corners: [.topLeft, .topRight])
                     }
                 }
                 
