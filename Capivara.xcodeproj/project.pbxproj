@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06661EBD275E7A25006E6FB3 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBC275E7A25006E6FB3 /* Share.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
 		5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBE274C047400BB90F1 /* TabBarScreen.swift */; };
 		5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */; };
@@ -78,6 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06661EBC275E7A25006E6FB3 /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		5B0D3BBE274C047400BB90F1 /* TabBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreen.swift; sourceTree = "<group>"; };
 		5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				5B0D3BC0274C050E00BB90F1 /* MyEvents */,
 				5B0D3BB8274C041B00BB90F1 /* Root */,
 				5B0D3BB7274C03E400BB90F1 /* UserProfile */,
+				06661EBC275E7A25006E6FB3 /* Share.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				5B898032274EC6A600CE92BF /* User.swift in Sources */,
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
+				06661EBD275E7A25006E6FB3 /* Share.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
