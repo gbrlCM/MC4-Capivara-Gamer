@@ -31,7 +31,7 @@ struct MyEventsView: View {
                     ForEach(viewModel.filterSegmentedEvents){ content in
                         ZStack {
                             NavigationLink(destination: {
-                                Text(content.name)
+                                EventInfoView(viewModel: EventInfoViewModel(event: content))
                             }, label: {
                                EmptyView()
                         })

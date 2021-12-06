@@ -8,20 +8,19 @@
 import SwiftUI
 
 struct EventInfoView: View {
+    @ObservedObject var viewModel: EventInfoViewModel
     var body: some View {
         VStack {
             ScrollView {
                 ZStack {
-                    Image("Celulol")
-                        .resizable()
-                        .frame(height: 230)
+                    CapybaraAsyncImage(url: URL(string: viewModel.event.coverUrl!), contentMode: .fit, cornerRadius: 0)
                     
                     VStack {
                         Spacer()
                         
                         HStack(alignment: .bottom) {
                             VStack(alignment: .leading) {
-                                Text("Campeonato de LOL")
+                                Text(viewModel.event.name)
                                     .font(.system(size: 24, weight: .bold, design: .default))
                                 Text("24/11/2021 | 15:30")
                             }.foregroundColor(ColorPalette.primaryText)
@@ -153,11 +152,7 @@ struct EventInfoView: View {
 struct EventInfoView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EventInfoView()
-            EventInfoView()
-                .previewDevice("iPhone 8")
-            EventInfoView()
-                .previewDevice("iPhone SE (2nd generation)")
+            EventInfoView(viewModel: EventInfoViewModel(event: EventMock.event))
         }
     }
 }
