@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
-		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
-		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
-		0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666E8BB27595C4A002BA436 /* MyEventsTab.swift */; };
-		06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */; };
-		06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
 		5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBE274C047400BB90F1 /* TabBarScreen.swift */; };
 		5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */; };
@@ -65,7 +59,6 @@
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
 		E96C62092756B5C1008CF3C5 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C62082756B5C1008CF3C5 /* EventInfoView.swift */; };
 		E9E3E911275AB55F00CE6FF7 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3E910275AB55F00CE6FF7 /* EventInfoTableViewCell.swift */; };
-		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,12 +79,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
-		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
-		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
-		0666E8BB27595C4A002BA436 /* MyEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsTab.swift; sourceTree = "<group>"; };
-		06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picker+SegmentControlColer.swift"; sourceTree = "<group>"; };
-		06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewModel.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		5B0D3BBE274C047400BB90F1 /* TabBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreen.swift; sourceTree = "<group>"; };
 		5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsView.swift; sourceTree = "<group>"; };
@@ -147,7 +134,6 @@
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E96C62082756B5C1008CF3C5 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
 		E9E3E910275AB55F00CE6FF7 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
-		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,22 +161,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0666E8B927595BEA002BA436 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0666E8BB27595C4A002BA436 /* MyEventsTab.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		06F6B5992757EEF200D4E9C4 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		5B0D3BB5274C03C300BB90F1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,7 +187,6 @@
 		5B0D3BB7274C03E400BB90F1 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
-				E9C622C22757F458002C5615 /* ViewModels */,
 				5B0D3BC4274C053900BB90F1 /* Views */,
 			);
 			path = UserProfile;
@@ -251,8 +220,6 @@
 		5B0D3BC0274C050E00BB90F1 /* MyEvents */ = {
 			isa = PBXGroup;
 			children = (
-				0666E8B927595BEA002BA436 /* Models */,
-				06F6B5992757EEF200D4E9C4 /* ViewModels */,
 				5B0D3BC1274C051700BB90F1 /* Views */,
 			);
 			path = MyEvents;
@@ -262,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */,
-				064170A02756AFA400E5B7F2 /* EventCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,8 +273,6 @@
 				5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */,
 				5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */,
 				5B832AC027516796009F5D5A /* View+NavBarTitle.swift */,
-				06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */,
-				06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -457,7 +421,6 @@
 				5BCD02912752FFA800B13D0C /* LoadingCircle.swift */,
 				5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */,
 				5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */,
-				06661EB8275E7604006E6FB3 /* RoundedCorner.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -545,12 +508,6 @@
 				E9E3E910275AB55F00CE6FF7 /* EventInfoTableViewCell.swift */,
 			);
 			path = Components;
-		E9C622C22757F458002C5615 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				E9C622C32757F482002C5615 /* UserProfileViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -696,27 +653,21 @@
 				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
-				06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */,
 				5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
-				064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */,
 				5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */,
 				5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */,
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
 				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
-				06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */,
 				5BCD0296275301F000B13D0C /* GeneralRegisterEventViewModel.swift in Sources */,
 				5B9D6D1D275581A500008B7E /* PlatformSection.swift in Sources */,
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
 				5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */,
-				06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */,
-				E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */,
 				5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */,
 				5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */,
 				5B898030274EC67500CE92BF /* Address.swift in Sources */,
-				0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */,
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
 				5B832AB927500A39009F5D5A /* EventRepository.swift in Sources */,
 				5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */,
@@ -728,7 +679,6 @@
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
-				06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
@@ -897,7 +847,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -926,7 +876,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -13,11 +13,11 @@ struct RootView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
+            MyEventsView()
                 .tag(TabBarScreen.events)
             SearchView()
                 .tag(TabBarScreen.search)
-            UserProfileView(viewModel: UserProfileViewModel())
+            UserProfileView()
                 .tag(TabBarScreen.profile)
         }
     }

@@ -12,9 +12,7 @@ class EventRepositoryMock: EventRepositoryProtocol {
     var allEvents = EventMock.events
     
     func fetchUserEvents(of user: User) async throws -> [Event] {
-        allEvents[3].creator = user
-        
-        return allEvents 
+        allEvents
     }
     
     func fetchHotEvents() async throws -> [Event] {
