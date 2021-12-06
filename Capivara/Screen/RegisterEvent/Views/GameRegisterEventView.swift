@@ -20,8 +20,16 @@ struct GameRegisterEventView: View {
                 EventTypeSection(selectedEventType: $viewModel.selectedEventType)
                 ContactTypeSection(selectedContactType: $viewModel.selectedContactType)
                 StreamSection(hasStreaming: $viewModel.hasStreaming,
-                              selectedStreamingPlatform: $viewModel.selectedStreamType)
+                              selectedStreamingPlatform: $viewModel.selectedStreamType,
+                              streamLinkIsValid: $viewModel.isStreamTypeFieldValid,
+                              streamLinkContent: $viewModel.streamLink)
             }.padding(.leading, 4)
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink("Próx", destination: Text("proximo"))
+                    .foregroundColor(ColorPalette.accent)
+            }
         }
         .foregroundColor(ColorPalette.primaryText)
         .backgroundColor(ColorPalette.backgroundColor)

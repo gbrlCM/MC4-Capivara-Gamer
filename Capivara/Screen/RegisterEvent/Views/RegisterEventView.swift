@@ -22,7 +22,7 @@ struct RegisterEventView: View {
                 .toolbar {
                     ToolbarItem(placement: .bottomBar, content: { Rectangle().fill(ColorPalette.accent).ignoresSafeArea(.all) })
                 }
-                .navigationTitle(viewModel.selectedTab.title)
+                .navigationTitle(RegisterEventTab.game.title)
                 .backgroundColor(ColorPalette.backgroundColor)
                 .navigationBarTitleColor(ColorPalette.primaryText)
                 

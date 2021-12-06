@@ -18,6 +18,7 @@
 		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
 		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
 		5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
 		5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA6274FEDEE009F5D5A /* GameMock.swift */; };
 		5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA8274FEDFF009F5D5A /* UserMock.swift */; };
 		5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAA274FEE0E009F5D5A /* AddressMock.swift */; };
@@ -96,6 +97,7 @@
 		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
 		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
 		5B0D3BD9274C239F00BB90F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEvent.swift; sourceTree = "<group>"; };
 		5B832AA6274FEDEE009F5D5A /* GameMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMock.swift; sourceTree = "<group>"; };
 		5B832AA8274FEDFF009F5D5A /* UserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMock.swift; sourceTree = "<group>"; };
 		5B832AAA274FEE0E009F5D5A /* AddressMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressMock.swift; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 				5BCD028D2752FF4D00B13D0C /* Components */,
 				5B832ABE27503057009F5D5A /* RegisterEventView.swift */,
 				5B832AC9275171B1009F5D5A /* GameRegisterEventView.swift */,
+				5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */,
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
 				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
+				5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
 				5B9D6D1D275581A500008B7E /* PlatformSection.swift in Sources */,
