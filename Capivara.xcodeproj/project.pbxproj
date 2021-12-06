@@ -59,6 +59,8 @@
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
+		E96C62092756B5C1008CF3C5 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C62082756B5C1008CF3C5 /* EventInfoView.swift */; };
+		E9E3E911275AB55F00CE6FF7 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3E910275AB55F00CE6FF7 /* EventInfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +136,8 @@
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		E9C622C527580663002C5615 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		E96C62082756B5C1008CF3C5 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
+		E9E3E910275AB55F00CE6FF7 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 		5B0D3BB6274C03CB00BB90F1 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				E96C62062756B586008CF3C5 /* EventInfo */,
 				5B832ABA27503015009F5D5A /* RegisterEvent */,
 				5B0D3BC7274C054F00BB90F1 /* Search */,
 				5B0D3BC0274C050E00BB90F1 /* MyEvents */,
@@ -186,7 +191,6 @@
 		5B0D3BB7274C03E400BB90F1 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
-				E9C622C22757F458002C5615 /* ViewModels */,
 				5B0D3BC4274C053900BB90F1 /* Views */,
 			);
 			path = UserProfile;
@@ -486,12 +490,29 @@
 			path = CapivaraUITests;
 			sourceTree = "<group>";
 		};
-		E9C622C22757F458002C5615 /* ViewModels */ = {
+		E96C62062756B586008CF3C5 /* EventInfo */ = {
 			isa = PBXGroup;
 			children = (
-				E9C622C32757F482002C5615 /* UserProfileViewModel.swift */,
+				E96C62072756B598008CF3C5 /* Views */,
 			);
-			path = ViewModels;
+			path = EventInfo;
+			sourceTree = "<group>";
+		};
+		E96C62072756B598008CF3C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9E3E90F275AB52A00CE6FF7 /* Components */,
+				E96C62082756B5C1008CF3C5 /* EventInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9E3E90F275AB52A00CE6FF7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E9E3E910275AB55F00CE6FF7 /* EventInfoTableViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -624,11 +645,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E3E911275AB55F00CE6FF7 /* EventInfoTableViewCell.swift in Sources */,
 				5B9D6D21275581F500008B7E /* ContactTypeSection.swift in Sources */,
 				5B832AC127516796009F5D5A /* View+NavBarTitle.swift in Sources */,
 				5B832AAE274FEE94009F5D5A /* EventRepositoryProtocol.swift in Sources */,
 				5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */,
 				5B832AB32750074B009F5D5A /* EventRepositoryMock.swift in Sources */,
+				E96C62092756B5C1008CF3C5 /* EventInfoView.swift in Sources */,
 				5BD88C552748415800036C35 /* ContentView.swift in Sources */,
 				5B832ABF27503057009F5D5A /* RegisterEventView.swift in Sources */,
 				5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */,
@@ -648,7 +671,6 @@
 				5B9D6D1D275581A500008B7E /* PlatformSection.swift in Sources */,
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
 				5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */,
-				E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */,
 				5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */,
 				5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */,
 				5B898030274EC67500CE92BF /* Address.swift in Sources */,
