@@ -11,8 +11,9 @@ struct ContentView: View {
     
     
     var body: some View {
-        //RootView()
-        RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepositoryMock()))
+        RootView()
+//        RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepositoryMock()))
+        
     }
 }
 

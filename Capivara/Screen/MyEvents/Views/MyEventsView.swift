@@ -8,14 +8,70 @@
 import SwiftUI
 
 struct MyEventsView: View {
+    
+    
+    @ObservedObject var viewModel: MyEventsViewModel
+    
     var body: some View {
-        Text("My events view")
+        NavigationView {
+            VStack {
+                Picker("What is your favorite color?", selection: $viewModel.filterSegmented)
+                {
+                    ForEach(MyEventsTab.allCases, id: \.self) { tab in
+                        Text(tab.rawValue).tag(tab)
+                    }
+                }
+                .selectedSegmentTintColor(ColorPalette.accent)
+                .selectedTitleColor(ColorPalette.primaryText)
+                .unselectedTitleColor(ColorPalette.primaryText)
+                .pickerStyle(.segmented)
+                .padding()
+
+                List {
+                    ForEach(viewModel.filterSegmentedEvents){ content in
+                        ZStack {
+                            NavigationLink(destination: {
+                                Text(content.name)
+                            }, label: {
+                               EmptyView()
+                        })
+                            EventCardView(event: content)
+                            .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
+                        }.listRowBackground(ColorPalette.backgroundColor)
+
+                }.listRowSeparator(.hidden)
+            }
+            .listStyle(.plain)
+            .backgroundColor(ColorPalette.backgroundColor)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {} , label: {
+                        Image(systemName: "plus")
+                    })
+                }
+            }
+            }
+            .navigationTitle("Eventos")
+            .navigationBarTitleColor(ColorPalette.primaryText)
+            .backgroundColor(ColorPalette.backgroundColor)
+            .task{
+                do {
+                    try await viewModel.fetchEvents()
+                } catch  {
+                    
+                }
+            }
+        }.searchable(text: $viewModel.searchFieldText)
             .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
     }
+    
 }
 
 struct MyEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        MyEventsView()
+        TabView {
+            MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
+        }
     }
 }
+
