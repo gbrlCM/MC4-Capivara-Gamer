@@ -10,6 +10,8 @@ import SwiftUI
 struct StreamSection: View {
     @Binding var hasStreaming: Bool
     @Binding var selectedStreamingPlatform: StreamingType?
+    @Binding var streamLinkIsValid: Bool
+    @Binding var streamLinkContent: String
     
     var body: some View {
         HStack {
@@ -21,6 +23,7 @@ struct StreamSection: View {
                 
                 if hasStreaming {
                     hasStreamingSection
+                    streamingLinkField
                 }
             }
             .padding(.bottom,8)
@@ -38,6 +41,7 @@ struct StreamSection: View {
                         selectedStreamingPlatform = nil
                     } else {
                         selectedStreamingPlatform = streamingType
+                        streamLinkContent = ""
                     }
                 }.padding(.vertical, 2)
                 .padding(.trailing, 8)
@@ -45,6 +49,21 @@ struct StreamSection: View {
         }
         .padding(.vertical)
         .transition(.moveAndFade)
+    }
+    
+    @ViewBuilder
+    var streamingLinkField: some View {
+        if selectedStreamingPlatform == .youtube {
+            LinkSection(linkContent: $streamLinkContent,
+                        isValid: $streamLinkIsValid,
+                        viewModel: LinkSectionViewModelFactory.buildForYouTube())
+                .transition(.moveAndFade)
+        } else if selectedStreamingPlatform == .twitch {
+            LinkSection(linkContent: $streamLinkContent,
+                        isValid: $streamLinkIsValid,
+                        viewModel: LinkSectionViewModelFactory.buildForTwitch())
+                .transition(.moveAndFade)
+        }
     }
 }
 
@@ -60,8 +79,10 @@ struct StreamSection_Previews: PreviewProvider {
 fileprivate struct StreamSectionPV: View {
     @State var hasStreaming = false
     @State var selected: StreamingType? = .youtube
+    @State var streamLinkIsValid: Bool = false
+    @State var streamLinkContent: String = ""
     
     var body: some View {
-        StreamSection(hasStreaming: $hasStreaming, selectedStreamingPlatform: $selected)
+        StreamSection(hasStreaming: $hasStreaming, selectedStreamingPlatform: $selected, streamLinkIsValid: $streamLinkIsValid, streamLinkContent: $streamLinkContent)
     }
 }

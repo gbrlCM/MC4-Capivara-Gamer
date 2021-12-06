@@ -28,9 +28,19 @@ final class RegisterEventViewModel: ObservableObject {
     @Published
     var selectedContactType: ContactType?
     @Published
+    var selectedStreamType: StreamingType?
+    @Published
     var contactLink: String
     @Published
+    var streamLink: String
+    @Published
     var hasStreaming: Bool
+    
+    //MARK: Field Validation
+    @Published
+    var isContactTypeFieldValid: Bool
+    @Published
+    var isStreamTypeFieldValid: Bool
     
     private var repository: GameRepositoryProtocol
     
@@ -42,8 +52,12 @@ final class RegisterEventViewModel: ObservableObject {
         self.selectedGameType = nil
         self.selectedContactType = nil
         self.selectedEventType = nil
+        self.selectedStreamType = nil
         self.contactLink = ""
+        self.streamLink = ""
         self.hasStreaming = false
+        self.isStreamTypeFieldValid = true
+        self.isContactTypeFieldValid = true
     }
     
     func fetchAllItems() async {
