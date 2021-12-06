@@ -64,6 +64,7 @@
 		5BD88C6E2748415A00036C35 /* CapivaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */; };
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
+		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,7 @@
 		5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITests.swift; sourceTree = "<group>"; };
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		E9C622C527580663002C5615 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,7 @@
 			children = (
 				5B0D3BD1274C0D5A00BB90F1 /* Components */,
 				5B0D3BC5274C054600BB90F1 /* UserProfileView.swift */,
+				E9C622C527580663002C5615 /* EditProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
 				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
+				E9C622C627580663002C5615 /* EditProfileView.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
 				06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */,
 				5BCD0296275301F000B13D0C /* GeneralRegisterEventViewModel.swift in Sources */,
