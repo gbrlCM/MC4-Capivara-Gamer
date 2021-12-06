@@ -7,7 +7,7 @@
 
 import SwiftUI
 import AuthenticationServices
-
+/
 struct SignInWApple: View {
     @AppStorage("email") var email: String = ""
     @AppStorage("firstName") var firstName: String = ""
