@@ -8,39 +8,63 @@
 import SwiftUI
 
 struct UserProfileView: View {
+    @ObservedObject var viewModel: UserProfileViewModel
     var body: some View {
         NavigationView {
-            VStack {
+            ScrollView {
                 userIdentificationSection
-                Spacer()
+                    .foregroundColor(ColorPalette.primaryText)
+                    .background(ColorPalette.secondaryBackground)
+                    .cornerRadius(10)
+                    .padding()
+                    
+                
                 navigationSection
-                Spacer()
+                    .padding()
+                   
                 actionsSection
+                    .padding()
+                
             }
-            .backgroundColor(Color(uiColor: .secondarySystemBackground))
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar{ ToolbarItem(placement: .navigationBarTrailing) { EditButton() }}
+            .backgroundColor(ColorPalette.backgroundColor)
+            .navigationTitle("Configurações")
+            .navigationBarTitleColor(ColorPalette.primaryText)
+            
+            
         }
         .tabBarLabel(text: "CapivaraGamer", systemImage: "person.fill")
     }
     
     @ViewBuilder
     var userIdentificationSection: some View {
-        VStack {
-            UserProfileAvatar(imageURL: .constant(URL(string: "https://image-downloader-test.s3.sa-east-1.amazonaws.com/sharkibara.png")))
-            Text("Capivara Gamer")
-                .font(.title.bold())
-            Text("12/02/2001")
-        }
+        NavigationLink.init(destination: {Text("tela de edição do usuário")}, label: {
+            HStack {
+                UserProfileAvatar(imageURL: $viewModel.user.avatar)
+                VStack(alignment: .leading) {
+                    Text(viewModel.user.username)
+                        .font(.title2.bold())
+                    Text(viewModel.user.dateOfBirth, style: .date)
+                }
+                
+                Spacer()
+            } .padding()
+        })
     }
     
     @ViewBuilder
     var navigationSection: some View {
-        List {
-            NavigationLink(destination: Text("Termos de consetimento")) {
+        NavigationLink(destination: Text("Termos de consentimento")) {
+            
+            HStack {
                 Text("Termos de consentimento")
-            }.listRowBackground(Color(uiColor: .tertiarySystemBackground))
-        }.backgroundColor(.clear)
+                    .font(.headline.bold())
+                    
+                Spacer()
+            }.padding()
+                .background(ColorPalette.secondaryBackground)
+                .cornerRadius(10)
+              
+        }
     }
     
     @ViewBuilder
@@ -48,19 +72,28 @@ struct UserProfileView: View {
         VStack {
             Button {} label: {
                 UserProfileActionLabel(text: "Logout")
+                    .font(.headline.bold())
+
             }.buttonStyle(.bordered)
+                .background(ColorPalette.secondaryBackground)
+                .cornerRadius(10)
             
             Button(role: .destructive) {} label: {
                 UserProfileActionLabel(text: "Deletar minha conta")
+                    .font(.headline.bold())
+
             }.buttonStyle(.bordered)
+                .background(ColorPalette.secondaryBackground)
+                .cornerRadius(10)
+        }.padding()
+            .padding(.horizontal, -15)
             
-        }.padding(.all, 16)
     }
 }
 
 struct UserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfileView()
-        .preferredColorScheme(.dark)
+        UserProfileView(viewModel: UserProfileViewModel())
+        .preferredColorScheme(.light)
     }
 }
