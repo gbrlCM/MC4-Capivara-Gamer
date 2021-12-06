@@ -63,7 +63,6 @@ struct MyEventsView: View {
             }
         }.searchable(text: $viewModel.searchFieldText)
             .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
-        print("")
     }
     
 }
