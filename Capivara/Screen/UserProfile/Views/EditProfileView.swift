@@ -14,7 +14,7 @@ struct EditProfileView: View {
         
         VStack() {
             userPhotoChanger
-                            
+            
             userNameChanger
                 .padding()
             
@@ -22,7 +22,7 @@ struct EditProfileView: View {
             
             userDateChanger
                 .padding(.horizontal)
-               
+            
             
             Spacer()
             
@@ -55,10 +55,6 @@ struct EditProfileView: View {
                 .cornerRadius(10)
                 .colorScheme(.dark)
             
-//                .textFieldStyle(
-//                            RoundedBorderTextFieldStyle()
-//                        )
-                            
         }
     }
     
@@ -74,23 +70,17 @@ struct EditProfileView: View {
     @ViewBuilder
     var userDateChanger: some View {
         HStack{
-        DatePicker("", selection: $viewModel.user.dateOfBirth, displayedComponents: .date)
-            .labelsHidden()
-            .colorScheme(.dark)
-            .accentColor(ColorPalette.accent)
-                    .background(RoundedRectangle(cornerRadius: 10)
-                        .fill(ColorPalette.secondaryBackground)
-                        .opacity(2.0))
-                    .datePickerStyle(GraphicalDatePickerStyle())
-        
-//            .datePickerStyle(WheelDatePickerStyle())
-//                         .background(
-//                            RoundedRectangle(cornerRadius: 30)
-//                                .stroke(Color.white, lineWidth: 1)
-//                         )
-//                         .foregroundColor(Color.purple)
-        }
+            DatePicker("", selection: $viewModel.user.dateOfBirth, displayedComponents: .date)
+                .labelsHidden()
+                .colorScheme(.dark)
+                .accentColor(ColorPalette.accent)
+                .background(RoundedRectangle(cornerRadius: 10)
+                                .fill(ColorPalette.secondaryBackground)
+                                .opacity(2.0))
+                .datePickerStyle(GraphicalDatePickerStyle())
             
+        }
+        
     }
 }
 
