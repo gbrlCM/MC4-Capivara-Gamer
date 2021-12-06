@@ -277,6 +277,7 @@
 		5B0D3BC7274C054F00BB90F1 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				E642F83E275EA85B009200A0 /* ViewModels */,
 				5B0D3BC8274C055900BB90F1 /* Views */,
 			);
 			path = Search;
@@ -518,6 +519,13 @@
 				5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */,
 			);
 			path = CapivaraUITests;
+			sourceTree = "<group>";
+		};
+		E642F83E275EA85B009200A0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		E9C622C22757F458002C5615 /* ViewModels */ = {
