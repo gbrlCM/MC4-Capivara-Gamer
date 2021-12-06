@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Loginbara.png",
+      "filename" : "Loginbara.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Loginbara-1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Loginbara-2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -10,15 +10,12 @@ import AuthenticationServices
 
 struct SignInWApple: View {
     @Environment(\.colorScheme) var colorScheme
-    
     @AppStorage("email") var email: String = ""
     @AppStorage("firstName") var firstName: String = ""
     @AppStorage("lastName") var lastName: String = ""
     @AppStorage("userId") var userId: String = ""
     
     var body: some View {
-        NavigationView{
-            VStack{
                 SignInWithAppleButton(.continue) { request in
                     request.requestedScopes = [.email, .fullName]
                 } onCompletion: { result in
@@ -29,10 +26,7 @@ struct SignInWApple: View {
                         switch auth.credential {
                         case let Credential as ASAuthorizationAppleIDCredential:
                             
-                            //user ID
                             let userId = Credential.user
-                            
-                            //User Infos
                             let email = Credential.email
                             let firstName = Credential.fullName?.givenName
                             let lastName = Credential.fullName?.familyName
@@ -42,6 +36,8 @@ struct SignInWApple: View {
                             self.firstName = firstName ?? ""
                             self.lastName = lastName ?? ""
                             
+                            print(userId)
+                            
                         default:
                             break
                             
@@ -50,18 +46,12 @@ struct SignInWApple: View {
                         print(error)
                     }
                 }
-                signInWithAppleButtonStyle(
-                    colorScheme == .dark ? .white: .black)
-
-                
-                .frame(width: 280, height: 60)
+                .signInWithAppleButtonStyle(
+                    colorScheme == .dark ? .white: .white)
+                .frame(width: 300, height: 50)
                 .padding()
                 .cornerRadius(8)            }
-            .navigationTitle("Sign In")
         }
-        
-    }
-}
 
 struct SignInWApple_Previews: PreviewProvider {
     static var previews: some View {

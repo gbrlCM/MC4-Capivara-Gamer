@@ -10,24 +10,23 @@ import SwiftUI
 struct LoginView: View {
     var body: some View {
         ZStack {
-            VStack (alignment: .leading) {
+            VStack {
                 Text("Bem vindo ao CapivaraGamer!")
                     .font(.title.bold())
-                Text("O aplicativo de bla bla bla")
+                Text("O aplicativo que te ajuda a encontrar capivaras pro players de COD!")
                     .font(.title2)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Spacer()
-                
+                SignInWApple()
+
             }.foregroundColor(ColorPalette.primaryText)
                 .padding()
             
-            //Image
             Image("Loginbara")
                 .resizable()
                 .scaledToFit()
-            
-           
         }.backgroundColor(ColorPalette.backgroundColor)
+        
         
     }
 }

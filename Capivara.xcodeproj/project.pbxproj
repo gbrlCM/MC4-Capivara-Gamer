@@ -80,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062D1996275E7AAF00F08E6E /* Capivara.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capivara.entitlements; sourceTree = "<group>"; };
 		063B0A77275AB83F0097D50A /* SignInWApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWApple.swift; sourceTree = "<group>"; };
 		06EB1AED275AA8660018C9FD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -476,6 +477,7 @@
 		5BD88C512748415800036C35 /* Capivara */ = {
 			isa = PBXGroup;
 			children = (
+				062D1996275E7AAF00F08E6E /* Capivara.entitlements */,
 				5B832AC227516EF7009F5D5A /* DesignSystem */,
 				5B0D3BCB274C089900BB90F1 /* Extensions */,
 				5B0D3BB6274C03CB00BB90F1 /* Screen */,
@@ -856,6 +858,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
@@ -885,6 +888,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
