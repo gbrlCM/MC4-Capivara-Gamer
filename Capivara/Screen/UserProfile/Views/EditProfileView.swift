@@ -54,10 +54,6 @@ struct EditProfileView: View {
                 .background(ColorPalette.secondaryBackground)
                 .cornerRadius(10)
                 .colorScheme(.dark)
-            
-//                .textFieldStyle(
-//                            RoundedBorderTextFieldStyle()
-//                        )
                             
         }
     }
@@ -82,13 +78,6 @@ struct EditProfileView: View {
                         .fill(ColorPalette.secondaryBackground)
                         .opacity(2.0))
                     .datePickerStyle(GraphicalDatePickerStyle())
-        
-//            .datePickerStyle(WheelDatePickerStyle())
-//                         .background(
-//                            RoundedRectangle(cornerRadius: 30)
-//                                .stroke(Color.white, lineWidth: 1)
-//                         )
-//                         .foregroundColor(Color.purple)
         }
             
     }
