@@ -23,12 +23,6 @@ struct EventCardView: View {
                         .opacity(0.6)
                         .cornerRadius(10 ,corners: .topRight)
                     .cornerRadius(70 ,corners: .bottomLeft)
-////                    streamImage
-//                        .resizable()
-//                        .frame(width: 30, height: 30)
-//                        .clipShape(Circle())
-//                        .fixedSize(horizontal: true, vertical: true)
-//                        .padding(.trailing, 7.5)
                     
                 }
                 Spacer()
