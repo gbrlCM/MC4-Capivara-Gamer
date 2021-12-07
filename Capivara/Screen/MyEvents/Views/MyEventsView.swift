@@ -58,7 +58,6 @@ struct MyEventsView: View {
                 do {
                     try await viewModel.fetchEvents()
                 } catch  {
-                    
                 }
             }
         }.searchable(text: $viewModel.searchFieldText)
