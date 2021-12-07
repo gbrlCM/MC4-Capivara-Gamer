@@ -15,6 +15,8 @@ struct GeneralRegisterEvent: View {
 
 struct GeneralRegisterEvent_Previews: PreviewProvider {
     static var previews: some View {
-        GeneralRegisterEvent()
+        NavigationView {
+            GeneralRegisterEvent()
+        }
     }
 }

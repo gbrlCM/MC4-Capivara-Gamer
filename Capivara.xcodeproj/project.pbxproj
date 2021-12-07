@@ -18,6 +18,8 @@
 		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
 		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
 		5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */; };
+		5B40E21D275EA7FB000820E1 /* TournamentFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */; };
 		5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
 		5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA6274FEDEE009F5D5A /* GameMock.swift */; };
 		5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA8274FEDFF009F5D5A /* UserMock.swift */; };
@@ -97,6 +99,8 @@
 		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
 		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
 		5B0D3BD9274C239F00BB90F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesRegisterEventView.swift; sourceTree = "<group>"; };
+		5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFormatSection.swift; sourceTree = "<group>"; };
 		5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEvent.swift; sourceTree = "<group>"; };
 		5B832AA6274FEDEE009F5D5A /* GameMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMock.swift; sourceTree = "<group>"; };
 		5B832AA8274FEDFF009F5D5A /* UserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMock.swift; sourceTree = "<group>"; };
@@ -365,6 +369,7 @@
 				5B832ABE27503057009F5D5A /* RegisterEventView.swift */,
 				5B832AC9275171B1009F5D5A /* GameRegisterEventView.swift */,
 				5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */,
+				5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -454,6 +459,7 @@
 				5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */,
 				5BC30FF427588D8F00800DEB /* LinkSection.swift */,
 				5BF77E8B275A8CC100D253AB /* StreamSection.swift */,
+				5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -679,6 +685,7 @@
 				5B832ABF27503057009F5D5A /* RegisterEventView.swift in Sources */,
 				5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */,
 				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
+				5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */,
 				5BC30FF727588DB600800DEB /* LinkSectionViewModel.swift in Sources */,
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
@@ -719,6 +726,7 @@
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
 				5BF77E8A275A87AD00D253AB /* LinkSectionViewModelFactory.swift in Sources */,
+				5B40E21D275EA7FB000820E1 /* TournamentFormatSection.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
 				5BC30FEE27587D8100800DEB /* LinkValidatedTextField.swift in Sources */,
 				5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */,
