@@ -90,7 +90,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		062D1996275E7AAF00F08E6E /* Capivara.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capivara.entitlements; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
@@ -523,7 +522,6 @@
 		5BD88C512748415800036C35 /* Capivara */ = {
 			isa = PBXGroup;
 			children = (
-				062D1996275E7AAF00F08E6E /* Capivara.entitlements */,
 				5B832AC227516EF7009F5D5A /* DesignSystem */,
 				5B0D3BCB274C089900BB90F1 /* Extensions */,
 				5B0D3BB6274C03CB00BB90F1 /* Screen */,
@@ -918,7 +916,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -931,7 +929,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.Capivara;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -948,7 +946,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -961,7 +959,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.Capivara;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
