@@ -10,19 +10,19 @@ import SwiftUI
 struct CapybaraAsyncImage: View {
     let url: URL?
     var height: CGFloat? = nil
+    var width: CGFloat? = nil
     var contentMode: ContentMode = .fill
     var cornerRadius: CGFloat = 10
     
     var body: some View {
         AsyncImage(url: url,
                    content: {
-            if let height = height {
-                $0.resizable().frame(height: height)
+            if let height = height, let width = width {
+                $0.resizable().frame(width: width, height: height)
             } else {
                 $0.resizable()
             }
-            
-                            },
+        },
                    placeholder: { placeholder })
             .cornerRadius(cornerRadius)
             .aspectRatio(1, contentMode: contentMode)

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct EventInfoView: View {
     @ObservedObject var viewModel: EventInfoViewModel
+    @State var symbolName: String = ""
+    
     var body: some View {
         VStack {
             ScrollView {
@@ -22,7 +24,7 @@ struct EventInfoView: View {
                             VStack(alignment: .leading) {
                                 Text(viewModel.event.name)
                                     .font(.system(size: 24, weight: .bold, design: .default))
-                                Text("24/11/2021 | 15:30")
+                                Text("\(viewModel.formatEventDate())")
                             }.foregroundColor(ColorPalette.primaryText)
                                 .padding()
                             
@@ -43,21 +45,18 @@ struct EventInfoView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         HStack {
-                            Image("CelulolLogo")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                                .cornerRadius(50)
+                            CapybaraAsyncImage(url: URL(string: viewModel.event.game.icon), height: 30, width: 30, cornerRadius: 10)
                             
-                            Text("League Of Legends")
+                            Text("\(viewModel.event.game.name)")
                                 .foregroundColor(ColorPalette.primaryText)
-                                .font(.system(size: 14, weight: .semibold))
+                                .font(.system(size: 17, weight: .semibold))
                         }
                         
                         HStack {
-                            Image(systemName: "logo.playstation")
+                            Image(systemName: symbolName)
                             
-                            Text("PS4")
-                                .font(.system(size: 14, weight: .semibold))
+                            Text("\(viewModel.event.game.type.rawValue)")
+                                .font(.system(size: 17, weight: .semibold))
                         }.foregroundColor(ColorPalette.primaryText)
                     }.padding()
                         .background(ColorPalette.secondaryBackground)
@@ -89,7 +88,7 @@ struct EventInfoView: View {
                     Spacer()
                 }
                 
-                Text("É um jogo eletrônico online gratuito, do gênero batalha multijogador, desenvolvido e publicado pela Riot Games em 2009,[3] para os sistemas Microsoft Windows e Mac OS X, inspirado no modo Defense of the Ancients[4] do jogo Warcraft III: The Frozen Throne.[5]")
+                Text("\(viewModel.event.description)")
                     .foregroundColor(ColorPalette.primaryText)
                     .padding()
                 
@@ -99,7 +98,7 @@ struct EventInfoView: View {
                     Text("Sobre o Evento")
                         .padding(.leading)
                         .foregroundColor(ColorPalette.primaryText)
-                        .font(.subheadline.bold())
+                        .font(.system(size: 20, weight: .semibold))
                     
                     Spacer()
                 }
@@ -107,34 +106,34 @@ struct EventInfoView: View {
                 LazyVStack {
                     VStack(alignment: .leading) {
                         Group {
-                            EventInfoTableViewCell(title: "Tipo do Evento", info: "Campeonato")
+                            EventInfoTableViewCell(title: "Tipo do Evento", info: "\(viewModel.event.eventType)")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Formato do Evento", info: "Round Robin")
+                            EventInfoTableViewCell(title: "Formato do Evento", info: "\(viewModel.event.eventFormat)")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Formato da Partida", info: "Melhor de 1")
+                            EventInfoTableViewCell(title: "Formato da Partida", info: "\(viewModel.event.matchFormat)")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Jogadores", info: "3 times com 3 jogadores em cada")
+                            EventInfoTableViewCell(title: "Jogadores", info: "\(viewModel.event.tournamentCapacity) Individualmente")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Entrada no Lobby", info: "15:30")
+                            EventInfoTableViewCell(title: "Entrada no Lobby", info: "\(viewModel.formatLobbyTimeDate())")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                         }
                         
                         Group {
-                            EventInfoTableViewCell(title: "Início da Primeira Partida", info: "16:00")
+                            EventInfoTableViewCell(title: "Início da Primeira Partida", info: "\(viewModel.formatStartTimeDate())")
                         }
                                                 
                     }.foregroundColor(ColorPalette.primaryText)
@@ -145,6 +144,20 @@ struct EventInfoView: View {
             }.backgroundColor(ColorPalette.backgroundColor)
                 .navigationTitle("Informação do Evento").navigationBarTitleColor(ColorPalette.primaryText)
                 .navigationBarTitleDisplayMode(.inline)
+                .onAppear(perform: getImageSymbol)
+        }
+    }
+    
+    func getImageSymbol() {
+        switch viewModel.event.game.type {
+        case .mobile:
+            symbolName = "candybarphone"
+        case .pc:
+            symbolName = "laptopcomputer"
+        case .xbox:
+            symbolName = "logo.xbox"
+        case .playstation:
+            symbolName = "logo.playstation"
         }
     }
 }
