@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		063B0A78275AB83F0097D50A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063B0A77275AB83F0097D50A /* LoginViewModel.swift */; };
-		067E9785275EA0AF002CD209 /* SignInWAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067E9784275EA0AF002CD209 /* SignInWAppleButton.swift */; };
-		06E2E039275FCDEE00A23293 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2E038275FCDEE00A23293 /* LoginData.swift */; };
-		06E2E03B275FD2ED00A23293 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2E03A275FD2ED00A23293 /* UserRepositoryMock.swift */; };
-		06EB1AEE275AA8660018C9FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EB1AED275AA8660018C9FD /* LoginView.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
 		0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666E8BB27595C4A002BA436 /* MyEventsTab.swift */; };
+		06E2E039275FCDEE00A23293 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2E038275FCDEE00A23293 /* LoginData.swift */; };
+		06E2E03B275FD2ED00A23293 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2E03A275FD2ED00A23293 /* UserRepositoryMock.swift */; };
 		06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */; };
 		06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
@@ -29,6 +26,9 @@
 		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
 		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
 		5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */; };
+		5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1A275FECDD00C7AE92 /* LoginView.swift */; };
+		5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */; };
 		5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA6274FEDEE009F5D5A /* GameMock.swift */; };
 		5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA8274FEDFF009F5D5A /* UserMock.swift */; };
 		5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAA274FEE0E009F5D5A /* AddressMock.swift */; };
@@ -91,15 +91,12 @@
 
 /* Begin PBXFileReference section */
 		062D1996275E7AAF00F08E6E /* Capivara.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capivara.entitlements; sourceTree = "<group>"; };
-		063B0A77275AB83F0097D50A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		067E9784275EA0AF002CD209 /* SignInWAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWAppleButton.swift; sourceTree = "<group>"; };
-		06E2E038275FCDEE00A23293 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
-		06E2E03A275FD2ED00A23293 /* UserRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
-		06EB1AED275AA8660018C9FD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
 		0666E8BB27595C4A002BA436 /* MyEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsTab.swift; sourceTree = "<group>"; };
+		06E2E038275FCDEE00A23293 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		06E2E03A275FD2ED00A23293 /* UserRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
 		06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picker+SegmentControlColer.swift"; sourceTree = "<group>"; };
 		06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewModel.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -113,6 +110,9 @@
 		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
 		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
 		5B0D3BD9274C239F00BB90F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInWAppleButton.swift; path = Login/View/SignInWAppleButton.swift; sourceTree = "<group>"; };
+		5B634B1A275FECDD00C7AE92 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Login/View/LoginView.swift; sourceTree = "<group>"; };
+		5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Login/ViewModel/LoginViewModel.swift; sourceTree = "<group>"; };
 		5B832AA6274FEDEE009F5D5A /* GameMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMock.swift; sourceTree = "<group>"; };
 		5B832AA8274FEDFF009F5D5A /* UserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMock.swift; sourceTree = "<group>"; };
 		5B832AAA274FEE0E009F5D5A /* AddressMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressMock.swift; sourceTree = "<group>"; };
@@ -184,36 +184,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06EB1AE8275AA65E0018C9FD /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				06EB1AEA275AA67C0018C9FD /* View */,
-				06EB1AE9275AA6730018C9FD /* ViewModel */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		06EB1AE9275AA6730018C9FD /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				063B0A77275AB83F0097D50A /* LoginViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		06EB1AEA275AA67C0018C9FD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				06EB1AED275AA8660018C9FD /* LoginView.swift */,
-				067E9784275EA0AF002CD209 /* SignInWAppleButton.swift */,
-			);
-			name = View;
 		0666E8B927595BEA002BA436 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0666E8BB27595C4A002BA436 /* MyEventsTab.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		06EB1AE8275AA65E0018C9FD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5B634B1D275FECE100C7AE92 /* ViewModels */,
+				5B634B18275FECD200C7AE92 /* Views */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		06F6B5992757EEF200D4E9C4 /* ViewModels */ = {
@@ -366,6 +351,23 @@
 				06E2E038275FCDEE00A23293 /* LoginData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5B634B18275FECD200C7AE92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B634B1A275FECDD00C7AE92 /* LoginView.swift */,
+				5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5B634B1D275FECE100C7AE92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		5B832AAC274FEE36009F5D5A /* Repositories */ = {
@@ -713,6 +715,7 @@
 				06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */,
 				5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
+				5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */,
 				064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */,
 				5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */,
 				5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */,
@@ -735,25 +738,24 @@
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
 				5B832AB927500A39009F5D5A /* EventRepository.swift in Sources */,
 				5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */,
-				067E9785275EA0AF002CD209 /* SignInWAppleButton.swift in Sources */,
 				5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */,
 				5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */,
 				5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */,
 				5B898032274EC6A600CE92BF /* User.swift in Sources */,
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
-				06EB1AEE275AA8660018C9FD /* LoginView.swift in Sources */,
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
 				06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
+				5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
+				5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */,
 				5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */,
-				063B0A78275AB83F0097D50A /* LoginViewModel.swift in Sources */,
 				5B832ACC27517270009F5D5A /* RegisterEventViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
