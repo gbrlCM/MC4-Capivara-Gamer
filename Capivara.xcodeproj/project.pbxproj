@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		063B0A78275AB83F0097D50A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063B0A77275AB83F0097D50A /* LoginViewModel.swift */; };
-		067E9785275EA0AF002CD209 /* SignInWAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067E9784275EA0AF002CD209 /* SignInWAppleButton.swift */; };
-		06E2E039275FCDEE00A23293 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2E038275FCDEE00A23293 /* LoginData.swift */; };
-		06E2E03B275FD2ED00A23293 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2E03A275FD2ED00A23293 /* UserRepositoryMock.swift */; };
-		06EB1AEE275AA8660018C9FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EB1AED275AA8660018C9FD /* LoginView.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
@@ -90,12 +85,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		062D1996275E7AAF00F08E6E /* Capivara.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capivara.entitlements; sourceTree = "<group>"; };
-		063B0A77275AB83F0097D50A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		067E9784275EA0AF002CD209 /* SignInWAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWAppleButton.swift; sourceTree = "<group>"; };
-		06E2E038275FCDEE00A23293 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
-		06E2E03A275FD2ED00A23293 /* UserRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
-		06EB1AED275AA8660018C9FD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
@@ -184,30 +173,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06EB1AE8275AA65E0018C9FD /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				06EB1AEA275AA67C0018C9FD /* View */,
-				06EB1AE9275AA6730018C9FD /* ViewModel */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		06EB1AE9275AA6730018C9FD /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				063B0A77275AB83F0097D50A /* LoginViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		06EB1AEA275AA67C0018C9FD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				06EB1AED275AA8660018C9FD /* LoginView.swift */,
-				067E9784275EA0AF002CD209 /* SignInWAppleButton.swift */,
-			);
-			name = View;
 		0666E8B927595BEA002BA436 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +202,6 @@
 		5B0D3BB6274C03CB00BB90F1 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				06EB1AE8275AA65E0018C9FD /* Login */,
 				5B832ABA27503015009F5D5A /* RegisterEvent */,
 				5B0D3BC7274C054F00BB90F1 /* Search */,
 				5B0D3BC0274C050E00BB90F1 /* MyEvents */,
@@ -363,7 +327,6 @@
 				5B89802F274EC67500CE92BF /* Address.swift */,
 				5B898031274EC6A600CE92BF /* User.swift */,
 				5B898033274EC6ED00CE92BF /* Game.swift */,
-				06E2E038275FCDEE00A23293 /* LoginData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -393,7 +356,6 @@
 			children = (
 				5B832AB22750074B009F5D5A /* EventRepositoryMock.swift */,
 				5B832ACD275180F3009F5D5A /* GameRepositoryMock.swift */,
-				06E2E03A275FD2ED00A23293 /* UserRepositoryMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -521,7 +483,6 @@
 		5BD88C512748415800036C35 /* Capivara */ = {
 			isa = PBXGroup;
 			children = (
-				062D1996275E7AAF00F08E6E /* Capivara.entitlements */,
 				5B832AC227516EF7009F5D5A /* DesignSystem */,
 				5B0D3BCB274C089900BB90F1 /* Extensions */,
 				5B0D3BB6274C03CB00BB90F1 /* Screen */,
@@ -707,9 +668,7 @@
 				5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */,
 				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
-				06E2E03B275FD2ED00A23293 /* UserRepositoryMock.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
-				06E2E039275FCDEE00A23293 /* LoginData.swift in Sources */,
 				06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */,
 				5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
@@ -735,13 +694,11 @@
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
 				5B832AB927500A39009F5D5A /* EventRepository.swift in Sources */,
 				5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */,
-				067E9785275EA0AF002CD209 /* SignInWAppleButton.swift in Sources */,
 				5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */,
 				5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */,
 				5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */,
 				5B898032274EC6A600CE92BF /* User.swift in Sources */,
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
-				06EB1AEE275AA8660018C9FD /* LoginView.swift in Sources */,
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
@@ -753,7 +710,6 @@
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
 				5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */,
-				063B0A78275AB83F0097D50A /* LoginViewModel.swift in Sources */,
 				5B832ACC27517270009F5D5A /* RegisterEventViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -912,7 +868,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
@@ -942,7 +897,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
