@@ -32,6 +32,8 @@ final class RegisterEventViewModel: ObservableObject {
     @Published
     var selectedTournamentType: TournamentFormat?
     @Published
+    var selectedMatchType: MatchFormat?
+    @Published
     var contactLink: String
     @Published
     var streamLink: String
@@ -55,6 +57,7 @@ final class RegisterEventViewModel: ObservableObject {
         self.selectedContactType = nil
         self.selectedEventType = nil
         self.selectedTournamentType = nil
+        self.selectedMatchType = nil
         self.selectedStreamType = nil
         self.contactLink = ""
         self.streamLink = ""

@@ -14,6 +14,7 @@ struct RulesRegisterEventView: View {
     var body: some View {
         VStack {
             TournamentFormatSection(selectedTournamentFormat: $viewModel.selectedTournamentType)
+            MatchFormatSection(seletectedMatchFormat: $viewModel.selectedMatchType)
             Spacer()
         }.padding(.top, 8)
         .navigationBarTitleColor(ColorPalette.primaryText)
