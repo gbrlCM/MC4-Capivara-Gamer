@@ -15,10 +15,17 @@ struct GameRegisterEventView: View {
     var body: some View {
         ScrollView {
             VStack {
-                GeneralRegisterEventGameSection(games: $viewModel.games, selectedGame: $viewModel.selectedGame)
+                GeneralRegisterEventGameSection(games: $viewModel.games,
+                                                selectedGame: $viewModel.selectedGame)
+                
                 PlatformSection(selectedPlatform: $viewModel.selectedGameType)
+                
                 EventTypeSection(selectedEventType: $viewModel.selectedEventType)
-                ContactTypeSection(selectedContactType: $viewModel.selectedContactType)
+                
+                ContactTypeSection(selectedContactType: $viewModel.selectedContactType,
+                                   contactLink: $viewModel.contactLink,
+                                   isLinkValid: $viewModel.isContactTypeFieldValid)
+                
                 StreamSection(hasStreaming: $viewModel.hasStreaming,
                               selectedStreamingPlatform: $viewModel.selectedStreamType,
                               streamLinkIsValid: $viewModel.isStreamTypeFieldValid,
@@ -27,7 +34,7 @@ struct GameRegisterEventView: View {
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                NavigationLink("Próx", destination: Text("proximo"))
+                NavigationLink("Próx", destination: RulesRegisterEventView())
                     .foregroundColor(ColorPalette.accent)
             }
         }

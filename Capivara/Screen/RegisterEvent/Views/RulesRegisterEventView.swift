@@ -12,12 +12,26 @@ struct RulesRegisterEventView: View {
     var viewModel: RegisterEventViewModel
     
     var body: some View {
-        VStack {
-            TournamentFormatSection(selectedTournamentFormat: $viewModel.selectedTournamentType)
-            MatchFormatSection(seletectedMatchFormat: $viewModel.selectedMatchType)
-            Spacer()
-        }.padding(.top, 8)
+        ScrollView {
+            VStack {
+                TournamentFormatSection(selectedTournamentFormat: $viewModel.selectedTournamentType)
+                MatchFormatSection(seletectedMatchFormat: $viewModel.selectedMatchType)
+                TeamBuildingSection(isIndividual: $viewModel.isIndividual,
+                                    parcitipants: $viewModel.numberOfParticipants,
+                                    teams: $viewModel.numberOfParticipantsPerTeam)
+                Spacer()
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Finalizar") {}
+                    .foregroundColor(.accentColor)
+                }
+            }
+            .padding(.top, 8)
+        }
         .navigationBarTitleColor(ColorPalette.primaryText)
+        .navigationTitle(RegisterEventTab.rules.title)
+        .backgroundColor(ColorPalette.backgroundColor)
         .foregroundColor(ColorPalette.primaryText)
     }
 }
@@ -27,8 +41,6 @@ struct RulesRegisterEventView_Previews: PreviewProvider {
         NavigationView {
             RulesRegisterEventView()
                 .environmentObject(RegisterEventViewModel(repository: GameRepositoryMock()))
-                .navigationTitle(RegisterEventTab.rules.title)
-                .backgroundColor(ColorPalette.backgroundColor)
         }
     }
 }

@@ -8,25 +8,49 @@
 import SwiftUI
 
 struct TeamBuildingSection: View {
-    @State
-    var isIndividual: Bool = false
+    @Binding
+    var isIndividual: Bool
+    @Binding
+    var parcitipants: Int
+    @Binding
+    var teams: Int
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Organização de equipes")
-                .font(.headline.bold())
+            Text("Organização de equipes *")
+                .font(.title3.bold())
             HStack {
-                RegisterEventButton(content: TeamType.idividual, isSelected: isIndividual, action: { isIndividual = true })
-                RegisterEventButton(content: TeamType.group, isSelected: !isIndividual, action: { isIndividual = false })
+                RegisterEventButton(content: TeamType.idividual, isSelected: isIndividual, action: { withAnimation { isIndividual = true }})
+                RegisterEventButton(content: TeamType.group, isSelected: !isIndividual, action: { withAnimation { isIndividual = false } })
                 Spacer()
             }
             if !isIndividual {
                 Text("Selecione o número de equipes e quantos participantes terão em cada equipe")
+                    .lineLimit(3)
                     .multilineTextAlignment(.leading)
                     .foregroundColor(ColorPalette.secondaryText)
+                    .transition(.moveAndFade)
             }
             
-        }.foregroundColor(ColorPalette.primaryText)
+            numberSection
+            
+        }
+        .padding()
+        .foregroundColor(ColorPalette.primaryText)
+    }
+    
+    @ViewBuilder
+    private var numberSection: some View {
+        VStack {
+            CapybaraStepper(value: $parcitipants, label: isIndividual ? "Participantes" : "Equipes")
+                .padding(.bottom, 8)
+            
+            if !isIndividual {
+                CapybaraStepper(value: $teams, label: "Membros de equipe")
+                    .transition(.moveAndFade)
+            }
+        }
+        .padding(.top, 8)
     }
     
     private enum TeamType: Presentable {
@@ -45,8 +69,9 @@ struct TeamBuildingSection: View {
 
 struct TeamBuildingSection_Previews: PreviewProvider {
     static var previews: some View {
-        TeamBuildingSection()
+        TeamBuildingSection(isIndividual: .constant(false),
+                            parcitipants: .constant(10),
+                            teams: .constant(16))
             .background(ColorPalette.backgroundColor)
-            .previewLayout(.sizeThatFits)
     }
 }

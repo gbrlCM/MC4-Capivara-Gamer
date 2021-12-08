@@ -17,8 +17,10 @@ struct StreamSection: View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Stream")
-                    .font(.title2.bold())
+                    .font(.title3.bold())
                 Text("O seu evento será transmitido online?")
+                    .font(.subheadline)
+                    .foregroundColor(ColorPalette.secondaryText)
                 CapybaraToggle(isOn: $hasStreaming)
                 
                 if hasStreaming {

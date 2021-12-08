@@ -39,6 +39,12 @@ final class RegisterEventViewModel: ObservableObject {
     var streamLink: String
     @Published
     var hasStreaming: Bool
+    @Published
+    var isIndividual: Bool
+    @Published
+    var numberOfParticipants: Int
+    @Published
+    var numberOfParticipantsPerTeam: Int
     
     //MARK: Field Validation
     @Published
@@ -64,6 +70,9 @@ final class RegisterEventViewModel: ObservableObject {
         self.hasStreaming = false
         self.isStreamTypeFieldValid = true
         self.isContactTypeFieldValid = true
+        self.isIndividual = true
+        self.numberOfParticipants = 1
+        self.numberOfParticipantsPerTeam = 1
     }
     
     func fetchAllItems() async {

@@ -11,10 +11,10 @@ struct ContactTypeSection: View {
     @Binding
     var selectedContactType: ContactType?
     var contactTypes: [ContactType] = ContactType.allCases
-    @State
-    var l: String = ""
-    @State
-    var i: Bool = false
+    @Binding
+    var contactLink: String
+    @Binding
+    var isLinkValid: Bool
     
     var body: some View {
         VStack {
@@ -26,6 +26,7 @@ struct ContactTypeSection: View {
                                 selectedContactType = nil
                             } else {
                                 selectedContactType = contactType
+                                contactLink = ""
                             }
                         }
                     }
@@ -35,11 +36,11 @@ struct ContactTypeSection: View {
             }
             
             if selectedContactType == .discord {
-                LinkSection(linkContent: $l, isValid: $i, viewModel: LinkSectionViewModelFactory.buildForDiscord())
+                LinkSection(linkContent: $contactLink, isValid: $isLinkValid, viewModel: LinkSectionViewModelFactory.buildForDiscord())
                     .padding()
                     .transition(.moveAndFade)
             } else if selectedContactType == .email {
-                LinkSection(linkContent: $l, isValid: $i, viewModel: LinkSectionViewModelFactory.buildForEmail())
+                LinkSection(linkContent: $contactLink, isValid: $isLinkValid, viewModel: LinkSectionViewModelFactory.buildForEmail())
                     .padding()
                     .transition(.moveAndFade)
             }

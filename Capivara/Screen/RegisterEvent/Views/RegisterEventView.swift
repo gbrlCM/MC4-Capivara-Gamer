@@ -19,9 +19,6 @@ struct RegisterEventView: View {
     var body: some View {
         NavigationView {
             GameRegisterEventView()
-                .toolbar {
-                    ToolbarItem(placement: .bottomBar, content: { Rectangle().fill(ColorPalette.accent).ignoresSafeArea(.all) })
-                }
                 .navigationTitle(RegisterEventTab.game.title)
                 .backgroundColor(ColorPalette.backgroundColor)
                 .navigationBarTitleColor(ColorPalette.primaryText)

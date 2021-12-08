@@ -17,7 +17,7 @@ struct LinkSection: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(viewModel.title)
-                .font(.title2.bold())
+                .font(.title3.bold())
             Text(viewModel.subtitle)
             
             LinkValidatedTextField(content: $linkContent,
