@@ -75,6 +75,7 @@
 		E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
+		E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,7 @@
 		E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoViewModel.swift; sourceTree = "<group>"; };
 		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		E9C622C527580663002C5615 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedEventsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,8 +291,8 @@
 		5B0D3BC1274C051700BB90F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E9DC43DC276153A000B6BA69 /* Components */,
 				5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */,
-				064170A02756AFA400E5B7F2 /* EventCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,6 +321,7 @@
 			children = (
 				E656D9B9275FD5E60075AE15 /* Components */,
 				5B0D3BC9274C056900BB90F1 /* SearchView.swift */,
+				E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -584,7 +587,7 @@
 			isa = PBXGroup;
 			children = (
 				E656D9BA275FD60A0075AE15 /* PopularGames.swift */,
-					);
+			);
 			path = Components;
 			sourceTree = "<group>";
 		};
@@ -628,6 +631,14 @@
 				E9C622C32757F482002C5615 /* UserProfileViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E9DC43DC276153A000B6BA69 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				064170A02756AFA400E5B7F2 /* EventCardView.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -794,6 +805,7 @@
 				06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */,
 				E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */,
 				E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */,
+				E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */,
 				5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */,
 				E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */,
 				5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */,

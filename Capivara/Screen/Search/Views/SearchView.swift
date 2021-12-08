@@ -10,7 +10,6 @@ import SwiftUI
 struct SearchView: View {
     @State var searchFieldContent: String = ""
     @ObservedObject var viewModel: ExploreScreenViewModel
-//    @ObservedObject var viewModelDois: MyEventsViewModel
     
     var body: some View {
         NavigationView {
@@ -62,7 +61,9 @@ struct SearchView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(viewModel.games) { game in
-                    PopularGames(imageURL: game.cover)
+                    ZStack {
+                        PopularGames(imageURL: game.cover)
+                    }
                 }
             }
         }
@@ -76,15 +77,13 @@ struct SearchView: View {
         
 
         LazyVStack {
-            ForEach(viewModel.allEvents){ content in
+            ForEach(viewModel.allEvents) { content in
                 ZStack {
                     NavigationLink(destination: {
-                        Text(content.name)
+                        EventInfoView(viewModel: EventInfoViewModel(event: content))
                     }, label: {
-                        EmptyView()
-                    })
-                    EventCardView(event: content)
-                        .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
+                        EventCardView(event: content)
+                    }) .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
                         .padding(.bottom, 4)
                 }.listRowBackground(ColorPalette.backgroundColor)
             }
