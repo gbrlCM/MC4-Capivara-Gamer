@@ -10,29 +10,32 @@ import Foundation
 final class ExploreScreenViewModel: ObservableObject {
     @Published var user: User
     @Published private var gameEvents: [Event]
-    @Published private var recentEvents: [Event]
-    var eventRepository: EventRepositoryProtocol
+    @Published var allEvents: [Event]
+    private var eventRepository: EventRepositoryProtocol
+    private var gameRepository: GameRepositoryProtocol
     @Published var searchFieldText: String
-    @Published var game: Game
+    @Published var games: [Game]
     
-    init(eventRepository: EventRepositoryProtocol, user: User) {
-        self.user = UserMock.gamerCapibara
+    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol, user: User) {
+        self.user = user
         gameEvents = []
-        recentEvents = []
+        allEvents = []
         self.eventRepository = eventRepository
         self.searchFieldText = ""
-        self.game = GameMock.leagueOfLegends
+        self.games = []
+        self.gameRepository = gameRepository
     }
     
-    func fetchGameEvents() async throws {
-        gameEvents = try await eventRepository.fetchGameEvents(of: game)
-    }
-    
-    func fetchUserEvents() async throws {
-        recentEvents = try await eventRepository.fetchUserEvents(of: user)
+    func fetchInitialData() async {
+        do {
+            games = try await gameRepository.fetchAllGames()
+            allEvents = try await eventRepository.fetchAllEvents()
+        } catch {
+            // Implementar algo para demonstrar erro
+        }
     }
     
     func orderEvents() {
-        recentEvents.order
+        
     }
 }

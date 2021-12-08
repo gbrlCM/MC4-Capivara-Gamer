@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SearchView: View {
     @State var searchFieldContent: String = ""
-    //@ObservedObject var viewModel: ExploreScreenViewModel
-    @ObservedObject var viewModelDois: MyEventsViewModel
+    @ObservedObject var viewModel: ExploreScreenViewModel
+//    @ObservedObject var viewModelDois: MyEventsViewModel
     
     var body: some View {
         NavigationView {
@@ -29,10 +29,7 @@ struct SearchView: View {
                 .navigationTitle("Explorar")
                 .navigationBarTitleColor(ColorPalette.primaryText)
         } .task {
-            do {
-                try await viewModelDois.fetchEvents()
-            } catch  {
-            }
+            await viewModel.fetchInitialData()
         }
     }
     
@@ -64,14 +61,9 @@ struct SearchView: View {
         
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                PopularGames(imageURL: $viewModelDois.user.avatar)
-                PopularGames(imageURL: $viewModelDois.user.avatar)
-                PopularGames(imageURL: $viewModelDois.user.avatar)
-                PopularGames(imageURL: $viewModelDois.user.avatar)
-                PopularGames(imageURL: $viewModelDois.user.avatar)
-                PopularGames(imageURL: $viewModelDois.user.avatar)
-                PopularGames(imageURL: $viewModelDois.user.avatar)
-                PopularGames(imageURL: $viewModelDois.user.avatar)
+                ForEach(viewModel.games) { game in
+                    PopularGames(imageURL: game.cover)
+                }
             }
         }
     }
@@ -84,7 +76,7 @@ struct SearchView: View {
         
 
         LazyVStack {
-            ForEach(viewModelDois.filterSegmentedEvents){ content in
+            ForEach(viewModel.allEvents){ content in
                 ZStack {
                     NavigationLink(destination: {
                         Text(content.name)
@@ -103,6 +95,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView(viewModelDois: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
+        SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepositoryMock(), user: UserMock.gamerCapibara))
     }
 }

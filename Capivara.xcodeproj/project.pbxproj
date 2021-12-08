@@ -65,7 +65,6 @@
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
 		E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */; };
 		E656D9BB275FD60A0075AE15 /* PopularGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9BA275FD60A0075AE15 /* PopularGames.swift */; };
-		E656D9BF275FDE900075AE15 /* EventCardExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9BE275FDE900075AE15 /* EventCardExploreView.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
@@ -149,7 +148,6 @@
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreenViewModel.swift; sourceTree = "<group>"; };
 		E656D9BA275FD60A0075AE15 /* PopularGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularGames.swift; sourceTree = "<group>"; };
-		E656D9BE275FDE900075AE15 /* EventCardExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardExploreView.swift; sourceTree = "<group>"; };
 		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		E9C622C527580663002C5615 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -540,7 +538,6 @@
 			isa = PBXGroup;
 			children = (
 				E656D9BA275FD60A0075AE15 /* PopularGames.swift */,
-				E656D9BE275FDE900075AE15 /* EventCardExploreView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -704,7 +701,6 @@
 				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
 				E656D9BB275FD60A0075AE15 /* PopularGames.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
-				E656D9BF275FDE900075AE15 /* EventCardExploreView.swift in Sources */,
 				E9C622C627580663002C5615 /* EditProfileView.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
 				06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */,

@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 struct PopularGames: View {
-    @Binding
     var imageURL: String
     
     var body: some View {
