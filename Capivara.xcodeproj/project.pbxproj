@@ -24,6 +24,11 @@
 		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
 		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
 		5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */; };
+		5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1A275FECDD00C7AE92 /* LoginView.swift */; };
+		5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */; };
+		5B634B21275FED6600C7AE92 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B20275FED6600C7AE92 /* LoginData.swift */; };
+		5B634B23275FEDAF00C7AE92 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B22275FEDAF00C7AE92 /* UserRepositoryMock.swift */; };
 		5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA6274FEDEE009F5D5A /* GameMock.swift */; };
 		5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA8274FEDFF009F5D5A /* UserMock.swift */; };
 		5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAA274FEE0E009F5D5A /* AddressMock.swift */; };
@@ -65,6 +70,9 @@
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
 		E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */; };
 		E656D9BB275FD60A0075AE15 /* PopularGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9BA275FD60A0075AE15 /* PopularGames.swift */; };
+		E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */; };
+		E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7C275EA5E400332B23 /* EventInfoView.swift */; };
+		E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
@@ -104,6 +112,11 @@
 		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
 		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
 		5B0D3BD9274C239F00BB90F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInWAppleButton.swift; path = Login/View/SignInWAppleButton.swift; sourceTree = "<group>"; };
+		5B634B1A275FECDD00C7AE92 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Login/View/LoginView.swift; sourceTree = "<group>"; };
+		5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Login/ViewModel/LoginViewModel.swift; sourceTree = "<group>"; };
+		5B634B20275FED6600C7AE92 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		5B634B22275FEDAF00C7AE92 /* UserRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
 		5B832AA6274FEDEE009F5D5A /* GameMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMock.swift; sourceTree = "<group>"; };
 		5B832AA8274FEDFF009F5D5A /* UserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMock.swift; sourceTree = "<group>"; };
 		5B832AAA274FEE0E009F5D5A /* AddressMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressMock.swift; sourceTree = "<group>"; };
@@ -148,6 +161,9 @@
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreenViewModel.swift; sourceTree = "<group>"; };
 		E656D9BA275FD60A0075AE15 /* PopularGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularGames.swift; sourceTree = "<group>"; };
+		E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
+		E957FC7C275EA5E400332B23 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
+		E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoViewModel.swift; sourceTree = "<group>"; };
 		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		E9C622C527580663002C5615 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +201,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		06EB1AE8275AA65E0018C9FD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5B634B1D275FECE100C7AE92 /* ViewModels */,
+				5B634B18275FECD200C7AE92 /* Views */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		06F6B5992757EEF200D4E9C4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +231,8 @@
 		5B0D3BB6274C03CB00BB90F1 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				E957FC77275EA53E00332B23 /* EventInfo */,
+				06EB1AE8275AA65E0018C9FD /* Login */,
 				5B832ABA27503015009F5D5A /* RegisterEvent */,
 				5B0D3BC7274C054F00BB90F1 /* Search */,
 				5B0D3BC0274C050E00BB90F1 /* MyEvents */,
@@ -333,8 +360,26 @@
 				5B89802F274EC67500CE92BF /* Address.swift */,
 				5B898031274EC6A600CE92BF /* User.swift */,
 				5B898033274EC6ED00CE92BF /* Game.swift */,
+				5B634B20275FED6600C7AE92 /* LoginData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5B634B18275FECD200C7AE92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B634B1A275FECDD00C7AE92 /* LoginView.swift */,
+				5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5B634B1D275FECE100C7AE92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		5B832AAC274FEE36009F5D5A /* Repositories */ = {
@@ -362,6 +407,7 @@
 			children = (
 				5B832AB22750074B009F5D5A /* EventRepositoryMock.swift */,
 				5B832ACD275180F3009F5D5A /* GameRepositoryMock.swift */,
+				5B634B22275FEDAF00C7AE92 /* UserRepositoryMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -538,8 +584,42 @@
 			isa = PBXGroup;
 			children = (
 				E656D9BA275FD60A0075AE15 /* PopularGames.swift */,
+					);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E957FC77275EA53E00332B23 /* EventInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E957FC7E275EA99600332B23 /* ViewModels */,
+				E957FC78275EA55700332B23 /* Views */,
+			);
+			path = EventInfo;
+			sourceTree = "<group>";
+		};
+		E957FC78275EA55700332B23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E957FC79275EA56E00332B23 /* Components */,
+				E957FC7C275EA5E400332B23 /* EventInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E957FC79275EA56E00332B23 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E957FC7E275EA99600332B23 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		E9C622C22757F458002C5615 /* ViewModels */ = {
@@ -692,8 +772,10 @@
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
 				06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */,
+				5B634B21275FED6600C7AE92 /* LoginData.swift in Sources */,
 				5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
+				5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */,
 				064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */,
 				5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */,
 				5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */,
@@ -705,13 +787,17 @@
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
 				06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */,
 				5BCD0296275301F000B13D0C /* GeneralRegisterEventViewModel.swift in Sources */,
+				5B634B23275FEDAF00C7AE92 /* UserRepositoryMock.swift in Sources */,
 				5B9D6D1D275581A500008B7E /* PlatformSection.swift in Sources */,
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
 				5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */,
 				06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */,
 				E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */,
+				E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */,
 				5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */,
+				E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */,
 				5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */,
+				E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */,
 				5B898030274EC67500CE92BF /* Address.swift in Sources */,
 				0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */,
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
@@ -728,11 +814,13 @@
 				06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
+				5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
 				E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
+				5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */,
 				5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */,
 				5B832ACC27517270009F5D5A /* RegisterEventViewModel.swift in Sources */,
 			);
@@ -892,10 +980,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -908,7 +997,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.Capivara;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -921,10 +1010,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -937,7 +1027,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.Capivara;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
