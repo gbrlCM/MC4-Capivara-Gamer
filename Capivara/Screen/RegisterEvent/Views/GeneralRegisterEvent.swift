@@ -10,12 +10,26 @@ import SwiftUI
 struct GeneralRegisterEvent: View {
     var body: some View {
         ScrollView {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack {
+                photoSection
+            }
+            
         }
         .navigationTitle("Geral")
         .foregroundColor(ColorPalette.primaryText)
         .navigationBarTitleColor(ColorPalette.primaryText)
         .backgroundColor(ColorPalette.backgroundColor)
+    }
+    
+    @ViewBuilder
+    private var photoSection: some View {
+        VStack(alignment: .leading) {
+            Text("Capa do evento")
+                .font(.title3.bold())
+            Text("Capa que ficará em destaque na pagina do evento.")
+                .font(.subheadline)
+        }
+        
     }
 }
 
