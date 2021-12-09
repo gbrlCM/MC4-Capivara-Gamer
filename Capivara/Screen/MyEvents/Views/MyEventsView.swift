@@ -15,7 +15,7 @@ struct MyEventsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Picker("What is your favorite color?", selection: $viewModel.filterSegmented)
+                Picker("", selection: $viewModel.filterSegmented)
                 {
                     ForEach(MyEventsTab.allCases, id: \.self) { tab in
                         Text(tab.rawValue).tag(tab)
@@ -58,10 +58,10 @@ struct MyEventsView: View {
                 do {
                     try await viewModel.fetchEvents()
                 } catch  {
-                    
                 }
             }
-        }.searchable(text: $viewModel.searchFieldText)
+        }.preferredColorScheme(.dark)
+         .searchable(text: $viewModel.searchFieldText)
             .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
     }
     
@@ -69,8 +69,10 @@ struct MyEventsView: View {
 
 struct MyEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        TabView {
-            MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
+        Group {
+            TabView {
+                MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
+            }
         }
     }
 }

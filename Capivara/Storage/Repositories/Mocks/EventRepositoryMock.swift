@@ -17,7 +17,7 @@ class EventRepositoryMock: EventRepositoryProtocol {
         return allEvents 
     }
     
-    func fetchHotEvents() async throws -> [Event] {
+    func fetchAllEvents() async throws -> [Event] {
         allEvents
     }
     

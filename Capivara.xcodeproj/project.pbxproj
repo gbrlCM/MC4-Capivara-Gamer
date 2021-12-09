@@ -68,11 +68,14 @@
 		5BD88C642748415A00036C35 /* CapivaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C632748415A00036C35 /* CapivaraTests.swift */; };
 		5BD88C6E2748415A00036C35 /* CapivaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */; };
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
+		E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */; };
+		E656D9BB275FD60A0075AE15 /* PopularGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9BA275FD60A0075AE15 /* PopularGames.swift */; };
 		E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */; };
 		E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7C275EA5E400332B23 /* EventInfoView.swift */; };
 		E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
+		E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,11 +160,14 @@
 		5BD88C692748415A00036C35 /* CapivaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapivaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITests.swift; sourceTree = "<group>"; };
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreenViewModel.swift; sourceTree = "<group>"; };
+		E656D9BA275FD60A0075AE15 /* PopularGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularGames.swift; sourceTree = "<group>"; };
 		E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
 		E957FC7C275EA5E400332B23 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
 		E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoViewModel.swift; sourceTree = "<group>"; };
 		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		E9C622C527580663002C5615 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedEventsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,8 +291,8 @@
 		5B0D3BC1274C051700BB90F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E9DC43DC276153A000B6BA69 /* Components */,
 				5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */,
-				064170A02756AFA400E5B7F2 /* EventCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 		5B0D3BC7274C054F00BB90F1 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				E642F83E275EA85B009200A0 /* ViewModels */,
 				5B0D3BC8274C055900BB90F1 /* Views */,
 			);
 			path = Search;
@@ -312,7 +319,9 @@
 		5B0D3BC8274C055900BB90F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E656D9B9275FD5E60075AE15 /* Components */,
 				5B0D3BC9274C056900BB90F1 /* SearchView.swift */,
+				E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -566,6 +575,22 @@
 			path = CapivaraUITests;
 			sourceTree = "<group>";
 		};
+		E642F83E275EA85B009200A0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E656D9B9275FD5E60075AE15 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E656D9BA275FD60A0075AE15 /* PopularGames.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E957FC77275EA53E00332B23 /* EventInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +631,14 @@
 				E9C622C32757F482002C5615 /* UserProfileViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E9DC43DC276153A000B6BA69 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				064170A02756AFA400E5B7F2 /* EventCardView.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -759,6 +792,7 @@
 				5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */,
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
 				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
+				E656D9BB275FD60A0075AE15 /* PopularGames.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
 				E9C622C627580663002C5615 /* EditProfileView.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
@@ -771,6 +805,7 @@
 				06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */,
 				E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */,
 				E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */,
+				E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */,
 				5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */,
 				E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */,
 				5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */,
@@ -793,6 +828,7 @@
 				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
 				5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
+				E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
