@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0627E7642762800A00F2D6DA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0627E7632762800A00F2D6DA /* WidgetKit.framework */; };
+		0627E7662762800A00F2D6DA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0627E7652762800A00F2D6DA /* SwiftUI.framework */; };
+		0627E7692762800A00F2D6DA /* CapivaraWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E7682762800A00F2D6DA /* CapivaraWidget.swift */; };
+		0627E76B2762800C00F2D6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0627E76A2762800C00F2D6DA /* Assets.xcassets */; };
+		0627E76F2762800C00F2D6DA /* CapivaraWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0627E7612762800A00F2D6DA /* CapivaraWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0627E779276280E000F2D6DA /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC327516F3C009F5D5A /* ColorPalette.swift */; };
+		0627E77B2762829300F2D6DA /* CapivaraEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77A2762829300F2D6DA /* CapivaraEntry.swift */; };
+		0627E77E27628F4B00F2D6DA /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */; };
+		0627E77F2762914C00F2D6DA /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */; };
+		0627E78527629DCC00F2D6DA /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidget.swift */; };
+		0627E78627629EAD00F2D6DA /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidget.swift */; };
+		0627E7882762A5DD00F2D6DA /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
@@ -76,6 +88,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0627E76D2762800C00F2D6DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BD88C472748415800036C35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0627E7602762800A00F2D6DA;
+			remoteInfo = CapivaraWidgetExtension;
+		};
 		5BD88C602748415A00036C35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BD88C472748415800036C35 /* Project object */;
@@ -92,7 +111,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0627E7702762800C00F2D6DA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0627E76F2762800C00F2D6DA /* CapivaraWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0627E7612762800A00F2D6DA /* CapivaraWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CapivaraWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0627E7632762800A00F2D6DA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0627E7652762800A00F2D6DA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0627E7682762800A00F2D6DA /* CapivaraWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraWidget.swift; sourceTree = "<group>"; };
+		0627E76A2762800C00F2D6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0627E76C2762800C00F2D6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0627E77A2762829300F2D6DA /* CapivaraEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraEntry.swift; sourceTree = "<group>"; };
+		0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
+		0627E78427629DCC00F2D6DA /* MediumWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidget.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
@@ -165,6 +207,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0627E75E2762800A00F2D6DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0627E7662762800A00F2D6DA /* SwiftUI.framework in Frameworks */,
+				0627E7642762800A00F2D6DA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BD88C4C2748415800036C35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +240,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0627E7622762800A00F2D6DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0627E7632762800A00F2D6DA /* WidgetKit.framework */,
+				0627E7652762800A00F2D6DA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0627E7672762800A00F2D6DA /* CapivaraWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0627E77C27628CB000F2D6DA /* Views */,
+				0627E7682762800A00F2D6DA /* CapivaraWidget.swift */,
+				0627E76A2762800C00F2D6DA /* Assets.xcassets */,
+				0627E76C2762800C00F2D6DA /* Info.plist */,
+				0627E77A2762829300F2D6DA /* CapivaraEntry.swift */,
+			);
+			path = CapivaraWidget;
+			sourceTree = "<group>";
+		};
+		0627E77C27628CB000F2D6DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */,
+				0627E78427629DCC00F2D6DA /* MediumWidget.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0666E8B927595BEA002BA436 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +593,8 @@
 				5BD88C512748415800036C35 /* Capivara */,
 				5BD88C622748415A00036C35 /* CapivaraTests */,
 				5BD88C6C2748415A00036C35 /* CapivaraUITests */,
+				0627E7672762800A00F2D6DA /* CapivaraWidget */,
+				0627E7622762800A00F2D6DA /* Frameworks */,
 				5BD88C502748415800036C35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -522,6 +605,7 @@
 				5BD88C4F2748415800036C35 /* Capivara.app */,
 				5BD88C5F2748415A00036C35 /* CapivaraTests.xctest */,
 				5BD88C692748415A00036C35 /* CapivaraUITests.xctest */,
+				0627E7612762800A00F2D6DA /* CapivaraWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -611,6 +695,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0627E7602762800A00F2D6DA /* CapivaraWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0627E7732762800C00F2D6DA /* Build configuration list for PBXNativeTarget "CapivaraWidgetExtension" */;
+			buildPhases = (
+				0627E75D2762800A00F2D6DA /* Sources */,
+				0627E75E2762800A00F2D6DA /* Frameworks */,
+				0627E75F2762800A00F2D6DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CapivaraWidgetExtension;
+			productName = CapivaraWidgetExtension;
+			productReference = 0627E7612762800A00F2D6DA /* CapivaraWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5BD88C4E2748415800036C35 /* Capivara */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BD88C732748415A00036C35 /* Build configuration list for PBXNativeTarget "Capivara" */;
@@ -618,10 +719,12 @@
 				5BD88C4B2748415800036C35 /* Sources */,
 				5BD88C4C2748415800036C35 /* Frameworks */,
 				5BD88C4D2748415800036C35 /* Resources */,
+				0627E7702762800C00F2D6DA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0627E76E2762800C00F2D6DA /* PBXTargetDependency */,
 			);
 			name = Capivara;
 			productName = Capivara;
@@ -674,6 +777,9 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					0627E7602762800A00F2D6DA = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					5BD88C4E2748415800036C35 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -703,11 +809,20 @@
 				5BD88C4E2748415800036C35 /* Capivara */,
 				5BD88C5E2748415A00036C35 /* CapivaraTests */,
 				5BD88C682748415A00036C35 /* CapivaraUITests */,
+				0627E7602762800A00F2D6DA /* CapivaraWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0627E75F2762800A00F2D6DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0627E76B2762800C00F2D6DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BD88C4D2748415800036C35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -734,6 +849,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0627E75D2762800A00F2D6DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0627E7692762800A00F2D6DA /* CapivaraWidget.swift in Sources */,
+				0627E77F2762914C00F2D6DA /* SmallWidgetView.swift in Sources */,
+				0627E78627629EAD00F2D6DA /* MediumWidget.swift in Sources */,
+				0627E779276280E000F2D6DA /* ColorPalette.swift in Sources */,
+				0627E7882762A5DD00F2D6DA /* View+BackgroundColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BD88C4B2748415800036C35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -788,11 +915,14 @@
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
+				0627E78527629DCC00F2D6DA /* MediumWidget.swift in Sources */,
 				06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
 				5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
+				0627E77E27628F4B00F2D6DA /* SmallWidgetView.swift in Sources */,
+				0627E77B2762829300F2D6DA /* CapivaraEntry.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
@@ -822,6 +952,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0627E76E2762800C00F2D6DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0627E7602762800A00F2D6DA /* CapivaraWidgetExtension */;
+			targetProxy = 0627E76D2762800C00F2D6DA /* PBXContainerItemProxy */;
+		};
 		5BD88C612748415A00036C35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5BD88C4E2748415800036C35 /* Capivara */;
@@ -835,6 +970,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0627E7712762800C00F2D6DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CapivaraWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CapivaraWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer.CapivaraWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0627E7722762800C00F2D6DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CapivaraWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CapivaraWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer.CapivaraWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5BD88C712748415A00036C35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -954,13 +1143,14 @@
 		5BD88C742748415A00036C35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = WK7599VNDW;
+				DEVELOPMENT_TEAM = UZ6JTAUWH8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -984,13 +1174,14 @@
 		5BD88C752748415A00036C35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = WK7599VNDW;
+				DEVELOPMENT_TEAM = UZ6JTAUWH8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1110,6 +1301,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0627E7732762800C00F2D6DA /* Build configuration list for PBXNativeTarget "CapivaraWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0627E7712762800C00F2D6DA /* Debug */,
+				0627E7722762800C00F2D6DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BD88C4A2748415800036C35 /* Build configuration list for PBXProject "Capivara" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
