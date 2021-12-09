@@ -60,7 +60,11 @@ struct SearchView: View {
             HStack {
                 ForEach(viewModel.games) { game in
                     ZStack {
-                        PopularGames(imageURL: game.cover)
+                        VStack {
+                            PopularGames(imageURL: game.cover)
+                            Text("oi")
+                                .foregroundColor(ColorPalette.primaryText)
+                        }
                     }
                 }
             }
