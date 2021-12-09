@@ -76,6 +76,7 @@
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
 		E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */; };
+		E9E642D42762939300EAF695 /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E642D32762939300EAF695 /* GameRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +169,7 @@
 		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		E9C622C527580663002C5615 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedEventsView.swift; sourceTree = "<group>"; };
+		E9E642D32762939300EAF695 /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				5B832AB827500A39009F5D5A /* EventRepository.swift */,
+				E9E642D32762939300EAF695 /* GameRepository.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -778,6 +781,7 @@
 				5B832AB32750074B009F5D5A /* EventRepositoryMock.swift in Sources */,
 				5BD88C552748415800036C35 /* ContentView.swift in Sources */,
 				5B832ABF27503057009F5D5A /* RegisterEventView.swift in Sources */,
+				E9E642D42762939300EAF695 /* GameRepository.swift in Sources */,
 				5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */,
 				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
