@@ -19,6 +19,8 @@
 		0627E78527629DCC00F2D6DA /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidget.swift */; };
 		0627E78627629EAD00F2D6DA /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidget.swift */; };
 		0627E7882762A5DD00F2D6DA /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */; };
+		0627E78C2762C72B00F2D6DA /* LargeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78B2762C72B00F2D6DA /* LargeWidget.swift */; };
+		0627E78D2762C77500F2D6DA /* LargeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78B2762C72B00F2D6DA /* LargeWidget.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
@@ -135,6 +137,7 @@
 		0627E77A2762829300F2D6DA /* CapivaraEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraEntry.swift; sourceTree = "<group>"; };
 		0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
 		0627E78427629DCC00F2D6DA /* MediumWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidget.swift; sourceTree = "<group>"; };
+		0627E78B2762C72B00F2D6DA /* LargeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidget.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
@@ -266,6 +269,7 @@
 			children = (
 				0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */,
 				0627E78427629DCC00F2D6DA /* MediumWidget.swift */,
+				0627E78B2762C72B00F2D6DA /* LargeWidget.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -854,6 +858,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0627E7692762800A00F2D6DA /* CapivaraWidget.swift in Sources */,
+				0627E78D2762C77500F2D6DA /* LargeWidget.swift in Sources */,
 				0627E77F2762914C00F2D6DA /* SmallWidgetView.swift in Sources */,
 				0627E78627629EAD00F2D6DA /* MediumWidget.swift in Sources */,
 				0627E779276280E000F2D6DA /* ColorPalette.swift in Sources */,
@@ -925,6 +930,7 @@
 				0627E77B2762829300F2D6DA /* CapivaraEntry.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
+				0627E78C2762C72B00F2D6DA /* LargeWidget.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
 				5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */,
 				5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */,

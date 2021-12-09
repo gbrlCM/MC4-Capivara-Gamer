@@ -1,5 +1,5 @@
 //
-//  MediumWidgetView.swift
+//  LargeWidgetView.swift
 //  Capivara
 //
 //  Created by Thallis Sousa on 09/12/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import WidgetKit
 
-struct MediumWidgetView: View {
+struct LargeWidgetView: View {
     
     let eventTitle: String
     let date: Date
@@ -44,7 +44,7 @@ struct MediumWidgetView: View {
                                             .frame(width: 30, height: 30)
                                             .overlay(Circle().stroke(ColorPalette.secondaryText, lineWidth: 3))
                                             .clipShape(Circle())
-                                                                         
+                                        
                                         Image("DiscordRosa").scaledToFit()
                                             .frame(width: 30, height: 30)
                                             .overlay(Circle().stroke(ColorPalette.secondaryText, lineWidth: 3))
@@ -62,7 +62,6 @@ struct MediumWidgetView: View {
                                 }
                             }
                         }
-                        
                     }
                 }
             }
@@ -70,10 +69,10 @@ struct MediumWidgetView: View {
         }
     }
     
-    struct MediumWidgetView_Previews: PreviewProvider {
+    struct LargeWidgetView_Previews: PreviewProvider {
         static var previews: some View {
-            MediumWidgetView(eventTitle: "Evento mais recente", date: Date())
-                .previewContext(WidgetPreviewContext(family: .systemMedium))
+            LargeWidgetView(eventTitle: "Evento mais recente", date: Date())
+                .previewContext(WidgetPreviewContext(family: .systemLarge))
         }
     }
 }
