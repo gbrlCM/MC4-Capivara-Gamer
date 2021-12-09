@@ -55,7 +55,8 @@ struct EventInfoView: View {
                         HStack {
                             Image(systemName: symbolName)
                             
-                            Text("\(viewModel.event.game.type.rawValue)")
+                            #warning("Reimplementar isso")
+                            Text("oi")
                                 .font(.system(size: 17, weight: .semibold))
                         }.foregroundColor(ColorPalette.primaryText)
                     }.padding()
@@ -149,16 +150,17 @@ struct EventInfoView: View {
     }
     
     func getImageSymbol() {
-        switch viewModel.event.game.type {
-        case .mobile:
-            symbolName = "candybarphone"
-        case .pc:
-            symbolName = "laptopcomputer"
-        case .xbox:
-            symbolName = "logo.xbox"
-        case .playstation:
-            symbolName = "logo.playstation"
-        }
+//        switch viewModel.event.game.type {
+//        case .mobile:
+//            symbolName = "candybarphone"
+//        case .pc:
+//            symbolName = "laptopcomputer"
+//        case .xbox:
+//            symbolName = "logo.xbox"
+//        case .playstation:
+//            symbolName = "logo.playstation"
+//        }
+        symbolName = "logo.playstation"
     }
 }
 

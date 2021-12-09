@@ -11,8 +11,8 @@ struct ContentView: View {
     
     
     var body: some View {
-        //RootView()
-        LoginView(viewModel: .init(repository: UserRepositoryMock()))
+        RootView()
+//        LoginView(viewModel: .init(repository: UserRepositoryMock()))
     }
 }
 

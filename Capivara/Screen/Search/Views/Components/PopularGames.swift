@@ -14,6 +14,6 @@ struct PopularGames: View {
     var body: some View {
         CapybaraAsyncImage(url: URL(string: imageURL))
             .clipShape(Circle())
-        .frame(width: 100, height: 100, alignment: .center)
+        .frame(width: 150, height: 150, alignment: .center)
     }
 }
