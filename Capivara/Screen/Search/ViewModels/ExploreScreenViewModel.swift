@@ -26,6 +26,17 @@ final class ExploreScreenViewModel: ObservableObject {
         self.gameRepository = gameRepository
     }
     
+    var searchedEvents: [Event] {
+        if searchFieldText.isEmpty {
+            return allEvents
+        } else {
+            return allEvents.filter{
+                $0.name.contains(searchFieldText)
+            }
+        }
+    }
+
+    
     func fetchInitialData() async {
         do {
             games = try await gameRepository.fetchAllGames()

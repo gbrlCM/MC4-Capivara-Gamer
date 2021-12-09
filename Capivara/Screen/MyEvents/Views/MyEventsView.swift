@@ -60,7 +60,8 @@ struct MyEventsView: View {
                 } catch  {
                 }
             }
-        }.searchable(text: $viewModel.searchFieldText)
+        }.preferredColorScheme(.dark)
+         .searchable(text: $viewModel.searchFieldText)
             .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
     }
     

@@ -8,33 +8,31 @@
 import SwiftUI
 
 struct SearchView: View {
-    @State var searchFieldContent: String = ""
     @ObservedObject var viewModel: ExploreScreenViewModel
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(alignment: .leading){
-                    searchBar
-                    
-                    popularGames
-                        .padding()
-                    
-                    recentEvents
-                        .padding()
-                    
+            VStack {
+                searchBar
+                
+                if !viewModel.searchFieldText.isEmpty {
+                    searched
+                }
+                
+                else {
+                    feed
                 }
             } .backgroundColor(ColorPalette.backgroundColor)
                 .navigationTitle("Explorar")
                 .navigationBarTitleColor(ColorPalette.primaryText)
-        } .task {
+        }.task {
             await viewModel.fetchInitialData()
         }
     }
     
     @ViewBuilder
     var searchBar: some View {
-        TextField("Search", text: $searchFieldContent)
+        TextField("Search", text: $viewModel.searchFieldText)
             .foregroundColor(ColorPalette.primaryText)
             .padding(.horizontal,25)
             .padding(7)
@@ -45,7 +43,7 @@ struct SearchView: View {
         
         HStack{
             Image(systemName: "magnifyingglass")
-                .foregroundColor(ColorPalette.primaryText)
+                .foregroundColor(ColorPalette.primaryText.opacity(0.3))
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 17)
                 .padding(.top, -35)
@@ -86,6 +84,24 @@ struct SearchView: View {
                     }) .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
                         .padding(.bottom, 4)
                 }.listRowBackground(ColorPalette.backgroundColor)
+            }
+        }
+    }
+    
+    @ViewBuilder
+    var searched: some View {
+        SearchedEventsView(contents: viewModel.searchedEvents)
+    }
+    
+    @ViewBuilder
+    var feed: some View {
+        ScrollView {
+            VStack(alignment: .leading) {
+                popularGames
+                    .padding()
+                
+                recentEvents
+                    .padding()
             }
         }
     }
