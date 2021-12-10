@@ -45,7 +45,7 @@ struct MyEventsView: View {
             .backgroundColor(ColorPalette.backgroundColor)
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {} , label: {
+                    Button(action: viewModel.goToRegister, label: {
                         Image(systemName: "plus")
                     })
                 }
@@ -60,9 +60,12 @@ struct MyEventsView: View {
                 } catch  {
                 }
             }
+        }.sheet(isPresented: $viewModel.isRegisteringEvent) {
+            RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
         }.preferredColorScheme(.dark)
          .searchable(text: $viewModel.searchFieldText)
-            .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
+         .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
+         
     }
     
 }

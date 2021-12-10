@@ -27,14 +27,14 @@
 		5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */; };
 		5B40E21D275EA7FB000820E1 /* TournamentFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */; };
 		5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
-		5B634B25275FF88800C7AE92 /* MatchFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */; };
-		5B634B27275FFBBB00C7AE92 /* TeamBuildingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */; };
-		5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B28276001D400C7AE92 /* CapybaraStepper.swift */; };
 		5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */; };
 		5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1A275FECDD00C7AE92 /* LoginView.swift */; };
 		5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */; };
 		5B634B21275FED6600C7AE92 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B20275FED6600C7AE92 /* LoginData.swift */; };
 		5B634B23275FEDAF00C7AE92 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B22275FEDAF00C7AE92 /* UserRepositoryMock.swift */; };
+		5B634B25275FF88800C7AE92 /* MatchFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */; };
+		5B634B27275FFBBB00C7AE92 /* TeamBuildingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */; };
+		5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B28276001D400C7AE92 /* CapybaraStepper.swift */; };
 		5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA6274FEDEE009F5D5A /* GameMock.swift */; };
 		5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA8274FEDFF009F5D5A /* UserMock.swift */; };
 		5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAA274FEE0E009F5D5A /* AddressMock.swift */; };
@@ -84,6 +84,7 @@
 		5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */; };
 		E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */; };
 		E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9BA275FD60A0075AE15 /* PopularGame.swift */; };
+		E94E9AF12763E447005533D3 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94E9AF02763E447005533D3 /* EditProfileViewModel.swift */; };
 		E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */; };
 		E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7C275EA5E400332B23 /* EventInfoView.swift */; };
 		E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
@@ -131,14 +132,14 @@
 		5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesRegisterEventView.swift; sourceTree = "<group>"; };
 		5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFormatSection.swift; sourceTree = "<group>"; };
 		5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEvent.swift; sourceTree = "<group>"; };
-		5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFormatSection.swift; sourceTree = "<group>"; };
-		5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBuildingSection.swift; sourceTree = "<group>"; };
-		5B634B28276001D400C7AE92 /* CapybaraStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraStepper.swift; sourceTree = "<group>"; };
 		5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInWAppleButton.swift; path = Login/View/SignInWAppleButton.swift; sourceTree = "<group>"; };
 		5B634B1A275FECDD00C7AE92 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Login/View/LoginView.swift; sourceTree = "<group>"; };
 		5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Login/ViewModel/LoginViewModel.swift; sourceTree = "<group>"; };
 		5B634B20275FED6600C7AE92 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		5B634B22275FEDAF00C7AE92 /* UserRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
+		5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFormatSection.swift; sourceTree = "<group>"; };
+		5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBuildingSection.swift; sourceTree = "<group>"; };
+		5B634B28276001D400C7AE92 /* CapybaraStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraStepper.swift; sourceTree = "<group>"; };
 		5B832AA6274FEDEE009F5D5A /* GameMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMock.swift; sourceTree = "<group>"; };
 		5B832AA8274FEDFF009F5D5A /* UserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMock.swift; sourceTree = "<group>"; };
 		5B832AAA274FEE0E009F5D5A /* AddressMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressMock.swift; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 		5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraToggle.swift; sourceTree = "<group>"; };
 		E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreenViewModel.swift; sourceTree = "<group>"; };
 		E656D9BA275FD60A0075AE15 /* PopularGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularGame.swift; sourceTree = "<group>"; };
+		E94E9AF02763E447005533D3 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
 		E957FC7C275EA5E400332B23 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
 		E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoViewModel.swift; sourceTree = "<group>"; };
@@ -698,6 +700,7 @@
 			isa = PBXGroup;
 			children = (
 				E9C622C32757F482002C5615 /* UserProfileViewModel.swift */,
+				E94E9AF02763E447005533D3 /* EditProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -869,13 +872,12 @@
 				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
 				E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */,
 				5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */,
-				E656D9BB275FD60A0075AE15 /* PopularGames.swift in Sources */,
+				E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
 				E9C622C627580663002C5615 /* EditProfileView.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
 				5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */,
 				06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */,
-				5BCD0296275301F000B13D0C /* GeneralRegisterEventViewModel.swift in Sources */,
 				5B634B23275FEDAF00C7AE92 /* UserRepositoryMock.swift in Sources */,
 				5B9D6D1D275581A500008B7E /* PlatformSection.swift in Sources */,
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
@@ -908,9 +910,10 @@
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
 				5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */,
-				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
+				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
 				5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
+				E94E9AF12763E447005533D3 /* EditProfileViewModel.swift in Sources */,
 				E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,

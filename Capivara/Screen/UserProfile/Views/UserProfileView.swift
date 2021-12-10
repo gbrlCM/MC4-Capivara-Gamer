@@ -37,7 +37,9 @@ struct UserProfileView: View {
     
     @ViewBuilder
     var userIdentificationSection: some View {
-        NavigationLink.init(destination: {Text("tela de edição do usuário")}, label: {
+        NavigationLink(destination: {
+            EditProfileView(viewModel: EditProfileViewModel(user: UserMock.gamerCapibara))
+            }, label: {
             HStack {
                 UserProfileAvatar(imageURL: $viewModel.user.avatar)
                 VStack(alignment: .leading) {
