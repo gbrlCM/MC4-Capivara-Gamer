@@ -12,7 +12,7 @@ enum EventMock {
     static var event: Event {
         Event(id: UUID().uuidString,
               name: "Venha jogar com a Capivara",
-              description: "Capivara gamer é o gamer mais shanty que existe, ele te dará uma quantidade gigantesta de premios. e conhecerá a coisa mais fofa que existe.",
+              description: "Capivara gamer é o gamer mais shanty que existe, ele te dará uma quantidade gigantesta de premios e você conhecerá a coisa mais fofa que existe.",
               game: GameMock.leagueOfLegends,
               creator: UserMock.gamerCapibara,
               participants: [],

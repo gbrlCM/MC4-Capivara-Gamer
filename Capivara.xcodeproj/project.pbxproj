@@ -16,11 +16,13 @@
 		0627E77B2762829300F2D6DA /* CapivaraEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77A2762829300F2D6DA /* CapivaraEntry.swift */; };
 		0627E77E27628F4B00F2D6DA /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */; };
 		0627E77F2762914C00F2D6DA /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */; };
-		0627E78527629DCC00F2D6DA /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidget.swift */; };
-		0627E78627629EAD00F2D6DA /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidget.swift */; };
+		0627E78527629DCC00F2D6DA /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidgetView.swift */; };
+		0627E78627629EAD00F2D6DA /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidgetView.swift */; };
 		0627E7882762A5DD00F2D6DA /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */; };
-		0627E78C2762C72B00F2D6DA /* LargeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78B2762C72B00F2D6DA /* LargeWidget.swift */; };
-		0627E78D2762C77500F2D6DA /* LargeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78B2762C72B00F2D6DA /* LargeWidget.swift */; };
+		0627E78C2762C72B00F2D6DA /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78B2762C72B00F2D6DA /* LargeWidgetView.swift */; };
+		0627E78D2762C77500F2D6DA /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78B2762C72B00F2D6DA /* LargeWidgetView.swift */; };
+		0627E78F2763D31D00F2D6DA /* CapivaraControlWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78E2763D31D00F2D6DA /* CapivaraControlWidget.swift */; };
+		0627E7902763EB4A00F2D6DA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
@@ -136,8 +138,9 @@
 		0627E76C2762800C00F2D6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0627E77A2762829300F2D6DA /* CapivaraEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraEntry.swift; sourceTree = "<group>"; };
 		0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
-		0627E78427629DCC00F2D6DA /* MediumWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidget.swift; sourceTree = "<group>"; };
-		0627E78B2762C72B00F2D6DA /* LargeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidget.swift; sourceTree = "<group>"; };
+		0627E78427629DCC00F2D6DA /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		0627E78B2762C72B00F2D6DA /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
+		0627E78E2763D31D00F2D6DA /* CapivaraControlWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraControlWidget.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
@@ -259,7 +262,6 @@
 				0627E7682762800A00F2D6DA /* CapivaraWidget.swift */,
 				0627E76A2762800C00F2D6DA /* Assets.xcassets */,
 				0627E76C2762800C00F2D6DA /* Info.plist */,
-				0627E77A2762829300F2D6DA /* CapivaraEntry.swift */,
 			);
 			path = CapivaraWidget;
 			sourceTree = "<group>";
@@ -268,8 +270,10 @@
 			isa = PBXGroup;
 			children = (
 				0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */,
-				0627E78427629DCC00F2D6DA /* MediumWidget.swift */,
-				0627E78B2762C72B00F2D6DA /* LargeWidget.swift */,
+				0627E78427629DCC00F2D6DA /* MediumWidgetView.swift */,
+				0627E78B2762C72B00F2D6DA /* LargeWidgetView.swift */,
+				0627E78E2763D31D00F2D6DA /* CapivaraControlWidget.swift */,
+				0627E77A2762829300F2D6DA /* CapivaraEntry.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -858,10 +862,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0627E7692762800A00F2D6DA /* CapivaraWidget.swift in Sources */,
-				0627E78D2762C77500F2D6DA /* LargeWidget.swift in Sources */,
+				0627E78D2762C77500F2D6DA /* LargeWidgetView.swift in Sources */,
 				0627E77F2762914C00F2D6DA /* SmallWidgetView.swift in Sources */,
-				0627E78627629EAD00F2D6DA /* MediumWidget.swift in Sources */,
+				0627E78627629EAD00F2D6DA /* MediumWidgetView.swift in Sources */,
 				0627E779276280E000F2D6DA /* ColorPalette.swift in Sources */,
+				0627E7902763EB4A00F2D6DA /* Event.swift in Sources */,
 				0627E7882762A5DD00F2D6DA /* View+BackgroundColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -872,6 +877,7 @@
 			files = (
 				5B9D6D21275581F500008B7E /* ContactTypeSection.swift in Sources */,
 				5B832AC127516796009F5D5A /* View+NavBarTitle.swift in Sources */,
+				0627E78F2763D31D00F2D6DA /* CapivaraControlWidget.swift in Sources */,
 				5B832AAE274FEE94009F5D5A /* EventRepositoryProtocol.swift in Sources */,
 				5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */,
 				5B832AB32750074B009F5D5A /* EventRepositoryMock.swift in Sources */,
@@ -920,7 +926,7 @@
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
-				0627E78527629DCC00F2D6DA /* MediumWidget.swift in Sources */,
+				0627E78527629DCC00F2D6DA /* MediumWidgetView.swift in Sources */,
 				06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
@@ -930,7 +936,7 @@
 				0627E77B2762829300F2D6DA /* CapivaraEntry.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
-				0627E78C2762C72B00F2D6DA /* LargeWidget.swift in Sources */,
+				0627E78C2762C72B00F2D6DA /* LargeWidgetView.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
 				5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */,
 				5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */,
@@ -1215,7 +1221,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WK7599VNDW;
+				DEVELOPMENT_TEAM = UZ6JTAUWH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1240,7 +1246,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WK7599VNDW;
+				DEVELOPMENT_TEAM = UZ6JTAUWH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1264,7 +1270,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WK7599VNDW;
+				DEVELOPMENT_TEAM = UZ6JTAUWH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1287,7 +1293,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WK7599VNDW;
+				DEVELOPMENT_TEAM = UZ6JTAUWH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct EventCardView: View {
-    var event: Event
-    
+
     var body: some View{
         ZStack{
             CapybaraAsyncImage(url: URL(string: event.coverUrl ?? ""))

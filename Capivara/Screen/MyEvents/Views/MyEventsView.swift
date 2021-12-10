@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MyEventsView: View {
     
-    
     @ObservedObject var viewModel: MyEventsViewModel
     
     var body: some View {
