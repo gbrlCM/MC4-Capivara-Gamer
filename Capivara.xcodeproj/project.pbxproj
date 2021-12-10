@@ -24,6 +24,12 @@
 		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
 		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
 		5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */; };
+		5B40E21D275EA7FB000820E1 /* TournamentFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */; };
+		5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
+		5B634B25275FF88800C7AE92 /* MatchFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */; };
+		5B634B27275FFBBB00C7AE92 /* TeamBuildingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */; };
+		5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B28276001D400C7AE92 /* CapybaraStepper.swift */; };
 		5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */; };
 		5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1A275FECDD00C7AE92 /* LoginView.swift */; };
 		5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */; };
@@ -41,7 +47,7 @@
 		5B832AC127516796009F5D5A /* View+NavBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC027516796009F5D5A /* View+NavBarTitle.swift */; };
 		5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC327516F3C009F5D5A /* ColorPalette.swift */; };
 		5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC72751716D009F5D5A /* RegisterEventTab.swift */; };
-		5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC9275171B1009F5D5A /* GeneralRegisterEventView.swift */; };
+		5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC9275171B1009F5D5A /* GameRegisterEventView.swift */; };
 		5B832ACC27517270009F5D5A /* RegisterEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ACB27517270009F5D5A /* RegisterEventViewModel.swift */; };
 		5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ACD275180F3009F5D5A /* GameRepositoryMock.swift */; };
 		5B898030274EC67500CE92BF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89802F274EC67500CE92BF /* Address.swift */; };
@@ -57,10 +63,15 @@
 		5B9D6D232755821500008B7E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D222755821500008B7E /* ContainerView.swift */; };
 		5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */; };
 		5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */; };
+		5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4BFAA275AF117009D75E6 /* Regex.swift */; };
+		5BC30FEC2758798F00800DEB /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FEB2758798F00800DEB /* Validator.swift */; };
+		5BC30FEE27587D8100800DEB /* LinkValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */; };
+		5BC30FF327588ABD00800DEB /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF227588ABD00800DEB /* RegexValidator.swift */; };
+		5BC30FF527588D8F00800DEB /* LinkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF427588D8F00800DEB /* LinkSection.swift */; };
+		5BC30FF727588DB600800DEB /* LinkSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF627588DB600800DEB /* LinkSectionViewModel.swift */; };
 		5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */; };
 		5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02912752FFA800B13D0C /* LoadingCircle.swift */; };
 		5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */; };
-		5BCD0296275301F000B13D0C /* GeneralRegisterEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD0295275301F000B13D0C /* GeneralRegisterEventViewModel.swift */; };
 		5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C522748415800036C35 /* CapivaraApp.swift */; };
 		5BD88C552748415800036C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C542748415800036C35 /* ContentView.swift */; };
 		5BD88C572748415A00036C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD88C562748415A00036C35 /* Assets.xcassets */; };
@@ -68,6 +79,9 @@
 		5BD88C642748415A00036C35 /* CapivaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C632748415A00036C35 /* CapivaraTests.swift */; };
 		5BD88C6E2748415A00036C35 /* CapivaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */; };
 		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
+		5BF77E8A275A87AD00D253AB /* LinkSectionViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */; };
+		5BF77E8C275A8CC100D253AB /* StreamSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8B275A8CC100D253AB /* StreamSection.swift */; };
+		5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */; };
 		E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */; };
 		E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9BA275FD60A0075AE15 /* PopularGame.swift */; };
 		E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */; };
@@ -113,6 +127,12 @@
 		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
 		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
 		5B0D3BD9274C239F00BB90F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesRegisterEventView.swift; sourceTree = "<group>"; };
+		5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFormatSection.swift; sourceTree = "<group>"; };
+		5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEvent.swift; sourceTree = "<group>"; };
+		5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFormatSection.swift; sourceTree = "<group>"; };
+		5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBuildingSection.swift; sourceTree = "<group>"; };
+		5B634B28276001D400C7AE92 /* CapybaraStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraStepper.swift; sourceTree = "<group>"; };
 		5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInWAppleButton.swift; path = Login/View/SignInWAppleButton.swift; sourceTree = "<group>"; };
 		5B634B1A275FECDD00C7AE92 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Login/View/LoginView.swift; sourceTree = "<group>"; };
 		5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Login/ViewModel/LoginViewModel.swift; sourceTree = "<group>"; };
@@ -130,7 +150,7 @@
 		5B832AC027516796009F5D5A /* View+NavBarTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavBarTitle.swift"; sourceTree = "<group>"; };
 		5B832AC327516F3C009F5D5A /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		5B832AC72751716D009F5D5A /* RegisterEventTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventTab.swift; sourceTree = "<group>"; };
-		5B832AC9275171B1009F5D5A /* GeneralRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEventView.swift; sourceTree = "<group>"; };
+		5B832AC9275171B1009F5D5A /* GameRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRegisterEventView.swift; sourceTree = "<group>"; };
 		5B832ACB27517270009F5D5A /* RegisterEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventViewModel.swift; sourceTree = "<group>"; };
 		5B832ACD275180F3009F5D5A /* GameRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryMock.swift; sourceTree = "<group>"; };
 		5B89802F274EC67500CE92BF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -146,10 +166,15 @@
 		5B9D6D222755821500008B7E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectRegisterEventSection.swift; sourceTree = "<group>"; };
+		5BA4BFAA275AF117009D75E6 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		5BC30FEB2758798F00800DEB /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkValidatedTextField.swift; sourceTree = "<group>"; };
+		5BC30FF227588ABD00800DEB /* RegexValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexValidator.swift; sourceTree = "<group>"; };
+		5BC30FF427588D8F00800DEB /* LinkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSection.swift; sourceTree = "<group>"; };
+		5BC30FF627588DB600800DEB /* LinkSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSectionViewModel.swift; sourceTree = "<group>"; };
 		5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventGameButton.swift; sourceTree = "<group>"; };
 		5BCD02912752FFA800B13D0C /* LoadingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCircle.swift; sourceTree = "<group>"; };
 		5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraAsyncImage.swift; sourceTree = "<group>"; };
-		5BCD0295275301F000B13D0C /* GeneralRegisterEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEventViewModel.swift; sourceTree = "<group>"; };
 		5BD88C4F2748415800036C35 /* Capivara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capivara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C522748415800036C35 /* CapivaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraApp.swift; sourceTree = "<group>"; };
 		5BD88C542748415800036C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +185,9 @@
 		5BD88C692748415A00036C35 /* CapivaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapivaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITests.swift; sourceTree = "<group>"; };
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSectionViewModelFactory.swift; sourceTree = "<group>"; };
+		5BF77E8B275A8CC100D253AB /* StreamSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamSection.swift; sourceTree = "<group>"; };
+		5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraToggle.swift; sourceTree = "<group>"; };
 		E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreenViewModel.swift; sourceTree = "<group>"; };
 		E656D9BA275FD60A0075AE15 /* PopularGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularGame.swift; sourceTree = "<group>"; };
 		E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -426,6 +454,7 @@
 		5B832ABA27503015009F5D5A /* RegisterEvent */ = {
 			isa = PBXGroup;
 			children = (
+				5BF77E88275A879800D253AB /* Factories */,
 				5B832AC62751715E009F5D5A /* Models */,
 				5B832AC5275170F2009F5D5A /* ViewModels */,
 				5B832ABB27503025009F5D5A /* Views */,
@@ -438,7 +467,9 @@
 			children = (
 				5BCD028D2752FF4D00B13D0C /* Components */,
 				5B832ABE27503057009F5D5A /* RegisterEventView.swift */,
-				5B832AC9275171B1009F5D5A /* GeneralRegisterEventView.swift */,
+				5B832AC9275171B1009F5D5A /* GameRegisterEventView.swift */,
+				5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */,
+				5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -457,7 +488,7 @@
 			isa = PBXGroup;
 			children = (
 				5B832ACB27517270009F5D5A /* RegisterEventViewModel.swift */,
-				5BCD0295275301F000B13D0C /* GeneralRegisterEventViewModel.swift */,
+				5BC30FF627588DB600800DEB /* LinkSectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -490,6 +521,24 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		5BC30FE92758796C00800DEB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5BC30FEA2758797700800DEB /* TextValidationService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5BC30FEA2758797700800DEB /* TextValidationService */ = {
+			isa = PBXGroup;
+			children = (
+				5BC30FEB2758798F00800DEB /* Validator.swift */,
+				5BC30FF227588ABD00800DEB /* RegexValidator.swift */,
+				5BA4BFAA275AF117009D75E6 /* Regex.swift */,
+			);
+			path = TextValidationService;
+			sourceTree = "<group>";
+		};
 		5BCD028D2752FF4D00B13D0C /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +549,11 @@
 				5B9D6D1E275581C700008B7E /* EventTypeSection.swift */,
 				5B9D6D20275581F500008B7E /* ContactTypeSection.swift */,
 				5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */,
+				5BC30FF427588D8F00800DEB /* LinkSection.swift */,
+				5BF77E8B275A8CC100D253AB /* StreamSection.swift */,
+				5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */,
+				5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */,
+				5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -510,6 +564,9 @@
 				5BCD02912752FFA800B13D0C /* LoadingCircle.swift */,
 				5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */,
 				5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */,
+				5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */,
+				5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */,
+				5B634B28276001D400C7AE92 /* CapybaraStepper.swift */,
 				06661EB8275E7604006E6FB3 /* RoundedCorner.swift */,
 			);
 			path = Components;
@@ -538,6 +595,7 @@
 		5BD88C512748415800036C35 /* Capivara */ = {
 			isa = PBXGroup;
 			children = (
+				5BC30FE92758796C00800DEB /* Services */,
 				5B832AC227516EF7009F5D5A /* DesignSystem */,
 				5B0D3BCB274C089900BB90F1 /* Extensions */,
 				5B0D3BB6274C03CB00BB90F1 /* Screen */,
@@ -573,6 +631,14 @@
 				5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */,
 			);
 			path = CapivaraUITests;
+			sourceTree = "<group>";
+		};
+		5BF77E88275A879800D253AB /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		E642F83E275EA85B009200A0 /* ViewModels */ = {
@@ -774,28 +840,36 @@
 				5B9D6D21275581F500008B7E /* ContactTypeSection.swift in Sources */,
 				5B832AC127516796009F5D5A /* View+NavBarTitle.swift in Sources */,
 				5B832AAE274FEE94009F5D5A /* EventRepositoryProtocol.swift in Sources */,
+				5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */,
 				5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */,
 				5B832AB32750074B009F5D5A /* EventRepositoryMock.swift in Sources */,
 				5BD88C552748415800036C35 /* ContentView.swift in Sources */,
 				5B832ABF27503057009F5D5A /* RegisterEventView.swift in Sources */,
 				5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */,
 				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
+				5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */,
+				5BC30FF727588DB600800DEB /* LinkSectionViewModel.swift in Sources */,
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
 				06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */,
 				5B634B21275FED6600C7AE92 /* LoginData.swift in Sources */,
 				5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */,
+				5B634B25275FF88800C7AE92 /* MatchFormatSection.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
 				5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */,
 				064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */,
 				5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */,
+				5BF77E8C275A8CC100D253AB /* StreamSection.swift in Sources */,
 				5B832AB727500A14009F5D5A /* UserRepositoryProtocol.swift in Sources */,
 				5B0D3BCE274C08B000BB90F1 /* View+TabBarLabel.swift in Sources */,
 				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
 				E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */,
+				5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */,
+				E656D9BB275FD60A0075AE15 /* PopularGames.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
 				E9C622C627580663002C5615 /* EditProfileView.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
+				5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */,
 				06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */,
 				5BCD0296275301F000B13D0C /* GeneralRegisterEventViewModel.swift in Sources */,
 				5B634B23275FEDAF00C7AE92 /* UserRepositoryMock.swift in Sources */,
@@ -814,26 +888,35 @@
 				0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */,
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
 				5B832AB927500A39009F5D5A /* EventRepository.swift in Sources */,
+				5BC30FF527588D8F00800DEB /* LinkSection.swift in Sources */,
+				5BC30FEC2758798F00800DEB /* Validator.swift in Sources */,
 				5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */,
 				5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */,
 				5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */,
 				5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */,
 				5B898032274EC6A600CE92BF /* User.swift in Sources */,
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
+				5BC30FF327588ABD00800DEB /* RegexValidator.swift in Sources */,
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
 				06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
+				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
+				5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
 				5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
 				E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
+				5BF77E8A275A87AD00D253AB /* LinkSectionViewModelFactory.swift in Sources */,
+				5B40E21D275EA7FB000820E1 /* TournamentFormatSection.swift in Sources */,
 				5B898039274ECAA200CE92BF /* EventMock.swift in Sources */,
+				5BC30FEE27587D8100800DEB /* LinkValidatedTextField.swift in Sources */,
 				5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */,
 				5B9D6D1F275581C700008B7E /* EventTypeSection.swift in Sources */,
+				5B634B27275FFBBB00C7AE92 /* TeamBuildingSection.swift in Sources */,
 				5B832ACC27517270009F5D5A /* RegisterEventViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,10 +21,18 @@ enum ColorPalette {
     }
     
     static var secondaryText: Color {
-        Color.white.opacity(0.7)
+        Color.white.opacity(0.6)
     }
     
     static var accent: Color {
         Color.accentColor
+    }
+    
+    static var secondaryAccent: Color {
+        Color("SecondaryAccentColor")
+    }
+    
+    static var danger: Color {
+        Color("DangerColor")
     }
 }
