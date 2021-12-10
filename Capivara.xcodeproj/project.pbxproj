@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
@@ -111,6 +112,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06AAB541275E9BCC00B36C97 /* ButtonShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShare.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
@@ -567,6 +569,7 @@
 				5BCD02912752FFA800B13D0C /* LoadingCircle.swift */,
 				5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */,
 				5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */,
+				06AAB541275E9BCC00B36C97 /* ButtonShare.swift */,
 				5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */,
 				5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */,
 				5B634B28276001D400C7AE92 /* CapybaraStepper.swift */,
@@ -889,6 +892,7 @@
 				5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */,
 				E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */,
 				5B898030274EC67500CE92BF /* Address.swift in Sources */,
+				06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */,
 				0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */,
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
 				5B832AB927500A39009F5D5A /* EventRepository.swift in Sources */,
