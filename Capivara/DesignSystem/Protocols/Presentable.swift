@@ -63,7 +63,7 @@ extension EventType: Presentable {
         case .training:
             label = Label("Treino", systemImage: "brain.head.profile")
         case .forFun:
-            label = Label("For fun", systemImage: "face.smilling.fill")
+            label = Label("For fun", systemImage: "face.smiling.fill")
         case .streaming:
             label = Label("Streaming", systemImage: "person.wave.2.fill")
         }
@@ -72,19 +72,27 @@ extension EventType: Presentable {
 }
 
 extension ContactType: Presentable {
+    @ViewBuilder
     var label: some View {
-        let label: Label<Text, Image>
         switch self {
         case .discord:
-            label = Label("Discord", image: "discord.logo")
+            Label(title: { Text("Discord") },
+                  icon: { Image("discord.logo").resizable().aspectRatio(contentMode: .fit).scaleEffect(0.6) })
+                .font(.headline.weight(.semibold))
+                .foregroundColor(ColorPalette.primaryText)
         case .email:
-            label = Label("Email", systemImage: "envelope.fill")
+            Label("Email", systemImage: "envelope.fill")
+                .font(.headline.weight(.semibold))
+                .foregroundColor(ColorPalette.primaryText)
         case .inGameVoice:
-            label = Label("Voz in Game", systemImage: "music.mic.circle.fill")
+            Label("Voz in Game", systemImage: "music.mic.circle.fill")
+                .font(.headline.weight(.semibold))
+                .foregroundColor(ColorPalette.primaryText)
         case .chatOnly:
-            label = Label("Apenas o chat", systemImage: "text.bubble.fill")
+            Label("Apenas o chat", systemImage: "text.bubble.fill")
+                .font(.headline.weight(.semibold))
+                .foregroundColor(ColorPalette.primaryText)
         }
-        return label.font(.headline.weight(.semibold)).foregroundColor(ColorPalette.primaryText)
     }
 }
 
@@ -115,5 +123,39 @@ extension AddressType: Presentable {
             label = Label("Presencial", systemImage: "building.2.fill")
         }
         return label.font(.headline.weight(.semibold)).foregroundColor(ColorPalette.primaryText)
+    }
+}
+
+extension StreamingType: Presentable {
+    @ViewBuilder
+    var label: some View {
+        switch self {
+        case .twitch:
+            Label(title: { Text("Twitch") },
+                  icon: { Image("twitch.logo").resizable().aspectRatio(contentMode: .fit).scaleEffect(0.6) })
+                .font(.headline.weight(.semibold))
+                .foregroundColor(ColorPalette.primaryText)
+        case .youtube:
+            Label(title: { Text("YouTube") },
+                  icon: { Image("youtube.logo").resizable().aspectRatio(contentMode: .fit).scaleEffect(0.6) })
+                .font(.headline.weight(.semibold))
+                .foregroundColor(ColorPalette.primaryText)
+        case .instagram:
+            Label(title: { Text("instagram") },
+                  icon: { Image("instagram.logo").resizable().aspectRatio(contentMode: .fit).scaleEffect(0.6) })
+                .font(.headline.weight(.semibold))
+                .foregroundColor(ColorPalette.primaryText)
+        }
+//        let label: Label<Text, Image>
+//        switch self {
+//        case .twitch:
+//            label = Label("Twitch", systemImage: "twitch.logo")
+//        case .youtube:
+//            label = Label("Youtube", systemImage: "youtube.logo")
+//        case .instagram:
+//            label = Label("Instagram", systemImage: "instagram.logo")
+//        }
+//
+//        return label.font(.headline.weight(.semibold)).foregroundColor(ColorPalette.primaryText)
     }
 }

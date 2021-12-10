@@ -10,9 +10,7 @@ import Foundation
 struct Game: Codable, Equatable, Identifiable {
     let id: String
     let name: String
-    let types: [GameType]
     let teamCapacity: Int
-    let formats: [TournamentFormat]
     let icon: String
     let cover: String
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RegisterEventView: View {
-
+    
     @ObservedObject
     var viewModel: RegisterEventViewModel
     
@@ -18,21 +18,13 @@ struct RegisterEventView: View {
     
     var body: some View {
         NavigationView {
-            TabView {
-                GeneralRegisterEventView(viewModel: GeneralRegisterEventViewModel(games: $viewModel.games))
-                    .tag(RegisterEventTab.general)
-                
-            }
-            .toolbar {
-                ToolbarItem(placement: .bottomBar, content: { Rectangle().fill(ColorPalette.accent).ignoresSafeArea(.all) })
-            }
-            .navigationTitle(viewModel.selectedTab.title)
-            .backgroundColor(ColorPalette.backgroundColor)
-            .navigationBarTitleColor(ColorPalette.primaryText)
-            .tabViewStyle(.page(indexDisplayMode: .never))
-            .task {
-                await viewModel.fetchAllItems()
-            }
+            GeneralRegisterEvent()
+        }
+        .environmentObject(viewModel)
+        .task {
+            await viewModel.fetchAllItems()
+        }.onAppear {
+            UINavigationBar.appearance().barTintColor = UIColor(ColorPalette.backgroundColor)
         }
     }
 }

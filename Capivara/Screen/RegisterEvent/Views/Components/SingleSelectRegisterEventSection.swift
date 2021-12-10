@@ -17,10 +17,11 @@ struct SingleSelectRegisterEventSection<Content: View>: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("\(title) \(isMandatory ? "*": " ")")
-                .font(.title2.bold())
+                .font(.title3.bold())
             
             HorizontalScrollView {
                 content()
+                    .padding(.vertical, 2)
             }
         }
         .padding(.bottom,8)

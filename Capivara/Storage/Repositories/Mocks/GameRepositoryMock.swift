@@ -10,6 +10,6 @@ import Foundation
 @MainActor
 class GameRepositoryMock: GameRepositoryProtocol {
     func fetchAllGames() async throws -> [Game] {
-        [GameMock.leagueOfLegends]
+        [GameMock.leagueOfLegends,GameMock.leagueOfLegends,GameMock.leagueOfLegends,GameMock.leagueOfLegends]
     }
 }
