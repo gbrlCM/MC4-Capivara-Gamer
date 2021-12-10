@@ -11,7 +11,7 @@ enum GameMock {
     static var leagueOfLegends: Game {
         Game(id: UUID().uuidString,
              name: "League of Legends",
-             types: [.pc],
+             type: .pc,
              teamCapacity: 5,
              formats: TournamentFormat.allCases,
              icon: "https://image-downloader-test.s3.sa-east-1.amazonaws.com/lolIcon.png",
