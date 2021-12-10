@@ -28,6 +28,13 @@ struct EditProfileView: View {
         }.navigationTitle("Editar Perfil")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarTitleColor(ColorPalette.primaryText)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {}, label: {
+                        Text("OK")
+                    })
+                }
+            }
             .backgroundColor(ColorPalette.backgroundColor)
         
     }
