@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct PlatformSection: View {
+    @Binding
+    var selectedPlatform: GameType?
+    
     var platforms: [GameType] = GameType.allCases
     
     var body: some View {
         SingleSelectRegisterEventSection(title: "Plataforma", isMandatory: true) {
             ForEach(platforms, id: \.self) { platform in
-                RegisterEventButton(content: platform, isSelected: false).padding(.trailing, 8)
+                RegisterEventButton(content: platform, isSelected: isSelected(platform: platform)) {
+                    if selectedPlatform == platform {
+                        selectedPlatform = nil
+                    } else {
+                        selectedPlatform = platform
+                    }
+                }
+                .padding(.trailing, 8)
             }
         }
     }
+    
+    func isSelected(platform: GameType) -> Bool {
+        selectedPlatform == platform
+    }
+    
 }

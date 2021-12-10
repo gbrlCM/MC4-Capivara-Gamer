@@ -11,17 +11,17 @@ struct GeneralRegisterEventGameSection: View {
     @Binding
     var games: [Game]
     @Binding
-    var selectedID: String?
+    var selectedGame: Game?
     
     var body: some View {
         SingleSelectRegisterEventSection(title: "Jogo", isMandatory: true) {
             ForEach($games) { $game in
-                RegisterEventGameButton(game: $game, selectedID: $selectedID)
+                RegisterEventGameButton(game: $game, isSelected: selectedGame == game)
                     .onTapGesture {
-                        if selectedID == game.id {
-                            selectedID = nil
+                        if selectedGame == game {
+                            selectedGame = nil
                         } else {
-                            selectedID = $game.id
+                            selectedGame = game
                         }
                     }
                     .padding(.trailing, 8)
