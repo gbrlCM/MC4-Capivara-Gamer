@@ -20,15 +20,16 @@ struct Event: Codable, Equatable, Identifiable {
     var eventFormat: TournamentFormat
     var matchFormat: MatchFormat
     var tournamentCapacity: Int
+    var teamSize: Int
     var creationDate: Date
     var date: Date
     var lobbyEntranceDate: Date
     var eventStartDate: Date
     var address: Address
-    
-#warning("UPDATE TO SHOW CONTACT TYPE")
-#warning("UPDATE TO SHOW STREAMING INFO")
-#warning("UPDATE TO SHOW PLATFORM")
+    var contactType: ContactType
+    var streamingType: StreamingType?
+    var streamingLink: String?
+    var gamePlatform: GameType
 }
 
 /**

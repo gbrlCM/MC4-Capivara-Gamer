@@ -30,6 +30,7 @@ struct GameRegisterEventView: View {
                               selectedStreamingPlatform: $viewModel.selectedStreamType,
                               streamLinkIsValid: $viewModel.isStreamTypeFieldValid,
                               streamLinkContent: $viewModel.streamLink)
+                
             }.padding(.leading, 4)
         }
         .toolbar {
@@ -39,7 +40,9 @@ struct GameRegisterEventView: View {
             }
         }
         .foregroundColor(ColorPalette.primaryText)
+        .navigationTitle(RegisterEventTab.game.title)
         .backgroundColor(ColorPalette.backgroundColor)
+        .navigationBarTitleColor(ColorPalette.primaryText)
     }
 }
 

@@ -18,17 +18,12 @@ struct RegisterEventView: View {
     
     var body: some View {
         NavigationView {
-            GameRegisterEventView()
-                .navigationTitle(RegisterEventTab.game.title)
-                .backgroundColor(ColorPalette.backgroundColor)
-                .navigationBarTitleColor(ColorPalette.primaryText)
-                
+            GeneralRegisterEvent()
         }
         .environmentObject(viewModel)
         .task {
             await viewModel.fetchAllItems()
         }.onAppear {
-            UIToolbar.appearance().barTintColor = UIColor(ColorPalette.backgroundColor)
             UINavigationBar.appearance().barTintColor = UIColor(ColorPalette.backgroundColor)
         }
     }

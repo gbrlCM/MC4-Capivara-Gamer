@@ -4,10 +4,9 @@
 //
 //  Created by Gabriel Ferreira de Carvalho on 26/11/21.
 //
-
+import Combine
 import Foundation
 
-@MainActor
 final class RegisterEventViewModel: ObservableObject {
     
     //MARK: View States
@@ -45,12 +44,26 @@ final class RegisterEventViewModel: ObservableObject {
     var numberOfParticipants: Int
     @Published
     var numberOfParticipantsPerTeam: Int
+    @Published
+    var name: String
+    @Published
+    var description: String
+    @Published
+    var eventDate: Date
+    @Published
+    var lobbyEntranceTimer: Date
+    @Published
+    var eventStartTimer: Date
     
     //MARK: Field Validation
     @Published
     var isContactTypeFieldValid: Bool
     @Published
     var isStreamTypeFieldValid: Bool
+    
+    //MARK: Form Page Validation
+    @Published
+    var generalFormIsValid: Bool
     
     private var repository: GameRepositoryProtocol
     
@@ -73,6 +86,12 @@ final class RegisterEventViewModel: ObservableObject {
         self.isIndividual = true
         self.numberOfParticipants = 1
         self.numberOfParticipantsPerTeam = 1
+        self.name = ""
+        self.description = ""
+        self.eventDate = Date()
+        self.lobbyEntranceTimer = Date().addingTimeInterval(3600)
+        self.eventStartTimer = Date().addingTimeInterval(3600*2)
+        self.generalFormIsValid = false
     }
     
     func fetchAllItems() async {
@@ -81,6 +100,18 @@ final class RegisterEventViewModel: ObservableObject {
             self.games = games
         } catch  {
             viewState = .error
+        }
+    }
+    
+    var isGeneralFormDisabled: Bool {
+        if name.isEmpty
+            && description.isEmpty
+            && eventDate < Date()
+            && lobbyEntranceTimer > eventDate
+            && eventStartTimer > eventDate {
+            return true
+        } else {
+            return false
         }
     }
     
