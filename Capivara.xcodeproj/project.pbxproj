@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
+		0625A5202763EEA600176FD0 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A51F2763EEA600176FD0 /* StatusView.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
 		0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666E8BB27595C4A002BA436 /* MyEventsTab.swift */; };
+		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
 		06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */; };
 		06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
@@ -28,14 +29,14 @@
 		5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */; };
 		5B40E21D275EA7FB000820E1 /* TournamentFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */; };
 		5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
-		5B634B25275FF88800C7AE92 /* MatchFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */; };
-		5B634B27275FFBBB00C7AE92 /* TeamBuildingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */; };
-		5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B28276001D400C7AE92 /* CapybaraStepper.swift */; };
 		5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */; };
 		5B634B1C275FECDD00C7AE92 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1A275FECDD00C7AE92 /* LoginView.swift */; };
 		5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */; };
 		5B634B21275FED6600C7AE92 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B20275FED6600C7AE92 /* LoginData.swift */; };
 		5B634B23275FEDAF00C7AE92 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B22275FEDAF00C7AE92 /* UserRepositoryMock.swift */; };
+		5B634B25275FF88800C7AE92 /* MatchFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */; };
+		5B634B27275FFBBB00C7AE92 /* TeamBuildingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */; };
+		5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B28276001D400C7AE92 /* CapybaraStepper.swift */; };
 		5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA6274FEDEE009F5D5A /* GameMock.swift */; };
 		5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA8274FEDFF009F5D5A /* UserMock.swift */; };
 		5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAA274FEE0E009F5D5A /* AddressMock.swift */; };
@@ -112,11 +113,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06AAB541275E9BCC00B36C97 /* ButtonShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShare.swift; sourceTree = "<group>"; };
+		0625A51F2763EEA600176FD0 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
 		0666E8BB27595C4A002BA436 /* MyEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsTab.swift; sourceTree = "<group>"; };
+		06AAB541275E9BCC00B36C97 /* ButtonShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShare.swift; sourceTree = "<group>"; };
 		06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picker+SegmentControlColer.swift"; sourceTree = "<group>"; };
 		06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewModel.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -133,14 +135,14 @@
 		5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesRegisterEventView.swift; sourceTree = "<group>"; };
 		5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFormatSection.swift; sourceTree = "<group>"; };
 		5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEvent.swift; sourceTree = "<group>"; };
-		5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFormatSection.swift; sourceTree = "<group>"; };
-		5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBuildingSection.swift; sourceTree = "<group>"; };
-		5B634B28276001D400C7AE92 /* CapybaraStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraStepper.swift; sourceTree = "<group>"; };
 		5B634B19275FECDD00C7AE92 /* SignInWAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInWAppleButton.swift; path = Login/View/SignInWAppleButton.swift; sourceTree = "<group>"; };
 		5B634B1A275FECDD00C7AE92 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Login/View/LoginView.swift; sourceTree = "<group>"; };
 		5B634B1E275FECF200C7AE92 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Login/ViewModel/LoginViewModel.swift; sourceTree = "<group>"; };
 		5B634B20275FED6600C7AE92 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		5B634B22275FEDAF00C7AE92 /* UserRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
+		5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFormatSection.swift; sourceTree = "<group>"; };
+		5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBuildingSection.swift; sourceTree = "<group>"; };
+		5B634B28276001D400C7AE92 /* CapybaraStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraStepper.swift; sourceTree = "<group>"; };
 		5B832AA6274FEDEE009F5D5A /* GameMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMock.swift; sourceTree = "<group>"; };
 		5B832AA8274FEDFF009F5D5A /* UserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMock.swift; sourceTree = "<group>"; };
 		5B832AAA274FEE0E009F5D5A /* AddressMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressMock.swift; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 				5B9D6D152755381200008B7E /* Protocols */,
 				5BCD028E2752FF6000B13D0C /* Components */,
 				5B832AC327516F3C009F5D5A /* ColorPalette.swift */,
+				0625A51F2763EEA600176FD0 /* StatusView.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -849,6 +852,7 @@
 				5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */,
 				5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */,
 				5B832AB32750074B009F5D5A /* EventRepositoryMock.swift in Sources */,
+				0625A5202763EEA600176FD0 /* StatusView.swift in Sources */,
 				5BD88C552748415800036C35 /* ContentView.swift in Sources */,
 				5B832ABF27503057009F5D5A /* RegisterEventView.swift in Sources */,
 				E9E642D42762939300EAF695 /* GameRepository.swift in Sources */,
@@ -872,13 +876,12 @@
 				5B9D6D172755385C00008B7E /* Presentable.swift in Sources */,
 				E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */,
 				5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */,
-				E656D9BB275FD60A0075AE15 /* PopularGames.swift in Sources */,
+				E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
 				E9C622C627580663002C5615 /* EditProfileView.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
 				5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */,
 				06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */,
-				5BCD0296275301F000B13D0C /* GeneralRegisterEventViewModel.swift in Sources */,
 				5B634B23275FEDAF00C7AE92 /* UserRepositoryMock.swift in Sources */,
 				5B9D6D1D275581A500008B7E /* PlatformSection.swift in Sources */,
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
@@ -912,7 +915,7 @@
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
 				5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */,
-				5B832ACA275171B1009F5D5A /* GeneralRegisterEventView.swift in Sources */,
+				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
 				5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
 				E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */,
