@@ -21,11 +21,17 @@ enum EventMock {
               eventFormat: .roundRobin,
               matchFormat: .bestOfOne,
               tournamentCapacity: 8,
+              teamSize: 5,
               creationDate: Date(timeIntervalSince1970: 1024),
               date: Date(timeIntervalSince1970: 3096),
               lobbyEntranceDate: Date(timeIntervalSince1970: 4004),
               eventStartDate: Date(timeIntervalSince1970: 4060),
-              address: AddressMock.onlineAddress)
+              address: AddressMock.onlineAddress,
+              contactType: .chatOnly,
+              streamingType: nil,
+              streamingLink: nil,
+              gamePlatform: .mobile
+        )
     }
     
     static var events: [Event] {
