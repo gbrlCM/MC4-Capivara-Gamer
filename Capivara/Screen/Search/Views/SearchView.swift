@@ -55,6 +55,7 @@ struct SearchView: View {
         Text("Jogos")
             .font(.headline.bold())
             .foregroundColor(ColorPalette.primaryText)
+            .padding(.bottom, -50)
         
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {

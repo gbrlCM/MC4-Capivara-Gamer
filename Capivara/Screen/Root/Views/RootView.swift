@@ -9,14 +9,14 @@ import SwiftUI
 
 struct RootView: View {
     @State
-    var selectedTab: TabBarScreen = .profile
+    var selectedTab: TabBarScreen = .search
     
     var body: some View {
         TabView(selection: $selectedTab) {
             MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
                 .tag(TabBarScreen.events)
-//            SearchView(viewModel: ExploreScreenViewModel())
-//                .tag(TabBarScreen.search)
+            SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepository(), user: UserMock.gamerCapibara))
+                .tag(TabBarScreen.search)
             UserProfileView(viewModel: UserProfileViewModel())
                 .tag(TabBarScreen.profile)
         }

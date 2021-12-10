@@ -36,13 +36,13 @@ final class ExploreScreenViewModel: ObservableObject {
         }
     }
 
-    
+    @MainActor
     func fetchInitialData() async {
         do {
             games = try await gameRepository.fetchAllGames()
             allEvents = try await eventRepository.fetchAllEvents()
         } catch {
-            // Implementar algo para demonstrar erro
+            fatalError(error.localizedDescription)
         }
     }
     
