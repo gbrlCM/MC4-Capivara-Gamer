@@ -59,16 +59,11 @@ struct SearchView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(viewModel.games) { game in
-                    ZStack {
-                        VStack {
-                            PopularGames(imageURL: game.cover)
-                            Text("oi")
-                                .foregroundColor(ColorPalette.primaryText)
-                        }
-                    }
+                    PopularGame(game: game)
+                        .padding(.trailing, 12)
                 }
             }
-        }
+        }.padding(.top, -20)
     }
     
     @ViewBuilder
@@ -77,7 +72,7 @@ struct SearchView: View {
             .font(.headline.bold())
             .foregroundColor(ColorPalette.primaryText)
         
-
+        
         LazyVStack {
             ForEach(viewModel.allEvents) { content in
                 ZStack {
