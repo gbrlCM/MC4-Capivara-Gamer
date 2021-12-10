@@ -31,7 +31,7 @@ struct EditProfileView: View {
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {}, label: {
-                        Text("OK")
+                        Text("Salvar")
                     })
                 }
             }
