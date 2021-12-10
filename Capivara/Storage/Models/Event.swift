@@ -20,11 +20,16 @@ struct Event: Codable, Equatable, Identifiable {
     var eventFormat: TournamentFormat
     var matchFormat: MatchFormat
     var tournamentCapacity: Int
+    var teamSize: Int
     var creationDate: Date
     var date: Date
     var lobbyEntranceDate: Date
     var eventStartDate: Date
     var address: Address
+    var contactType: ContactType
+    var streamingType: StreamingType?
+    var streamingLink: String?
+    var gamePlatform: GameType
 }
 
 /**
@@ -46,7 +51,7 @@ enum MatchFormat: String, Codable, CaseIterable {
 /**
  Type of contact of a event, ergo how you can enter in contact with the owner of the event
  cases: discord, email, inGameVoice, chatOnly
-*/
+ */
 enum ContactType: String, Codable, CaseIterable {
     case discord, email, inGameVoice, chatOnly
 }
@@ -57,4 +62,8 @@ enum ContactType: String, Codable, CaseIterable {
  */
 enum EventType: String, Codable, CaseIterable {
     case championship, training, forFun, streaming
+}
+
+enum StreamingType: String, Codable, CaseIterable {
+    case twitch, youtube, instagram
 }
