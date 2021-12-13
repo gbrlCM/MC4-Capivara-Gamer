@@ -94,6 +94,7 @@ final class RegisterEventViewModel: ObservableObject {
         self.generalFormIsValid = false
     }
     
+    @MainActor
     func fetchAllItems() async {
         do {
             let games = try await repository.fetchAllGames()

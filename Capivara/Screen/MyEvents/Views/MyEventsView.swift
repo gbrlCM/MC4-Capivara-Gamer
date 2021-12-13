@@ -47,14 +47,27 @@ struct MyEventsView: View {
             }
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {} , label: {
+                    Button(action: viewModel.goToRegister, label: {
                         Image(systemName: "plus")
                     })
                 }
             }
+            }
+            .navigationTitle("Eventos")
+            .navigationBarTitleColor(ColorPalette.primaryText)
+            .backgroundColor(ColorPalette.backgroundColor)
+            .task{
+                do {
+                    try await viewModel.fetchEvents()
+                } catch  {
+                }
+            }
+        }.sheet(isPresented: $viewModel.isRegisteringEvent) {
+            RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
         }.preferredColorScheme(.dark)
-            .searchable(text: $viewModel.searchFieldText)
-            .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
+         .searchable(text: $viewModel.searchFieldText)
+         .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
+         
     }
     
     

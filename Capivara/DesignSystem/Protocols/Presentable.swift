@@ -103,7 +103,7 @@ extension GameType: Presentable {
         case .mobile:
             label = Label("Mobile", systemImage: "candybarphone")
         case .pc:
-            label = Label("Computer", systemImage: "laptopcomputer")
+            label = Label("Computador", systemImage: "laptopcomputer")
         case .xbox:
             label = Label("Xbox", systemImage: "logo.xbox")
         case .playstation:

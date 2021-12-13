@@ -12,6 +12,8 @@ struct ContentView: View {
     var body: some View {
         RootView()
 //        LoginView(viewModel: .init(repository: UserRepositoryMock()))
+        
+//        SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepository(), user: UserMock.gamerCapibara))
     }
 }
 

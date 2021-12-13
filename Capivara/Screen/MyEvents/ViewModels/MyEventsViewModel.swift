@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class MyEventsViewModel: ObservableObject{
     let repository: EventRepositoryProtocol
@@ -14,6 +15,7 @@ final class MyEventsViewModel: ObservableObject{
     @Published var searchFieldText: String
     @Published var filterSegmented: MyEventsTab = .all
     @Published var statusView: StatusView = .loading
+    @Published var isRegisteringEvent: Bool
     
     
     init(repository: EventRepositoryProtocol, user: User){
@@ -21,6 +23,7 @@ final class MyEventsViewModel: ObservableObject{
         self.user = UserMock.gamerCapibara
         events = []
         self.searchFieldText = ""
+        self.isRegisteringEvent = false
     }
 
     var searchedEvents: [Event] {
@@ -45,6 +48,10 @@ final class MyEventsViewModel: ObservableObject{
         }
     }
     
+    func goToRegister() {
+        isRegisteringEvent = true
+    }
+    
     var filterSegmentedEvents: [Event] {
         switch filterSegmented {
         case .all:
@@ -62,9 +69,7 @@ final class MyEventsViewModel: ObservableObject{
                 $0.participants.contains(user)
 
             }
-            
         }
-        
     }
 }
 
