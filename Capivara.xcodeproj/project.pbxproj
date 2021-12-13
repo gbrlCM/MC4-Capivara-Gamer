@@ -25,6 +25,7 @@
 		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
 		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
 		5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		5B1AC26C2763891D00FD9A7B /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1AC26B2763891D00FD9A7B /* KeychainService.swift */; };
 		5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */; };
 		5B40E21D275EA7FB000820E1 /* TournamentFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */; };
 		5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
@@ -65,6 +66,7 @@
 		5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */; };
 		5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */; };
 		5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4BFAA275AF117009D75E6 /* Regex.swift */; };
+		5BB494C12767B585009E2ACB /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB494C02767B585009E2ACB /* AuthenticationService.swift */; };
 		5BC30FEC2758798F00800DEB /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FEB2758798F00800DEB /* Validator.swift */; };
 		5BC30FEE27587D8100800DEB /* LinkValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */; };
 		5BC30FF327588ABD00800DEB /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF227588ABD00800DEB /* RegexValidator.swift */; };
@@ -132,6 +134,7 @@
 		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
 		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
 		5B0D3BD9274C239F00BB90F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5B1AC26B2763891D00FD9A7B /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesRegisterEventView.swift; sourceTree = "<group>"; };
 		5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFormatSection.swift; sourceTree = "<group>"; };
 		5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEvent.swift; sourceTree = "<group>"; };
@@ -172,6 +175,7 @@
 		5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectRegisterEventSection.swift; sourceTree = "<group>"; };
 		5BA4BFAA275AF117009D75E6 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		5BB494C02767B585009E2ACB /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		5BC30FEB2758798F00800DEB /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkValidatedTextField.swift; sourceTree = "<group>"; };
 		5BC30FF227588ABD00800DEB /* RegexValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexValidator.swift; sourceTree = "<group>"; };
@@ -404,6 +408,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		5B1AC26A2763890500FD9A7B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5B1AC26B2763891D00FD9A7B /* KeychainService.swift */,
+				5BB494C02767B585009E2ACB /* AuthenticationService.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		5B634B18275FECD200C7AE92 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +546,7 @@
 		5BC30FE92758796C00800DEB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5B1AC26A2763890500FD9A7B /* Authentication */,
 				5BC30FEA2758797700800DEB /* TextValidationService */,
 			);
 			path = Services;
@@ -862,7 +876,9 @@
 				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
 				5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */,
 				5BC30FF727588DB600800DEB /* LinkSectionViewModel.swift in Sources */,
+				5BB494C12767B585009E2ACB /* AuthenticationService.swift in Sources */,
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
+				5B1AC26C2763891D00FD9A7B /* KeychainService.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
 				06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */,
 				5B634B21275FED6600C7AE92 /* LoginData.swift in Sources */,

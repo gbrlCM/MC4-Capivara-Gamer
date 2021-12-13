@@ -11,13 +11,18 @@
  final class UserRepositoryMock: UserRepositoryProtocol {
      var user: User = UserMock.gamerCapibara
 
-     func login(_ loginData: LoginData) async throws {
-         user.username = loginData.username
+     func login(_ user: User) async throws {
+         self.user.username = user.username
+         print(user)
      }
 
      func retrieveUser(userId: String) async throws -> User {
+         print(userId)
          return user
      }
 
+     func deleteUser(userId: String) async throws {
+         print(userId)
+     }
 
  }
