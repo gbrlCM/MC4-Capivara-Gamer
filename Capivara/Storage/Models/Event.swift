@@ -27,6 +27,7 @@ struct Event: Codable, Equatable, Identifiable {
     var eventStartDate: Date
     var address: Address
     var contactType: ContactType
+    var contactLink: String?
     var streamingType: StreamingType?
     var streamingLink: String?
     var gamePlatform: GameType

@@ -9,6 +9,8 @@ import Foundation
 
 enum EventMock {
     
+    #warning("O email não funciona no contactLink - linha 33")
+    
     static var event: Event {
         Event(id: UUID().uuidString,
               name: "Venha jogar com a Capivara",
@@ -27,9 +29,10 @@ enum EventMock {
               lobbyEntranceDate: Date(timeIntervalSince1970: 4004),
               eventStartDate: Date(timeIntervalSince1970: 4060),
               address: AddressMock.onlineAddress,
-              contactType: .chatOnly,
-              streamingType: nil,
-              streamingLink: nil,
+              contactType: .email,
+              contactLink: "mailto:nathaliapapst@gmail.com".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+              streamingType: .youtube,
+              streamingLink: "https://www.twitch.tv",
               gamePlatform: .mobile
         )
     }
