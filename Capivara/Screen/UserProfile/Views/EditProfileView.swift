@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct EditProfileView: View {
-    @ObservedObject var viewModel: UserProfileViewModel
-    @State private var username: String = ""
+    @ObservedObject var viewModel: EditProfileViewModel
     var body: some View {
         
         VStack() {
@@ -29,6 +28,13 @@ struct EditProfileView: View {
         }.navigationTitle("Editar Perfil")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarTitleColor(ColorPalette.primaryText)
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {}, label: {
+                        Text("Salvar")
+                    })
+                }
+            }
             .backgroundColor(ColorPalette.backgroundColor)
         
     }
@@ -47,7 +53,7 @@ struct EditProfileView: View {
     @ViewBuilder
     var userNameChanger: some View {
         VStack {
-            TextField("Username", text: $username)
+            TextField("Username", text: $viewModel.usernameField)
                 .padding()
                 .foregroundColor(ColorPalette.primaryText)
                 .frame(width: 360, height: 40, alignment: .center)
@@ -87,7 +93,7 @@ struct EditProfileView: View {
 struct EditProfileView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EditProfileView(viewModel: UserProfileViewModel())
+            EditProfileView(viewModel: EditProfileViewModel(user: UserMock.gamerCapibara))
         }
     }
 }

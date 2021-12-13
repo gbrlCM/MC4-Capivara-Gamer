@@ -50,14 +50,11 @@ struct EventInfoView: View {
                             Text("\(viewModel.event.game.name)")
                                 .foregroundColor(ColorPalette.primaryText)
                                 .font(.system(size: 17, weight: .semibold))
-                        }
+                        }.padding(.bottom)
                         
-                        HStack {
-                            Image(systemName: symbolName)
-                            
-                            Text("\(viewModel.event.game.type.rawValue)")
+                            viewModel.event.gamePlatform.label
                                 .font(.system(size: 17, weight: .semibold))
-                        }.foregroundColor(ColorPalette.primaryText)
+                                .foregroundColor(ColorPalette.primaryText)
                     }.padding()
                         .background(ColorPalette.secondaryBackground)
                         .cornerRadius(10)
@@ -149,7 +146,7 @@ struct EventInfoView: View {
     }
     
     func getImageSymbol() {
-        switch viewModel.event.game.type {
+        switch viewModel.event.gamePlatform {
         case .mobile:
             symbolName = "candybarphone"
         case .pc:

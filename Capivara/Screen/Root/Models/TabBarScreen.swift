@@ -8,5 +8,5 @@
 import Foundation
 
 enum TabBarScreen: Int, Hashable {
-    case events, search, profile
+    case events, search, configuration
 }

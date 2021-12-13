@@ -12,7 +12,7 @@ actor EventRepository: EventRepositoryProtocol {
         []
     }
     
-    func fetchHotEvents() async throws -> [Event] {
+    func fetchAllEvents() async throws -> [Event] {
         []
     }
     
