@@ -18,7 +18,7 @@ struct RootView: View {
             SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepository(), user: UserMock.gamerCapibara))
                 .tag(TabBarScreen.search)
             UserProfileView(viewModel: UserProfileViewModel())
-                .tag(TabBarScreen.profile)
+                .tag(TabBarScreen.configuration)
         }
     }
 }

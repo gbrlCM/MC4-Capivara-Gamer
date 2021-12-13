@@ -27,7 +27,7 @@ struct SearchView: View {
                 .navigationBarTitleColor(ColorPalette.primaryText)
         }.task {
             await viewModel.fetchInitialData()
-        }
+        }.tabBarLabel(text: "Explorar", systemImage: "magnifyingglass")
     }
     
     @ViewBuilder
@@ -64,7 +64,7 @@ struct SearchView: View {
                         .padding(.trailing, 12)
                 }
             }
-        }.padding(.top, -20)
+        }.padding(.top, -3)
     }
     
     @ViewBuilder
