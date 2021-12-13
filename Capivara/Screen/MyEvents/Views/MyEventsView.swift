@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MyEventsView: View {
     
-    
     @ObservedObject var viewModel: MyEventsViewModel
     
     var body: some View {
@@ -26,23 +25,26 @@ struct MyEventsView: View {
                 .unselectedTitleColor(ColorPalette.primaryText)
                 .pickerStyle(.segmented)
                 .padding()
-
-                List {
-                    ForEach(viewModel.filterSegmentedEvents){ content in
-                        ZStack {
-                            NavigationLink(destination: {
-                                EventInfoView(viewModel: EventInfoViewModel(event: content))
-                            }, label: {
-                               EmptyView()
-                        })
-                            EventCardView(event: content)
-                            .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
-                        }.listRowBackground(ColorPalette.backgroundColor)
-
-                }.listRowSeparator(.hidden)
+                switch viewModel.statusView{
+                case .ok:
+                    listMyEvent
+                case .error:
+                    ErrorView()
+                case .loading:
+                    LoadView()
+                case .empty:
+                    CapybaraEmptyView()
+                }
+                
             }
-            .listStyle(.plain)
+            .navigationTitle("Eventos")
+            .navigationBarTitleColor(ColorPalette.primaryText)
             .backgroundColor(ColorPalette.backgroundColor)
+            .task{
+                await viewModel.fetchEvents()
+            }.refreshable {
+                await viewModel.fetchEvents()
+            }
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: viewModel.goToRegister, label: {
@@ -66,6 +68,27 @@ struct MyEventsView: View {
          .searchable(text: $viewModel.searchFieldText)
          .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
          
+    }
+    
+    
+    @ViewBuilder
+    var listMyEvent: some View{
+        List {
+            ForEach(viewModel.filterSegmentedEvents){ content in
+                ZStack {
+                    NavigationLink(destination: {
+                        EventInfoView(viewModel: EventInfoViewModel(event: content))
+                    }, label: {
+                        EmptyView()
+                    })
+                    EventCardView(event: content)
+                        .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
+                }.listRowBackground(ColorPalette.backgroundColor)
+                
+            }.listRowSeparator(.hidden)
+        }
+        .listStyle(.plain)
+        .backgroundColor(ColorPalette.backgroundColor)
     }
     
 }
