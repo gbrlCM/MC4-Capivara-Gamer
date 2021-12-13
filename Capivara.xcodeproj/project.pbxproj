@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
 		0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666E8BB27595C4A002BA436 /* MyEventsTab.swift */; };
+		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
 		06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */; };
 		06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
@@ -89,6 +89,7 @@
 		E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */; };
 		E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7C275EA5E400332B23 /* EventInfoView.swift */; };
 		E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
+		E9ADDEC22767B50C003FFF02 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADDEC12767B50C003FFF02 /* ImagePicker.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
 		E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */; };
@@ -113,11 +114,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06AAB541275E9BCC00B36C97 /* ButtonShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShare.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
 		0666E8BB27595C4A002BA436 /* MyEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsTab.swift; sourceTree = "<group>"; };
+		06AAB541275E9BCC00B36C97 /* ButtonShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShare.swift; sourceTree = "<group>"; };
 		06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picker+SegmentControlColer.swift"; sourceTree = "<group>"; };
 		06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewModel.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -198,6 +199,7 @@
 		E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
 		E957FC7C275EA5E400332B23 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
 		E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoViewModel.swift; sourceTree = "<group>"; };
+		E9ADDEC12767B50C003FFF02 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		E9C622C527580663002C5615 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedEventsView.swift; sourceTree = "<group>"; };
@@ -576,6 +578,7 @@
 				5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */,
 				5B634B28276001D400C7AE92 /* CapybaraStepper.swift */,
 				06661EB8275E7604006E6FB3 /* RoundedCorner.swift */,
+				E9ADDEC12767B50C003FFF02 /* ImagePicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -891,6 +894,7 @@
 				E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */,
 				5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */,
 				E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */,
+				E9ADDEC22767B50C003FFF02 /* ImagePicker.swift in Sources */,
 				5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */,
 				E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */,
 				5B898030274EC67500CE92BF /* Address.swift in Sources */,
