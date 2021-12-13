@@ -13,37 +13,38 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             VStack {
-            switch viewModel.statusView{
-            case .ok:
-                okView
-            case .error:
-                ErrorView()
-            case .loading:
-                LoadView()
-            case .empty:
-                EmptyView()
-            }
-        } .backgroundColor(ColorPalette.backgroundColor)
-            .navigationTitle("Explorar")
-            .navigationBarTitleColor(ColorPalette.primaryText)
-        }.task {
-            await viewModel.fetchInitialData()
+                switch viewModel.statusView{
+                case .ok:
+                    okView
+                case .error:
+                    ErrorView()
+                case .loading:
+                    LoadView()
+                case .empty:
+                    CapybaraEmptyView()
+                }
+            } .backgroundColor(ColorPalette.backgroundColor)
+                .navigationTitle("Explorar")
+                .navigationBarTitleColor(ColorPalette.primaryText)
+                .task {
+                    await viewModel.fetchInitialData()
+                }
         }
     }
     
     @ViewBuilder
     var okView: some View {
         
-            searchBar
-            
-            if !viewModel.searchFieldText.isEmpty {
-                searched
-            }
-            
-            else {
-                feed
-            }
-
+        searchBar
+        
+        if !viewModel.searchFieldText.isEmpty {
+            searched
+        }
+        
+        else {
+            feed
+        }
+        
     }
     
     @ViewBuilder
@@ -80,7 +81,7 @@ struct SearchView: View {
                         .padding(.trailing, 12)
                 }
             }
-        }.padding(.top, -20)
+        }
     }
     
     @ViewBuilder

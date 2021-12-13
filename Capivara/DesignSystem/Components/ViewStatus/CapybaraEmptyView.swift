@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EmptyView: View {
+struct CapybaraEmptyView: View {
     var body: some View {
         VStack{
             Spacer()

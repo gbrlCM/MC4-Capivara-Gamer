@@ -27,13 +27,13 @@ struct MyEventsView: View {
                 .padding()
                 switch viewModel.statusView{
                 case .ok:
-                    listaMyEvent
+                    listMyEvent
                 case .error:
                     ErrorView()
                 case .loading:
                     LoadView()
                 case .empty:
-                    EmptyView()
+                    CapybaraEmptyView()
                 }
                 
             }
@@ -41,10 +41,9 @@ struct MyEventsView: View {
             .navigationBarTitleColor(ColorPalette.primaryText)
             .backgroundColor(ColorPalette.backgroundColor)
             .task{
-                do {
-                    try await viewModel.fetchEvents()
-                } catch  {
-                }
+                await viewModel.fetchEvents()
+            }.refreshable {
+                await viewModel.fetchEvents()
             }
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -60,7 +59,7 @@ struct MyEventsView: View {
     
     
     @ViewBuilder
-    var listaMyEvent: some View{
+    var listMyEvent: some View{
         List {
             ForEach(viewModel.filterSegmentedEvents){ content in
                 ZStack {

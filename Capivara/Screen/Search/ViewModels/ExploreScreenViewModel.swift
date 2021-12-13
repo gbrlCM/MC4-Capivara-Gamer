@@ -39,12 +39,12 @@ final class ExploreScreenViewModel: ObservableObject {
 
     @MainActor
     func fetchInitialData() async {
+        statusView = .loading
         do {
             games = try await gameRepository.fetchAllGames()
             allEvents = try await eventRepository.fetchAllEvents()
             statusView = StatusView.ok
         } catch {
-            fatalError(error.localizedDescription)
             statusView = StatusView.error
         }
     }

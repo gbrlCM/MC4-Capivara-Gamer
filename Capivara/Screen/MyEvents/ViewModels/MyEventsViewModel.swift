@@ -35,8 +35,14 @@ final class MyEventsViewModel: ObservableObject{
     
     
     
-    func fetchEvents() async throws{
-        events = try await repository.fetchUserEvents(of: user)
+    func fetchEvents() async {
+        statusView = .loading
+        do {
+            events = try await repository.fetchUserEvents(of: user)
+            statusView = .ok
+        } catch {
+            statusView = .error
+        }
     }
     
     var filterSegmentedEvents: [Event] {

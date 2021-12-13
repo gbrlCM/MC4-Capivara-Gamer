@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0625A5202763EEA600176FD0 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A51F2763EEA600176FD0 /* StatusView.swift */; };
 		0625A5232767C08700176FD0 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5222767C08700176FD0 /* ErrorView.swift */; };
-		0625A5252767C14700176FD0 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5242767C14700176FD0 /* EmptyView.swift */; };
+		0625A5252767C14700176FD0 /* CapybaraEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5242767C14700176FD0 /* CapybaraEmptyView.swift */; };
 		0625A5272767C22400176FD0 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5262767C22400176FD0 /* LoadView.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
@@ -118,7 +118,7 @@
 /* Begin PBXFileReference section */
 		0625A51F2763EEA600176FD0 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		0625A5222767C08700176FD0 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		0625A5242767C14700176FD0 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		0625A5242767C14700176FD0 /* CapybaraEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraEmptyView.swift; sourceTree = "<group>"; };
 		0625A5262767C22400176FD0 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				0625A5222767C08700176FD0 /* ErrorView.swift */,
-				0625A5242767C14700176FD0 /* EmptyView.swift */,
+				0625A5242767C14700176FD0 /* CapybaraEmptyView.swift */,
 				0625A5262767C22400176FD0 /* LoadView.swift */,
 			);
 			path = ViewStatus;
@@ -904,7 +904,7 @@
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
 				5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */,
 				06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */,
-				0625A5252767C14700176FD0 /* EmptyView.swift in Sources */,
+				0625A5252767C14700176FD0 /* CapybaraEmptyView.swift in Sources */,
 				E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */,
 				E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */,
 				E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */,
