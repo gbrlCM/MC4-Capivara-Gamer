@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum StatusView: String, CaseIterable {
-    case erro = "Erro"
-    case loading = "Loading"
-    case empy = "Empy"
-    case Ok = "Ok"
+enum StatusView {
+    case error
+    case loading
+    case empty
+    case ok
 }

@@ -13,6 +13,7 @@ final class MyEventsViewModel: ObservableObject{
     @Published var user: User
     @Published var searchFieldText: String
     @Published var filterSegmented: MyEventsTab = .all
+    @Published var statusView: StatusView = .loading
     
     
     init(repository: EventRepositoryProtocol, user: User){

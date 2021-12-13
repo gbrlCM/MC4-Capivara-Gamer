@@ -13,21 +13,37 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             VStack {
-                searchBar
-                
-                if !viewModel.searchFieldText.isEmpty {
-                    searched
-                }
-                
-                else {
-                    feed
-                }
-            } .backgroundColor(ColorPalette.backgroundColor)
-                .navigationTitle("Explorar")
-                .navigationBarTitleColor(ColorPalette.primaryText)
+            switch viewModel.statusView{
+            case .ok:
+                okView
+            case .error:
+                ErrorView()
+            case .loading:
+                LoadView()
+            case .empty:
+                EmptyView()
+            }
+        } .backgroundColor(ColorPalette.backgroundColor)
+            .navigationTitle("Explorar")
+            .navigationBarTitleColor(ColorPalette.primaryText)
         }.task {
             await viewModel.fetchInitialData()
         }
+    }
+    
+    @ViewBuilder
+    var okView: some View {
+        
+            searchBar
+            
+            if !viewModel.searchFieldText.isEmpty {
+                searched
+            }
+            
+            else {
+                feed
+            }
+
     }
     
     @ViewBuilder

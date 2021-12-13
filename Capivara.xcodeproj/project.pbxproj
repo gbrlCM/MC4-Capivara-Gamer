@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0625A5202763EEA600176FD0 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A51F2763EEA600176FD0 /* StatusView.swift */; };
+		0625A5232767C08700176FD0 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5222767C08700176FD0 /* ErrorView.swift */; };
+		0625A5252767C14700176FD0 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5242767C14700176FD0 /* EmptyView.swift */; };
+		0625A5272767C22400176FD0 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5262767C22400176FD0 /* LoadView.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
@@ -114,6 +117,9 @@
 
 /* Begin PBXFileReference section */
 		0625A51F2763EEA600176FD0 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		0625A5222767C08700176FD0 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		0625A5242767C14700176FD0 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		0625A5262767C22400176FD0 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
@@ -229,6 +235,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0625A5212767C04D00176FD0 /* ViewStatus */ = {
+			isa = PBXGroup;
+			children = (
+				0625A5222767C08700176FD0 /* ErrorView.swift */,
+				0625A5242767C14700176FD0 /* EmptyView.swift */,
+				0625A5262767C22400176FD0 /* LoadView.swift */,
+			);
+			path = ViewStatus;
+			sourceTree = "<group>";
+		};
 		0666E8B927595BEA002BA436 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,6 +585,7 @@
 		5BCD028E2752FF6000B13D0C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0625A5212767C04D00176FD0 /* ViewStatus */,
 				5BCD02912752FFA800B13D0C /* LoadingCircle.swift */,
 				5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */,
 				5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */,
@@ -887,6 +904,7 @@
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
 				5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */,
 				06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */,
+				0625A5252767C14700176FD0 /* EmptyView.swift in Sources */,
 				E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */,
 				E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */,
 				E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */,
@@ -909,10 +927,12 @@
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
 				5BC30FF327588ABD00800DEB /* RegexValidator.swift in Sources */,
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
+				0625A5272767C22400176FD0 /* LoadView.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
 				06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
+				0625A5232767C08700176FD0 /* ErrorView.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
 				5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,

@@ -15,6 +15,7 @@ final class ExploreScreenViewModel: ObservableObject {
     private var gameRepository: GameRepositoryProtocol
     @Published var searchFieldText: String
     @Published var games: [Game]
+    @Published var statusView: StatusView = .loading
     
     init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol, user: User) {
         self.user = user
@@ -41,8 +42,10 @@ final class ExploreScreenViewModel: ObservableObject {
         do {
             games = try await gameRepository.fetchAllGames()
             allEvents = try await eventRepository.fetchAllEvents()
+            statusView = StatusView.ok
         } catch {
             fatalError(error.localizedDescription)
+            statusView = StatusView.error
         }
     }
     
