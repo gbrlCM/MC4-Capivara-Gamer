@@ -1,4 +1,3 @@
-//
 //  TimelineEntry.swift
 //  Capivara
 //

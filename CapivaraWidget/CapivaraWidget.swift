@@ -5,8 +5,8 @@
 //  Created by Thallis Sousa on 09/12/21.
 //
 
-import WidgetKit
 import SwiftUI
+import WidgetKit
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -48,14 +48,16 @@ struct CapivaraWidgetEntryView : View {
 
 @main
 struct CapivaraWidget: Widget {
-    let kind: String = "CapivaraWidget"
+    let kind: String = "Gamerbara"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             CapivaraWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Gamerbara")
+        .description("Acesse rapidamente os seus próximos eventos.")
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .systemExtraLarge])
+
     }
 }
 

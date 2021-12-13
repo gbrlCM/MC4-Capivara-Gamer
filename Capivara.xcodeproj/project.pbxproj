@@ -13,21 +13,76 @@
 		0627E76B2762800C00F2D6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0627E76A2762800C00F2D6DA /* Assets.xcassets */; };
 		0627E76F2762800C00F2D6DA /* CapivaraWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0627E7612762800A00F2D6DA /* CapivaraWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0627E779276280E000F2D6DA /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC327516F3C009F5D5A /* ColorPalette.swift */; };
-		0627E77B2762829300F2D6DA /* CapivaraEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77A2762829300F2D6DA /* CapivaraEntry.swift */; };
-		0627E77E27628F4B00F2D6DA /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */; };
 		0627E77F2762914C00F2D6DA /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */; };
-		0627E78527629DCC00F2D6DA /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidgetView.swift */; };
 		0627E78627629EAD00F2D6DA /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidgetView.swift */; };
 		0627E7882762A5DD00F2D6DA /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */; };
-		0627E78C2762C72B00F2D6DA /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78B2762C72B00F2D6DA /* LargeWidgetView.swift */; };
-		0627E78D2762C77500F2D6DA /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78B2762C72B00F2D6DA /* LargeWidgetView.swift */; };
-		0627E78F2763D31D00F2D6DA /* CapivaraControlWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78E2763D31D00F2D6DA /* CapivaraControlWidget.swift */; };
-		0627E7902763EB4A00F2D6DA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
-		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
+		063CE90B27680209003DF623 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78427629DCC00F2D6DA /* MediumWidgetView.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
 		0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666E8BB27595C4A002BA436 /* MyEventsTab.swift */; };
+		0667BB1B2767C389001D7E64 /* ExtraLargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D079832767BF8300F18007 /* ExtraLargeWidgetView.swift */; };
+		0667BB1C2767C3D0001D7E64 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78B2762C72B00F2D6DA /* LargeWidgetView.swift */; };
+		0667BB1E2767C51C001D7E64 /* CapivaraEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E77A2762829300F2D6DA /* CapivaraEntry.swift */; };
+		0667BB1F2767C770001D7E64 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		0667BB202767DAB3001D7E64 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898033274EC6ED00CE92BF /* Game.swift */; };
+		0667BB212767DAD1001D7E64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898031274EC6A600CE92BF /* User.swift */; };
+		0667BB222767DADC001D7E64 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89802F274EC67500CE92BF /* Address.swift */; };
+		0667BB232767DAEC001D7E64 /* MyEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BC2274C053100BB90F1 /* MyEventsView.swift */; };
+		0667BB242767DB35001D7E64 /* EventMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898038274ECAA200CE92BF /* EventMock.swift */; };
+		0667BB252767DB40001D7E64 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D162755385C00008B7E /* Presentable.swift */; };
+		0667BB262767DB46001D7E64 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
+		0667BB272767DB4D001D7E64 /* RegisterEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ACB27517270009F5D5A /* RegisterEventViewModel.swift */; };
+		0667BB282767DB59001D7E64 /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E642D32762939300EAF695 /* GameRepository.swift */; };
+		0667BB292767DBA7001D7E64 /* RegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ABE27503057009F5D5A /* RegisterEventView.swift */; };
+		0667BB2A2767DBAD001D7E64 /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA8274FEDFF009F5D5A /* UserMock.swift */; };
+		0667BB2B2767DBB1001D7E64 /* GameRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB4275009FA009F5D5A /* GameRepositoryProtocol.swift */; };
+		0667BB2C2767DBB8001D7E64 /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB827500A39009F5D5A /* EventRepository.swift */; };
+		0667BB2D2767DBC6001D7E64 /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
+		0667BB2E2767DBCB001D7E64 /* MyEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666E8BB27595C4A002BA436 /* MyEventsTab.swift */; };
+		0667BB2F2767DBD4001D7E64 /* View+NavBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC027516796009F5D5A /* View+NavBarTitle.swift */; };
+		0667BB302767DBDA001D7E64 /* View+TabBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCD274C08B000BB90F1 /* View+TabBarLabel.swift */; };
+		0667BB312767DBE1001D7E64 /* EventRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB22750074B009F5D5A /* EventRepositoryMock.swift */; };
+		0667BB322767DBF2001D7E64 /* GameRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ACD275180F3009F5D5A /* GameRepositoryMock.swift */; };
+		0667BB342767DBFA001D7E64 /* EventRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAD274FEE94009F5D5A /* EventRepositoryProtocol.swift */; };
+		0667BB352767DC05001D7E64 /* GameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA6274FEDEE009F5D5A /* GameMock.swift */; };
+		0667BB362767DC09001D7E64 /* RegisterEventTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC72751716D009F5D5A /* RegisterEventTab.swift */; };
+		0667BB372767DC11001D7E64 /* AddressMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAA274FEE0E009F5D5A /* AddressMock.swift */; };
+		0667BB382767DC27001D7E64 /* GameRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC9275171B1009F5D5A /* GameRegisterEventView.swift */; };
+		0667BB392767DC2D001D7E64 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7C275EA5E400332B23 /* EventInfoView.swift */; };
+		0667BB3A2767DC35001D7E64 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
+		0667BB3B2767DC4F001D7E64 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
+		0667BB3C2767DC5C001D7E64 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */; };
+		0667BB3D2767DC63001D7E64 /* RulesRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */; };
+		0667BB3E2767DC6B001D7E64 /* CapybaraAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */; };
+		0667BB3F2767DC72001D7E64 /* TournamentFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */; };
+		0667BB402767DC77001D7E64 /* GeneralRegisterEventGameSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D12275536FF00008B7E /* GeneralRegisterEventGameSection.swift */; };
+		0667BB412767DC91001D7E64 /* PlatformSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D1C275581A500008B7E /* PlatformSection.swift */; };
+		0667BB422767DC98001D7E64 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
+		0667BB432767DCB7001D7E64 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
+		0667BB442767DCC9001D7E64 /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02912752FFA800B13D0C /* LoadingCircle.swift */; };
+		0667BB452767DCCF001D7E64 /* SingleSelectRegisterEventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */; };
+		0667BB462767DEA0001D7E64 /* RegisterEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D18275568F800008B7E /* RegisterEventButton.swift */; };
+		0667BB472767DEA6001D7E64 /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */; };
+		0667BB482767DEAB001D7E64 /* EventTypeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D1E275581C700008B7E /* EventTypeSection.swift */; };
+		0667BB492767DEBF001D7E64 /* RegisterEventGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */; };
+		0667BB4A2767DEC8001D7E64 /* MatchFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */; };
+		0667BB4B2767DED4001D7E64 /* ContactTypeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D20275581F500008B7E /* ContactTypeSection.swift */; };
+		0667BB4C2767DEDB001D7E64 /* TeamBuildingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */; };
+		0667BB4D2767DEDF001D7E64 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D222755821500008B7E /* ContainerView.swift */; };
+		0667BB4E2767DEF2001D7E64 /* LinkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF427588D8F00800DEB /* LinkSection.swift */; };
+		0667BB4F2767DEF7001D7E64 /* LinkSectionViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */; };
+		0667BB502767DF03001D7E64 /* LinkSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF627588DB600800DEB /* LinkSectionViewModel.swift */; };
+		0667BB512767DF0A001D7E64 /* StreamSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8B275A8CC100D253AB /* StreamSection.swift */; };
+		0667BB522767DF10001D7E64 /* CapybaraStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B28276001D400C7AE92 /* CapybaraStepper.swift */; };
+		0667BB532767DF1E001D7E64 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FEB2758798F00800DEB /* Validator.swift */; };
+		0667BB542767DF25001D7E64 /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF227588ABD00800DEB /* RegexValidator.swift */; };
+		0667BB552767DF34001D7E64 /* LinkValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */; };
+		0667BB562767DF3A001D7E64 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4BFAA275AF117009D75E6 /* Regex.swift */; };
+		0667BB572767DF55001D7E64 /* Picker+SegmentControlColer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */; };
+		0667BB582767DF5F001D7E64 /* CapybaraToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */; };
+		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
+		06D079862767C01C00F18007 /* CapivaraControlWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627E78E2763D31D00F2D6DA /* CapivaraControlWidget.swift */; };
 		06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */; };
 		06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
@@ -161,11 +216,12 @@
 		0627E78427629DCC00F2D6DA /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
 		0627E78B2762C72B00F2D6DA /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
 		0627E78E2763D31D00F2D6DA /* CapivaraControlWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraControlWidget.swift; sourceTree = "<group>"; };
-		06AAB541275E9BCC00B36C97 /* ButtonShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShare.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
 		0666E8BB27595C4A002BA436 /* MyEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsTab.swift; sourceTree = "<group>"; };
+		06AAB541275E9BCC00B36C97 /* ButtonShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShare.swift; sourceTree = "<group>"; };
+		06D079832767BF8300F18007 /* ExtraLargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraLargeWidgetView.swift; sourceTree = "<group>"; };
 		06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picker+SegmentControlColer.swift"; sourceTree = "<group>"; };
 		06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewModel.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -312,6 +368,7 @@
 				0627E77D27628F4B00F2D6DA /* SmallWidgetView.swift */,
 				0627E78427629DCC00F2D6DA /* MediumWidgetView.swift */,
 				0627E78B2762C72B00F2D6DA /* LargeWidgetView.swift */,
+				06D079832767BF8300F18007 /* ExtraLargeWidgetView.swift */,
 				0627E78E2763D31D00F2D6DA /* CapivaraControlWidget.swift */,
 				0627E77A2762829300F2D6DA /* CapivaraEntry.swift */,
 			);
@@ -969,13 +1026,72 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0667BB3F2767DC72001D7E64 /* TournamentFormatSection.swift in Sources */,
 				0627E7692762800A00F2D6DA /* CapivaraWidget.swift in Sources */,
-				0627E78D2762C77500F2D6DA /* LargeWidgetView.swift in Sources */,
+				0667BB512767DF0A001D7E64 /* StreamSection.swift in Sources */,
+				0667BB2F2767DBD4001D7E64 /* View+NavBarTitle.swift in Sources */,
+				0667BB252767DB40001D7E64 /* Presentable.swift in Sources */,
+				0667BB2D2767DBC6001D7E64 /* GeneralRegisterEvent.swift in Sources */,
+				0667BB372767DC11001D7E64 /* AddressMock.swift in Sources */,
+				0667BB272767DB4D001D7E64 /* RegisterEventViewModel.swift in Sources */,
+				0667BB2B2767DBB1001D7E64 /* GameRepositoryProtocol.swift in Sources */,
+				0667BB392767DC2D001D7E64 /* EventInfoView.swift in Sources */,
+				0667BB2C2767DBB8001D7E64 /* EventRepository.swift in Sources */,
+				0667BB242767DB35001D7E64 /* EventMock.swift in Sources */,
+				0667BB1B2767C389001D7E64 /* ExtraLargeWidgetView.swift in Sources */,
+				0667BB432767DCB7001D7E64 /* RoundedCorner.swift in Sources */,
+				0667BB222767DADC001D7E64 /* Address.swift in Sources */,
+				0667BB1E2767C51C001D7E64 /* CapivaraEntry.swift in Sources */,
 				0627E77F2762914C00F2D6DA /* SmallWidgetView.swift in Sources */,
+				0667BB302767DBDA001D7E64 /* View+TabBarLabel.swift in Sources */,
+				0667BB492767DEBF001D7E64 /* RegisterEventGameButton.swift in Sources */,
+				0667BB3D2767DC63001D7E64 /* RulesRegisterEventView.swift in Sources */,
+				0667BB1F2767C770001D7E64 /* Event.swift in Sources */,
+				0667BB4D2767DEDF001D7E64 /* ContainerView.swift in Sources */,
+				0667BB1C2767C3D0001D7E64 /* LargeWidgetView.swift in Sources */,
+				0667BB362767DC09001D7E64 /* RegisterEventTab.swift in Sources */,
+				0667BB3C2767DC5C001D7E64 /* EventInfoTableViewCell.swift in Sources */,
+				0667BB442767DCC9001D7E64 /* LoadingCircle.swift in Sources */,
+				0667BB462767DEA0001D7E64 /* RegisterEventButton.swift in Sources */,
+				0667BB322767DBF2001D7E64 /* GameRepositoryMock.swift in Sources */,
+				0667BB202767DAB3001D7E64 /* Game.swift in Sources */,
+				0667BB262767DB46001D7E64 /* MyEventsViewModel.swift in Sources */,
+				0667BB292767DBA7001D7E64 /* RegisterEventView.swift in Sources */,
 				0627E78627629EAD00F2D6DA /* MediumWidgetView.swift in Sources */,
+				0667BB572767DF55001D7E64 /* Picker+SegmentControlColer.swift in Sources */,
+				0667BB4A2767DEC8001D7E64 /* MatchFormatSection.swift in Sources */,
+				0667BB562767DF3A001D7E64 /* Regex.swift in Sources */,
+				0667BB502767DF03001D7E64 /* LinkSectionViewModel.swift in Sources */,
+				0667BB542767DF25001D7E64 /* RegexValidator.swift in Sources */,
+				0667BB472767DEA6001D7E64 /* HorizontalScrollView.swift in Sources */,
+				0667BB212767DAD1001D7E64 /* User.swift in Sources */,
+				06D079862767C01C00F18007 /* CapivaraControlWidget.swift in Sources */,
+				0667BB482767DEAB001D7E64 /* EventTypeSection.swift in Sources */,
+				0667BB352767DC05001D7E64 /* GameMock.swift in Sources */,
+				0667BB3B2767DC4F001D7E64 /* EventCardView.swift in Sources */,
+				0667BB402767DC77001D7E64 /* GeneralRegisterEventGameSection.swift in Sources */,
+				0667BB2E2767DBCB001D7E64 /* MyEventsTab.swift in Sources */,
+				0667BB4B2767DED4001D7E64 /* ContactTypeSection.swift in Sources */,
 				0627E779276280E000F2D6DA /* ColorPalette.swift in Sources */,
-				0627E7902763EB4A00F2D6DA /* Event.swift in Sources */,
+				0667BB552767DF34001D7E64 /* LinkValidatedTextField.swift in Sources */,
+				0667BB532767DF1E001D7E64 /* Validator.swift in Sources */,
+				0667BB452767DCCF001D7E64 /* SingleSelectRegisterEventSection.swift in Sources */,
+				0667BB3E2767DC6B001D7E64 /* CapybaraAsyncImage.swift in Sources */,
+				0667BB522767DF10001D7E64 /* CapybaraStepper.swift in Sources */,
+				0667BB4F2767DEF7001D7E64 /* LinkSectionViewModelFactory.swift in Sources */,
+				0667BB412767DC91001D7E64 /* PlatformSection.swift in Sources */,
+				0667BB342767DBFA001D7E64 /* EventRepositoryProtocol.swift in Sources */,
 				0627E7882762A5DD00F2D6DA /* View+BackgroundColor.swift in Sources */,
+				0667BB4E2767DEF2001D7E64 /* LinkSection.swift in Sources */,
+				0667BB422767DC98001D7E64 /* View+cornerRadius.swift in Sources */,
+				0667BB582767DF5F001D7E64 /* CapybaraToggle.swift in Sources */,
+				0667BB312767DBE1001D7E64 /* EventRepositoryMock.swift in Sources */,
+				0667BB2A2767DBAD001D7E64 /* UserMock.swift in Sources */,
+				0667BB232767DAEC001D7E64 /* MyEventsView.swift in Sources */,
+				0667BB4C2767DEDB001D7E64 /* TeamBuildingSection.swift in Sources */,
+				0667BB3A2767DC35001D7E64 /* EventInfoViewModel.swift in Sources */,
+				0667BB382767DC27001D7E64 /* GameRegisterEventView.swift in Sources */,
+				0667BB282767DB59001D7E64 /* GameRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,7 +1101,6 @@
 			files = (
 				5B9D6D21275581F500008B7E /* ContactTypeSection.swift in Sources */,
 				5B832AC127516796009F5D5A /* View+NavBarTitle.swift in Sources */,
-				0627E78F2763D31D00F2D6DA /* CapivaraControlWidget.swift in Sources */,
 				5B832AAE274FEE94009F5D5A /* EventRepositoryProtocol.swift in Sources */,
 				5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */,
 				5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */,
@@ -995,6 +1110,7 @@
 				E9E642D42762939300EAF695 /* GameRepository.swift in Sources */,
 				5B0D3BC6274C054600BB90F1 /* UserProfileView.swift in Sources */,
 				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
+				063CE90B27680209003DF623 /* MediumWidgetView.swift in Sources */,
 				5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */,
 				5BC30FF727588DB600800DEB /* LinkSectionViewModel.swift in Sources */,
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
@@ -1048,7 +1164,6 @@
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
-				0627E78527629DCC00F2D6DA /* MediumWidgetView.swift in Sources */,
 				06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
@@ -1056,11 +1171,8 @@
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
 				5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
-				0627E77E27628F4B00F2D6DA /* SmallWidgetView.swift in Sources */,
-				0627E77B2762829300F2D6DA /* CapivaraEntry.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
-				0627E78C2762C72B00F2D6DA /* LargeWidgetView.swift in Sources */,
 				E94E9AF12763E447005533D3 /* EditProfileViewModel.swift in Sources */,
 				E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
@@ -1119,9 +1231,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CapivaraWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CapivaraWidget;
@@ -1146,9 +1260,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CapivaraWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CapivaraWidget;
@@ -1290,12 +1406,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
 				DEVELOPMENT_TEAM = UZ6JTAUWH8;
 				ENABLE_PREVIEWS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1321,12 +1439,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
 				DEVELOPMENT_TEAM = UZ6JTAUWH8;
 				ENABLE_PREVIEWS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1351,9 +1471,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1376,9 +1498,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1400,9 +1524,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1423,9 +1549,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZ6JTAUWH8;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

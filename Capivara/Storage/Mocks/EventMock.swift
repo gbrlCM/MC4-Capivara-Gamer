@@ -30,7 +30,7 @@ enum EventMock {
               contactType: .chatOnly,
               streamingType: nil,
               streamingLink: nil,
-              gamePlatform: .mobile
+              gamePlatform: .playstation
         )
     }
     

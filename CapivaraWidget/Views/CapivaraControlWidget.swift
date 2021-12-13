@@ -7,7 +7,7 @@
 
 import SwiftUI
 import WidgetKit
-import CapivaraWidgetExtension
+
 
 struct CapivaraControlWidget: View {
    
@@ -19,20 +19,17 @@ struct CapivaraControlWidget: View {
     var body: some View {
         switch family {
         case .systemSmall:
-            SmallWidgetView(eventTitle: "Evento", date: Date())
+            SmallWidgetView(event: EventMock.event)
         case .systemMedium:
-            MediumWidgetView(eventTitle: "Evento 2", date: Date(), widgetBackground: ColorPalette.backgroundColor)
+            MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
         case .systemLarge:
             LargeWidgetView()
+        case .systemExtraLarge:
+            ExtraLargeWidgetView()
         default:
-            MediumWidgetView(eventTitle: "Evento teste", date: Date(), widgetBackground: ColorPalette.backgroundColor)
+            MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
             
         }    }
 }
 
-//struct SwiftUIView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CapivaraControlWidget(entry: CapivaraEntry)
-//            .previewContext(WidgetPreviewContext(family: .systemLarge))
-//    }
-//}
+

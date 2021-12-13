@@ -10,48 +10,51 @@ import WidgetKit
 
 struct MediumWidgetView: View {
     
-    let eventTitle: String
-    let date: Date
+    let event: Event
     let widgetBackground: Color
     
     var body: some View {
         HStack{
             VStack (alignment: .leading, spacing: 5){
-                Text(event)
+                Text(event.name)
                     .font(.system(size: 14, weight: .bold))
                     .foregroundColor(ColorPalette.primaryText)
-                Text(//////)
+                Text(event.description)
                     .font(.system(size: 12))
                     .foregroundColor(ColorPalette.secondaryText)
-                HStack{
-                    Image(systemName: "logo.playstation")
-                        .font(.system(size: 12))
-                        .foregroundColor(ColorPalette.secondaryText)
-                    Text("PS4")
-                        .font(.system(size: 12))
-                        .foregroundColor(ColorPalette.secondaryText)
-                }
-                
+                event.gamePlatform.label.opacity(0.5).font(.system(size: 8))
+                //tamanho não está mudando
             }
             Spacer()
-            
+
             HStack{
-                Image("Capy")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 120, height: 120)
-                    .cornerRadius(10)
+                if let urlString = event.coverUrl {
+                    AsyncImage(url: URL(string: urlString)) { image in
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 120, height: 120)
+                            .cornerRadius(10)
+                    } placeholder: {
+                        Rectangle().fill(ColorPalette.secondaryBackground)
+                    }.cornerRadius(10)
+                } else {
+                    Image("Capy")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 120, height: 120)
+                        .cornerRadius(10)
+                }
             }
-            
         } .padding()
             .background(widgetBackground)
             .backgroundColor(ColorPalette.backgroundColor)
-            
+        
     }
     
     struct MediumWidgetView_Previews: PreviewProvider {
         static var previews: some View {
-            MediumWidgetView(eventTitle: "Evento mais recente", date: Date(), widgetBackground: ColorPalette.backgroundColor)
+            MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
         }
     }

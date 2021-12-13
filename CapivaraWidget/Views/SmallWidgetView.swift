@@ -10,14 +10,28 @@ import WidgetKit
 
 struct SmallWidgetView: View {
     
-    let eventTitle: String
-    let date: Date
-    
+    let event: Event
+     
     var body: some View {
         ZStack (alignment: .bottomLeading) {
-            Image("Capy")
-                .resizable()
-                .frame(width: 158, height: 158)
+            if let urlString = event.coverUrl {
+                AsyncImage(url: URL(string: urlString)) { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 120, height: 120)
+                        .cornerRadius(10)
+                } placeholder: {
+                    Rectangle().fill(ColorPalette.secondaryBackground)
+                    
+                }
+            } else {
+                Image("Capy")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 120, height: 120)
+                    .cornerRadius(10)
+            }
             VStack{
                 ZStack {
                     Rectangle()
@@ -27,11 +41,11 @@ struct SmallWidgetView: View {
                         .cornerRadius(8)
                     HStack{
                         VStack (alignment: .leading){
-                            Text("Campeonato de Fifa")
+                            Text(event.name)
                                 .padding(.leading, 5)
                                 .font(.system(size: 13, weight: .bold))
                                 .foregroundColor(ColorPalette.primaryText)
-                            Text("10/12/2021 | 18:30")
+                            Text(event.date, style: .date)
                                 .padding(.leading, 5)
                                 .font(.system(size: 8))
                                 .foregroundColor(ColorPalette.secondaryText)
@@ -45,7 +59,7 @@ struct SmallWidgetView: View {
     
     struct SmallWidgetView_Previews: PreviewProvider {
         static var previews: some View {
-            SmallWidgetView(eventTitle: "Evento mais recente", date: Date())
+            SmallWidgetView(event: EventMock.event)
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
         }
     }
