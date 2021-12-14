@@ -14,6 +14,7 @@ final class MyEventsViewModel: ObservableObject{
     @Published var user: User
     @Published var searchFieldText: String
     @Published var filterSegmented: MyEventsTab = .all
+    @Published var statusView: StatusView = .loading
     @Published var isRegisteringEvent: Bool
     
     
@@ -35,8 +36,16 @@ final class MyEventsViewModel: ObservableObject{
         }
     }
     
-    func fetchEvents() async throws{
-        events = try await repository.fetchUserEvents(of: user)
+    
+    
+    func fetchEvents() async {
+        statusView = .loading
+        do {
+            events = try await repository.fetchUserEvents(of: user)
+            statusView = .ok
+        } catch {
+            statusView = .error
+        }
     }
     
     func goToRegister() {
