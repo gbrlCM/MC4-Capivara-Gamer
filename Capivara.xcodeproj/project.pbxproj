@@ -12,6 +12,8 @@
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
 		0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666E8BB27595C4A002BA436 /* MyEventsTab.swift */; };
 		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
+		06DB5433276913B100B1EA9B /* URLSession+Get&Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB5432276913B100B1EA9B /* URLSession+Get&Post.swift */; };
+		06DB54352769140C00B1EA9B /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB54342769140C00B1EA9B /* UserRepository.swift */; };
 		06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */; };
 		06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
@@ -121,6 +123,8 @@
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
 		0666E8BB27595C4A002BA436 /* MyEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsTab.swift; sourceTree = "<group>"; };
 		06AAB541275E9BCC00B36C97 /* ButtonShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShare.swift; sourceTree = "<group>"; };
+		06DB5432276913B100B1EA9B /* URLSession+Get&Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Get&Post.swift"; sourceTree = "<group>"; };
+		06DB54342769140C00B1EA9B /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picker+SegmentControlColer.swift"; sourceTree = "<group>"; };
 		06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewModel.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -370,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0D3BCC274C08A100BB90F1 /* Views */,
+				06DB5432276913B100B1EA9B /* URLSession+Get&Post.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -469,6 +474,7 @@
 			children = (
 				5B832AB827500A39009F5D5A /* EventRepository.swift */,
 				E9E642D32762939300EAF695 /* GameRepository.swift */,
+				06DB54342769140C00B1EA9B /* UserRepository.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -885,6 +891,7 @@
 				5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */,
 				5B634B25275FF88800C7AE92 /* MatchFormatSection.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
+				06DB54352769140C00B1EA9B /* UserRepository.swift in Sources */,
 				5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */,
 				064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */,
 				5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */,
@@ -923,6 +930,7 @@
 				5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */,
 				5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */,
 				5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */,
+				06DB5433276913B100B1EA9B /* URLSession+Get&Post.swift in Sources */,
 				5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */,
 				5B898032274EC6A600CE92BF /* User.swift in Sources */,
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
