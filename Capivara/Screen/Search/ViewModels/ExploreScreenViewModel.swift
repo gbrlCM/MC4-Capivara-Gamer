@@ -15,6 +15,7 @@ final class ExploreScreenViewModel: ObservableObject {
     private var gameRepository: GameRepositoryProtocol
     @Published var searchFieldText: String
     @Published var games: [Game]
+    @Published var event: Event
     @Published var statusView: StatusView = .loading
     
     init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol) {
@@ -24,6 +25,7 @@ final class ExploreScreenViewModel: ObservableObject {
         self.searchFieldText = ""
         self.games = []
         self.gameRepository = gameRepository
+        self.event = EventMock.event
     }
     
     var searchedEvents: [Event] {
@@ -42,13 +44,12 @@ final class ExploreScreenViewModel: ObservableObject {
         do {
             games = try await gameRepository.fetchAllGames()
             allEvents = try await eventRepository.fetchAllEvents()
+            allEvents.sort {
+                $0.date < $1.date
+            }
             statusView = StatusView.ok
         } catch {
             statusView = StatusView.error
         }
-    }
-    
-    func orderEvents() {
-        
     }
 }

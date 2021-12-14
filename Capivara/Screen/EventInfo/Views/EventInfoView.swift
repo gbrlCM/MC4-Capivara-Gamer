@@ -24,7 +24,6 @@ struct EventInfoView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
                     
-                    
                     VStack {
                         Spacer()
                         
@@ -38,19 +37,26 @@ struct EventInfoView: View {
                             
                             Spacer()
                             
-                            Button(action:{}) {
-                                Text("Participar")
-                            }.foregroundColor(ColorPalette.primaryText)
-                                .frame(width: 90, height: 30)
-                                .background(ColorPalette.accent)
-                                .cornerRadius(21)
-                                .padding()
+                            #if APPCLIP
+                                                        
+                            #else
+                                Button(action:{}) {
+                                    Text("Participar")
+                                }.foregroundColor(ColorPalette  .primaryText)
+                                    .frame(width: 90, height:   30)
+                                    .background(ColorPalette    .accent)
+                                    .cornerRadius(21)
+                                    .padding()
+                            #endif
+                            
                         }.background(ColorPalette.backgroundColor.opacity(0.9))
                             .cornerRadius(20, corners: [.topLeft, .topRight])
                     }
                 }
                 
                 HStack {
+                    Spacer()
+                    
                     VStack(alignment: .leading) {
                         HStack {
                             CapybaraAsyncImage(url: URL(string: viewModel.event.game.icon), height: 30, width: 30, cornerRadius: 10)
@@ -66,29 +72,32 @@ struct EventInfoView: View {
                     }.padding()
                         .background(ColorPalette.secondaryBackground)
                         .cornerRadius(10)
-                        .padding()
                     
                     Spacer()
                     
-                    Button(action:{}) {
-                        Image("DiscordRosa")
-                            .resizable()
-                            .frame(width: 30, height: 25)
-                    }.padding()
-                     .background(ColorPalette.accent.opacity(0.4))
-                     .frame(width: 50, height: 50)
-                     .cornerRadius(50)
+                    if let (image, link) = viewModel.comunicationLinkImage {
+                        Link.init(destination: link) {
+                            Image(image)
+                                .resizable()
+                                .frame(width: 30, height: 25)
+                        }.padding()
+                            .background(Circle().fill(ColorPalette.accent.opacity(0.4)))
+                            .frame(width: 44, height: 44)
+                    }
                     
                     Spacer()
                     
-                    Button(action:{}) {
-                        Image("TwitchRosa")
-                            .resizable()
-                            .frame(width: 28, height: 30)
-                    }.padding()
-                     .background(ColorPalette.accent.opacity(0.4))
-                     .frame(width: 50, height: 50)
-                     .cornerRadius(50)
+                    if let (image, link) = viewModel.streamLinkImage {
+                        Link.init(destination: link) {
+                            Image(image)
+                                .resizable()
+                                .scaledToFill()
+                                .padding(.all, 2)
+                                .frame(width: 28, height: 30)
+                        }.padding()
+                            .background(Circle().fill(ColorPalette.accent.opacity(0.4)))
+                            .frame(width: 44, height: 44)
+                    }
                     
                     Spacer()
                 }
@@ -111,22 +120,22 @@ struct EventInfoView: View {
                 LazyVStack {
                     VStack(alignment: .leading) {
                         Group {
-                            EventInfoTableViewCell(title: "Tipo do Evento", info: "\(viewModel.event.eventType)")
+                            EventInfoTableViewCell(title: "Tipo do Evento", info: "\(viewModel.event.eventType.text)")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Formato do Evento", info: "\(viewModel.event.eventFormat)")
+                            EventInfoTableViewCell(title: "Formato do Evento", info: "\(viewModel.event.eventFormat.text)")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Formato da Partida", info: "\(viewModel.event.matchFormat)")
+                            EventInfoTableViewCell(title: "Formato da Partida", info: "\(viewModel.event.matchFormat.text)")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Jogadores", info: "\(viewModel.event.tournamentCapacity) Individualmente")
+                            EventInfoTableViewCell(title: "Jogadores", info: viewModel.teamSizeLabel)
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)

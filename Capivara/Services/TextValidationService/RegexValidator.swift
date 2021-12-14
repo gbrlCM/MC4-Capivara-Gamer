@@ -13,4 +13,8 @@ struct RegexValidator: Validator {
     func validate(text: String) -> Bool {
         NSPredicate(format: "SELF MATCHES %@", regex.rawValue).evaluate(with: text)
     }
+    
+    func validate(text: String, for regex: Regex) -> Bool {
+        NSPredicate(format: "SELF MATCHES %@", regex.rawValue).evaluate(with: text)
+    }
 }

@@ -93,10 +93,44 @@
 		5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */; };
 		E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */; };
 		E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9BA275FD60A0075AE15 /* PopularGame.swift */; };
+		E9324B7B2767D6DC00D02CB7 /* AppClipEventInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9324B7A2767D6DC00D02CB7 /* AppClipEventInfoApp.swift */; };
+		E9324B7D2767D6DC00D02CB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9324B7C2767D6DC00D02CB7 /* ContentView.swift */; };
+		E9324B7F2767D6DE00D02CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9324B7E2767D6DE00D02CB7 /* Assets.xcassets */; };
+		E9324B822767D6DE00D02CB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9324B812767D6DE00D02CB7 /* Preview Assets.xcassets */; };
+		E9324B872767D6DE00D02CB7 /* AppClipEventInfo.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = E9324B782767D6DC00D02CB7 /* AppClipEventInfo.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9324B8C2767D6ED00D02CB7 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7C275EA5E400332B23 /* EventInfoView.swift */; };
+		E9324B8D2767D73600D02CB7 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
+		E9324B8F2767D74D00D02CB7 /* EventMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898038274ECAA200CE92BF /* EventMock.swift */; };
+		E9324B902767D77100D02CB7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		E9324B912767D78100D02CB7 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */; };
+		E9324B922767D78700D02CB7 /* CapybaraAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */; };
+		E9324B932767D79300D02CB7 /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02912752FFA800B13D0C /* LoadingCircle.swift */; };
+		E9324B942767D79900D02CB7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898033274EC6ED00CE92BF /* Game.swift */; };
+		E9324B952767D7A000D02CB7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898031274EC6A600CE92BF /* User.swift */; };
+		E9324B962767D7A700D02CB7 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89802F274EC67500CE92BF /* Address.swift */; };
+		E9324B972767D7BB00D02CB7 /* GameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA6274FEDEE009F5D5A /* GameMock.swift */; };
+		E9324B982767D7C000D02CB7 /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA8274FEDFF009F5D5A /* UserMock.swift */; };
+		E9324B992767D7C600D02CB7 /* AddressMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAA274FEE0E009F5D5A /* AddressMock.swift */; };
+		E9324B9A2767D7DB00D02CB7 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
+		E9324B9B2767D7EA00D02CB7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
+		E9324B9C2767D7FA00D02CB7 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D162755385C00008B7E /* Presentable.swift */; };
+		E9324B9D2767D81200D02CB7 /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */; };
+		E9324B9E2767D82000D02CB7 /* View+NavBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC027516796009F5D5A /* View+NavBarTitle.swift */; };
+		E9324BA02767D9C000D02CB7 /* ColorPaletteAppClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9324B9F2767D9C000D02CB7 /* ColorPaletteAppClip.swift */; };
 		E94E9AF12763E447005533D3 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94E9AF02763E447005533D3 /* EditProfileViewModel.swift */; };
 		E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */; };
 		E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7C275EA5E400332B23 /* EventInfoView.swift */; };
 		E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
+		E9647D8B27690840000EBCE4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BC9274C056900BB90F1 /* SearchView.swift */; };
+		E9647D8C27690843000EBCE4 /* SearchedEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */; };
+		E9647D8D27690847000EBCE4 /* PopularGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9BA275FD60A0075AE15 /* PopularGame.swift */; };
+		E9647D8E2769084B000EBCE4 /* ExploreScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */; };
+		E9647D8F27690867000EBCE4 /* EventRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB22750074B009F5D5A /* EventRepositoryMock.swift */; };
+		E9647D902769086A000EBCE4 /* GameRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ACD275180F3009F5D5A /* GameRepositoryMock.swift */; };
+		E9647D912769087A000EBCE4 /* GameRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB4275009FA009F5D5A /* GameRepositoryProtocol.swift */; };
+		E9647D922769087F000EBCE4 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
+		E9647D932769088A000EBCE4 /* EventRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAD274FEE94009F5D5A /* EventRepositoryProtocol.swift */; };
+		E9647D9427690896000EBCE4 /* View+TabBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCD274C08B000BB90F1 /* View+TabBarLabel.swift */; };
 		E9ADDEC22767B50C003FFF02 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADDEC12767B50C003FFF02 /* ImagePicker.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
@@ -119,7 +153,28 @@
 			remoteGlobalIDString = 5BD88C4E2748415800036C35;
 			remoteInfo = Capivara;
 		};
+		E9324B852767D6DE00D02CB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BD88C472748415800036C35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9324B772767D6DC00D02CB7;
+			remoteInfo = AppClipEventInfo;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9324B882767D6DE00D02CB7 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				E9324B872767D6DE00D02CB7 /* AppClipEventInfo.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0625A51F2763EEA600176FD0 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
@@ -211,6 +266,14 @@
 		5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraToggle.swift; sourceTree = "<group>"; };
 		E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreenViewModel.swift; sourceTree = "<group>"; };
 		E656D9BA275FD60A0075AE15 /* PopularGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularGame.swift; sourceTree = "<group>"; };
+		E9324B782767D6DC00D02CB7 /* AppClipEventInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppClipEventInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9324B7A2767D6DC00D02CB7 /* AppClipEventInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClipEventInfoApp.swift; sourceTree = "<group>"; };
+		E9324B7C2767D6DC00D02CB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E9324B7E2767D6DE00D02CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9324B812767D6DE00D02CB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9324B832767D6DE00D02CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9324B842767D6DE00D02CB7 /* AppClipEventInfo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppClipEventInfo.entitlements; sourceTree = "<group>"; };
+		E9324B9F2767D9C000D02CB7 /* ColorPaletteAppClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteAppClip.swift; sourceTree = "<group>"; };
 		E94E9AF02763E447005533D3 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
 		E957FC7C275EA5E400332B23 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
@@ -238,6 +301,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5BD88C662748415A00036C35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9324B752767D6DC00D02CB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -629,6 +699,7 @@
 				5BD88C512748415800036C35 /* Capivara */,
 				5BD88C622748415A00036C35 /* CapivaraTests */,
 				5BD88C6C2748415A00036C35 /* CapivaraUITests */,
+				E9324B792767D6DC00D02CB7 /* AppClipEventInfo */,
 				5BD88C502748415800036C35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -639,6 +710,7 @@
 				5BD88C4F2748415800036C35 /* CAPY.app */,
 				5BD88C5F2748415A00036C35 /* CapivaraTests.xctest */,
 				5BD88C692748415A00036C35 /* CapivaraUITests.xctest */,
+				E9324B782767D6DC00D02CB7 /* AppClipEventInfo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -708,6 +780,28 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		E9324B792767D6DC00D02CB7 /* AppClipEventInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E9324B7A2767D6DC00D02CB7 /* AppClipEventInfoApp.swift */,
+				E9324B7C2767D6DC00D02CB7 /* ContentView.swift */,
+				E9324B7E2767D6DE00D02CB7 /* Assets.xcassets */,
+				E9324B832767D6DE00D02CB7 /* Info.plist */,
+				E9324B842767D6DE00D02CB7 /* AppClipEventInfo.entitlements */,
+				E9324B802767D6DE00D02CB7 /* Preview Content */,
+				E9324B9F2767D9C000D02CB7 /* ColorPaletteAppClip.swift */,
+			);
+			path = AppClipEventInfo;
+			sourceTree = "<group>";
+		};
+		E9324B802767D6DE00D02CB7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E9324B812767D6DE00D02CB7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		E957FC77275EA53E00332B23 /* EventInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,10 +863,12 @@
 				5BD88C4B2748415800036C35 /* Sources */,
 				5BD88C4C2748415800036C35 /* Frameworks */,
 				5BD88C4D2748415800036C35 /* Resources */,
+				E9324B882767D6DE00D02CB7 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9324B862767D6DE00D02CB7 /* PBXTargetDependency */,
 			);
 			name = Capivara;
 			productName = Capivara;
@@ -815,6 +911,23 @@
 			productReference = 5BD88C692748415A00036C35 /* CapivaraUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E9324B772767D6DC00D02CB7 /* AppClipEventInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9324B8B2767D6DE00D02CB7 /* Build configuration list for PBXNativeTarget "AppClipEventInfo" */;
+			buildPhases = (
+				E9324B742767D6DC00D02CB7 /* Sources */,
+				E9324B752767D6DC00D02CB7 /* Frameworks */,
+				E9324B762767D6DC00D02CB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppClipEventInfo;
+			productName = AppClipEventInfo;
+			productReference = E9324B782767D6DC00D02CB7 /* AppClipEventInfo.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -836,6 +949,9 @@
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 5BD88C4E2748415800036C35;
 					};
+					E9324B772767D6DC00D02CB7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
 				};
 			};
 			buildConfigurationList = 5BD88C4A2748415800036C35 /* Build configuration list for PBXProject "Capivara" */;
@@ -854,6 +970,7 @@
 				5BD88C4E2748415800036C35 /* Capivara */,
 				5BD88C5E2748415A00036C35 /* CapivaraTests */,
 				5BD88C682748415A00036C35 /* CapivaraUITests */,
+				E9324B772767D6DC00D02CB7 /* AppClipEventInfo */,
 			);
 		};
 /* End PBXProject section */
@@ -879,6 +996,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9324B762767D6DC00D02CB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9324B822767D6DE00D02CB7 /* Preview Assets.xcassets in Resources */,
+				E9324B7F2767D6DE00D02CB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,6 +1127,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9324B742767D6DC00D02CB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9324B932767D79300D02CB7 /* LoadingCircle.swift in Sources */,
+				E9324B912767D78100D02CB7 /* EventInfoTableViewCell.swift in Sources */,
+				E9647D9427690896000EBCE4 /* View+TabBarLabel.swift in Sources */,
+				E9324B9D2767D81200D02CB7 /* View+BackgroundColor.swift in Sources */,
+				E9324B962767D7A700D02CB7 /* Address.swift in Sources */,
+				E9324B7D2767D6DC00D02CB7 /* ContentView.swift in Sources */,
+				E9324B8D2767D73600D02CB7 /* EventInfoViewModel.swift in Sources */,
+				E9324B7B2767D6DC00D02CB7 /* AppClipEventInfoApp.swift in Sources */,
+				E9324BA02767D9C000D02CB7 /* ColorPaletteAppClip.swift in Sources */,
+				E9324B942767D79900D02CB7 /* Game.swift in Sources */,
+				E9324B8F2767D74D00D02CB7 /* EventMock.swift in Sources */,
+				E9647D8B27690840000EBCE4 /* SearchView.swift in Sources */,
+				E9647D922769087F000EBCE4 /* EventCardView.swift in Sources */,
+				E9324B982767D7C000D02CB7 /* UserMock.swift in Sources */,
+				E9324B952767D7A000D02CB7 /* User.swift in Sources */,
+				E9324B902767D77100D02CB7 /* Event.swift in Sources */,
+				E9324B9B2767D7EA00D02CB7 /* RoundedCorner.swift in Sources */,
+				E9324B992767D7C600D02CB7 /* AddressMock.swift in Sources */,
+				E9324B972767D7BB00D02CB7 /* GameMock.swift in Sources */,
+				E9647D8D27690847000EBCE4 /* PopularGame.swift in Sources */,
+				E9324B9C2767D7FA00D02CB7 /* Presentable.swift in Sources */,
+				E9647D912769087A000EBCE4 /* GameRepositoryProtocol.swift in Sources */,
+				E9324B922767D78700D02CB7 /* CapybaraAsyncImage.swift in Sources */,
+				E9647D8E2769084B000EBCE4 /* ExploreScreenViewModel.swift in Sources */,
+				E9324B9E2767D82000D02CB7 /* View+NavBarTitle.swift in Sources */,
+				E9647D932769088A000EBCE4 /* EventRepositoryProtocol.swift in Sources */,
+				E9647D902769086A000EBCE4 /* GameRepositoryMock.swift in Sources */,
+				E9647D8F27690867000EBCE4 /* EventRepositoryMock.swift in Sources */,
+				E9324B9A2767D7DB00D02CB7 /* View+cornerRadius.swift in Sources */,
+				E9324B8C2767D6ED00D02CB7 /* EventInfoView.swift in Sources */,
+				E9647D8C27690843000EBCE4 /* SearchedEventsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1013,6 +1177,11 @@
 			isa = PBXTargetDependency;
 			target = 5BD88C4E2748415800036C35 /* Capivara */;
 			targetProxy = 5BD88C6A2748415A00036C35 /* PBXContainerItemProxy */;
+		};
+		E9324B862767D6DE00D02CB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9324B772767D6DC00D02CB7 /* AppClipEventInfo */;
+			targetProxy = E9324B852767D6DE00D02CB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1136,6 +1305,7 @@
 		5BD88C742748415A00036C35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
@@ -1166,6 +1336,7 @@
 		5BD88C752748415A00036C35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
@@ -1289,6 +1460,72 @@
 			};
 			name = Release;
 		};
+		E9324B892767D6DE00D02CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppClipEventInfo/AppClipEventInfo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppClipEventInfo/Preview Content\"";
+				DEVELOPMENT_TEAM = WK7599VNDW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppClipEventInfo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Capivara;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG APPCLIP";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9324B8A2767D6DE00D02CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppClipEventInfo/AppClipEventInfo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppClipEventInfo/Preview Content\"";
+				DEVELOPMENT_TEAM = WK7599VNDW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppClipEventInfo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Capivara;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APPCLIP;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1324,6 +1561,15 @@
 			buildConfigurations = (
 				5BD88C7A2748415A00036C35 /* Debug */,
 				5BD88C7B2748415A00036C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9324B8B2767D6DE00D02CB7 /* Build configuration list for PBXNativeTarget "AppClipEventInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9324B892767D6DE00D02CB7 /* Debug */,
+				E9324B8A2767D6DE00D02CB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
