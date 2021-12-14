@@ -77,8 +77,13 @@ struct SearchView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(viewModel.games) { game in
-                    PopularGame(game: game)
-                        .padding(.trailing, 12)
+                    NavigationLink.init(destination: {
+                        SearchedEventsView(contents: viewModel.allEvents.filter {$0.game == game})
+                            .navigationTitle(game.name)
+                            .navigationBarTitleColor(ColorPalette.primaryText)
+                    }, label: {
+                        PopularGame(game: game)}
+                    ).padding(.trailing, 12)
                 }
             }
         }

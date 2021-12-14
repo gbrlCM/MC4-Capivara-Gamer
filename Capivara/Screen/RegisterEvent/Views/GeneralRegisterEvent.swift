@@ -52,7 +52,6 @@ struct GeneralRegisterEvent: View {
                                subtitle: "Capa que ficará em destaque na pagina do evento.") {
             Button(action: {
                 showSheet = true
-                ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
             }) {
                 ZStack {
                     Rectangle().fill(ColorPalette.secondaryBackground)
