@@ -9,7 +9,7 @@ import Foundation
 
 struct UserRepository: UserRepositoryProtocol {
     func login(_ user: User) async throws -> User {
-        UserMock.gamerCapibara
+        return UserMock.gamerCapibara
     }
     
     func retrieveUser(userId: String) async throws -> User {

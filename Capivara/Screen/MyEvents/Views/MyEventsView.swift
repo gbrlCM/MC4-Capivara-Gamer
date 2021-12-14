@@ -58,9 +58,7 @@ struct MyEventsView: View {
                     .backgroundColor(ColorPalette.backgroundColor)
                     } else {
                     VStack {
-                        Spacer()
                         LoadingCircle()
-                        Spacer()
                     }.navigationTitle("Eventos")
                     .navigationBarTitleColor(ColorPalette.primaryText)
                     .backgroundColor(ColorPalette.backgroundColor)
@@ -110,4 +108,3 @@ struct MyEventsView_Previews: PreviewProvider {
         }
     }
 }
-
