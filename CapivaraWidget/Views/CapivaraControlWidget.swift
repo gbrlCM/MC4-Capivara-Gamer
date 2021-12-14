@@ -17,15 +17,15 @@ struct CapivaraControlWidget: View {
     var body: some View {
         switch family {
         case .systemSmall:
-            SmallWidgetView(event: EventMock.event)
+            SmallWidgetView(event: entry.event)
         case .systemMedium:
-            MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
+            MediumWidgetView(event: entry.event, widgetBackground: ColorPalette.backgroundColor)
         case .systemLarge:
             LargeWidgetView()
         case .systemExtraLarge:
             ExtraLargeWidgetView()
         default:
-            MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
+            MediumWidgetView(event: entry.event, widgetBackground: ColorPalette.backgroundColor)
             
         }
     }

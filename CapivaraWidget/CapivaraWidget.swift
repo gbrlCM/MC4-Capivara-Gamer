@@ -15,17 +15,23 @@ struct Provider: TimelineProvider {
     }
     
     func placeholder(in context: Context) -> CapivaraEntry {
-        CapivaraEntry(date: Date(), event: EventMock.event)
+        var event = EventMock.event
+        event.name = "Pudim"
+        return CapivaraEntry(date: Date(), event: event)
         
     }
     
     func getSnapshot(in context: Context, completion: @escaping (CapivaraEntry) -> ()) {
         Task {
             do {
+                var event = EventMock.event
+                event.name = "Pudim"
                 let events = try await repository.fetchAllEvents()
-                completion(CapivaraEntry(date: Date(), event: events[0]))
+                completion(CapivaraEntry(date: Date(), event: event))
             } catch {
-                completion(CapivaraEntry(date: Date(), event: EventMock.event))
+                var event = EventMock.event
+                event.name = "Pudim3"
+                completion(CapivaraEntry(date: Date(), event: event))
             }
         }
     }
@@ -34,7 +40,10 @@ struct Provider: TimelineProvider {
         Task {
             do {
                 let events = try await repository.fetchAllEvents()
-                let timeline = Timeline(entries: events.map{CapivaraEntry(date: Date(), event: $0)}, policy: .after(Date().addingTimeInterval(21600)))
+//                let timeline = Timeline(entries: events.map{CapivaraEntry(date: Date(), event: $0)}, policy: .after(Date().addingTimeInterval(21600)))
+                var event = EventMock.event
+                event.name = "Pudim8"
+                let timeline = Timeline(entries: [CapivaraEntry(date: .now, event: event)], policy: .after(Date().addingTimeInterval(21600)))
                 completion(timeline)
             } catch {
                 
@@ -66,7 +75,7 @@ struct CapivaraWidget: Widget {
     
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider(repository: repository)) { entry in
-            CapivaraWidgetEntryView(entry: entry)
+            CapivaraControlWidget(entry: entry)
         }
         .configurationDisplayName("Próximos eventos")
         .description("Acesse rapidamente as suas próximas partidas.")

@@ -35,7 +35,7 @@ struct SmallWidgetView: View {
                 ZStack {
                     Rectangle()
                         .fill(Color.black)
-                        .frame(width: .infinity , height: 50, alignment: .center)
+                        .frame(height: 50)
                         .opacity(0.8)
                         .cornerRadius(8)
                     HStack{

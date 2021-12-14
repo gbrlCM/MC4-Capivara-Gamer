@@ -9,6 +9,7 @@ import SwiftUI
 import WidgetKit
 
 struct LargeWidgetView: View {
+    let events: [Event]
     var body: some View {
         VStack {
             MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
@@ -20,7 +21,7 @@ struct LargeWidgetView: View {
     
     struct LargeWidgetView_Previews: PreviewProvider {
         static var previews: some View {
-            LargeWidgetView()
+            LargeWidgetView(events: [EventMock.event, EventMock.event])
                 .previewContext(WidgetPreviewContext(family: .systemLarge))
         }
     }
