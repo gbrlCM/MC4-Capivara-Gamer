@@ -58,35 +58,23 @@ struct MyEventsView: View {
                     .backgroundColor(ColorPalette.backgroundColor)
                     } else {
                     VStack {
-                        LoadView()
+                        Spacer()
+                        LoadingCircle()
+                        Spacer()
                     }.navigationTitle("Eventos")
                     .navigationBarTitleColor(ColorPalette.primaryText)
                     .backgroundColor(ColorPalette.backgroundColor)
                 }
-                
-            }  .sheet(isPresented: $viewModel.isRegisteringEvent) {
-                RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
-            }.preferredColorScheme(.dark)
-                .searchable(text: $viewModel.searchFieldText)
-                .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
-                .navigationTitle("Eventos")
-                .navigationBarTitleColor(ColorPalette.primaryText)
-                .backgroundColor(ColorPalette.backgroundColor)
-                .task{
-                    await viewModel.fetchEvents()
-                }.refreshable {
-                    await viewModel.fetchEvents()
-                }
-                .toolbar{
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: viewModel.goToRegister, label:
-                                {
-                            Image(systemName: "plus")
-                        })
-                    }
-                }
+            
+        }.sheet(isPresented: $viewModel.isRegisteringEvent) {
+            RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
+        }.preferredColorScheme(.dark)
+         .searchable(text: $viewModel.searchFieldText)
+         .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
+         
     }
-          
+    
+    
     @ViewBuilder
     var listMyEvent: some View{
         List {
@@ -109,7 +97,6 @@ struct MyEventsView: View {
     
 }
 
-
 struct MyEventsView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
@@ -123,4 +110,3 @@ struct MyEventsView_Previews: PreviewProvider {
         }
     }
 }
-
