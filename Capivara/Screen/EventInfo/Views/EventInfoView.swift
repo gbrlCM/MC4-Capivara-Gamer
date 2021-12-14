@@ -80,11 +80,12 @@ struct EventInfoView: View {
                     
                     Spacer()
                     
-                    #warning("Padronizar a height e width dos ícones dos botões")
                     if let (image, link) = viewModel.streamLinkImage {
                         Link.init(destination: link) {
                             Image(image)
                                 .resizable()
+                                .scaledToFill()
+                                .padding(.all, 2)
                                 .frame(width: 28, height: 30)
                         }.padding()
                             .background(Circle().fill(ColorPalette.accent.opacity(0.4)))

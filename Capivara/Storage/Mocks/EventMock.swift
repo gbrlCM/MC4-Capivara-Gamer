@@ -29,9 +29,9 @@ enum EventMock {
               lobbyEntranceDate: Date(timeIntervalSince1970: 4004),
               eventStartDate: Date(timeIntervalSince1970: 4060),
               address: AddressMock.onlineAddress,
-              contactType: .email,
+              contactType: .chatOnly,
               contactLink: "mailto:nathaliapapst@gmail.com".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
-              streamingType: .youtube,
+              streamingType: .instagram,
               streamingLink: "https://www.twitch.tv",
               gamePlatform: .mobile
         )
