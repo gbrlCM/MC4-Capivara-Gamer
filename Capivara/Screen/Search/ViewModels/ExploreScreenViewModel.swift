@@ -6,18 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class ExploreScreenViewModel: ObservableObject {
-    @Published var user: User
     @Published private var gameEvents: [Event]
     @Published var allEvents: [Event]
     private var eventRepository: EventRepositoryProtocol
     private var gameRepository: GameRepositoryProtocol
     @Published var searchFieldText: String
     @Published var games: [Game]
+    @Published var statusView: StatusView = .loading
     
-    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol, user: User) {
-        self.user = user
+    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol) {
         gameEvents = []
         allEvents = []
         self.eventRepository = eventRepository
@@ -38,11 +38,13 @@ final class ExploreScreenViewModel: ObservableObject {
 
     @MainActor
     func fetchInitialData() async {
+        statusView = .loading
         do {
             games = try await gameRepository.fetchAllGames()
             allEvents = try await eventRepository.fetchAllEvents()
+            statusView = StatusView.ok
         } catch {
-            fatalError(error.localizedDescription)
+            statusView = StatusView.error
         }
     }
     
