@@ -13,21 +13,38 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             VStack {
-                searchBar
-                
-                if !viewModel.searchFieldText.isEmpty {
-                    searched
-                }
-                
-                else {
-                    feed
+                switch viewModel.statusView{
+                case .ok:
+                    okView
+                case .error:
+                    ErrorView()
+                case .loading:
+                    LoadView()
+                case .empty:
+                    CapybaraEmptyView()
                 }
             } .backgroundColor(ColorPalette.backgroundColor)
                 .navigationTitle("Explorar")
                 .navigationBarTitleColor(ColorPalette.primaryText)
-        }.task {
-            await viewModel.fetchInitialData()
-        }.tabBarLabel(text: "Explorar", systemImage: "magnifyingglass")
+                .task {
+                    await viewModel.fetchInitialData()
+                }
+        }
+    }
+    
+    @ViewBuilder
+    var okView: some View {
+        
+        searchBar
+        
+        if !viewModel.searchFieldText.isEmpty {
+            searched
+        }
+        
+        else {
+            feed
+        }
+        
     }
     
     @ViewBuilder
@@ -64,7 +81,7 @@ struct SearchView: View {
                         .padding(.trailing, 12)
                 }
             }
-        }.padding(.top, -3)
+        }
     }
     
     @ViewBuilder
