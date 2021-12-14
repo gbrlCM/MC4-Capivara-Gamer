@@ -6,9 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class ExploreScreenViewModel: ObservableObject {
-    @Published var user: User
     @Published private var gameEvents: [Event]
     @Published var allEvents: [Event]
     private var eventRepository: EventRepositoryProtocol
@@ -17,8 +17,7 @@ final class ExploreScreenViewModel: ObservableObject {
     @Published var games: [Game]
     @Published var statusView: StatusView = .loading
     
-    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol, user: User) {
-        self.user = user
+    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol) {
         gameEvents = []
         allEvents = []
         self.eventRepository = eventRepository

@@ -4,7 +4,7 @@
 //
 //  Created by Gabriel Ferreira de Carvalho on 22/11/21.
 //
-
+import Combine
 import SwiftUI
 
 struct MyEventsView: View {
@@ -13,12 +13,57 @@ struct MyEventsView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Picker("", selection: $viewModel.filterSegmented)
-                {
-                    ForEach(MyEventsTab.allCases, id: \.self) { tab in
-                        Text(tab.rawValue).tag(tab)
+                if let user = viewModel.user {
+                    VStack {
+                        Picker("", selection: $viewModel.filterSegmented)
+                        {
+                            ForEach(MyEventsTab.allCases, id: \.self) { tab in
+                                Text(tab.rawValue).tag(tab)
+                            }
+                        }
+                        .selectedSegmentTintColor(ColorPalette.accent)
+                        .selectedTitleColor(ColorPalette.primaryText)
+                        .unselectedTitleColor(ColorPalette.primaryText)
+                        .pickerStyle(.segmented)
+                        .padding()
+                        switch viewModel.statusView{
+                        case .ok:
+                            listMyEvent
+                        case .error:
+                            ErrorView()
+                        case .loading:
+                            LoadView()
+                        case .empty:
+                            CapybaraEmptyView()
+                        }
+                        
                     }
+                    .navigationTitle("Eventos")
+                    .navigationBarTitleColor(ColorPalette.primaryText)
+                    .backgroundColor(ColorPalette.backgroundColor)
+                    .task{
+                        await viewModel.fetchEvents(for: user)
+                    }.refreshable {
+                        await viewModel.fetchEvents(for: user)
+                    }
+                    .toolbar{
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: viewModel.goToRegister, label: {
+                                Image(systemName: "plus")
+                            })
+                        }
+                    }
+                    .navigationTitle("Eventos")
+                    .navigationBarTitleColor(ColorPalette.primaryText)
+                    .backgroundColor(ColorPalette.backgroundColor)
+                    } else {
+                    VStack {
+                        Spacer()
+                        LoadingCircle()
+                        Spacer()
+                    }.navigationTitle("Eventos")
+                    .navigationBarTitleColor(ColorPalette.primaryText)
+                    .backgroundColor(ColorPalette.backgroundColor)
                 }
                 .selectedSegmentTintColor(ColorPalette.accent)
                 .selectedTitleColor(ColorPalette.primaryText)
@@ -89,7 +134,11 @@ struct MyEventsView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             TabView {
-                MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
+                let publisher = CurrentValueSubject<User?, Never>(nil)
+                MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara, userPublisher: publisher.eraseToAnyPublisher()))
+                    .onAppear {
+                        publisher.send(UserMock.gamerCapibara)
+                    }
             }
         }
     }
