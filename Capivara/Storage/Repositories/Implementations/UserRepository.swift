@@ -8,8 +8,8 @@
 import Foundation
 
 struct UserRepository: UserRepositoryProtocol {
-    func login(_ user: User) async throws {
-
+    func login(_ user: User) async throws -> User {
+        UserMock.gamerCapibara
     }
     
     func retrieveUser(userId: String) async throws -> User {

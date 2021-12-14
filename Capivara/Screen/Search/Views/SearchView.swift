@@ -29,9 +29,8 @@ struct SearchView: View {
                 .task {
                     await viewModel.fetchInitialData()
                 }
-        }
+        }.tabBarLabel(text: "Explorar", systemImage: "square.grid.2x2.fill")
     }
-    
     @ViewBuilder
     var okView: some View {
         

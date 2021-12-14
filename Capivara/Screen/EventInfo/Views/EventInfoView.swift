@@ -15,7 +15,15 @@ struct EventInfoView: View {
         VStack {
             ScrollView {
                 ZStack {
-                    CapybaraAsyncImage(url: URL(string: viewModel.event.coverUrl!), contentMode: .fit, cornerRadius: 0)
+                    if let coverUrl = viewModel.event.coverUrl {
+                        CapybaraAsyncImage(url: URL(string: coverUrl), contentMode: .fit, cornerRadius: 0)
+                    } else {
+                        Image("standard")
+                            .resizable()
+                            .scaledToFill()
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                    }
+                    
                     
                     VStack {
                         Spacer()

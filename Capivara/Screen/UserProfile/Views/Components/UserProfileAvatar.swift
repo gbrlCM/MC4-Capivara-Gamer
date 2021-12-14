@@ -12,8 +12,14 @@ struct UserProfileAvatar: View {
     var imageURL: String
     
     var body: some View {
-        CapybaraAsyncImage(url: URL(string: imageURL))
-            .clipShape(Circle())
-        .frame(width: 100, height: 100, alignment: .center)
+        if let url = URL(string: imageURL) {
+            CapybaraAsyncImage(url: url)
+                .clipShape(Circle())
+            .frame(width: 100, height: 100, alignment: .center)
+        } else {
+            Image("profile")
+                .clipShape(Circle())
+                .frame(width: 100, height: 100, alignment: .center)
+        }
     }
 }

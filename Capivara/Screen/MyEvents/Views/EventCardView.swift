@@ -12,9 +12,19 @@ struct EventCardView: View {
     
     var body: some View{
         ZStack{
-            CapybaraAsyncImage(url: URL(string: event.coverUrl ?? ""))
-                .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
-                .cornerRadius(10)
+            if let coverUrl = event.coverUrl {
+                CapybaraAsyncImage(url: URL(string: coverUrl))
+                    .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
+                    .cornerRadius(10)
+            } else {
+                VStack {
+                    Image("standard")
+                        .resizable()
+                        .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                }
+                
+            }
             VStack(alignment: .trailing){
                 ZStack (alignment: .trailing){
                     Rectangle()
@@ -61,6 +71,7 @@ struct EventCardView_Previews: PreviewProvider {
     static var previews: some View {
         TabView {
             EventCardView(event: EventMock.event)
+                .frame(height: 155)
         }
 
     }
