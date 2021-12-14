@@ -65,13 +65,45 @@ struct MyEventsView: View {
                     .navigationBarTitleColor(ColorPalette.primaryText)
                     .backgroundColor(ColorPalette.backgroundColor)
                 }
-            
-        }.sheet(isPresented: $viewModel.isRegisteringEvent) {
-            RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
-        }.preferredColorScheme(.dark)
-         .searchable(text: $viewModel.searchFieldText)
-         .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
-         
+                .selectedSegmentTintColor(ColorPalette.accent)
+                .selectedTitleColor(ColorPalette.primaryText)
+                .unselectedTitleColor(ColorPalette.primaryText)
+                .pickerStyle(.segmented)
+                .padding()
+                switch viewModel.statusView{
+                case .ok:
+                    listMyEvent
+                case .error:
+                    ErrorView()
+                case .loading:
+                    LoadView()
+                case .empty:
+                    CapybaraEmptyView()
+                }
+                
+            }
+            .sheet(isPresented: $viewModel.isRegisteringEvent) {
+                RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
+            }.preferredColorScheme(.dark)
+                .searchable(text: $viewModel.searchFieldText)
+                .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
+                .navigationTitle("Eventos")
+                .navigationBarTitleColor(ColorPalette.primaryText)
+                .backgroundColor(ColorPalette.backgroundColor)
+                .task{
+                    await viewModel.fetchEvents()
+                }.refreshable {
+                    await viewModel.fetchEvents()
+                }
+                .toolbar{
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: viewModel.goToRegister, label:
+                                {
+                            Image(systemName: "plus")
+                        })
+                    }
+                }
+        }
     }
     
     
@@ -96,6 +128,7 @@ struct MyEventsView: View {
     }
     
 }
+
 
 struct MyEventsView_Previews: PreviewProvider {
     static var previews: some View {
