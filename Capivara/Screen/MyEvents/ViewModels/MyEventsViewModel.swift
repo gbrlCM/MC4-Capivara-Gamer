@@ -6,23 +6,26 @@
 //
 
 import Foundation
+import Combine
 import SwiftUI
 
 final class MyEventsViewModel: ObservableObject{
     let repository: EventRepositoryProtocol
     @Published private var events: [Event]
-    @Published var user: User
+    @Published var user: User?
     @Published var searchFieldText: String
     @Published var filterSegmented: MyEventsTab = .all
+    @Published var statusView: StatusView = .loading
     @Published var isRegisteringEvent: Bool
     
     
-    init(repository: EventRepositoryProtocol, user: User){
+    init(repository: EventRepositoryProtocol, user: User?, userPublisher: AnyPublisher<User?, Never>){
         self.repository = repository
-        self.user = UserMock.gamerCapibara
+        self.user = user
         events = []
         self.searchFieldText = ""
         self.isRegisteringEvent = false
+        userPublisher.assign(to: &$user)
     }
 
     var searchedEvents: [Event] {
@@ -35,8 +38,16 @@ final class MyEventsViewModel: ObservableObject{
         }
     }
     
-    func fetchEvents() async throws{
-        events = try await repository.fetchUserEvents(of: user)
+    
+    
+    func fetchEvents(for user: User) async {
+        statusView = .loading
+        do {
+            events = try await repository.fetchUserEvents(of: user)
+            statusView = .ok
+        } catch {
+            statusView = .error
+        }
     }
     
     func goToRegister() {
@@ -56,6 +67,9 @@ final class MyEventsViewModel: ObservableObject{
                 $0.creator == user
             }
         case .participated:
+            guard let user = user else {
+                return []
+            }
             return searchedEvents.filter{
                 $0.participants.contains(user)
 

@@ -42,7 +42,7 @@ struct EditProfileView: View {
     @ViewBuilder
     var userPhotoChanger: some View {
         VStack {
-            UserProfileAvatar(imageURL: $viewModel.user.avatar)
+            UserProfileAvatar(imageURL: viewModel.user.avatar)
             
             Button(action: {}) {
                 Label("Editar", systemImage: "pencil")

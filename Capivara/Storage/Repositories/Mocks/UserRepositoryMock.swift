@@ -9,15 +9,24 @@
 
  @MainActor
  final class UserRepositoryMock: UserRepositoryProtocol {
-     var user: User = UserMock.gamerCapibara
+     var user: User? = nil
 
-     func login(_ loginData: LoginData) async throws {
-         user.username = loginData.username
-     }
-
-     func retrieveUser(userId: String) async throws -> User {
+     func login(_ user: User) async throws -> User {
+         self.user = user
+         print(user)
          return user
      }
 
+     func retrieveUser(userId: String) async throws -> User {
+         if user?.appleId == userId {
+             return user!
+         } else {
+             throw NSError(domain: "No user", code: 1, userInfo: nil)
+         }
+     }
+
+     func deleteUser(userId: String) async throws {
+         user = nil
+     }
 
  }

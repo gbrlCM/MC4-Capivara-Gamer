@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class ExploreScreenViewModel: ObservableObject {
     @Published private var gameEvents: [Event]
@@ -15,6 +16,7 @@ final class ExploreScreenViewModel: ObservableObject {
     @Published var searchFieldText: String
     @Published var games: [Game]
     @Published var event: Event
+    @Published var statusView: StatusView = .loading
     
     init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol) {
         gameEvents = []
@@ -38,14 +40,16 @@ final class ExploreScreenViewModel: ObservableObject {
 
     @MainActor
     func fetchInitialData() async {
+        statusView = .loading
         do {
             games = try await gameRepository.fetchAllGames()
             allEvents = try await eventRepository.fetchAllEvents()
             allEvents.sort {
                 $0.date < $1.date
             }
+            statusView = StatusView.ok
         } catch {
-            fatalError(error.localizedDescription)
+            statusView = StatusView.error
         }
     }
 }

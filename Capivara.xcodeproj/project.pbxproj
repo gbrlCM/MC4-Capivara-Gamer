@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0625A5202763EEA600176FD0 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A51F2763EEA600176FD0 /* StatusView.swift */; };
+		0625A5232767C08700176FD0 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5222767C08700176FD0 /* ErrorView.swift */; };
+		0625A5252767C14700176FD0 /* CapybaraEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5242767C14700176FD0 /* CapybaraEmptyView.swift */; };
+		0625A5272767C22400176FD0 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5262767C22400176FD0 /* LoadView.swift */; };
 		064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064170A02756AFA400E5B7F2 /* EventCardView.swift */; };
 		06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EB8275E7604006E6FB3 /* RoundedCorner.swift */; };
 		06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */; };
 		0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666E8BB27595C4A002BA436 /* MyEventsTab.swift */; };
 		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
+		06DB5433276913B100B1EA9B /* URLSession+Get&Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB5432276913B100B1EA9B /* URLSession+Get&Post.swift */; };
+		06DB54352769140C00B1EA9B /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB54342769140C00B1EA9B /* UserRepository.swift */; };
 		06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */; };
 		06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
@@ -25,6 +31,7 @@
 		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
 		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
 		5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		5B1AC26C2763891D00FD9A7B /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1AC26B2763891D00FD9A7B /* KeychainService.swift */; };
 		5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */; };
 		5B40E21D275EA7FB000820E1 /* TournamentFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */; };
 		5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
@@ -65,6 +72,7 @@
 		5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */; };
 		5B9D6D272755827100008B7E /* SingleSelectRegisterEventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */; };
 		5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4BFAA275AF117009D75E6 /* Regex.swift */; };
+		5BB494C12767B585009E2ACB /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB494C02767B585009E2ACB /* AuthenticationService.swift */; };
 		5BC30FEC2758798F00800DEB /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FEB2758798F00800DEB /* Validator.swift */; };
 		5BC30FEE27587D8100800DEB /* LinkValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */; };
 		5BC30FF327588ABD00800DEB /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF227588ABD00800DEB /* RegexValidator.swift */; };
@@ -169,11 +177,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0625A51F2763EEA600176FD0 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		0625A5222767C08700176FD0 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		0625A5242767C14700176FD0 /* CapybaraEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraEmptyView.swift; sourceTree = "<group>"; };
+		0625A5262767C22400176FD0 /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
 		064170A02756AFA400E5B7F2 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		06661EB8275E7604006E6FB3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		06661EBA275E7650006E6FB3 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
 		0666E8BB27595C4A002BA436 /* MyEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsTab.swift; sourceTree = "<group>"; };
 		06AAB541275E9BCC00B36C97 /* ButtonShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShare.swift; sourceTree = "<group>"; };
+		06DB5432276913B100B1EA9B /* URLSession+Get&Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Get&Post.swift"; sourceTree = "<group>"; };
+		06DB54342769140C00B1EA9B /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picker+SegmentControlColer.swift"; sourceTree = "<group>"; };
 		06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewModel.swift; sourceTree = "<group>"; };
 		5B0D3BBC274C044300BB90F1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -187,6 +201,7 @@
 		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
 		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
 		5B0D3BD9274C239F00BB90F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5B1AC26B2763891D00FD9A7B /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesRegisterEventView.swift; sourceTree = "<group>"; };
 		5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFormatSection.swift; sourceTree = "<group>"; };
 		5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEvent.swift; sourceTree = "<group>"; };
@@ -227,6 +242,7 @@
 		5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectRegisterEventSection.swift; sourceTree = "<group>"; };
 		5BA4BFAA275AF117009D75E6 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		5BB494C02767B585009E2ACB /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		5BC30FEB2758798F00800DEB /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkValidatedTextField.swift; sourceTree = "<group>"; };
 		5BC30FF227588ABD00800DEB /* RegexValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexValidator.swift; sourceTree = "<group>"; };
@@ -301,6 +317,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0625A5212767C04D00176FD0 /* ViewStatus */ = {
+			isa = PBXGroup;
+			children = (
+				0625A5222767C08700176FD0 /* ErrorView.swift */,
+				0625A5242767C14700176FD0 /* CapybaraEmptyView.swift */,
+				0625A5262767C22400176FD0 /* LoadView.swift */,
+			);
+			path = ViewStatus;
+			sourceTree = "<group>";
+		};
 		0666E8B927595BEA002BA436 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0D3BCC274C08A100BB90F1 /* Views */,
+				06DB5432276913B100B1EA9B /* URLSession+Get&Post.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -472,6 +499,15 @@
 				5B634B20275FED6600C7AE92 /* LoginData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5B1AC26A2763890500FD9A7B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5B1AC26B2763891D00FD9A7B /* KeychainService.swift */,
+				5BB494C02767B585009E2ACB /* AuthenticationService.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		5B634B18275FECD200C7AE92 /* Views */ = {
@@ -526,6 +562,7 @@
 			children = (
 				5B832AB827500A39009F5D5A /* EventRepository.swift */,
 				E9E642D32762939300EAF695 /* GameRepository.swift */,
+				06DB54342769140C00B1EA9B /* UserRepository.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -559,6 +596,7 @@
 				5B9D6D152755381200008B7E /* Protocols */,
 				5BCD028E2752FF6000B13D0C /* Components */,
 				5B832AC327516F3C009F5D5A /* ColorPalette.swift */,
+				0625A51F2763EEA600176FD0 /* StatusView.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -603,6 +641,7 @@
 		5BC30FE92758796C00800DEB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5B1AC26A2763890500FD9A7B /* Authentication */,
 				5BC30FEA2758797700800DEB /* TextValidationService */,
 			);
 			path = Services;
@@ -640,6 +679,7 @@
 		5BCD028E2752FF6000B13D0C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0625A5212767C04D00176FD0 /* ViewStatus */,
 				5BCD02912752FFA800B13D0C /* LoadingCircle.swift */,
 				5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */,
 				5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */,
@@ -981,6 +1021,7 @@
 				5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */,
 				5B832AAB274FEE0E009F5D5A /* AddressMock.swift in Sources */,
 				5B832AB32750074B009F5D5A /* EventRepositoryMock.swift in Sources */,
+				0625A5202763EEA600176FD0 /* StatusView.swift in Sources */,
 				5BD88C552748415800036C35 /* ContentView.swift in Sources */,
 				5B832ABF27503057009F5D5A /* RegisterEventView.swift in Sources */,
 				E9E642D42762939300EAF695 /* GameRepository.swift in Sources */,
@@ -988,13 +1029,16 @@
 				5B832AC427516F3C009F5D5A /* ColorPalette.swift in Sources */,
 				5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */,
 				5BC30FF727588DB600800DEB /* LinkSectionViewModel.swift in Sources */,
+				5BB494C12767B585009E2ACB /* AuthenticationService.swift in Sources */,
 				5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */,
+				5B1AC26C2763891D00FD9A7B /* KeychainService.swift in Sources */,
 				5B0D3BC3274C053100BB90F1 /* MyEventsView.swift in Sources */,
 				06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */,
 				5B634B21275FED6600C7AE92 /* LoginData.swift in Sources */,
 				5B832AA7274FEDEE009F5D5A /* GameMock.swift in Sources */,
 				5B634B25275FF88800C7AE92 /* MatchFormatSection.swift in Sources */,
 				5B0D3BD3274C0E3B00BB90F1 /* UserProfileAvatar.swift in Sources */,
+				06DB54352769140C00B1EA9B /* UserRepository.swift in Sources */,
 				5B634B1B275FECDD00C7AE92 /* SignInWAppleButton.swift in Sources */,
 				064170A12756AFA400E5B7F2 /* EventCardView.swift in Sources */,
 				5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */,
@@ -1015,6 +1059,7 @@
 				5B832AB5275009FA009F5D5A /* GameRepositoryProtocol.swift in Sources */,
 				5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */,
 				06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */,
+				0625A5252767C14700176FD0 /* CapybaraEmptyView.swift in Sources */,
 				E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */,
 				E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */,
 				E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */,
@@ -1033,15 +1078,18 @@
 				5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */,
 				5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */,
 				5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */,
+				06DB5433276913B100B1EA9B /* URLSession+Get&Post.swift in Sources */,
 				5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */,
 				5B898032274EC6A600CE92BF /* User.swift in Sources */,
 				5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */,
 				5BC30FF327588ABD00800DEB /* RegexValidator.swift in Sources */,
 				5B0D3BBF274C047400BB90F1 /* TabBarScreen.swift in Sources */,
+				0625A5272767C22400176FD0 /* LoadView.swift in Sources */,
 				5B832ACE275180F3009F5D5A /* GameRepositoryMock.swift in Sources */,
 				5BD88C532748415800036C35 /* CapivaraApp.swift in Sources */,
 				06661EB9275E7604006E6FB3 /* RoundedCorner.swift in Sources */,
 				5B0D3BD0274C0A4F00BB90F1 /* View+BackgroundColor.swift in Sources */,
+				0625A5232767C08700176FD0 /* ErrorView.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
 				5BA4BFAB275AF117009D75E6 /* Regex.swift in Sources */,
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
@@ -1264,7 +1312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = WK7599VNDW;
+				DEVELOPMENT_TEAM = NHY67K6358;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1295,7 +1343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
-				DEVELOPMENT_TEAM = WK7599VNDW;
+				DEVELOPMENT_TEAM = NHY67K6358;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
