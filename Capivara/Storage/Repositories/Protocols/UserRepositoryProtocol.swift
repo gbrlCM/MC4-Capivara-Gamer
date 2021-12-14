@@ -8,7 +8,7 @@
 import Foundation
 
 protocol UserRepositoryProtocol {
-    func login(_ user: User) async throws
+    func login(_ user: User) async throws -> User
     func retrieveUser(userId: String) async throws -> User
     func deleteUser(userId: String) async throws
 }
