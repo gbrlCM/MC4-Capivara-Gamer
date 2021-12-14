@@ -18,7 +18,8 @@ class EventRepositoryMock: EventRepositoryProtocol {
     }
     
     func fetchAllEvents() async throws -> [Event] {
-        allEvents
+        allEvents[0].name = "vamo que vamo"
+        return allEvents
     }
     
     func fetchGameEvents(of game: Game) async throws -> [Event] {

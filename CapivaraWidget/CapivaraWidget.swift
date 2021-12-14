@@ -78,6 +78,6 @@ struct CapivaraWidget: Widget {
 struct CapivaraWidget_Previews: PreviewProvider {
     static var previews: some View {
         CapivaraWidgetEntryView(entry: CapivaraEntry(date: Date(), event: EventMock.event))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

@@ -46,7 +46,7 @@ struct SmallWidgetView: View {
                             Text(event.date, style: .date)
                                 .font(.system(size: 10))
                                 .foregroundColor(ColorPalette.primaryText)
-                        }.padding(.leading, 15)
+                        }.padding(.leading, 18)
                         Spacer()
                     }
                 }
