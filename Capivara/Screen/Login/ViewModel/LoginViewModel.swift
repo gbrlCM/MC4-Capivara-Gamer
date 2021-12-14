@@ -11,11 +11,10 @@ import AuthenticationServices
 final class LoginViewModel: ObservableObject {
     
     @Published var didOccurError: Bool
+    private var authenticationService: AutheticationService
     
-    private var repository: UserRepositoryProtocol
-    
-    init(repository: UserRepositoryProtocol){
-        self.repository = repository
+    init(authenticationService: AutheticationService){
+        self.authenticationService = authenticationService
         self.didOccurError = false
     }
     
@@ -32,23 +31,17 @@ final class LoginViewModel: ObservableObject {
     private func onLoginCompletionSucess(auth: ASAuthorization) {
         guard let userCredential = auth.credential as? ASAuthorizationAppleIDCredential else {
             didOccurError = true
-            return}
+            return
+        }
         
-        let userId = userCredential.user
-        let firstName = userCredential.fullName?.givenName
-        let lastName = userCredential.fullName?.familyName
-        let fullName = "\(firstName ?? "") \(lastName ?? "")"
-        let loginData = LoginData(appleId: userId, username: fullName)
-        
-//        Task {
-//            do {
-//                try await repository.login(loginData)
-//                let user = try await repository.retrieveUser(userId: "")
-//                print(user)
-//            } catch {
-//                didOccurError = true
-//            }
-//        }
+        Task {
+            do {
+                try await authenticationService.signIn(credentials: userCredential)
+            } catch {
+                print(error.localizedDescription)
+                didOccurError = true
+            }
+        }
     }
     
 }

@@ -8,10 +8,10 @@
 import Foundation
 import AuthenticationServices
 
-final class AutheticationService {
+final class AutheticationService: ObservableObject {
     
     @Published
-    private(set) var loggedUser: User?
+    var loggedUser: User?
     
     private let userRepository: UserRepositoryProtocol
     private let keychainService: KeyChainServiceProtocol

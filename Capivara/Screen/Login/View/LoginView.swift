@@ -36,7 +36,7 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(viewModel: LoginViewModel(repository: UserRepositoryMock()))
+        LoginView(viewModel: LoginViewModel(authenticationService: AutheticationService(repository: UserRepositoryMock(), keychainService: KeyChainService())))
             .previewDevice("iPhone 13").preferredColorScheme(.light)
     }
 }
