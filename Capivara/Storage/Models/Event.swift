@@ -39,6 +39,26 @@ struct Event: Codable, Equatable, Identifiable {
  */
 enum TournamentFormat: String, Codable, CaseIterable {
     case roundRobin, singleElimination, doubleElimination, multiLevel, extended, groupStageAndTournament, points, singleMatch
+    var text: String {
+        switch self {
+        case .roundRobin:
+            return "Round Robin"
+        case .singleElimination:
+            return "Eliminação Única"
+        case .doubleElimination:
+            return "Eliminação Dupla"
+        case .multiLevel:
+            return "Multinível"
+        case .extended:
+            return "Extendida"
+        case .groupStageAndTournament:
+            return "Fase de Grupos e Torneio"
+        case .points:
+            return "Pontos"
+        case .singleMatch:
+            return "Partida Única"
+        }
+    }
 }
 
 /**
@@ -47,6 +67,18 @@ enum TournamentFormat: String, Codable, CaseIterable {
  */
 enum MatchFormat: String, Codable, CaseIterable {
     case bestOfOne, bestOfThree, bestOfFive, bestOfSeven
+    var text: String {
+        switch self {
+        case .bestOfOne:
+            return "Melhor de 1"
+        case .bestOfThree:
+            return "Melhor de 3"
+        case .bestOfFive:
+            return "Melhor de 5"
+        case .bestOfSeven:
+            return "Melhor de 7"
+        }
+    }
 }
 
 /**
@@ -63,6 +95,18 @@ enum ContactType: String, Codable, CaseIterable {
  */
 enum EventType: String, Codable, CaseIterable {
     case championship, training, forFun, streaming
+    var text: String {
+        switch self {
+        case .championship:
+            return "Campeonato"
+        case .training:
+            return "Treino"
+        case .forFun:
+            return "For Fun"
+        case .streaming:
+            return "Transmitido"
+        }
+    }
 }
 
 enum StreamingType: String, Codable, CaseIterable {

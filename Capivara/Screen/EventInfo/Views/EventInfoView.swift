@@ -113,22 +113,22 @@ struct EventInfoView: View {
                 LazyVStack {
                     VStack(alignment: .leading) {
                         Group {
-                            EventInfoTableViewCell(title: "Tipo do Evento", info: "\(viewModel.event.eventType)")
+                            EventInfoTableViewCell(title: "Tipo do Evento", info: "\(viewModel.event.eventType.text)")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Formato do Evento", info: "\(viewModel.event.eventFormat)")
+                            EventInfoTableViewCell(title: "Formato do Evento", info: "\(viewModel.event.eventFormat.text)")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Formato da Partida", info: "\(viewModel.event.matchFormat)")
+                            EventInfoTableViewCell(title: "Formato da Partida", info: "\(viewModel.event.matchFormat.text)")
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)
                             
-                            EventInfoTableViewCell(title: "Jogadores", info: "\(viewModel.event.tournamentCapacity) Individualmente")
+                            EventInfoTableViewCell(title: "Jogadores", info: viewModel.teamSizeLabel)
                             
                             Divider()
                                 .background(ColorPalette.secondaryText)

@@ -43,6 +43,16 @@ final class EventInfoViewModel: ObservableObject {
         }
     }
     
+    var teamSizeLabel: String {
+        if event.teamSize == 1 {
+            return "\(event.tournamentCapacity) Jogadores"
+        }
+        
+        else {
+            return "\(event.tournamentCapacity) Equipes de \(event.teamSize) Jogadores"
+        }
+    }
+    
     init(event: Event) {
         self.event = event
     }
@@ -67,7 +77,7 @@ final class EventInfoViewModel: ObservableObject {
     
     func formatStartTimeDate() -> String {
         let formatter = DateFormatter()
-        formatter.timeStyle = .short
+        formatter.dateFormat = "HH:mm"
         
         return formatter.string(from: event.eventStartDate)
     }
