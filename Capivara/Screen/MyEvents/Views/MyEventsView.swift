@@ -37,37 +37,28 @@ struct MyEventsView: View {
                 }
                 
             }
-            .navigationTitle("Eventos")
-            .navigationBarTitleColor(ColorPalette.primaryText)
-            .backgroundColor(ColorPalette.backgroundColor)
-            .task{
-                await viewModel.fetchEvents()
-            }.refreshable {
-                await viewModel.fetchEvents()
-            }
-            .toolbar{
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: viewModel.goToRegister, label: {
-                        Image(systemName: "plus")
-                    })
+            .sheet(isPresented: $viewModel.isRegisteringEvent) {
+                RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
+            }.preferredColorScheme(.dark)
+                .searchable(text: $viewModel.searchFieldText)
+                .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
+                .navigationTitle("Eventos")
+                .navigationBarTitleColor(ColorPalette.primaryText)
+                .backgroundColor(ColorPalette.backgroundColor)
+                .task{
+                    await viewModel.fetchEvents()
+                }.refreshable {
+                    await viewModel.fetchEvents()
                 }
-            }
-            }
-            .navigationTitle("Eventos")
-            .navigationBarTitleColor(ColorPalette.primaryText)
-            .backgroundColor(ColorPalette.backgroundColor)
-            .task{
-                do {
-                    try await viewModel.fetchEvents()
-                } catch  {
+                .toolbar{
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: viewModel.goToRegister, label:
+                                {
+                            Image(systemName: "plus")
+                        })
+                    }
                 }
-            }
-        }.sheet(isPresented: $viewModel.isRegisteringEvent) {
-            RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
-        }.preferredColorScheme(.dark)
-         .searchable(text: $viewModel.searchFieldText)
-         .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
-         
+        }
     }
     
     
@@ -92,6 +83,7 @@ struct MyEventsView: View {
     }
     
 }
+
 
 struct MyEventsView_Previews: PreviewProvider {
     static var previews: some View {
