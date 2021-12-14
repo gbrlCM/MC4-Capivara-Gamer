@@ -15,7 +15,7 @@ struct RootView: View {
         TabView(selection: $selectedTab) {
             MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
                 .tag(TabBarScreen.events)
-            SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepository(), user: UserMock.gamerCapibara))
+            SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepository()))
                 .tag(TabBarScreen.search)
             UserProfileView(viewModel: UserProfileViewModel())
                 .tag(TabBarScreen.configuration)
