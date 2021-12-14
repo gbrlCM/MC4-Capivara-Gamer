@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 import AuthenticationServices
 
 final class AutheticationService: ObservableObject {
@@ -13,16 +14,20 @@ final class AutheticationService: ObservableObject {
     @Published
     var loggedUser: User?
     
+    let userPublisher: CurrentValueSubject<User?, Never>
+    
     private let userRepository: UserRepositoryProtocol
     private let keychainService: KeyChainServiceProtocol
     
     private let credentialKey = "userCredential"
     private let serviceKey = "com.gbrlcm.capivara"
     
+    
     init(repository: UserRepositoryProtocol, keychainService: KeyChainServiceProtocol) {
         self.loggedUser = nil
         self.userRepository = repository
         self.keychainService = keychainService
+        userPublisher = .init(nil)
     }
     
     func signIn(credentials :ASAuthorizationAppleIDCredential) async throws {
@@ -40,8 +45,11 @@ final class AutheticationService: ObservableObject {
         
         do {
             try keychainService.set(userId, forKey: credentialKey, inService: serviceKey)
-            try await userRepository.login(newUser)
+            let user = try await userRepository.login(newUser)
+            userPublisher.send(user)
+            
         } catch {
+            print(error.localizedDescription)
             throw error
         }
     }
@@ -49,7 +57,8 @@ final class AutheticationService: ObservableObject {
     func login() async throws {
         do {
             let userId = try keychainService.get(forKey: credentialKey, inService: serviceKey)
-            loggedUser = try await userRepository.retrieveUser(userId: userId)
+            let user = try await userRepository.retrieveUser(userId: userId)
+            userPublisher.send(user)
         } catch {
             throw error
         }
@@ -62,7 +71,7 @@ final class AutheticationService: ObservableObject {
         
         do {
             try keychainService.delete(forKey: credentialKey, inService: serviceKey)
-            self.loggedUser = nil
+            userPublisher.send(nil)
         } catch  {
             throw error
         }

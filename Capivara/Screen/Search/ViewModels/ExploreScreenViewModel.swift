@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 final class ExploreScreenViewModel: ObservableObject {
-    @Binding var user: User?
     @Published private var gameEvents: [Event]
     @Published var allEvents: [Event]
     private var eventRepository: EventRepositoryProtocol
@@ -17,8 +16,7 @@ final class ExploreScreenViewModel: ObservableObject {
     @Published var searchFieldText: String
     @Published var games: [Game]
     
-    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol, user: Binding<User?>) {
-        self._user = user
+    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol) {
         gameEvents = []
         allEvents = []
         self.eventRepository = eventRepository

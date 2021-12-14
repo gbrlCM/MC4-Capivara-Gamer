@@ -12,12 +12,15 @@ final class LoginViewModel: ObservableObject {
     
     @Published var didOccurError: Bool
     private var authenticationService: AutheticationService
+    private var onFinishAuth: () -> Void
     
-    init(authenticationService: AutheticationService){
+    init(authenticationService: AutheticationService, onFinishAuth: @escaping () -> Void){
         self.authenticationService = authenticationService
+        self.onFinishAuth = onFinishAuth
         self.didOccurError = false
     }
     
+    @MainActor
     func onLoginCompletion(result: Result<ASAuthorization, Error>) {
         switch result {
         case .success(let auth):
@@ -28,6 +31,7 @@ final class LoginViewModel: ObservableObject {
         }
     }
     
+    @MainActor
     private func onLoginCompletionSucess(auth: ASAuthorization) {
         guard let userCredential = auth.credential as? ASAuthorizationAppleIDCredential else {
             didOccurError = true
@@ -37,6 +41,7 @@ final class LoginViewModel: ObservableObject {
         Task {
             do {
                 try await authenticationService.signIn(credentials: userCredential)
+                onFinishAuth()
             } catch {
                 print(error.localizedDescription)
                 didOccurError = true

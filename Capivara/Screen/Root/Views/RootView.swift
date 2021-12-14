@@ -11,7 +11,7 @@ struct RootView: View {
     @State
     var selectedTab: TabBarScreen = .search
     @State
-    var isLoggedIn: Bool = true
+    var isNotLoggedIn: Bool = false
     @StateObject
     var autheticationService: AutheticationService = AutheticationService(repository: UserRepositoryMock(), keychainService: KeyChainService())
     
@@ -19,22 +19,25 @@ struct RootView: View {
         TabView(selection: $selectedTab) {
             MyEventsView(viewModel: MyEventsViewModel(repository: EventRepositoryMock(), user: UserMock.gamerCapibara))
                 .tag(TabBarScreen.events)
-            SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepository(), user: $autheticationService.loggedUser))
+            SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepository()))
                 .tag(TabBarScreen.search)
-            UserProfileView(viewModel: UserProfileViewModel())
+            UserProfileView(viewModel: UserProfileViewModel(authenticationService: autheticationService))
                 .tag(TabBarScreen.configuration)
         }
         .task {
             do {
                 try await autheticationService.login()
+                isNotLoggedIn = false
             } catch {
-                isLoggedIn = false
+                isNotLoggedIn = true
             }
         }
         .environmentObject(autheticationService)
-        .fullScreenCover(isPresented: $isLoggedIn) {
+        .fullScreenCover(isPresented: $isNotLoggedIn) {
             LoginView(viewModel:
-                        LoginViewModel(authenticationService: autheticationService)
+                        LoginViewModel(authenticationService: autheticationService) {
+                isNotLoggedIn = false
+            }
             )
         }
     }

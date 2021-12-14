@@ -64,12 +64,15 @@ struct KeyChainService: KeyChainServiceProtocol {
         
         if status == errSecDuplicateItem {
             try update(value, service: service, inKey: key)
+            
         } else if status != errSecSuccess {
+            print(status)
             throw KeychainError.unexpectedStatus(status)
         }
     }
     
     private func update(_ value: String, service: String, inKey key: String) throws {
+        let data = value.data(using: .utf8)
         
         let query: [String: AnyObject] = [
             kSecAttrService as String: service as AnyObject,
@@ -78,7 +81,7 @@ struct KeyChainService: KeyChainServiceProtocol {
         ]
 
         let attributes: [String: AnyObject] = [
-            kSecValueData as String: value as AnyObject
+            kSecValueData as String: data as AnyObject
         ]
 
         let status = SecItemUpdate(
@@ -112,6 +115,28 @@ struct KeyChainService: KeyChainServiceProtocol {
         }
         
     }
+}
+
+class KeychainServiceMock: KeyChainServiceProtocol {
+    var values: [String : String] = [:]
+    
+    func get(forKey key: String, inService service: String) throws -> String {
+        guard let value = values[key] else {
+            throw KeychainError.itemNotFound
+        }
+        
+        return value
+    }
+    
+    func set(_ value: String, forKey key: String, inService service: String) throws {
+        values[key] = value
+    }
+    
+    func delete(forKey key: String, inService service: String) throws {
+        values.removeValue(forKey: key)
+    }
+    
+    
 }
 
 enum KeychainError: Error {
