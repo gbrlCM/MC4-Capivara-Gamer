@@ -9,16 +9,12 @@ import WidgetKit
 
 struct CapivaraEntry: TimelineEntry {
     var date: Date
-    
-    //pegar todos os eventos
-    let totalEvents: MyEventsView
-    let isPlaceHolder = false
+    let event: Event
     
 }
-
-extension CapivaraEntry {
-    
-    static var allEvents: MyEventsView {
-        MyEventsView(viewModel: MyEventsViewModel.init(repository: EventRepository() as EventRepositoryProtocol, user: UserMock.gamerCapibara))
+    extension CapivaraEntry {
+        
+        static var allEvents: MyEventsView {
+            MyEventsView(viewModel: MyEventsViewModel.init(repository: EventRepository() as EventRepositoryProtocol, user: UserMock.gamerCapibara))
+        }
     }
-}

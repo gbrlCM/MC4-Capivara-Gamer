@@ -10,11 +10,9 @@ import WidgetKit
 
 
 struct CapivaraControlWidget: View {
-   
+    
     let entry: CapivaraEntry
     @Environment(\.widgetFamily) var family
-    
-    
     
     var body: some View {
         switch family {
@@ -29,7 +27,8 @@ struct CapivaraControlWidget: View {
         default:
             MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
             
-        }    }
+        }
+    }
 }
 
 

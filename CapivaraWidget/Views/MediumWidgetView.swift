@@ -19,14 +19,13 @@ struct MediumWidgetView: View {
                 Text(event.name)
                     .font(.system(size: 14, weight: .bold))
                     .foregroundColor(ColorPalette.primaryText)
-                Text(event.description)
+                Text(event.date, style: .date)
                     .font(.system(size: 12))
                     .foregroundColor(ColorPalette.secondaryText)
                 event.gamePlatform.label.opacity(0.5).font(.system(size: 8))
-                //tamanho não está mudando
             }
             Spacer()
-
+            
             HStack{
                 if let urlString = event.coverUrl {
                     AsyncImage(url: URL(string: urlString)) { image in
@@ -49,7 +48,7 @@ struct MediumWidgetView: View {
         } .padding()
             .background(widgetBackground)
             .backgroundColor(ColorPalette.backgroundColor)
-        
+            .cornerRadius(10)
     }
     
     struct MediumWidgetView_Previews: PreviewProvider {

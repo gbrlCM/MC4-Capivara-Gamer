@@ -14,9 +14,9 @@ struct ExtraLargeWidgetView: View {
             MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
             MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.secondaryBackground)
             MediumWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
-                .cornerRadius(10)
-        } .padding()
-            .backgroundColor(ColorPalette.backgroundColor)
+                
+        }.padding()
+        .backgroundColor(ColorPalette.backgroundColor)
     }
     
     struct ExtraLargeWidgetView_Previews: PreviewProvider {

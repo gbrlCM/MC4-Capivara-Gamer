@@ -9,28 +9,37 @@ import SwiftUI
 import WidgetKit
 
 struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
+    let repository: EventRepositoryProtocol
+    init(repository: EventRepositoryProtocol) {
+        self.repository = repository
     }
-
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
-        completion(entry)
+    
+    func placeholder(in context: Context) -> CapivaraEntry {
+        CapivaraEntry(date: Date(), event: EventMock.event)
+        
     }
-
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
-            entries.append(entry)
+    
+    func getSnapshot(in context: Context, completion: @escaping (CapivaraEntry) -> ()) {
+        Task {
+            do {
+                let events = try await repository.fetchAllEvents()
+                completion(CapivaraEntry(date: Date(), event: events[0]))
+            } catch {
+                completion(CapivaraEntry(date: Date(), event: EventMock.event))
+            }
         }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+    }
+    
+    func getTimeline(in context: Context, completion: @escaping (Timeline<CapivaraEntry>) -> ()) {
+        Task {
+            do {
+                let events = try await repository.fetchAllEvents()
+                let timeline = Timeline(entries: events.map{CapivaraEntry(date: Date(), event: $0)}, policy: .after(Date().addingTimeInterval(21600)))
+                completion(timeline)
+            } catch {
+                
+            }
+        }
     }
 }
 
@@ -40,30 +49,35 @@ struct SimpleEntry: TimelineEntry {
 
 struct CapivaraWidgetEntryView : View {
     var entry: Provider.Entry
-
+    
     var body: some View {
-        Text(entry.date, style: .time)
+        CapivaraControlWidget(entry: CapivaraEntry.init(date: Date(), event: EventMock.event))
+        
     }
 }
 
 @main
 struct CapivaraWidget: Widget {
-    let kind: String = "Gamerbara"
-
+    let kind: String = "Capy"
+    
+    @MainActor
+    let repository: EventRepositoryMock = EventRepositoryMock()
+    
+    
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+        StaticConfiguration(kind: kind, provider: Provider(repository: repository)) { entry in
             CapivaraWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Gamerbara")
-        .description("Acesse rapidamente os seus próximos eventos.")
+        .configurationDisplayName("Próximos eventos")
+        .description("Acesse rapidamente as suas próximas partidas.")
         .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .systemExtraLarge])
-
+        
     }
 }
 
 struct CapivaraWidget_Previews: PreviewProvider {
     static var previews: some View {
-        CapivaraWidgetEntryView(entry: SimpleEntry(date: Date()))
+        CapivaraWidgetEntryView(entry: CapivaraEntry(date: Date(), event: EventMock.event))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

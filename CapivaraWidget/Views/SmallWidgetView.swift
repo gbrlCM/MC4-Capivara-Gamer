@@ -11,7 +11,7 @@ import WidgetKit
 struct SmallWidgetView: View {
     
     let event: Event
-     
+    
     var body: some View {
         ZStack (alignment: .bottomLeading) {
             if let urlString = event.coverUrl {
@@ -23,7 +23,6 @@ struct SmallWidgetView: View {
                         .cornerRadius(10)
                 } placeholder: {
                     Rectangle().fill(ColorPalette.secondaryBackground)
-                    
                 }
             } else {
                 Image("Capy")
@@ -37,19 +36,17 @@ struct SmallWidgetView: View {
                     Rectangle()
                         .fill(Color.black)
                         .frame(width: .infinity , height: 50, alignment: .center)
-                        .opacity(0.6)
+                        .opacity(0.8)
                         .cornerRadius(8)
                     HStack{
                         VStack (alignment: .leading){
                             Text(event.name)
-                                .padding(.leading, 5)
-                                .font(.system(size: 13, weight: .bold))
+                                .font(.system(size: 14, weight: .bold))
                                 .foregroundColor(ColorPalette.primaryText)
                             Text(event.date, style: .date)
-                                .padding(.leading, 5)
-                                .font(.system(size: 8))
-                                .foregroundColor(ColorPalette.secondaryText)
-                        }
+                                .font(.system(size: 10))
+                                .foregroundColor(ColorPalette.primaryText)
+                        }.padding(.leading, 15)
                         Spacer()
                     }
                 }
