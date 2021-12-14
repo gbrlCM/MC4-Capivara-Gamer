@@ -23,9 +23,7 @@ struct LoginView: View {
                     Spacer()
                 }.foregroundColor(ColorPalette.primaryText)
                     .padding()
-                SignInWAppleButton {
-                    viewModel.onLoginCompletion(result: $0)
-                }
+                SignInWAppleButton(onLoginCompletion: viewModel.onLoginCompletion)
             }
             Image("Loginbara")
                 .resizable()
@@ -38,7 +36,7 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(viewModel: LoginViewModel(authenticationService: AutheticationService(repository: UserRepositoryMock(), keychainService: KeyChainService()), onFinishAuth: {}))
+        LoginView(viewModel: LoginViewModel(repository: UserRepositoryMock()))
             .previewDevice("iPhone 13").preferredColorScheme(.light)
     }
 }

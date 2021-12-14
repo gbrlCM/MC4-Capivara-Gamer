@@ -13,38 +13,21 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             VStack {
-                switch viewModel.statusView{
-                case .ok:
-                    okView
-                case .error:
-                    ErrorView()
-                case .loading:
-                    LoadView()
-                case .empty:
-                    CapybaraEmptyView()
+                searchBar
+                
+                if !viewModel.searchFieldText.isEmpty {
+                    searched
+                }
+                
+                else {
+                    feed
                 }
             } .backgroundColor(ColorPalette.backgroundColor)
                 .navigationTitle("Explorar")
                 .navigationBarTitleColor(ColorPalette.primaryText)
-                .task {
-                    await viewModel.fetchInitialData()
-                }
-        }
-    }
-    
-    @ViewBuilder
-    var okView: some View {
-        
-        searchBar
-        
-        if !viewModel.searchFieldText.isEmpty {
-            searched
-        }
-        
-        else {
-            feed
-        }
-        
+        }.task {
+            await viewModel.fetchInitialData()
+        }.tabBarLabel(text: "Explorar", systemImage: "magnifyingglass")
     }
     
     @ViewBuilder
@@ -81,7 +64,7 @@ struct SearchView: View {
                         .padding(.trailing, 12)
                 }
             }
-        }
+        }.padding(.top, -3)
     }
     
     @ViewBuilder
@@ -127,6 +110,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepositoryMock()))
+        SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepositoryMock(), user: UserMock.gamerCapibara))
     }
 }

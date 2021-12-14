@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserProfileAvatar: View {
-
+    @Binding
     var imageURL: String
     
     var body: some View {

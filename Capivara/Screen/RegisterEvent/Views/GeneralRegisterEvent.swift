@@ -10,8 +10,6 @@ import SwiftUI
 struct GeneralRegisterEvent: View {
     @EnvironmentObject
     var viewModel: RegisterEventViewModel
-    @State private var image = UIImage()
-    @State private var showSheet = false
     
     var body: some View {
         ScrollView {
@@ -50,10 +48,7 @@ struct GeneralRegisterEvent: View {
     private var photoSection: some View {
         GeneralRegisterSection(title: "Capa do evento *",
                                subtitle: "Capa que ficará em destaque na pagina do evento.") {
-            Button(action: {
-                showSheet = true
-                ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
-            }) {
+            Button(action: {}) {
                 ZStack {
                     Rectangle().fill(ColorPalette.secondaryBackground)
                         .frame(height: 200)
@@ -61,13 +56,6 @@ struct GeneralRegisterEvent: View {
                     Image(systemName: "photo")
                         .foregroundColor(ColorPalette.accent)
                         .scaleEffect(2)
-                    
-                    Image(uiImage: self.image)
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(height: 200)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                                    .edgesIgnoringSafeArea(.all)
                     VStack {
                         Spacer()
                         HStack {
@@ -77,8 +65,6 @@ struct GeneralRegisterEvent: View {
                         }
                     }.padding()
                 }
-            }.sheet(isPresented: $showSheet) {
-                ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
             }
         }
     }
