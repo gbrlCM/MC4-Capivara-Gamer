@@ -58,31 +58,13 @@ struct MyEventsView: View {
                     .backgroundColor(ColorPalette.backgroundColor)
                     } else {
                     VStack {
-                        Spacer()
-                        LoadingCircle()
-                        Spacer()
+                        LoadView()
                     }.navigationTitle("Eventos")
                     .navigationBarTitleColor(ColorPalette.primaryText)
                     .backgroundColor(ColorPalette.backgroundColor)
                 }
-                .selectedSegmentTintColor(ColorPalette.accent)
-                .selectedTitleColor(ColorPalette.primaryText)
-                .unselectedTitleColor(ColorPalette.primaryText)
-                .pickerStyle(.segmented)
-                .padding()
-                switch viewModel.statusView{
-                case .ok:
-                    listMyEvent
-                case .error:
-                    ErrorView()
-                case .loading:
-                    LoadView()
-                case .empty:
-                    CapybaraEmptyView()
-                }
                 
-            }
-            .sheet(isPresented: $viewModel.isRegisteringEvent) {
+            }  .sheet(isPresented: $viewModel.isRegisteringEvent) {
                 RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
             }.preferredColorScheme(.dark)
                 .searchable(text: $viewModel.searchFieldText)
@@ -103,10 +85,8 @@ struct MyEventsView: View {
                         })
                     }
                 }
-        }
     }
-    
-    
+          
     @ViewBuilder
     var listMyEvent: some View{
         List {
