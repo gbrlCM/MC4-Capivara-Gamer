@@ -80,7 +80,7 @@ struct UserProfileView: View {
     @ViewBuilder
     var actionsSection: some View {
         VStack {
-            Button {} label: {
+            Button { viewModel.logout() } label: {
                 UserProfileActionLabel(text: "Logout")
                     .font(.headline.bold())
                 
@@ -88,7 +88,7 @@ struct UserProfileView: View {
                 .background(ColorPalette.secondaryBackground)
                 .cornerRadius(10)
             
-            Button(role: .destructive) {} label: {
+            Button(role: .destructive) { viewModel.delete() } label: {
                 UserProfileActionLabel(text: "Deletar minha conta")
                     .font(.headline.bold())
                 
