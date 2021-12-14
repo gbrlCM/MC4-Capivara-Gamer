@@ -25,6 +25,12 @@ struct UserRepository: UserRepositoryProtocol {
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
         
+        let (_, response) = try await URLSession.shared.data(for: request)
+        guard let httpResponse = response as? HTTPURLResponse else { return }
+        if httpResponse.statusCode != 200 {
+            throw NSError(domain: "Unvalid response", code: httpResponse.statusCode, userInfo: nil)
+        }
+        
     }
     
 }
