@@ -25,7 +25,7 @@ enum EventMock {
               tournamentCapacity: 8,
               teamSize: 5,
               creationDate: Date(timeIntervalSince1970: 1024),
-              date: Date(timeIntervalSince1970: 3096),
+              date: Date(timeIntervalSince1970: 4096),
               lobbyEntranceDate: Date(timeIntervalSince1970: 4004),
               eventStartDate: Date(timeIntervalSince1970: 4060),
               address: AddressMock.onlineAddress,
