@@ -6,6 +6,7 @@
 //
 import Combine
 import Foundation
+import UIKit
 
 final class RegisterEventViewModel: ObservableObject {
     
@@ -30,6 +31,8 @@ final class RegisterEventViewModel: ObservableObject {
     var selectedStreamType: StreamingType?
     @Published
     var selectedTournamentType: TournamentFormat?
+    @Published
+    var coverImage: UIImage
     @Published
     var selectedMatchType: MatchFormat?
     @Published
@@ -66,6 +69,7 @@ final class RegisterEventViewModel: ObservableObject {
     var generalFormIsValid: Bool
     
     private var repository: GameRepositoryProtocol
+    private var imageUploaderService: ImageUploaderService
     
     init(repository: GameRepositoryProtocol) {
         self.repository = repository
@@ -81,6 +85,7 @@ final class RegisterEventViewModel: ObservableObject {
         self.contactLink = ""
         self.streamLink = ""
         self.hasStreaming = false
+        self.coverImage = UIImage()
         self.isStreamTypeFieldValid = true
         self.isContactTypeFieldValid = true
         self.isIndividual = true
@@ -92,6 +97,7 @@ final class RegisterEventViewModel: ObservableObject {
         self.lobbyEntranceTimer = Date().addingTimeInterval(3600)
         self.eventStartTimer = Date().addingTimeInterval(3600*2)
         self.generalFormIsValid = false
+        self.imageUploaderService = ImageUploaderService()
     }
     
     @MainActor
@@ -101,6 +107,18 @@ final class RegisterEventViewModel: ObservableObject {
             self.games = games
         } catch  {
             viewState = .error
+        }
+    }
+    
+    @MainActor
+    func finishForm() async {
+        if let jpegData = coverImage.jpegData(compressionQuality: 0.5) {
+            do {
+                let imageURL = try await imageUploaderService.upload(jpegData)
+                print(imageURL)
+            } catch {
+                fatalError()
+            }
         }
     }
     

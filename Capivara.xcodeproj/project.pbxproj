@@ -62,6 +62,7 @@
 		5B898032274EC6A600CE92BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898031274EC6A600CE92BF /* User.swift */; };
 		5B898034274EC6ED00CE92BF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898033274EC6ED00CE92BF /* Game.swift */; };
 		5B898039274ECAA200CE92BF /* EventMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898038274ECAA200CE92BF /* EventMock.swift */; };
+		5B96719927697CD800BAD919 /* ImageUploaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96719827697CD800BAD919 /* ImageUploaderService.swift */; };
 		5B9D6D13275536FF00008B7E /* GeneralRegisterEventGameSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D12275536FF00008B7E /* GeneralRegisterEventGameSection.swift */; };
 		5B9D6D172755385C00008B7E /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D162755385C00008B7E /* Presentable.swift */; };
 		5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D18275568F800008B7E /* RegisterEventButton.swift */; };
@@ -236,6 +237,7 @@
 		5B898031274EC6A600CE92BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B898033274EC6ED00CE92BF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5B898038274ECAA200CE92BF /* EventMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMock.swift; sourceTree = "<group>"; };
+		5B96719827697CD800BAD919 /* ImageUploaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploaderService.swift; sourceTree = "<group>"; };
 		5B9D6D12275536FF00008B7E /* GeneralRegisterEventGameSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRegisterEventGameSection.swift; sourceTree = "<group>"; };
 		5B9D6D162755385C00008B7E /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		5B9D6D18275568F800008B7E /* RegisterEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventButton.swift; sourceTree = "<group>"; };
@@ -633,6 +635,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		5B96719727697CAA00BAD919 /* ImageUploader */ = {
+			isa = PBXGroup;
+			children = (
+				5B96719827697CD800BAD919 /* ImageUploaderService.swift */,
+			);
+			path = ImageUploader;
+			sourceTree = "<group>";
+		};
 		5B9D6D152755381200008B7E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +655,7 @@
 		5BC30FE92758796C00800DEB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5B96719727697CAA00BAD919 /* ImageUploader */,
 				5B1AC26A2763890500FD9A7B /* Authentication */,
 				5BC30FEA2758797700800DEB /* TextValidationService */,
 			);
@@ -1054,6 +1065,7 @@
 				5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */,
 				E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
+				5B96719927697CD800BAD919 /* ImageUploaderService.swift in Sources */,
 				E9C622C627580663002C5615 /* EditProfileView.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
 				5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */,
@@ -1481,10 +1493,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppClipEventInfo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Capivara;
+				INFOPLIST_KEY_CFBundleDisplayName = CAPY;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1497,7 +1510,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG APPCLIP";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1514,10 +1527,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppClipEventInfo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Capivara;
+				INFOPLIST_KEY_CFBundleDisplayName = CAPY;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1530,7 +1544,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APPCLIP;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
