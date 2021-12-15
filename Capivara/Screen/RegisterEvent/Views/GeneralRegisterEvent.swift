@@ -10,7 +10,6 @@ import SwiftUI
 struct GeneralRegisterEvent: View {
     @EnvironmentObject
     var viewModel: RegisterEventViewModel
-    @State private var image = UIImage()
     @State private var showSheet = false
     
     var body: some View {
@@ -61,7 +60,7 @@ struct GeneralRegisterEvent: View {
                         .foregroundColor(ColorPalette.accent)
                         .scaleEffect(2)
                     
-                    Image(uiImage: self.image)
+                    Image(uiImage: viewModel.coverImage)
                                     .resizable()
                                     .scaledToFill()
                                     .frame(height: 200)
@@ -77,7 +76,7 @@ struct GeneralRegisterEvent: View {
                     }.padding()
                 }
             }.sheet(isPresented: $showSheet) {
-                ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+                ImagePicker(sourceType: .photoLibrary, selectedImage: $viewModel.coverImage)
             }
         }
     }

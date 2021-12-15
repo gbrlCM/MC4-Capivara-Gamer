@@ -23,7 +23,7 @@ struct RulesRegisterEventView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Finalizar") {}
+                    Button("Finalizar") { Task { await viewModel.finishForm() } }
                     .foregroundColor(.accentColor)
                 }
             }
