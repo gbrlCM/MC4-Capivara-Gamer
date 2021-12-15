@@ -40,7 +40,7 @@ struct RulesRegisterEventView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             RulesRegisterEventView()
-                .environmentObject(RegisterEventViewModel(repository: GameRepositoryMock()))
+                .environmentObject(RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara))
         }
     }
 }

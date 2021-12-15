@@ -49,7 +49,7 @@ struct GameRegisterEventView: View {
 struct GameRegisterEventView_Previews: PreviewProvider {
     
     static var previews: some View {
-        let vm = RegisterEventViewModel(repository: GameRepositoryMock())
+        let vm = RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara)
         NavigationView {
             GameRegisterEventView()
                 .navigationTitle(RegisterEventTab.general.title)

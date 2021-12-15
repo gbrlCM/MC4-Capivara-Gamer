@@ -31,6 +31,6 @@ struct RegisterEventView: View {
 
 struct RegisterEventView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepositoryMock()))
+        RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara))
     }
 }

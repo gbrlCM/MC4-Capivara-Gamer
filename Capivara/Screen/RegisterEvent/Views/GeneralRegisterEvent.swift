@@ -134,7 +134,6 @@ struct GeneralRegisterEvent: View {
                                    title: "Hora de inicio",
                                    subtitle: "Horario que começara a primeira partida")
             }
-            
         }
     }
 }
@@ -143,7 +142,7 @@ struct GeneralRegisterEvent_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             GeneralRegisterEvent()
-        }.environmentObject(RegisterEventViewModel(repository: GameRepositoryMock()))
+        }.environmentObject(RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara))
     }
 }
 

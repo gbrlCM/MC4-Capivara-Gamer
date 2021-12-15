@@ -54,9 +54,11 @@ final class RegisterEventViewModel: ObservableObject {
     @Published
     var eventDate: Date
     @Published
-    var lobbyEntranceTimer: Date
+    var lobbyEntranceTimer: Double
     @Published
-    var eventStartTimer: Date
+    var eventStartTimer: Double
+    @Published
+    var creator: User
     
     //MARK: Field Validation
     @Published
@@ -71,7 +73,7 @@ final class RegisterEventViewModel: ObservableObject {
     private var repository: GameRepositoryProtocol
     private var imageUploaderService: ImageUploaderService
     
-    init(repository: GameRepositoryProtocol) {
+    init(repository: GameRepositoryProtocol, creator: User) {
         self.repository = repository
         self.games = []
         self.viewState = .loading
@@ -94,10 +96,11 @@ final class RegisterEventViewModel: ObservableObject {
         self.name = ""
         self.description = ""
         self.eventDate = Date()
-        self.lobbyEntranceTimer = Date().addingTimeInterval(3600)
-        self.eventStartTimer = Date().addingTimeInterval(3600*2)
+        self.lobbyEntranceTimer = Double()
+        self.eventStartTimer = Double()
         self.generalFormIsValid = false
         self.imageUploaderService = ImageUploaderService()
+        self.creator = creator
     }
     
     @MainActor
@@ -116,6 +119,8 @@ final class RegisterEventViewModel: ObservableObject {
             do {
                 let imageURL = try await imageUploaderService.upload(jpegData)
                 print(imageURL)
+                
+                let newEvent: Event = Event(id: nil, name: self.name, description: self.description, game: self.selectedGame ?? GameMock.leagueOfLegends, creator: self.creator, participants: [], coverUrl: imageURL, eventType: self.selectedEventType ?? .championship, eventFormat: self.selectedTournamentType ?? .points, matchFormat: self.selectedMatchType ?? .bestOfOne, tournamentCapacity: self.numberOfParticipants, teamSize: self.numberOfParticipantsPerTeam, date: self.eventDate, lobbyEntranceDate: self.lobbyEntranceTimer, eventStartDate: self.eventStartTimer, contactType: self.selectedContactType ?? .chatOnly, contactLink: self.contactLink, streamingType: self.selectedStreamType, streamingLink: self.streamLink, gamePlatform: self.selectedGameType ?? .pc)
             } catch {
                 fatalError()
             }
@@ -126,8 +131,8 @@ final class RegisterEventViewModel: ObservableObject {
         if name.isEmpty
             && description.isEmpty
             && eventDate < Date()
-            && lobbyEntranceTimer > eventDate
-            && eventStartTimer > eventDate {
+            && Date(timeIntervalSince1970: lobbyEntranceTimer) > eventDate
+            && Date(timeIntervalSince1970: eventStartTimer) > eventDate {
             return true
         } else {
             return false
