@@ -28,7 +28,6 @@ enum EventMock {
               date: Date(timeIntervalSince1970: 4096),
               lobbyEntranceDate: Date(timeIntervalSince1970: 4004),
               eventStartDate: Date(timeIntervalSince1970: 4060),
-              address: AddressMock.onlineAddress,
               contactType: .chatOnly,
               contactLink: "mailto:nathaliapapst@gmail.com".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
               streamingType: .instagram,

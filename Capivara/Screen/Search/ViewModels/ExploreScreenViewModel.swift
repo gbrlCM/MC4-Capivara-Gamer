@@ -48,7 +48,8 @@ final class ExploreScreenViewModel: ObservableObject {
                 $0.date < $1.date
             }
             statusView = StatusView.ok
-        } catch {
+        } catch{
+            print(error.localizedDescription)
             statusView = StatusView.error
         }
     }

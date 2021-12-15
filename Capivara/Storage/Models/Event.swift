@@ -25,13 +25,36 @@ struct Event: Codable, Equatable, Identifiable {
     var date: Date
     var lobbyEntranceDate: Date
     var eventStartDate: Date
-    var address: Address
     var contactType: ContactType
     var contactLink: String?
     var streamingType: StreamingType?
     var streamingLink: String?
     var gamePlatform: GameType
 }
+
+/**
+ val id: UUID?,
+ val creator: User,
+ var participants: MutableList<User>,
+ var name: String,
+ var description: String,
+ var coverUrl: String,
+ var game: Game,
+ var eventType: String,
+ var eventFormat: String,
+ var matchFormat: String,
+ var tournamentCapacity: Int,
+ val creationDate: Date,
+ var date: Date,
+ var lobbyEntranceDate: Date,
+ val eventStartDate: Date,
+ val typeEvent: String,
+ val linkContato: String?,
+ val typeStream: String,
+ val linkStream: String,
+ val gamePlataform: String,
+ var timeSize: Int,
+ */
 
 /**
  Possible formats of a tournament

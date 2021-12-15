@@ -34,12 +34,11 @@ final class AutheticationService: ObservableObject {
         let userId = credentials.user
         let firstName = credentials.fullName?.givenName
         let lastName = credentials.fullName?.familyName
-        let fullName = "\(firstName ?? "") \(lastName ?? "")"
+        let fullName = "\(firstName ?? "Capivarinha") \(lastName ?? "")"
         
         let newUser = User(id: nil,
-                           username: fullName,
+                           userName: fullName,
                            avatar: "",
-                           description: "",
                            dateOfBirth: Date(),
                            appleId: userId)
         
