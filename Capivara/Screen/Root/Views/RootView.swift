@@ -19,9 +19,6 @@ struct RootView: View {
                 .tag(TabBarScreen.search)
             UserProfileView(viewModel: UserProfileViewModel())
                 .tag(TabBarScreen.configuration)
-        }.onAppear {
-            let keychain = KeyChainService()
-            try! keychain.set("Oi miga", forKey: "shanty", inService: "dili")
         }
     }
 }
