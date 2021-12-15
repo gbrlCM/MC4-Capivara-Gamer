@@ -72,14 +72,14 @@ final class EventInfoViewModel: ObservableObject {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
         
-        return formatter.string(from: event.lobbyEntranceDate)
+        return formatter.string(from: Date(timeIntervalSince1970: event.lobbyEntranceDate))
     }
     
     func formatStartTimeDate() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
         
-        return formatter.string(from: event.eventStartDate)
+        return formatter.string(from: Date(timeIntervalSince1970: event.eventStartDate))
     }
     
 }

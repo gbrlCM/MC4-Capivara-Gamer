@@ -23,8 +23,8 @@ struct Event: Codable, Equatable, Identifiable {
     var teamSize: Int
     var creationDate: Date
     var date: Date
-    var lobbyEntranceDate: Date
-    var eventStartDate: Date
+    var lobbyEntranceDate: Double
+    var eventStartDate: Double
     var contactType: ContactType
     var contactLink: String?
     var streamingType: StreamingType?

@@ -13,12 +13,12 @@ struct RootView: View {
     @State
     var isNotLoggedIn: Bool = false
     @StateObject
-    var autheticationService: AutheticationService = AutheticationService(repository: UserRepository(), keychainService: KeyChainService())
+    var autheticationService: AutheticationService = AutheticationService(repository: UserRepository(), keychainService: KeychainServiceMock())
     
     var body: some View {
         TabView(selection: $selectedTab) {
             MyEventsView(viewModel:
-                            MyEventsViewModel(repository: EventRepositoryMock(),
+                            MyEventsViewModel(repository: EventRepository(),
                                               user: autheticationService.userPublisher.value,
                                               userPublisher: autheticationService.userPublisher.eraseToAnyPublisher()))
                 .tag(TabBarScreen.events)
