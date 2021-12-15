@@ -96,8 +96,6 @@
 		5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */; };
 		5B0D3BD7274C155300BB90F1 /* List+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */; };
 		5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
-		5B216AA8276937AB00A4882F /* DELETARDEPOIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B216AA7276937AB00A4882F /* DELETARDEPOIS.swift */; };
-		5B216AA9276937CE00A4882F /* DELETARDEPOIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B216AA7276937AB00A4882F /* DELETARDEPOIS.swift */; };
 		5B40E21B275EA66D000820E1 /* RulesRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */; };
 		5B40E21D275EA7FB000820E1 /* TournamentFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */; };
 		5B62F9A4275EA15F00979BA3 /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
@@ -237,7 +235,6 @@
 		5B0D3BD4274C12A500BB90F1 /* UserProfileActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionLabel.swift; sourceTree = "<group>"; };
 		5B0D3BD6274C155300BB90F1 /* List+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+BackgroundColor.swift"; sourceTree = "<group>"; };
 		5B0D3BD9274C239F00BB90F1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		5B216AA7276937AB00A4882F /* DELETARDEPOIS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELETARDEPOIS.swift; sourceTree = "<group>"; };
 		5B216AAA2769396C00A4882F /* CapivaraWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CapivaraWidgetExtension.entitlements; sourceTree = "<group>"; };
 		5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesRegisterEventView.swift; sourceTree = "<group>"; };
 		5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentFormatSection.swift; sourceTree = "<group>"; };
@@ -375,7 +372,6 @@
 				06D079832767BF8300F18007 /* ExtraLargeWidgetView.swift */,
 				0627E78E2763D31D00F2D6DA /* CapivaraControlWidget.swift */,
 				0627E77A2762829300F2D6DA /* CapivaraEntry.swift */,
-				5B216AA7276937AB00A4882F /* DELETARDEPOIS.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1054,7 +1050,6 @@
 				0667BB3D2767DC63001D7E64 /* RulesRegisterEventView.swift in Sources */,
 				0667BB1F2767C770001D7E64 /* Event.swift in Sources */,
 				0667BB4D2767DEDF001D7E64 /* ContainerView.swift in Sources */,
-				5B216AA8276937AB00A4882F /* DELETARDEPOIS.swift in Sources */,
 				0667BB1C2767C3D0001D7E64 /* LargeWidgetView.swift in Sources */,
 				0667BB362767DC09001D7E64 /* RegisterEventTab.swift in Sources */,
 				0667BB3C2767DC5C001D7E64 /* EventInfoTableViewCell.swift in Sources */,
@@ -1156,7 +1151,6 @@
 				E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */,
 				5B898030274EC67500CE92BF /* Address.swift in Sources */,
 				06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */,
-				5B216AA9276937CE00A4882F /* DELETARDEPOIS.swift in Sources */,
 				0666E8BC27595C4A002BA436 /* MyEventsTab.swift in Sources */,
 				5B0D3BCA274C056900BB90F1 /* SearchView.swift in Sources */,
 				5B832AB927500A39009F5D5A /* EventRepository.swift in Sources */,
