@@ -21,7 +21,7 @@ struct CapivaraControlWidget: View {
         case .systemMedium:
             MediumWidgetView(event: entry.event, widgetBackground: ColorPalette.backgroundColor)
         case .systemLarge:
-            LargeWidgetView()
+            LargeWidgetView(events: [])
         case .systemExtraLarge:
             ExtraLargeWidgetView()
         default:

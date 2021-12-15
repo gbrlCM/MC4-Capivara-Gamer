@@ -24,8 +24,9 @@ struct Provider: TimelineProvider {
     func getSnapshot(in context: Context, completion: @escaping (CapivaraEntry) -> ()) {
         Task {
             do {
+                let keychain = KeyChainService()
                 var event = EventMock.event
-                event.name = "Pudim"
+                event.name = try keychain.get(forKey: "shanty", inService: "dili")
                 let events = try await repository.fetchAllEvents()
                 completion(CapivaraEntry(date: Date(), event: event))
             } catch {
