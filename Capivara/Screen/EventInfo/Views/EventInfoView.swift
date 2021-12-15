@@ -40,7 +40,8 @@ struct EventInfoView: View {
                             #if APPCLIP
                                                         
                             #else
-                                Button(action:{}) {
+                            Button{viewModel.actionRegister()}
+                                label:{
                                     Text("Participar")
                                 }.foregroundColor(ColorPalette  .primaryText)
                                     .frame(width: 90, height:   30)
@@ -179,7 +180,7 @@ struct EventInfoView: View {
 struct EventInfoView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EventInfoView(viewModel: EventInfoViewModel(event: EventMock.event))
+            EventInfoView(viewModel: EventInfoViewModel(event: EventMock.event, user: UserMock.gamerCapibara,eventRepository: EventRepositoryMock()))
         }
     }
 }

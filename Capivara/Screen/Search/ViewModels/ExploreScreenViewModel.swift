@@ -17,8 +17,9 @@ final class ExploreScreenViewModel: ObservableObject {
     @Published var games: [Game]
     @Published var event: Event
     @Published var statusView: StatusView = .loading
+    @Published var user: User?
     
-    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol) {
+    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol, user:User?) {
         gameEvents = []
         allEvents = []
         self.eventRepository = eventRepository
@@ -26,6 +27,7 @@ final class ExploreScreenViewModel: ObservableObject {
         self.games = []
         self.gameRepository = gameRepository
         self.event = EventMock.event
+        self.user = user
     }
     
     var searchedEvents: [Event] {
