@@ -7,8 +7,12 @@
 import Combine
 import Foundation
 import UIKit
+import SwiftUI
 
 final class RegisterEventViewModel: ObservableObject {
+    
+    @Binding
+    var isShowing: Bool
     
     //MARK: View States
     @Published
@@ -54,9 +58,9 @@ final class RegisterEventViewModel: ObservableObject {
     @Published
     var eventDate: Date
     @Published
-    var lobbyEntranceTimer: Double
+    var lobbyEntranceTimer: Date
     @Published
-    var eventStartTimer: Double
+    var eventStartTimer: Date
     @Published
     var creator: User
     
@@ -73,7 +77,7 @@ final class RegisterEventViewModel: ObservableObject {
     private var repository: GameRepositoryProtocol
     private var imageUploaderService: ImageUploaderService
     
-    init(repository: GameRepositoryProtocol, creator: User) {
+    init(repository: GameRepositoryProtocol, creator: User, isShowing: Binding <Bool>) {
         self.repository = repository
         self.games = []
         self.viewState = .loading
@@ -96,11 +100,12 @@ final class RegisterEventViewModel: ObservableObject {
         self.name = ""
         self.description = ""
         self.eventDate = Date()
-        self.lobbyEntranceTimer = Double()
-        self.eventStartTimer = Double()
+        self.lobbyEntranceTimer = Date()
+        self.eventStartTimer = Date()
         self.generalFormIsValid = false
         self.imageUploaderService = ImageUploaderService()
         self.creator = creator
+        self._isShowing = isShowing
     }
     
     @MainActor
@@ -120,7 +125,28 @@ final class RegisterEventViewModel: ObservableObject {
                 let imageURL = try await imageUploaderService.upload(jpegData)
                 print(imageURL)
                 
-                let newEvent: Event = Event(id: nil, name: self.name, description: self.description, game: self.selectedGame ?? GameMock.leagueOfLegends, creator: self.creator, participants: [], coverUrl: imageURL, eventType: self.selectedEventType ?? .championship, eventFormat: self.selectedTournamentType ?? .points, matchFormat: self.selectedMatchType ?? .bestOfOne, tournamentCapacity: self.numberOfParticipants, teamSize: self.numberOfParticipantsPerTeam, date: self.eventDate, lobbyEntranceDate: self.lobbyEntranceTimer, eventStartDate: self.eventStartTimer, contactType: self.selectedContactType ?? .chatOnly, contactLink: self.contactLink, streamingType: self.selectedStreamType, streamingLink: self.streamLink, gamePlatform: self.selectedGameType ?? .pc)
+                let newEvent: Event = Event(id: nil,
+                                            name: self.name,
+                                            description: self.description,
+                                            game: self.selectedGame ?? GameMock.leagueOfLegends,
+                                            creator: self.creator,
+                                            participants: [],
+                                            coverUrl: imageURL,
+                                            eventType: self.selectedEventType ?? .championship,
+                                            eventFormat: self.selectedTournamentType ?? .points,
+                                            matchFormat: self.selectedMatchType ?? .bestOfOne,
+                                            tournamentCapacity: self.numberOfParticipants,
+                                            teamSize: self.numberOfParticipantsPerTeam,
+                                            date: self.eventDate,
+                                            lobbyEntranceDate: self.lobbyEntranceTimer.timeIntervalSince1970,
+                                            eventStartDate: self.eventStartTimer.timeIntervalSince1970,
+                                            contactType: self.selectedContactType ?? .chatOnly,
+                                            contactLink: self.contactLink,
+                                            streamingType: self.selectedStreamType,
+                                            streamingLink: self.streamLink,
+                                            gamePlatform: self.selectedGameType ?? .pc)
+                
+                isShowing = false
             } catch {
                 fatalError()
             }
@@ -131,8 +157,8 @@ final class RegisterEventViewModel: ObservableObject {
         if name.isEmpty
             && description.isEmpty
             && eventDate < Date()
-            && Date(timeIntervalSince1970: lobbyEntranceTimer) > eventDate
-            && Date(timeIntervalSince1970: eventStartTimer) > eventDate {
+            && lobbyEntranceTimer > eventDate
+            && eventStartTimer > eventDate {
             return true
         } else {
             return false

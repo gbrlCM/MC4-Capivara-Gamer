@@ -11,6 +11,8 @@ struct GeneralRegisterEvent: View {
     @EnvironmentObject
     var viewModel: RegisterEventViewModel
     @State private var showSheet = false
+    @Environment(\.dismiss)
+    var dismiss
     
     var body: some View {
         ScrollView {
@@ -25,7 +27,9 @@ struct GeneralRegisterEvent: View {
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-                Button(role: .cancel, action: {}) {
+                Button(role: .cancel, action: {
+                    dismiss()
+                }) {
                     Text("Cancelar")
                         .foregroundColor(ColorPalette.danger)
                 }
@@ -142,7 +146,7 @@ struct GeneralRegisterEvent_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             GeneralRegisterEvent()
-        }.environmentObject(RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara))
+        }.environmentObject(RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara, isShowing: .constant(true)))
     }
 }
 

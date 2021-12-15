@@ -10,6 +10,8 @@ import SwiftUI
 struct RulesRegisterEventView: View {
     @EnvironmentObject
     var viewModel: RegisterEventViewModel
+    @Environment(\.dismiss)
+    var dismiss
     
     var body: some View {
         ScrollView {
@@ -23,7 +25,12 @@ struct RulesRegisterEventView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Finalizar") { Task { await viewModel.finishForm() } }
+                    Button("Finalizar") {
+                        Task {
+                            await viewModel.finishForm()
+                            dismiss()
+                    }
+                    }
                     .foregroundColor(.accentColor)
                 }
             }
@@ -40,7 +47,7 @@ struct RulesRegisterEventView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             RulesRegisterEventView()
-                .environmentObject(RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara))
+                .environmentObject(RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara, isShowing: .constant(true)))
         }
     }
 }
