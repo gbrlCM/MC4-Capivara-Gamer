@@ -15,7 +15,7 @@ struct MediumWidgetView: View {
     
     var body: some View {
         HStack{
-            VStack (alignment: .leading, spacing: 0){
+            VStack (alignment: .center, spacing: 0){
                 Text(event.name)
                     .font(.system(size: 24, weight: .bold))
                     .foregroundColor(ColorPalette.primaryText)
