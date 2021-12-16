@@ -25,7 +25,7 @@ final class MyEventsViewModel: ObservableObject{
         events = []
         self.searchFieldText = ""
         self.isRegisteringEvent = false
-        userPublisher.assign(to: &$user)
+        userPublisher.receive(on: RunLoop.main).assign(to: &$user)
     }
 
     var searchedEvents: [Event] {
@@ -39,7 +39,7 @@ final class MyEventsViewModel: ObservableObject{
     }
     
     
-    
+    @MainActor
     func fetchEvents(for user: User) async {
         statusView = .loading
         do {

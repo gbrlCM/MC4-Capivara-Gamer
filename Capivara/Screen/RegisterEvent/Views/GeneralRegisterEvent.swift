@@ -11,6 +11,8 @@ struct GeneralRegisterEvent: View {
     @EnvironmentObject
     var viewModel: RegisterEventViewModel
     @State private var showSheet = false
+    @Environment(\.dismiss)
+    var dismiss
     
     var body: some View {
         ScrollView {
@@ -25,7 +27,9 @@ struct GeneralRegisterEvent: View {
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-                Button(role: .cancel, action: {}) {
+                Button(role: .cancel, action: {
+                    dismiss()
+                }) {
                     Text("Cancelar")
                         .foregroundColor(ColorPalette.danger)
                 }
@@ -60,12 +64,15 @@ struct GeneralRegisterEvent: View {
                         .foregroundColor(ColorPalette.accent)
                         .scaleEffect(2)
                     
-                    Image(uiImage: viewModel.coverImage)
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(height: 200)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                                    .edgesIgnoringSafeArea(.all)
+                    if let image = viewModel.coverImage {
+                        Image(uiImage: image)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(height: 200)
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .edgesIgnoringSafeArea(.all)
+                    }
+                    
                     VStack {
                         Spacer()
                         HStack {
@@ -134,7 +141,6 @@ struct GeneralRegisterEvent: View {
                                    title: "Hora de inicio",
                                    subtitle: "Horario que começara a primeira partida")
             }
-            
         }
     }
 }
@@ -143,7 +149,7 @@ struct GeneralRegisterEvent_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             GeneralRegisterEvent()
-        }.environmentObject(RegisterEventViewModel(repository: GameRepositoryMock()))
+        }.environmentObject(RegisterEventViewModel(gameRepository: GameRepositoryMock(), creator: UserMock.gamerCapibara, isShowing: .constant(true), eventRepository: EventRepositoryMock()))
     }
 }
 

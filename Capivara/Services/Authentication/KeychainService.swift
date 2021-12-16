@@ -14,7 +14,7 @@ protocol KeyChainServiceProtocol {
     func delete(forKey key: String, inService service: String, inGroup group: String) throws
 }
 
-struct KeyChainService: KeyChainServiceProtocol {
+struct KeychainService: KeyChainServiceProtocol {
     
     func get(forKey key: String, inService service: String, inGroup group: String) throws -> String {
         let query: [String: AnyObject] = [
@@ -130,6 +130,7 @@ class KeychainServiceMock: KeyChainServiceProtocol {
         }
         
         return value
+
     }
     
     func set(_ value: String, forKey key: String, inService service: String, inGroup group: String) throws {

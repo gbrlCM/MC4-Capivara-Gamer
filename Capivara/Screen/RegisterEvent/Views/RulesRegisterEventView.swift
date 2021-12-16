@@ -10,6 +10,9 @@ import SwiftUI
 struct RulesRegisterEventView: View {
     @EnvironmentObject
     var viewModel: RegisterEventViewModel
+    @Environment(\.dismiss)
+    var dismiss
+    @State var showAlert: Bool = false
     
     var body: some View {
         ScrollView {
@@ -23,9 +26,20 @@ struct RulesRegisterEventView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Finalizar") { Task { await viewModel.finishForm() } }
+                    Button("Finalizar") {
+                        Task {
+                            do {
+                                try await viewModel.finishForm()
+                                dismiss()
+                            } catch {
+                                print(error.localizedDescription)
+                                showAlert = true
+                            }
+                        }
+                    }
                     .foregroundColor(.accentColor)
                 }
+            }.alert("Um erro ocorreu ao tentar registrar o evento.", isPresented: $showAlert) {Button("OK", role: .cancel) { }
             }
             .padding(.top, 8)
         }
@@ -40,7 +54,7 @@ struct RulesRegisterEventView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             RulesRegisterEventView()
-                .environmentObject(RegisterEventViewModel(repository: GameRepositoryMock()))
+                .environmentObject(RegisterEventViewModel(gameRepository: GameRepositoryMock(), creator: UserMock.gamerCapibara, isShowing: .constant(true), eventRepository: EventRepositoryMock()))
         }
     }
 }

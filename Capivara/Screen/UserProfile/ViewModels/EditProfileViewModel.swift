@@ -13,6 +13,6 @@ final class EditProfileViewModel: ObservableObject {
     
     init(user: User) {
         self.user = user
-        self.usernameField = user.username
+        self.usernameField = user.userName
     }
 }

@@ -51,7 +51,7 @@ struct UserProfileView: View {
             HStack {
                 UserProfileAvatar(imageURL: user.avatar)
                 VStack(alignment: .leading) {
-                    Text(user.username)
+                    Text(user.userName)
                         .font(.title2.bold())
                     Text(user.dateOfBirth, style: .date)
                 }

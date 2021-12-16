@@ -24,10 +24,10 @@ enum EventMock {
               matchFormat: .bestOfOne,
               tournamentCapacity: 8,
               teamSize: 5,
-              creationDate: Date(timeIntervalSince1970: 1024),
               date: Date(timeIntervalSince1970: 4096),
-              lobbyEntranceDate: Date(timeIntervalSince1970: 4004),
-              eventStartDate: Date(timeIntervalSince1970: 4060),
+
+              lobbyEntranceDate: Date(timeIntervalSince1970: 4004).timeIntervalSince1970,
+              eventStartDate: Date(timeIntervalSince1970: 4060).timeIntervalSince1970,
               contactType: .chatOnly,
               contactLink: "mailto:nathaliapapst@gmail.com".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
               streamingType: .instagram,
