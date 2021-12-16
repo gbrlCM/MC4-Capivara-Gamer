@@ -57,7 +57,7 @@ final class EventInfoViewModel: ObservableObject {
         }
     }
     
-    init(event: Event,user: User?,eventRepository:EventRepositoryProtocol) {
+    init(event: Event, user: User?, eventRepository: EventRepositoryProtocol) {
         self.event = event
         self.user = user
         self.eventRepository = eventRepository
@@ -88,21 +88,13 @@ final class EventInfoViewModel: ObservableObject {
         return formatter.string(from: Date(timeIntervalSince1970: event.eventStartDate))
     }
     
-    func registerToEvent() async{
+    func registerToEvent() async {
         
         guard let newUser = user else { return }
-
-
-        event.participants.forEach{ participan in
-            if participan == user {
-                print("Deu erro")
-                return
-            }
-        }
         
         do {
             try await eventRepository.registerToEvent(newUser, event: event)
-            print("Sucesso")
+            event.participants.append(newUser)
         } catch {
             print(error.localizedDescription)
         }

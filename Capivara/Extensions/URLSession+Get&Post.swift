@@ -9,7 +9,6 @@ import Foundation
 
 extension URLSession {
     func get<T:Codable>(urlString: String, decodeTo: T.Type) async throws -> T {
-        
         guard let url = URL(string: urlString) // Mostra o caminho do back
         else {
             throw NSError(domain: "Unvalid URL", code: 1, userInfo: nil)

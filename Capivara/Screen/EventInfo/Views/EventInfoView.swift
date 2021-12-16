@@ -37,18 +37,29 @@ struct EventInfoView: View {
                             
                             Spacer()
                             
-                            #if APPCLIP
-                                                        
-                            #else
-                            Button{viewModel.actionRegister()}
-                                label:{
-                                    Text("Participar")
-                                }.foregroundColor(ColorPalette  .primaryText)
-                                    .frame(width: 90, height:   30)
-                                    .background(ColorPalette    .accent)
+#if APPCLIP
+                            
+#else
+                            if let user = viewModel.user,
+                                !viewModel.event.participants.contains(user),
+                               viewModel.event.creator.id != user.id
+                            {
+                                Button{viewModel.actionRegister()}
+                            label:{
+                                Text("Participar")
+                            }.foregroundColor(ColorPalette .primaryText)
+                                    .frame(width: 90, height: 30)
+                                    .background(ColorPalette .accent)
                                     .cornerRadius(21)
                                     .padding()
-                            #endif
+                            } else {
+                                Image(systemName: "checkmark")
+                                    .frame(width: 90, height: 30)
+                                    .onAppear {
+                                        print(viewModel.user)
+                                    }
+                            }
+#endif
                             
                         }.background(ColorPalette.backgroundColor.opacity(0.9))
                             .cornerRadius(20, corners: [.topLeft, .topRight])
@@ -67,9 +78,9 @@ struct EventInfoView: View {
                                 .font(.system(size: 17, weight: .semibold))
                         }.padding(.bottom)
                         
-                            viewModel.event.gamePlatform.label
-                                .font(.system(size: 17, weight: .semibold))
-                                .foregroundColor(ColorPalette.primaryText)
+                        viewModel.event.gamePlatform.label
+                            .font(.system(size: 17, weight: .semibold))
+                            .foregroundColor(ColorPalette.primaryText)
                     }.padding()
                         .background(ColorPalette.secondaryBackground)
                         .cornerRadius(10)
@@ -150,13 +161,17 @@ struct EventInfoView: View {
                         Group {
                             EventInfoTableViewCell(title: "Início da Primeira Partida", info: "\(viewModel.formatStartTimeDate())")
                         }
-                                                
+                        
                     }.foregroundColor(ColorPalette.primaryText)
                     
                 }.background(RoundedRectangle(cornerRadius: 10).fill(ColorPalette.secondaryBackground))
                     .padding()
-
-            }.backgroundColor(ColorPalette.backgroundColor)
+                
+            }
+            .onAppear(perform: {
+                print(viewModel.event.game)
+            })
+            .backgroundColor(ColorPalette.backgroundColor)
                 .navigationTitle("Informação do Evento").navigationBarTitleColor(ColorPalette.primaryText)
                 .navigationBarTitleDisplayMode(.inline)
                 .onAppear(perform: getImageSymbol)

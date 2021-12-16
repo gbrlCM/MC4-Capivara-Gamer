@@ -22,7 +22,7 @@ struct RootView: View {
                                               user: autheticationService.userPublisher.value,
                                               userPublisher: autheticationService.userPublisher.eraseToAnyPublisher()))
                 .tag(TabBarScreen.events)
-            SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepository(), gameRepository: GameRepository(), user: autheticationService.userPublisher.value))
+            SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepository(), gameRepository: GameRepository(), user: autheticationService.userPublisher.value, userPublisher: autheticationService.userPublisher))
                 .tag(TabBarScreen.search)
             UserProfileView(viewModel: UserProfileViewModel(authenticationService: autheticationService))
                 .tag(TabBarScreen.configuration)
