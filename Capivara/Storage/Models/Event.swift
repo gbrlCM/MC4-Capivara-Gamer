@@ -22,6 +22,7 @@ struct Event: Codable, Equatable, Identifiable {
     var tournamentCapacity: Int
     var teamSize: Int
     var date: Date
+
     var lobbyEntranceDate: Double
     var eventStartDate: Double
     var contactType: ContactType

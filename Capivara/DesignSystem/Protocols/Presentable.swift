@@ -111,7 +111,24 @@ extension GameType: Presentable {
         }
         return label.font(.headline.weight(.semibold)).foregroundColor(ColorPalette.primaryText)
     }
+    
+    var labelWidget: some View {
+        let labelWidget: Label<Text, Image>
+        switch self {
+        case .mobile:
+            labelWidget = Label("Mobile", systemImage: "candybarphone")
+        case .pc:
+            labelWidget = Label("Computador", systemImage: "laptopcomputer")
+        case .xbox:
+            labelWidget = Label("Xbox", systemImage: "logo.xbox")
+        case .playstation:
+            labelWidget = Label("Playstation", systemImage: "logo.playstation")
+        }
+        return labelWidget.font(.system(size: 14)).foregroundColor(ColorPalette.primaryText)
+    }
+    
 }
+
 
 extension AddressType: Presentable {
     var label: some View {

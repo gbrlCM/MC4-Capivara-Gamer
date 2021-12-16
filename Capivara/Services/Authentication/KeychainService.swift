@@ -9,18 +9,19 @@ import Foundation
 import Security
 
 protocol KeyChainServiceProtocol {
-    func get(forKey key: String, inService service: String) throws -> String
-    func set(_ value: String, forKey key: String, inService service: String) throws
-    func delete(forKey key: String, inService service: String) throws
+    func get(forKey key: String, inService service: String , inGroup group: String) throws -> String
+    func set(_ value: String, forKey key: String, inService service: String, inGroup group: String) throws
+    func delete(forKey key: String, inService service: String, inGroup group: String) throws
 }
 
 struct KeychainService: KeyChainServiceProtocol {
     
-    func get(forKey key: String, inService service: String) throws -> String {
+    func get(forKey key: String, inService service: String, inGroup group: String) throws -> String {
         let query: [String: AnyObject] = [
             kSecAttrService as String: service as AnyObject,
             kSecAttrAccount as String: key as AnyObject,
             kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccessGroup as String: group as AnyObject,
             kSecMatchLimit as String: kSecMatchLimitOne,
             kSecReturnData as String: kCFBooleanTrue
         ]
@@ -50,20 +51,21 @@ struct KeychainService: KeyChainServiceProtocol {
         return decodedValue
     }
     
-    func set(_ value: String, forKey key: String, inService service: String) throws {
+    func set(_ value: String, forKey key: String, inService service: String, inGroup group: String) throws {
         let data = value.data(using: .utf8)
         
         let query: [String: AnyObject] = [
             kSecAttrService as String: service as AnyObject,
             kSecAttrAccount as String: key as AnyObject,
             kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccessGroup as String: group as AnyObject,
             kSecValueData as String: data as AnyObject
         ]
         
         let status = SecItemAdd(query as CFDictionary, nil)
         
         if status == errSecDuplicateItem {
-            try update(value, service: service, inKey: key)
+            try update(value, service: service, inKey: key, inGroup: group)
             
         } else if status != errSecSuccess {
             print(status)
@@ -71,12 +73,13 @@ struct KeychainService: KeyChainServiceProtocol {
         }
     }
     
-    private func update(_ value: String, service: String, inKey key: String) throws {
+    private func update(_ value: String, service: String, inKey key: String, inGroup group: String) throws {
         let data = value.data(using: .utf8)
         
         let query: [String: AnyObject] = [
             kSecAttrService as String: service as AnyObject,
             kSecAttrAccount as String: key as AnyObject,
+            kSecAttrAccessGroup as String: group as AnyObject,
             kSecClass as String: kSecClassGenericPassword
         ]
 
@@ -100,10 +103,11 @@ struct KeychainService: KeyChainServiceProtocol {
         }
     }
     
-    func delete(forKey key: String, inService service: String) throws {
+    func delete(forKey key: String, inService service: String, inGroup group: String) throws {
         let query: [String: AnyObject] = [
             kSecAttrService as String: service as AnyObject,
             kSecAttrAccount as String: key as AnyObject,
+            kSecAttrAccessGroup as String: group as AnyObject,
             kSecClass as String: kSecClassGenericPassword
         ]
         
@@ -120,20 +124,20 @@ struct KeychainService: KeyChainServiceProtocol {
 class KeychainServiceMock: KeyChainServiceProtocol {
     var values: [String : String] = [:]
     
-    func get(forKey key: String, inService service: String) throws -> String {
-//        guard let value = values[key] else {
-//            throw KeychainError.itemNotFound
-//        }
-//
-//        return value
-        return "000988.7e30e3ef1de64e1cad6395d82c0bdebf.1943"
+    func get(forKey key: String, inService service: String, inGroup group: String) throws -> String {
+        guard let value = values[key] else {
+            throw KeychainError.itemNotFound
+        }
+        
+        return value
+
     }
     
-    func set(_ value: String, forKey key: String, inService service: String) throws {
+    func set(_ value: String, forKey key: String, inService service: String, inGroup group: String) throws {
         values[key] = value
     }
     
-    func delete(forKey key: String, inService service: String) throws {
+    func delete(forKey key: String, inService service: String, inGroup group: String) throws {
         values.removeValue(forKey: key)
     }
     

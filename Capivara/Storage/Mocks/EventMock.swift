@@ -25,6 +25,7 @@ enum EventMock {
               tournamentCapacity: 8,
               teamSize: 5,
               date: Date(timeIntervalSince1970: 4096),
+
               lobbyEntranceDate: Date(timeIntervalSince1970: 4004).timeIntervalSince1970,
               eventStartDate: Date(timeIntervalSince1970: 4060).timeIntervalSince1970,
               contactType: .chatOnly,

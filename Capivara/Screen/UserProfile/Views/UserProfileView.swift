@@ -107,7 +107,7 @@ struct UserProfileView_Previews: PreviewProvider {
         let service = AutheticationService(repository: UserRepositoryMock(), keychainService: keychainMock)
         UserProfileView(viewModel: UserProfileViewModel(authenticationService: service))
             .task {
-                try! keychainMock.set("appleid", forKey: "userCredential", inService: "1243")
+                try! keychainMock.set("appleid", forKey: "userCredential", inService: "1243", inGroup: "oi")
                 try! await service.login()
             }
             .preferredColorScheme(.light)
