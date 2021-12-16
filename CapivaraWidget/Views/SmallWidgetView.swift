@@ -11,49 +11,37 @@ import WidgetKit
 struct SmallWidgetView: View {
     
     let event: Event
-    var image: UIImage?
+    let widgetBackground: Color
     
     var body: some View {
         ZStack (alignment: .bottomLeading) {
-            if let image = image {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 120, height: 120)
-                    .cornerRadius(10)
-            } else {
-                Image("standard")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 120, height: 120)
-                    .cornerRadius(10)
-            }
-            VStack{
-                ZStack {
-                    Rectangle()
-                        .fill(Color.black)
-                        .frame(height: 50)
-                        .opacity(0.8)
-                        .cornerRadius(8)
-                    HStack{
-                        VStack (alignment: .leading){
-                            Text(event.name)
-                                .font(.system(size: 14, weight: .bold))
-                                .foregroundColor(ColorPalette.primaryText)
-                            Text(event.date, style: .date)
-                                .font(.system(size: 10))
-                                .foregroundColor(ColorPalette.primaryText)
-                        }.padding(.leading, 18)
-                        Spacer()
-                    }
+            HStack{
+                VStack (alignment: .leading, spacing: 0){
+                    Text(event.name)
+                        .font(.system(size: 16, weight: .bold))
+                        .foregroundColor(ColorPalette.primaryText)
+                    Text(event.date, style: .date)
+                        .font(.system(size: 11)).foregroundColor(ColorPalette.primaryText)
+                        .foregroundColor(ColorPalette.secondaryText)
+//                    Text(event.gamePlatform.label)
+                    
+                    event.gamePlatform.labelWidget.opacity(0.5)
+                    
+                    
                 }
-            }
+                Spacer()
+                
+            } .padding(10)
+                .background(widgetBackground)
+                .backgroundColor(ColorPalette.backgroundColor)
+                .cornerRadius(10)
         }
+        
     }
     
     struct SmallWidgetView_Previews: PreviewProvider {
         static var previews: some View {
-            SmallWidgetView(event: EventMock.event)
+            SmallWidgetView(event: EventMock.event, widgetBackground: ColorPalette.backgroundColor)
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
         }
     }

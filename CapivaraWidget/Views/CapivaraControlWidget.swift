@@ -17,13 +17,11 @@ struct CapivaraControlWidget: View {
     var body: some View {
         switch family {
         case .systemSmall:
-            SmallWidgetView(event: entry.event)
+            SmallWidgetView(event: entry.event, widgetBackground: ColorPalette.backgroundColor)
         case .systemMedium:
-            MediumWidgetView(event: entry.event, image: entry.image, widgetBackground: ColorPalette.backgroundColor)
+            MediumWidgetView(event: entry.event, widgetBackground: ColorPalette.backgroundColor)
         case .systemLarge:
             LargeWidgetView(events: [])
-        case .systemExtraLarge:
-            ExtraLargeWidgetView()
         default:
             MediumWidgetView(event: entry.event, widgetBackground: ColorPalette.backgroundColor)
             

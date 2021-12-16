@@ -88,7 +88,6 @@
 		5BC89ADE276A7BEC00183279 /* CapivaraWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5BC89ACD276A7BEA00183279 /* CapivaraWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5BC89AF1276A7D9000183279 /* CapivaraControlWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AE5276A7C7C00183279 /* CapivaraControlWidget.swift */; };
 		5BC89AF2276A7D9400183279 /* CapivaraEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AE7276A7CA900183279 /* CapivaraEntry.swift */; };
-		5BC89AF3276A7D9800183279 /* ExtraLargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AE9276A7CD200183279 /* ExtraLargeWidgetView.swift */; };
 		5BC89AF4276A7D9C00183279 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AEB276A7D1000183279 /* LargeWidgetView.swift */; };
 		5BC89AF5276A7DA000183279 /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AEF276A7D4E00183279 /* SmallWidgetView.swift */; };
 		5BC89AF6276A7DA400183279 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AED276A7D3800183279 /* MediumWidgetView.swift */; };
@@ -315,7 +314,6 @@
 		5BC89AE3276A7C4200183279 /* CapivaraWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CapivaraWidgetExtension.entitlements; sourceTree = "<group>"; };
 		5BC89AE5276A7C7C00183279 /* CapivaraControlWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraControlWidget.swift; sourceTree = "<group>"; };
 		5BC89AE7276A7CA900183279 /* CapivaraEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraEntry.swift; sourceTree = "<group>"; };
-		5BC89AE9276A7CD200183279 /* ExtraLargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraLargeWidgetView.swift; sourceTree = "<group>"; };
 		5BC89AEB276A7D1000183279 /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
 		5BC89AED276A7D3800183279 /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
 		5BC89AEF276A7D4E00183279 /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
@@ -772,10 +770,9 @@
 			children = (
 				5BC89AE5276A7C7C00183279 /* CapivaraControlWidget.swift */,
 				5BC89AE7276A7CA900183279 /* CapivaraEntry.swift */,
-				5BC89AE9276A7CD200183279 /* ExtraLargeWidgetView.swift */,
-				5BC89AEB276A7D1000183279 /* LargeWidgetView.swift */,
-				5BC89AED276A7D3800183279 /* MediumWidgetView.swift */,
 				5BC89AEF276A7D4E00183279 /* SmallWidgetView.swift */,
+				5BC89AED276A7D3800183279 /* MediumWidgetView.swift */,
+				5BC89AEB276A7D1000183279 /* LargeWidgetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1173,7 +1170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BC89AF3276A7D9800183279 /* ExtraLargeWidgetView.swift in Sources */,
 				5BC89AF7276A7DC300183279 /* Event.swift in Sources */,
 				5BC89B04276A7EA400183279 /* EventRepository.swift in Sources */,
 				5BC89AF6276A7DA400183279 /* MediumWidgetView.swift in Sources */,
