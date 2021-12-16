@@ -12,23 +12,31 @@ struct SearchView: View {
     
     var body: some View {
         NavigationView {
+            if viewModel.user != nil {
+                VStack {
+                    switch viewModel.statusView{
+                    case .ok:
+                        okView
+                    case .error:
+                        ErrorView()
+                    case .loading:
+                        LoadView()
+                    case .empty:
+                        CapybaraEmptyView()
+                    }
+                } .backgroundColor(ColorPalette.backgroundColor)
+                    .navigationTitle("Explorar")
+                    .navigationBarTitleColor(ColorPalette.primaryText)
+                    .task {
+                        await viewModel.fetchInitialData()
+                    }
+        } else {
             VStack {
-                switch viewModel.statusView{
-                case .ok:
-                    okView
-                case .error:
-                    ErrorView()
-                case .loading:
-                    LoadView()
-                case .empty:
-                    CapybaraEmptyView()
-                }
+                LoadView()
             } .backgroundColor(ColorPalette.backgroundColor)
                 .navigationTitle("Explorar")
                 .navigationBarTitleColor(ColorPalette.primaryText)
-                .task {
-                    await viewModel.fetchInitialData()
-                }
+        }
         }.tabBarLabel(text: "Explorar", systemImage: "square.grid.2x2.fill")
     }
     @ViewBuilder
@@ -77,7 +85,7 @@ struct SearchView: View {
             HStack {
                 ForEach(viewModel.games) { game in
                     NavigationLink.init(destination: {
-                        SearchedEventsView(contents: viewModel.allEvents.filter {$0.game == game})
+                        SearchedEventsView(contents: viewModel.allEvents.filter {$0.game == game}, user: viewModel.user)
                             .navigationTitle(game.name)
                             .navigationBarTitleColor(ColorPalette.primaryText)
                     }, label: {
@@ -99,7 +107,7 @@ struct SearchView: View {
             ForEach(viewModel.allEvents) { content in
                 ZStack {
                     NavigationLink(destination: {
-                        EventInfoView(viewModel: EventInfoViewModel(event: content))
+                        EventInfoView(viewModel: EventInfoViewModel(event: content, user: viewModel.user, eventRepository: EventRepository()))
                     }, label: {
                         EventCardView(event: content)
                     }) .frame(maxWidth: .infinity, minHeight: 155, maxHeight: 155)
@@ -111,7 +119,7 @@ struct SearchView: View {
     
     @ViewBuilder
     var searched: some View {
-        SearchedEventsView(contents: viewModel.searchedEvents)
+        SearchedEventsView(contents: viewModel.searchedEvents, user: viewModel.user)
     }
     
     @ViewBuilder
@@ -131,6 +139,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepositoryMock()))
+        SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepositoryMock(), user: UserMock.gamerCapibara, userPublisher: .init(UserMock.gamerCapibara)))
     }
 }

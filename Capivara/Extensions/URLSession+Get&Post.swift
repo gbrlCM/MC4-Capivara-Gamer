@@ -9,15 +9,26 @@ import Foundation
 
 extension URLSession {
     func get<T:Codable>(urlString: String, decodeTo: T.Type) async throws -> T {
-        
         guard let url = URL(string: urlString) // Mostra o caminho do back
         else {
             throw NSError(domain: "Unvalid URL", code: 1, userInfo: nil)
         }
         
+        let yyyyMMdd: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            formatter.calendar = Calendar(identifier: .iso8601)
+            formatter.timeZone = TimeZone(secondsFromGMT: 0)
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            return formatter
+          }()
+        
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(yyyyMMdd)
+        
         let request = URLRequest(url: url) // Cria uma requisição com o caminho do back
         let (data, _) = try await URLSession.shared.data(for: request) // Executa a requisição e conecta com o back
-        let decodedData = try JSONDecoder().decode(T.self, from: data) // Decodifica o JSON para os tipos dentro do Swift
+        let decodedData = try decoder.decode(T.self, from: data) // Decodifica o JSON para os tipos dentro do Swift
         
         return decodedData
         

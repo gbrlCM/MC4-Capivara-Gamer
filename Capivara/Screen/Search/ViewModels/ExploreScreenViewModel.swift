@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 final class ExploreScreenViewModel: ObservableObject {
     @Published private var gameEvents: [Event]
@@ -17,8 +18,9 @@ final class ExploreScreenViewModel: ObservableObject {
     @Published var games: [Game]
     @Published var event: Event
     @Published var statusView: StatusView = .loading
+    @Published var user: User?
     
-    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol) {
+    init(eventRepository: EventRepositoryProtocol, gameRepository: GameRepositoryProtocol, user:User?, userPublisher: CurrentValueSubject<User?, Never>) {
         gameEvents = []
         allEvents = []
         self.eventRepository = eventRepository
@@ -26,6 +28,8 @@ final class ExploreScreenViewModel: ObservableObject {
         self.games = []
         self.gameRepository = gameRepository
         self.event = EventMock.event
+        self.user = user
+        userPublisher.receive(on: RunLoop.main).assign(to: &$user)
     }
     
     var searchedEvents: [Event] {
@@ -48,7 +52,8 @@ final class ExploreScreenViewModel: ObservableObject {
                 $0.date < $1.date
             }
             statusView = StatusView.ok
-        } catch {
+        } catch{
+            print(error.localizedDescription)
             statusView = StatusView.error
         }
     }

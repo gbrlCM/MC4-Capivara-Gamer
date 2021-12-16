@@ -13,7 +13,7 @@ final class UserProfileViewModel: ObservableObject {
     init(authenticationService: AutheticationService) {
         self.user = authenticationService.userPublisher.value
         self.authenticationService = authenticationService
-        authenticationService.userPublisher.assign(to: &$user)
+        authenticationService.userPublisher.receive(on: RunLoop.main).assign(to: &$user)
     }
     
     @MainActor

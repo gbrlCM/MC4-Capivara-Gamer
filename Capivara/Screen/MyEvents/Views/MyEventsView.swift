@@ -10,7 +10,6 @@ import SwiftUI
 struct MyEventsView: View {
     
     @ObservedObject var viewModel: MyEventsViewModel
-    
     var body: some View {
         NavigationView {
                 if let user = viewModel.user {
@@ -65,7 +64,7 @@ struct MyEventsView: View {
                 }
             
         }.sheet(isPresented: $viewModel.isRegisteringEvent) {
-            RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository()))
+            RegisterEventView(viewModel: RegisterEventViewModel(gameRepository: GameRepository(), creator: UserMock.gamerCapibara, isShowing: $viewModel.isRegisteringEvent, eventRepository: EventRepositoryMock()))
         }.preferredColorScheme(.dark)
          .searchable(text: $viewModel.searchFieldText)
          .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")
@@ -79,7 +78,7 @@ struct MyEventsView: View {
             ForEach(viewModel.filterSegmentedEvents){ content in
                 ZStack {
                     NavigationLink(destination: {
-                        EventInfoView(viewModel: EventInfoViewModel(event: content))
+                        EventInfoView(viewModel: EventInfoViewModel(event: content, user: viewModel.user, eventRepository: EventRepository()))
                     }, label: {
                         EmptyView()
                     })
