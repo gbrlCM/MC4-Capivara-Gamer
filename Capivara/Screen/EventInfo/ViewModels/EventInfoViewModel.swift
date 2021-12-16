@@ -6,9 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class EventInfoViewModel: ObservableObject {
     @Published var event: Event
+    @Published var user: User?
+    private var eventRepository: EventRepositoryProtocol
+    
     var streamLinkImage: (String, URL)? {
         guard let streamType = event.streamingType,
               let streamLink = event.streamingLink,
@@ -53,8 +57,10 @@ final class EventInfoViewModel: ObservableObject {
         }
     }
     
-    init(event: Event) {
+    init(event: Event, user: User?, eventRepository: EventRepositoryProtocol) {
         self.event = event
+        self.user = user
+        self.eventRepository = eventRepository
     }
     
     func participate() {
@@ -72,14 +78,34 @@ final class EventInfoViewModel: ObservableObject {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
         
-        return formatter.string(from: event.lobbyEntranceDate)
+        return formatter.string(from: Date(timeIntervalSince1970: event.lobbyEntranceDate))
     }
     
     func formatStartTimeDate() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
         
-        return formatter.string(from: event.eventStartDate)
+        return formatter.string(from: Date(timeIntervalSince1970: event.eventStartDate))
+    }
+    
+    func registerToEvent() async {
+        
+        guard let newUser = user else { return }
+        
+        do {
+            try await eventRepository.registerToEvent(newUser, event: event)
+            event.participants.append(newUser)
+        } catch {
+            print(error.localizedDescription)
+        }
+       
+        
+    }
+    
+    func actionRegister() {
+        Task {
+            await registerToEvent()
+        }
     }
     
 }

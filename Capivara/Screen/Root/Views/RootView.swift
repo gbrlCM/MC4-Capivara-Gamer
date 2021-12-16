@@ -13,16 +13,16 @@ struct RootView: View {
     @State
     var isNotLoggedIn: Bool = false
     @StateObject
-    var autheticationService: AutheticationService = AutheticationService(repository: UserRepositoryMock(), keychainService: KeyChainService())
+    var autheticationService: AutheticationService = AutheticationService(repository: UserRepository(), keychainService: KeychainServiceMock())
     
     var body: some View {
         TabView(selection: $selectedTab) {
             MyEventsView(viewModel:
-                            MyEventsViewModel(repository: EventRepositoryMock(),
+                            MyEventsViewModel(repository: EventRepository(),
                                               user: autheticationService.userPublisher.value,
                                               userPublisher: autheticationService.userPublisher.eraseToAnyPublisher()))
                 .tag(TabBarScreen.events)
-            SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepository()))
+            SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepository(), gameRepository: GameRepository(), user: autheticationService.userPublisher.value, userPublisher: autheticationService.userPublisher))
                 .tag(TabBarScreen.search)
             UserProfileView(viewModel: UserProfileViewModel(authenticationService: autheticationService))
                 .tag(TabBarScreen.configuration)
@@ -32,6 +32,7 @@ struct RootView: View {
                 try await autheticationService.login()
                 isNotLoggedIn = false
             } catch {
+                print("catch: \(error.localizedDescription)")
                 isNotLoggedIn = true
             }
         }

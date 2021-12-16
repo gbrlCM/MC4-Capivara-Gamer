@@ -9,13 +9,13 @@ import SwiftUI
 
 struct SearchedEventsView: View {
     var contents: [Event]
-    
+    var user: User?
     var body: some View {
         List {
             ForEach(contents) { content in
                 ZStack {
                     NavigationLink(destination: {
-                        EventInfoView(viewModel: EventInfoViewModel(event: content))
+                        EventInfoView(viewModel: EventInfoViewModel(event: content, user: user,eventRepository: EventRepository()))
                     }, label: {
                         EmptyView()
                     })
@@ -32,6 +32,6 @@ struct SearchedEventsView: View {
 
 struct SearchedEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchedEventsView(contents: EventMock.events)
+        SearchedEventsView(contents: EventMock.events,user: UserMock.gamerCapibara)
     }
 }

@@ -9,9 +9,8 @@ import Foundation
 
 struct User: Codable, Equatable, Identifiable {
     let id: String?
-    var username: String
+    var userName: String
     var avatar: String
-    var description: String
     var dateOfBirth: Date
     var appleId: String
 }

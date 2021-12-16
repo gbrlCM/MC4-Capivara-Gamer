@@ -18,6 +18,43 @@
 		06AAB542275E9BCC00B36C97 /* ButtonShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAB541275E9BCC00B36C97 /* ButtonShare.swift */; };
 		06DB5433276913B100B1EA9B /* URLSession+Get&Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB5432276913B100B1EA9B /* URLSession+Get&Post.swift */; };
 		06DB54352769140C00B1EA9B /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB54342769140C00B1EA9B /* UserRepository.swift */; };
+		06DB5436276A826200B1EA9B /* SearchedEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */; };
+		06DB5437276A826600B1EA9B /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB827500A39009F5D5A /* EventRepository.swift */; };
+		06DB5438276A831200B1EA9B /* URLSession+Get&Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB5432276913B100B1EA9B /* URLSession+Get&Post.swift */; };
+		06DB543A276A83CB00B1EA9B /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E642D32762939300EAF695 /* GameRepository.swift */; };
+		06DB543B276A83CE00B1EA9B /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB54342769140C00B1EA9B /* UserRepository.swift */; };
+		06DB543C276A840900B1EA9B /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
+		06DB543D276A843800B1EA9B /* RulesRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21A275EA66D000820E1 /* RulesRegisterEventView.swift */; };
+		06DB543E276A844800B1EA9B /* RegisterEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ACB27517270009F5D5A /* RegisterEventViewModel.swift */; };
+		06DB543F276A844D00B1EA9B /* RegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832ABE27503057009F5D5A /* RegisterEventView.swift */; };
+		06DB5440276A847300B1EA9B /* RegisterEventTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC72751716D009F5D5A /* RegisterEventTab.swift */; };
+		06DB5442276A849600B1EA9B /* MyEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0666E8BB27595C4A002BA436 /* MyEventsTab.swift */; };
+		06DB5443276A852300B1EA9B /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB627500A14009F5D5A /* UserRepositoryProtocol.swift */; };
+		06DB5444276A852D00B1EA9B /* GeneralRegisterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B62F9A3275EA15F00979BA3 /* GeneralRegisterEvent.swift */; };
+		06DB5445276A853700B1EA9B /* TournamentFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B40E21C275EA7FB000820E1 /* TournamentFormatSection.swift */; };
+		06DB5446276A8BFC00B1EA9B /* GameRegisterEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC9275171B1009F5D5A /* GameRegisterEventView.swift */; };
+		06DB5447276A8C0800B1EA9B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADDEC12767B50C003FFF02 /* ImagePicker.swift */; };
+		06DB5448276A8C1000B1EA9B /* SingleSelectRegisterEventSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D262755827100008B7E /* SingleSelectRegisterEventSection.swift */; };
+		06DB5449276A8C1900B1EA9B /* RegisterEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D18275568F800008B7E /* RegisterEventButton.swift */; };
+		06DB544A276A8C2100B1EA9B /* MatchFormatSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B24275FF88800C7AE92 /* MatchFormatSection.swift */; };
+		06DB544B276A8C7500B1EA9B /* TeamBuildingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B26275FFBBB00C7AE92 /* TeamBuildingSection.swift */; };
+		06DB544C276A8C7D00B1EA9B /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D242755823E00008B7E /* HorizontalScrollView.swift */; };
+		06DB544D276A8C8400B1EA9B /* GeneralRegisterEventGameSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D12275536FF00008B7E /* GeneralRegisterEventGameSection.swift */; };
+		06DB544E276A8CA200B1EA9B /* ContactTypeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D20275581F500008B7E /* ContactTypeSection.swift */; };
+		06DB544F276A8CAB00B1EA9B /* CapybaraStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B28276001D400C7AE92 /* CapybaraStepper.swift */; };
+		06DB5450276A8CB200B1EA9B /* RegisterEventGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */; };
+		06DB5451276A8CB900B1EA9B /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D222755821500008B7E /* ContainerView.swift */; };
+		06DB5452276A8CD200B1EA9B /* PlatformSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D1C275581A500008B7E /* PlatformSection.swift */; };
+		06DB5453276A8CEA00B1EA9B /* LinkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF427588D8F00800DEB /* LinkSection.swift */; };
+		06DB5454276A8CF300B1EA9B /* LinkSectionViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */; };
+		06DB5455276A8CFF00B1EA9B /* LinkSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF627588DB600800DEB /* LinkSectionViewModel.swift */; };
+		06DB5456276A8D1B00B1EA9B /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FEB2758798F00800DEB /* Validator.swift */; };
+		06DB5457276A8D2200B1EA9B /* EventTypeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D1E275581C700008B7E /* EventTypeSection.swift */; };
+		06DB5458276A8D2900B1EA9B /* LinkValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FED27587D8100800DEB /* LinkValidatedTextField.swift */; };
+		06DB5459276A8D3300B1EA9B /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF227588ABD00800DEB /* RegexValidator.swift */; };
+		06DB545A276A8D4A00B1EA9B /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4BFAA275AF117009D75E6 /* Regex.swift */; };
+		06DB545B276A8D6B00B1EA9B /* StreamSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8B275A8CC100D253AB /* StreamSection.swift */; };
+		06DB545C276A8D7600B1EA9B /* CapybaraToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */; };
 		06F6B5982757EE9600D4E9C4 /* Picker+SegmentControlColer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B5972757EE9600D4E9C4 /* Picker+SegmentControlColer.swift */; };
 		06F6B59B2757EF1200D4E9C4 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6B59A2757EF1200D4E9C4 /* MyEventsViewModel.swift */; };
 		5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BBC274C044300BB90F1 /* RootView.swift */; };
@@ -86,9 +123,6 @@
 		5BD88C552748415800036C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C542748415800036C35 /* ContentView.swift */; };
 		5BD88C572748415A00036C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD88C562748415A00036C35 /* Assets.xcassets */; };
 		5BD88C5A2748415A00036C35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD88C592748415A00036C35 /* Preview Assets.xcassets */; };
-		5BD88C642748415A00036C35 /* CapivaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C632748415A00036C35 /* CapivaraTests.swift */; };
-		5BD88C6E2748415A00036C35 /* CapivaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */; };
-		5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */; };
 		5BF77E8A275A87AD00D253AB /* LinkSectionViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */; };
 		5BF77E8C275A8CC100D253AB /* StreamSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8B275A8CC100D253AB /* StreamSection.swift */; };
 		5BF77E8E275A915B00D253AB /* CapybaraToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF77E8D275A915B00D253AB /* CapybaraToggle.swift */; };
@@ -123,7 +157,6 @@
 		E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7C275EA5E400332B23 /* EventInfoView.swift */; };
 		E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
 		E9647D8B27690840000EBCE4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BC9274C056900BB90F1 /* SearchView.swift */; };
-		E9647D8C27690843000EBCE4 /* SearchedEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */; };
 		E9647D8D27690847000EBCE4 /* PopularGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9BA275FD60A0075AE15 /* PopularGame.swift */; };
 		E9647D8E2769084B000EBCE4 /* ExploreScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E656D9B7275FD5CA0075AE15 /* ExploreScreenViewModel.swift */; };
 		E9647D8F27690867000EBCE4 /* EventRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB22750074B009F5D5A /* EventRepositoryMock.swift */; };
@@ -144,20 +177,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5BD88C602748415A00036C35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BD88C472748415800036C35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BD88C4E2748415800036C35;
-			remoteInfo = Capivara;
-		};
-		5BD88C6A2748415A00036C35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BD88C472748415800036C35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BD88C4E2748415800036C35;
-			remoteInfo = Capivara;
-		};
 		E9324B852767D6DE00D02CB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BD88C472748415800036C35 /* Project object */;
@@ -262,9 +281,7 @@
 		5BD88C542748415800036C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5BD88C562748415A00036C35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BD88C592748415A00036C35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5BD88C5F2748415A00036C35 /* CapivaraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapivaraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C632748415A00036C35 /* CapivaraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraTests.swift; sourceTree = "<group>"; };
-		5BD88C692748415A00036C35 /* CapivaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapivaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD88C6D2748415A00036C35 /* CapivaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITests.swift; sourceTree = "<group>"; };
 		5BD88C6F2748415A00036C35 /* CapivaraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5BF77E89275A87AD00D253AB /* LinkSectionViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSectionViewModelFactory.swift; sourceTree = "<group>"; };
@@ -293,20 +310,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		5BD88C4C2748415800036C35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BD88C5C2748415A00036C35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BD88C662748415A00036C35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -723,8 +726,6 @@
 			isa = PBXGroup;
 			children = (
 				5BD88C4F2748415800036C35 /* CAPY.app */,
-				5BD88C5F2748415A00036C35 /* CapivaraTests.xctest */,
-				5BD88C692748415A00036C35 /* CapivaraUITests.xctest */,
 				E9324B782767D6DC00D02CB7 /* AppClipEventInfo.app */,
 			);
 			name = Products;
@@ -890,42 +891,6 @@
 			productReference = 5BD88C4F2748415800036C35 /* CAPY.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5BD88C5E2748415A00036C35 /* CapivaraTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5BD88C762748415A00036C35 /* Build configuration list for PBXNativeTarget "CapivaraTests" */;
-			buildPhases = (
-				5BD88C5B2748415A00036C35 /* Sources */,
-				5BD88C5C2748415A00036C35 /* Frameworks */,
-				5BD88C5D2748415A00036C35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BD88C612748415A00036C35 /* PBXTargetDependency */,
-			);
-			name = CapivaraTests;
-			productName = CapivaraTests;
-			productReference = 5BD88C5F2748415A00036C35 /* CapivaraTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5BD88C682748415A00036C35 /* CapivaraUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5BD88C792748415A00036C35 /* Build configuration list for PBXNativeTarget "CapivaraUITests" */;
-			buildPhases = (
-				5BD88C652748415A00036C35 /* Sources */,
-				5BD88C662748415A00036C35 /* Frameworks */,
-				5BD88C672748415A00036C35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BD88C6B2748415A00036C35 /* PBXTargetDependency */,
-			);
-			name = CapivaraUITests;
-			productName = CapivaraUITests;
-			productReference = 5BD88C692748415A00036C35 /* CapivaraUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		E9324B772767D6DC00D02CB7 /* AppClipEventInfo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9324B8B2767D6DE00D02CB7 /* Build configuration list for PBXNativeTarget "AppClipEventInfo" */;
@@ -956,14 +921,6 @@
 					5BD88C4E2748415800036C35 = {
 						CreatedOnToolsVersion = 13.1;
 					};
-					5BD88C5E2748415A00036C35 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 5BD88C4E2748415800036C35;
-					};
-					5BD88C682748415A00036C35 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 5BD88C4E2748415800036C35;
-					};
 					E9324B772767D6DC00D02CB7 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -983,8 +940,6 @@
 			projectRoot = "";
 			targets = (
 				5BD88C4E2748415800036C35 /* Capivara */,
-				5BD88C5E2748415A00036C35 /* CapivaraTests */,
-				5BD88C682748415A00036C35 /* CapivaraUITests */,
 				E9324B772767D6DC00D02CB7 /* AppClipEventInfo */,
 			);
 		};
@@ -997,20 +952,6 @@
 			files = (
 				5BD88C5A2748415A00036C35 /* Preview Assets.xcassets in Resources */,
 				5BD88C572748415A00036C35 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BD88C5D2748415A00036C35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BD88C672748415A00036C35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1126,78 +1067,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BD88C5B2748415A00036C35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BD88C642748415A00036C35 /* CapivaraTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BD88C652748415A00036C35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BD88C702748415A00036C35 /* CapivaraUITestsLaunchTests.swift in Sources */,
-				5BD88C6E2748415A00036C35 /* CapivaraUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E9324B742767D6DC00D02CB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06DB5442276A849600B1EA9B /* MyEventsTab.swift in Sources */,
 				E9324B932767D79300D02CB7 /* LoadingCircle.swift in Sources */,
 				E9324B912767D78100D02CB7 /* EventInfoTableViewCell.swift in Sources */,
+				06DB5458276A8D2900B1EA9B /* LinkValidatedTextField.swift in Sources */,
 				E9647D9427690896000EBCE4 /* View+TabBarLabel.swift in Sources */,
 				E9324B9D2767D81200D02CB7 /* View+BackgroundColor.swift in Sources */,
+				06DB545C276A8D7600B1EA9B /* CapybaraToggle.swift in Sources */,
+				06DB5444276A852D00B1EA9B /* GeneralRegisterEvent.swift in Sources */,
 				E9647D98276937B9000EBCE4 /* LoadView.swift in Sources */,
 				E9324B962767D7A700D02CB7 /* Address.swift in Sources */,
 				E9324B7D2767D6DC00D02CB7 /* ContentView.swift in Sources */,
 				E9324B8D2767D73600D02CB7 /* EventInfoViewModel.swift in Sources */,
 				E9324B7B2767D6DC00D02CB7 /* AppClipEventInfoApp.swift in Sources */,
+				06DB5454276A8CF300B1EA9B /* LinkSectionViewModelFactory.swift in Sources */,
 				E9324BA02767D9C000D02CB7 /* ColorPaletteAppClip.swift in Sources */,
+				06DB544E276A8CA200B1EA9B /* ContactTypeSection.swift in Sources */,
+				06DB5457276A8D2200B1EA9B /* EventTypeSection.swift in Sources */,
 				E9324B942767D79900D02CB7 /* Game.swift in Sources */,
+				06DB544F276A8CAB00B1EA9B /* CapybaraStepper.swift in Sources */,
 				E9647D97276937AF000EBCE4 /* ErrorView.swift in Sources */,
+				06DB5456276A8D1B00B1EA9B /* Validator.swift in Sources */,
+				06DB5448276A8C1000B1EA9B /* SingleSelectRegisterEventSection.swift in Sources */,
+				06DB5446276A8BFC00B1EA9B /* GameRegisterEventView.swift in Sources */,
 				E9647D9627693797000EBCE4 /* StatusView.swift in Sources */,
 				E9324B8F2767D74D00D02CB7 /* EventMock.swift in Sources */,
+				06DB5451276A8CB900B1EA9B /* ContainerView.swift in Sources */,
 				E9647D8B27690840000EBCE4 /* SearchView.swift in Sources */,
 				E9647D922769087F000EBCE4 /* EventCardView.swift in Sources */,
 				E9324B982767D7C000D02CB7 /* UserMock.swift in Sources */,
+				06DB5445276A853700B1EA9B /* TournamentFormatSection.swift in Sources */,
 				E9324B952767D7A000D02CB7 /* User.swift in Sources */,
 				E9324B902767D77100D02CB7 /* Event.swift in Sources */,
 				E9324B9B2767D7EA00D02CB7 /* RoundedCorner.swift in Sources */,
+				06DB543F276A844D00B1EA9B /* RegisterEventView.swift in Sources */,
+				06DB5440276A847300B1EA9B /* RegisterEventTab.swift in Sources */,
+				06DB5436276A826200B1EA9B /* SearchedEventsView.swift in Sources */,
+				06DB545A276A8D4A00B1EA9B /* Regex.swift in Sources */,
+				06DB5447276A8C0800B1EA9B /* ImagePicker.swift in Sources */,
+				06DB544A276A8C2100B1EA9B /* MatchFormatSection.swift in Sources */,
 				E9324B992767D7C600D02CB7 /* AddressMock.swift in Sources */,
+				06DB5438276A831200B1EA9B /* URLSession+Get&Post.swift in Sources */,
+				06DB5455276A8CFF00B1EA9B /* LinkSectionViewModel.swift in Sources */,
+				06DB5437276A826600B1EA9B /* EventRepository.swift in Sources */,
+				06DB543D276A843800B1EA9B /* RulesRegisterEventView.swift in Sources */,
 				E9324B972767D7BB00D02CB7 /* GameMock.swift in Sources */,
 				E9647D8D27690847000EBCE4 /* PopularGame.swift in Sources */,
 				E9324B9C2767D7FA00D02CB7 /* Presentable.swift in Sources */,
 				E9647D912769087A000EBCE4 /* GameRepositoryProtocol.swift in Sources */,
 				E9324B922767D78700D02CB7 /* CapybaraAsyncImage.swift in Sources */,
 				E9647D8E2769084B000EBCE4 /* ExploreScreenViewModel.swift in Sources */,
+				06DB544C276A8C7D00B1EA9B /* HorizontalScrollView.swift in Sources */,
+				06DB5449276A8C1900B1EA9B /* RegisterEventButton.swift in Sources */,
+				06DB543C276A840900B1EA9B /* MyEventsViewModel.swift in Sources */,
 				E9324B9E2767D82000D02CB7 /* View+NavBarTitle.swift in Sources */,
+				06DB5459276A8D3300B1EA9B /* RegexValidator.swift in Sources */,
+				06DB544D276A8C8400B1EA9B /* GeneralRegisterEventGameSection.swift in Sources */,
+				06DB5452276A8CD200B1EA9B /* PlatformSection.swift in Sources */,
 				E9647D932769088A000EBCE4 /* EventRepositoryProtocol.swift in Sources */,
+				06DB543E276A844800B1EA9B /* RegisterEventViewModel.swift in Sources */,
+				06DB543A276A83CB00B1EA9B /* GameRepository.swift in Sources */,
 				E9647D902769086A000EBCE4 /* GameRepositoryMock.swift in Sources */,
 				E9647D99276937C4000EBCE4 /* CapybaraEmptyView.swift in Sources */,
 				E9647D8F27690867000EBCE4 /* EventRepositoryMock.swift in Sources */,
+				06DB5443276A852300B1EA9B /* UserRepositoryProtocol.swift in Sources */,
+				06DB544B276A8C7500B1EA9B /* TeamBuildingSection.swift in Sources */,
+				06DB5453276A8CEA00B1EA9B /* LinkSection.swift in Sources */,
 				E9324B9A2767D7DB00D02CB7 /* View+cornerRadius.swift in Sources */,
+				06DB543B276A83CE00B1EA9B /* UserRepository.swift in Sources */,
+				06DB545B276A8D6B00B1EA9B /* StreamSection.swift in Sources */,
+				06DB5450276A8CB200B1EA9B /* RegisterEventGameButton.swift in Sources */,
 				E9324B8C2767D6ED00D02CB7 /* EventInfoView.swift in Sources */,
-				E9647D8C27690843000EBCE4 /* SearchedEventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5BD88C612748415A00036C35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BD88C4E2748415800036C35 /* Capivara */;
-			targetProxy = 5BD88C602748415A00036C35 /* PBXContainerItemProxy */;
-		};
-		5BD88C6B2748415A00036C35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BD88C4E2748415800036C35 /* Capivara */;
-			targetProxy = 5BD88C6A2748415A00036C35 /* PBXContainerItemProxy */;
-		};
 		E9324B862767D6DE00D02CB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E9324B772767D6DC00D02CB7 /* AppClipEventInfo */;
@@ -1384,108 +1334,13 @@
 			};
 			name = Release;
 		};
-		5BD88C772748415A00036C35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WK7599VNDW;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.CapivaraTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capivara.app/Capivara";
-			};
-			name = Debug;
-		};
-		5BD88C782748415A00036C35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WK7599VNDW;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.CapivaraTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capivara.app/Capivara";
-			};
-			name = Release;
-		};
-		5BD88C7A2748415A00036C35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WK7599VNDW;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.CapivaraUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Capivara;
-			};
-			name = Debug;
-		};
-		5BD88C7B2748415A00036C35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WK7599VNDW;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.CapivaraUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Capivara;
-			};
-			name = Release;
-		};
 		E9324B892767D6DE00D02CB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AppClipEventInfo/AppClipEventInfo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppClipEventInfo/Preview Content\"";
@@ -1507,6 +1362,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG APPCLIP";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1520,6 +1376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AppClipEventInfo/AppClipEventInfo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppClipEventInfo/Preview Content\"";
@@ -1541,6 +1398,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APPCLIP;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1565,24 +1423,6 @@
 			buildConfigurations = (
 				5BD88C742748415A00036C35 /* Debug */,
 				5BD88C752748415A00036C35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5BD88C762748415A00036C35 /* Build configuration list for PBXNativeTarget "CapivaraTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BD88C772748415A00036C35 /* Debug */,
-				5BD88C782748415A00036C35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5BD88C792748415A00036C35 /* Build configuration list for PBXNativeTarget "CapivaraUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BD88C7A2748415A00036C35 /* Debug */,
-				5BD88C7B2748415A00036C35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
