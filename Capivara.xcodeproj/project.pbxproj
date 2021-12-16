@@ -184,7 +184,6 @@
 		E9324B9D2767D81200D02CB7 /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */; };
 		E9324B9E2767D82000D02CB7 /* View+NavBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC027516796009F5D5A /* View+NavBarTitle.swift */; };
 		E9324BA02767D9C000D02CB7 /* ColorPaletteAppClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9324B9F2767D9C000D02CB7 /* ColorPaletteAppClip.swift */; };
-		E94E9AF12763E447005533D3 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94E9AF02763E447005533D3 /* EditProfileViewModel.swift */; };
 		E957FC7B275EA59A00332B23 /* EventInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */; };
 		E957FC7D275EA5E400332B23 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7C275EA5E400332B23 /* EventInfoView.swift */; };
 		E957FC80275EA9B300332B23 /* EventInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */; };
@@ -201,9 +200,9 @@
 		E9647D97276937AF000EBCE4 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5222767C08700176FD0 /* ErrorView.swift */; };
 		E9647D98276937B9000EBCE4 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5262767C22400176FD0 /* LoadView.swift */; };
 		E9647D99276937C4000EBCE4 /* CapybaraEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5242767C14700176FD0 /* CapybaraEmptyView.swift */; };
+		E9A6D330276BB8C40058BF98 /* ImageUploaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96719827697CD800BAD919 /* ImageUploaderService.swift */; };
 		E9ADDEC22767B50C003FFF02 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADDEC12767B50C003FFF02 /* ImagePicker.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
-		E9C622C627580663002C5615 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C527580663002C5615 /* EditProfileView.swift */; };
 		E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */; };
 		E9E642D42762939300EAF695 /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E642D32762939300EAF695 /* GameRepository.swift */; };
 /* End PBXBuildFile section */
@@ -216,21 +215,6 @@
 			remoteGlobalIDString = 5BC89ACC276A7BEA00183279;
 			remoteInfo = CapivaraWidgetExtension;
 		};
-		5BD88C602748415A00036C35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BD88C472748415800036C35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BD88C4E2748415800036C35;
-			remoteInfo = Capivara;
-		};
-		5BD88C6A2748415A00036C35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BD88C472748415800036C35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BD88C4E2748415800036C35;
-			remoteInfo = Capivara;
-		};
-
 		E9324B852767D6DE00D02CB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BD88C472748415800036C35 /* Project object */;
@@ -375,13 +359,11 @@
 		E9324B832767D6DE00D02CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9324B842767D6DE00D02CB7 /* AppClipEventInfo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppClipEventInfo.entitlements; sourceTree = "<group>"; };
 		E9324B9F2767D9C000D02CB7 /* ColorPaletteAppClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteAppClip.swift; sourceTree = "<group>"; };
-		E94E9AF02763E447005533D3 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		E957FC7A275EA59A00332B23 /* EventInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoTableViewCell.swift; sourceTree = "<group>"; };
 		E957FC7C275EA5E400332B23 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
 		E957FC7F275EA9B300332B23 /* EventInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoViewModel.swift; sourceTree = "<group>"; };
 		E9ADDEC12767B50C003FFF02 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E9C622C32757F482002C5615 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
-		E9C622C527580663002C5615 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedEventsView.swift; sourceTree = "<group>"; };
 		E9E642D32762939300EAF695 /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -530,7 +512,6 @@
 			children = (
 				5B0D3BD1274C0D5A00BB90F1 /* Components */,
 				5B0D3BC5274C054600BB90F1 /* UserProfileView.swift */,
-				E9C622C527580663002C5615 /* EditProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -980,7 +961,6 @@
 			isa = PBXGroup;
 			children = (
 				E9C622C32757F482002C5615 /* UserProfileViewModel.swift */,
-				E94E9AF02763E447005533D3 /* EditProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1196,7 +1176,6 @@
 				E656D9BB275FD60A0075AE15 /* PopularGame.swift in Sources */,
 				5B0D3BD5274C12A500BB90F1 /* UserProfileActionLabel.swift in Sources */,
 				5B96719927697CD800BAD919 /* ImageUploaderService.swift in Sources */,
-				E9C622C627580663002C5615 /* EditProfileView.swift in Sources */,
 				5B9D6D232755821500008B7E /* ContainerView.swift in Sources */,
 				5B634B29276001D400C7AE92 /* CapybaraStepper.swift in Sources */,
 				06661EBB275E7650006E6FB3 /* View+cornerRadius.swift in Sources */,
@@ -1242,7 +1221,6 @@
 				5B832ACA275171B1009F5D5A /* GameRegisterEventView.swift in Sources */,
 				5B634B1F275FECF200C7AE92 /* LoginViewModel.swift in Sources */,
 				5B0D3BBD274C044300BB90F1 /* RootView.swift in Sources */,
-				E94E9AF12763E447005533D3 /* EditProfileViewModel.swift in Sources */,
 				E656D9B8275FD5CA0075AE15 /* ExploreScreenViewModel.swift in Sources */,
 				5B0D3BDA274C239F00BB90F1 /* Event.swift in Sources */,
 				5B898034274EC6ED00CE92BF /* Game.swift in Sources */,
@@ -1314,6 +1292,7 @@
 				06DB544C276A8C7D00B1EA9B /* HorizontalScrollView.swift in Sources */,
 				06DB5449276A8C1900B1EA9B /* RegisterEventButton.swift in Sources */,
 				06DB543C276A840900B1EA9B /* MyEventsViewModel.swift in Sources */,
+				E9A6D330276BB8C40058BF98 /* ImageUploaderService.swift in Sources */,
 				E9324B9E2767D82000D02CB7 /* View+NavBarTitle.swift in Sources */,
 				06DB5459276A8D3300B1EA9B /* RegexValidator.swift in Sources */,
 				06DB544D276A8C8400B1EA9B /* GeneralRegisterEventGameSection.swift in Sources */,
@@ -1338,21 +1317,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-
 		5BC89ADD276A7BEC00183279 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5BC89ACC276A7BEA00183279 /* CapivaraWidgetExtension */;
 			targetProxy = 5BC89ADC276A7BEC00183279 /* PBXContainerItemProxy */;
-		};
-		5BD88C612748415A00036C35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BD88C4E2748415800036C35 /* Capivara */;
-			targetProxy = 5BD88C602748415A00036C35 /* PBXContainerItemProxy */;
-		};
-		5BD88C6B2748415A00036C35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BD88C4E2748415800036C35 /* Capivara */;
-			targetProxy = 5BD88C6A2748415A00036C35 /* PBXContainerItemProxy */;
 		};
 		E9324B862767D6DE00D02CB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
