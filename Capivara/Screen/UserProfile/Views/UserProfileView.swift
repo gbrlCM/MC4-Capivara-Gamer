@@ -45,10 +45,7 @@ struct UserProfileView: View {
     
     @ViewBuilder
     func userIdentificationSection(user: User) -> some View {
-        NavigationLink(destination: {
-            EditProfileView(viewModel: EditProfileViewModel(user: UserMock.gamerCapibara))
-        }, label: {
-            HStack {
+       HStack {
                 UserProfileAvatar(imageURL: user.avatar)
                 VStack(alignment: .leading) {
                     Text(user.userName)
@@ -58,7 +55,6 @@ struct UserProfileView: View {
                 
                 Spacer()
             } .padding()
-        })
     }
     
     @ViewBuilder
