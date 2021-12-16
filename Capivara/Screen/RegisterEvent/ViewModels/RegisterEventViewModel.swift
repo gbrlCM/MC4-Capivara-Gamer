@@ -7,8 +7,12 @@
 import Combine
 import Foundation
 import UIKit
+import SwiftUI
 
 final class RegisterEventViewModel: ObservableObject {
+    
+    @Binding
+    var isShowing: Bool
     
     //MARK: View States
     @Published
@@ -32,7 +36,7 @@ final class RegisterEventViewModel: ObservableObject {
     @Published
     var selectedTournamentType: TournamentFormat?
     @Published
-    var coverImage: UIImage
+    var coverImage: UIImage?
     @Published
     var selectedMatchType: MatchFormat?
     @Published
@@ -57,6 +61,8 @@ final class RegisterEventViewModel: ObservableObject {
     var lobbyEntranceTimer: Date
     @Published
     var eventStartTimer: Date
+    @Published
+    var creator: User
     
     //MARK: Field Validation
     @Published
@@ -68,11 +74,13 @@ final class RegisterEventViewModel: ObservableObject {
     @Published
     var generalFormIsValid: Bool
     
-    private var repository: GameRepositoryProtocol
+    private var gameRepository: GameRepositoryProtocol
+    private var eventRepository: EventRepositoryProtocol
     private var imageUploaderService: ImageUploaderService
     
-    init(repository: GameRepositoryProtocol) {
-        self.repository = repository
+    init(gameRepository: GameRepositoryProtocol, creator: User, isShowing: Binding <Bool>, eventRepository: EventRepositoryProtocol) {
+        self.gameRepository = gameRepository
+        self.eventRepository = eventRepository
         self.games = []
         self.viewState = .loading
         self.selectedGame = nil
@@ -85,7 +93,7 @@ final class RegisterEventViewModel: ObservableObject {
         self.contactLink = ""
         self.streamLink = ""
         self.hasStreaming = false
-        self.coverImage = UIImage()
+        self.coverImage = nil
         self.isStreamTypeFieldValid = true
         self.isContactTypeFieldValid = true
         self.isIndividual = true
@@ -94,16 +102,41 @@ final class RegisterEventViewModel: ObservableObject {
         self.name = ""
         self.description = ""
         self.eventDate = Date()
-        self.lobbyEntranceTimer = Date().addingTimeInterval(3600)
-        self.eventStartTimer = Date().addingTimeInterval(3600*2)
+        self.lobbyEntranceTimer = Date()
+        self.eventStartTimer = Date()
         self.generalFormIsValid = false
         self.imageUploaderService = ImageUploaderService()
+        self.creator = creator
+        self._isShowing = isShowing
+    }
+    
+    private func createEvent (imageURL: String?) -> Event {
+        Event(id: nil,
+              name: self.name,
+              description: self.description,
+              game: self.selectedGame ?? GameMock.leagueOfLegends,
+              creator: self.creator,
+              participants: [],
+              coverUrl: imageURL,
+              eventType: self.selectedEventType ?? .championship,
+              eventFormat: self.selectedTournamentType ?? .points,
+              matchFormat: self.selectedMatchType ?? .bestOfOne,
+              tournamentCapacity: self.numberOfParticipants,
+              teamSize: self.numberOfParticipantsPerTeam,
+              date: self.eventDate,
+              lobbyEntranceDate: self.lobbyEntranceTimer.timeIntervalSince1970,
+              eventStartDate: self.eventStartTimer.timeIntervalSince1970,
+              contactType: self.selectedContactType ?? .chatOnly,
+              contactLink: self.contactLink,
+              streamingType: self.selectedStreamType,
+              streamingLink: self.streamLink,
+              gamePlatform: self.selectedGameType ?? .pc)
     }
     
     @MainActor
     func fetchAllItems() async {
         do {
-            let games = try await repository.fetchAllGames()
+            let games = try await gameRepository.fetchAllGames()
             self.games = games
         } catch  {
             viewState = .error
@@ -111,15 +144,22 @@ final class RegisterEventViewModel: ObservableObject {
     }
     
     @MainActor
-    func finishForm() async {
-        if let jpegData = coverImage.jpegData(compressionQuality: 0.5) {
-            do {
-                let imageURL = try await imageUploaderService.upload(jpegData)
-                print(imageURL)
-            } catch {
-                fatalError()
-            }
+    func finishForm() async throws {
+        
+        let imageUrl: String?
+        
+        if let image = coverImage, let jpegData = image.jpegData(compressionQuality: 0.5) {
+            imageUrl = try? await imageUploaderService.upload(jpegData)
         }
+        
+        else {
+            imageUrl = nil
+        }
+        
+        let event = createEvent(imageURL: imageUrl)
+        try await eventRepository.createEvent(event)
+        isShowing = false
+        
     }
     
     var isGeneralFormDisabled: Bool {

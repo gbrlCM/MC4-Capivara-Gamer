@@ -18,11 +18,13 @@
      }
 
      func retrieveUser(userId: String) async throws -> User {
-         if user?.appleId == userId {
-             return user!
-         } else {
-             throw NSError(domain: "No user", code: 1, userInfo: nil)
-         }
+//         if user?.appleId == userId {
+//             return user!
+//         } else {
+//             throw NSError(domain: "No user", code: 1, userInfo: nil)
+//         }
+         
+         UserMock.gamerCapibara
      }
 
      func deleteUser(userId: String) async throws {

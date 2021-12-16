@@ -21,7 +21,6 @@ struct Event: Codable, Equatable, Identifiable {
     var matchFormat: MatchFormat
     var tournamentCapacity: Int
     var teamSize: Int
-    var creationDate: Date
     var date: Date
     var lobbyEntranceDate: Double
     var eventStartDate: Double

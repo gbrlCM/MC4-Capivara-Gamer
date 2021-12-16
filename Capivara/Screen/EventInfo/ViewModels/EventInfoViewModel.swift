@@ -86,6 +86,7 @@ final class EventInfoViewModel: ObservableObject {
         formatter.dateFormat = "HH:mm"
         
         return formatter.string(from: Date(timeIntervalSince1970: event.eventStartDate))
+
     }
     
     func registerToEvent() async {

@@ -13,7 +13,7 @@ enum UserMock {
              userName: "capivaraGamer",
              avatar: "https://image-downloader-test.s3.sa-east-1.amazonaws.com/sharkibara.png",
              dateOfBirth: Date(timeIntervalSince1970: 350000000),
-             appleId: "cricricri"
+             appleId: "AppleId"
         )
     }
 }
