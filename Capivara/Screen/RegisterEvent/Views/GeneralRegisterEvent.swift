@@ -64,12 +64,15 @@ struct GeneralRegisterEvent: View {
                         .foregroundColor(ColorPalette.accent)
                         .scaleEffect(2)
                     
-                    Image(uiImage: viewModel.coverImage)
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(height: 200)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                                    .edgesIgnoringSafeArea(.all)
+                    if let image = viewModel.coverImage {
+                        Image(uiImage: image)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(height: 200)
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .edgesIgnoringSafeArea(.all)
+                    }
+                    
                     VStack {
                         Spacer()
                         HStack {
@@ -146,7 +149,7 @@ struct GeneralRegisterEvent_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             GeneralRegisterEvent()
-        }.environmentObject(RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara, isShowing: .constant(true)))
+        }.environmentObject(RegisterEventViewModel(gameRepository: GameRepositoryMock(), creator: UserMock.gamerCapibara, isShowing: .constant(true), eventRepository: EventRepositoryMock()))
     }
 }
 

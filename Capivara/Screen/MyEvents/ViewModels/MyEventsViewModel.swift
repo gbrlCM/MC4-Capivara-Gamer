@@ -39,7 +39,7 @@ final class MyEventsViewModel: ObservableObject{
     }
     
     
-    
+    @MainActor
     func fetchEvents(for user: User) async {
         statusView = .loading
         do {

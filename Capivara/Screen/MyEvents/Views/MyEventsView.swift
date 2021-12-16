@@ -65,7 +65,7 @@ struct MyEventsView: View {
                 }
             
         }.sheet(isPresented: $viewModel.isRegisteringEvent) {
-            RegisterEventView(viewModel: RegisterEventViewModel(repository: GameRepository(), creator: UserMock.gamerCapibara, isShowing: $viewModel.isRegisteringEvent))
+            RegisterEventView(viewModel: RegisterEventViewModel(gameRepository: GameRepository(), creator: UserMock.gamerCapibara, isShowing: $viewModel.isRegisteringEvent, eventRepository: EventRepositoryMock()))
         }.preferredColorScheme(.dark)
          .searchable(text: $viewModel.searchFieldText)
          .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")

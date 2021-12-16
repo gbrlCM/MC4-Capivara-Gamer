@@ -12,6 +12,7 @@ struct RulesRegisterEventView: View {
     var viewModel: RegisterEventViewModel
     @Environment(\.dismiss)
     var dismiss
+    @State var showAlert: Bool = false
     
     var body: some View {
         ScrollView {
@@ -27,12 +28,18 @@ struct RulesRegisterEventView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Finalizar") {
                         Task {
-                            await viewModel.finishForm()
-                            dismiss()
-                    }
+                            do {
+                                try await viewModel.finishForm()
+                                dismiss()
+                            } catch {
+                                print(error.localizedDescription)
+                                showAlert = true
+                            }
+                        }
                     }
                     .foregroundColor(.accentColor)
                 }
+            }.alert("Um erro ocorreu ao tentar registrar o evento.", isPresented: $showAlert) {Button("OK", role: .cancel) { }
             }
             .padding(.top, 8)
         }
@@ -47,7 +54,7 @@ struct RulesRegisterEventView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             RulesRegisterEventView()
-                .environmentObject(RegisterEventViewModel(repository: GameRepositoryMock(), creator: UserMock.gamerCapibara, isShowing: .constant(true)))
+                .environmentObject(RegisterEventViewModel(gameRepository: GameRepositoryMock(), creator: UserMock.gamerCapibara, isShowing: .constant(true), eventRepository: EventRepositoryMock()))
         }
     }
 }
