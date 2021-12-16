@@ -10,7 +10,6 @@ import SwiftUI
 struct MyEventsView: View {
     
     @ObservedObject var viewModel: MyEventsViewModel
-    
     var body: some View {
         NavigationView {
                 if let user = viewModel.user {
@@ -79,7 +78,7 @@ struct MyEventsView: View {
             ForEach(viewModel.filterSegmentedEvents){ content in
                 ZStack {
                     NavigationLink(destination: {
-                        EventInfoView(viewModel: EventInfoViewModel(event: content))
+                        EventInfoView(viewModel: EventInfoViewModel(event: content, user: viewModel.user, eventRepository: EventRepository()))
                     }, label: {
                         EmptyView()
                     })

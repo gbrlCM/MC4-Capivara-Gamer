@@ -32,6 +32,30 @@ struct Event: Codable, Equatable, Identifiable {
 }
 
 /**
+ val id: UUID?,
+ val creator: User,
+ var participants: MutableList<User>,
+ var name: String,
+ var description: String,
+ var coverUrl: String,
+ var game: Game,
+ var eventType: String,
+ var eventFormat: String,
+ var matchFormat: String,
+ var tournamentCapacity: Int,
+ val creationDate: Date,
+ var date: Date,
+ var lobbyEntranceDate: Date,
+ val eventStartDate: Date,
+ val typeEvent: String,
+ val linkContato: String?,
+ val typeStream: String,
+ val linkStream: String,
+ val gamePlataform: String,
+ var timeSize: Int,
+ */
+
+/**
  Possible formats of a tournament
  cases: Round Robin, Single Elimination, Double Elimination, Multiple Levels, extended, Group Stage And Tournament, Points and Single Match
  */
