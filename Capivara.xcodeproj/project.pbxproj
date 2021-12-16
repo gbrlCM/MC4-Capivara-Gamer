@@ -79,6 +79,39 @@
 		5BC30FF327588ABD00800DEB /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF227588ABD00800DEB /* RegexValidator.swift */; };
 		5BC30FF527588D8F00800DEB /* LinkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF427588D8F00800DEB /* LinkSection.swift */; };
 		5BC30FF727588DB600800DEB /* LinkSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC30FF627588DB600800DEB /* LinkSectionViewModel.swift */; };
+		5BC89AD0276A7BEA00183279 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC89ACF276A7BEA00183279 /* WidgetKit.framework */; };
+		5BC89AD2276A7BEA00183279 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC89AD1276A7BEA00183279 /* SwiftUI.framework */; };
+		5BC89AD5276A7BEA00183279 /* CapivaraWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AD4276A7BEA00183279 /* CapivaraWidget.swift */; };
+		5BC89AD8276A7BEC00183279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC89AD7276A7BEC00183279 /* Assets.xcassets */; };
+		5BC89ADA276A7BEC00183279 /* CapivaraWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AD6276A7BEA00183279 /* CapivaraWidget.intentdefinition */; };
+		5BC89ADB276A7BEC00183279 /* CapivaraWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AD6276A7BEA00183279 /* CapivaraWidget.intentdefinition */; };
+		5BC89ADE276A7BEC00183279 /* CapivaraWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5BC89ACD276A7BEA00183279 /* CapivaraWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5BC89AF1276A7D9000183279 /* CapivaraControlWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AE5276A7C7C00183279 /* CapivaraControlWidget.swift */; };
+		5BC89AF2276A7D9400183279 /* CapivaraEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AE7276A7CA900183279 /* CapivaraEntry.swift */; };
+		5BC89AF3276A7D9800183279 /* ExtraLargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AE9276A7CD200183279 /* ExtraLargeWidgetView.swift */; };
+		5BC89AF4276A7D9C00183279 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AEB276A7D1000183279 /* LargeWidgetView.swift */; };
+		5BC89AF5276A7DA000183279 /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AEF276A7D4E00183279 /* SmallWidgetView.swift */; };
+		5BC89AF6276A7DA400183279 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC89AED276A7D3800183279 /* MediumWidgetView.swift */; };
+		5BC89AF7276A7DC300183279 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BD9274C239F00BB90F1 /* Event.swift */; };
+		5BC89AF8276A7DCB00183279 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898031274EC6A600CE92BF /* User.swift */; };
+		5BC89AF9276A7DCD00183279 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898033274EC6ED00CE92BF /* Game.swift */; };
+		5BC89AFA276A7DED00183279 /* EventMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B898038274ECAA200CE92BF /* EventMock.swift */; };
+		5BC89AFB276A7DF900183279 /* GameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA6274FEDEE009F5D5A /* GameMock.swift */; };
+		5BC89AFC276A7DFD00183279 /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AA8274FEDFF009F5D5A /* UserMock.swift */; };
+		5BC89AFD276A7E0E00183279 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AC327516F3C009F5D5A /* ColorPalette.swift */; };
+		5BC89AFE276A7E2000183279 /* EventRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AAD274FEE94009F5D5A /* EventRepositoryProtocol.swift */; };
+		5BC89AFF276A7E2600183279 /* GameRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB4275009FA009F5D5A /* GameRepositoryProtocol.swift */; };
+		5BC89B00276A7E2A00183279 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB627500A14009F5D5A /* UserRepositoryProtocol.swift */; };
+		5BC89B01276A7E7500183279 /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D3BCF274C0A4F00BB90F1 /* View+BackgroundColor.swift */; };
+		5BC89B02276A7E8000183279 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D6D162755385C00008B7E /* Presentable.swift */; };
+		5BC89B03276A7E8C00183279 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89802F274EC67500CE92BF /* Address.swift */; };
+		5BC89B04276A7EA400183279 /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB827500A39009F5D5A /* EventRepository.swift */; };
+		5BC89B05276A7EA900183279 /* EventRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B832AB22750074B009F5D5A /* EventRepositoryMock.swift */; };
+		5BC89B06276A7EDC00183279 /* URLSession+Get&Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB5432276913B100B1EA9B /* URLSession+Get&Post.swift */; };
+		5BC89B07276A805A00183279 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB494C02767B585009E2ACB /* AuthenticationService.swift */; };
+		5BC89B08276A805E00183279 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1AC26B2763891D00FD9A7B /* KeychainService.swift */; };
+		5BC89B09276A808700183279 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DB54342769140C00B1EA9B /* UserRepository.swift */; };
+		5BC89B0A276A81B400183279 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B634B22275FEDAF00C7AE92 /* UserRepositoryMock.swift */; };
 		5BCD02902752FF7A00B13D0C /* RegisterEventGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */; };
 		5BCD02922752FFA800B13D0C /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02912752FFA800B13D0C /* LoadingCircle.swift */; };
 		5BCD02942752FFD000B13D0C /* CapybaraAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */; };
@@ -144,6 +177,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5BC89ADC276A7BEC00183279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BD88C472748415800036C35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BC89ACC276A7BEA00183279;
+			remoteInfo = CapivaraWidgetExtension;
+		};
 		5BD88C602748415A00036C35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BD88C472748415800036C35 /* Project object */;
@@ -168,6 +208,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5BC89ADF276A7BEC00183279 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5BC89ADE276A7BEC00183279 /* CapivaraWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9324B882767D6DE00D02CB7 /* Embed App Clips */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +305,20 @@
 		5BC30FF227588ABD00800DEB /* RegexValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexValidator.swift; sourceTree = "<group>"; };
 		5BC30FF427588D8F00800DEB /* LinkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSection.swift; sourceTree = "<group>"; };
 		5BC30FF627588DB600800DEB /* LinkSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSectionViewModel.swift; sourceTree = "<group>"; };
+		5BC89ACD276A7BEA00183279 /* CapivaraWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CapivaraWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC89ACF276A7BEA00183279 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5BC89AD1276A7BEA00183279 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5BC89AD4276A7BEA00183279 /* CapivaraWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraWidget.swift; sourceTree = "<group>"; };
+		5BC89AD6276A7BEA00183279 /* CapivaraWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CapivaraWidget.intentdefinition; sourceTree = "<group>"; };
+		5BC89AD7276A7BEC00183279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BC89AD9276A7BEC00183279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC89AE3276A7C4200183279 /* CapivaraWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CapivaraWidgetExtension.entitlements; sourceTree = "<group>"; };
+		5BC89AE5276A7C7C00183279 /* CapivaraControlWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraControlWidget.swift; sourceTree = "<group>"; };
+		5BC89AE7276A7CA900183279 /* CapivaraEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapivaraEntry.swift; sourceTree = "<group>"; };
+		5BC89AE9276A7CD200183279 /* ExtraLargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraLargeWidgetView.swift; sourceTree = "<group>"; };
+		5BC89AEB276A7D1000183279 /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
+		5BC89AED276A7D3800183279 /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		5BC89AEF276A7D4E00183279 /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
 		5BCD028F2752FF7A00B13D0C /* RegisterEventGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventGameButton.swift; sourceTree = "<group>"; };
 		5BCD02912752FFA800B13D0C /* LoadingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCircle.swift; sourceTree = "<group>"; };
 		5BCD02932752FFD000B13D0C /* CapybaraAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapybaraAsyncImage.swift; sourceTree = "<group>"; };
@@ -292,6 +357,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5BC89ACA276A7BEA00183279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC89AD2276A7BEA00183279 /* SwiftUI.framework in Frameworks */,
+				5BC89AD0276A7BEA00183279 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BD88C4C2748415800036C35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -672,6 +746,40 @@
 			path = TextValidationService;
 			sourceTree = "<group>";
 		};
+		5BC89ACE276A7BEA00183279 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BC89ACF276A7BEA00183279 /* WidgetKit.framework */,
+				5BC89AD1276A7BEA00183279 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BC89AD3276A7BEA00183279 /* CapivaraWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5BC89AE4276A7C6500183279 /* Views */,
+				5BC89AD4276A7BEA00183279 /* CapivaraWidget.swift */,
+				5BC89AD6276A7BEA00183279 /* CapivaraWidget.intentdefinition */,
+				5BC89AD7276A7BEC00183279 /* Assets.xcassets */,
+				5BC89AD9276A7BEC00183279 /* Info.plist */,
+			);
+			path = CapivaraWidget;
+			sourceTree = "<group>";
+		};
+		5BC89AE4276A7C6500183279 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BC89AE5276A7C7C00183279 /* CapivaraControlWidget.swift */,
+				5BC89AE7276A7CA900183279 /* CapivaraEntry.swift */,
+				5BC89AE9276A7CD200183279 /* ExtraLargeWidgetView.swift */,
+				5BC89AEB276A7D1000183279 /* LargeWidgetView.swift */,
+				5BC89AED276A7D3800183279 /* MediumWidgetView.swift */,
+				5BC89AEF276A7D4E00183279 /* SmallWidgetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5BCD028D2752FF4D00B13D0C /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -711,10 +819,13 @@
 		5BD88C462748415800036C35 = {
 			isa = PBXGroup;
 			children = (
+				5BC89AE3276A7C4200183279 /* CapivaraWidgetExtension.entitlements */,
 				5BD88C512748415800036C35 /* Capivara */,
 				5BD88C622748415A00036C35 /* CapivaraTests */,
 				5BD88C6C2748415A00036C35 /* CapivaraUITests */,
 				E9324B792767D6DC00D02CB7 /* AppClipEventInfo */,
+				5BC89AD3276A7BEA00183279 /* CapivaraWidget */,
+				5BC89ACE276A7BEA00183279 /* Frameworks */,
 				5BD88C502748415800036C35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -726,6 +837,7 @@
 				5BD88C5F2748415A00036C35 /* CapivaraTests.xctest */,
 				5BD88C692748415A00036C35 /* CapivaraUITests.xctest */,
 				E9324B782767D6DC00D02CB7 /* AppClipEventInfo.app */,
+				5BC89ACD276A7BEA00183279 /* CapivaraWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -871,6 +983,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5BC89ACC276A7BEA00183279 /* CapivaraWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC89AE2276A7BEC00183279 /* Build configuration list for PBXNativeTarget "CapivaraWidgetExtension" */;
+			buildPhases = (
+				5BC89AC9276A7BEA00183279 /* Sources */,
+				5BC89ACA276A7BEA00183279 /* Frameworks */,
+				5BC89ACB276A7BEA00183279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CapivaraWidgetExtension;
+			productName = CapivaraWidgetExtension;
+			productReference = 5BC89ACD276A7BEA00183279 /* CapivaraWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5BD88C4E2748415800036C35 /* Capivara */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BD88C732748415A00036C35 /* Build configuration list for PBXNativeTarget "Capivara" */;
@@ -879,11 +1008,13 @@
 				5BD88C4C2748415800036C35 /* Frameworks */,
 				5BD88C4D2748415800036C35 /* Resources */,
 				E9324B882767D6DE00D02CB7 /* Embed App Clips */,
+				5BC89ADF276A7BEC00183279 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E9324B862767D6DE00D02CB7 /* PBXTargetDependency */,
+				5BC89ADD276A7BEC00183279 /* PBXTargetDependency */,
 			);
 			name = Capivara;
 			productName = Capivara;
@@ -953,6 +1084,9 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					5BC89ACC276A7BEA00183279 = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					5BD88C4E2748415800036C35 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -986,11 +1120,20 @@
 				5BD88C5E2748415A00036C35 /* CapivaraTests */,
 				5BD88C682748415A00036C35 /* CapivaraUITests */,
 				E9324B772767D6DC00D02CB7 /* AppClipEventInfo */,
+				5BC89ACC276A7BEA00183279 /* CapivaraWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5BC89ACB276A7BEA00183279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC89AD8276A7BEC00183279 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BD88C4D2748415800036C35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1026,6 +1169,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5BC89AC9276A7BEA00183279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC89AF3276A7D9800183279 /* ExtraLargeWidgetView.swift in Sources */,
+				5BC89AF7276A7DC300183279 /* Event.swift in Sources */,
+				5BC89B04276A7EA400183279 /* EventRepository.swift in Sources */,
+				5BC89AF6276A7DA400183279 /* MediumWidgetView.swift in Sources */,
+				5BC89AD5276A7BEA00183279 /* CapivaraWidget.swift in Sources */,
+				5BC89AFC276A7DFD00183279 /* UserMock.swift in Sources */,
+				5BC89AFD276A7E0E00183279 /* ColorPalette.swift in Sources */,
+				5BC89B08276A805E00183279 /* KeychainService.swift in Sources */,
+				5BC89B03276A7E8C00183279 /* Address.swift in Sources */,
+				5BC89ADA276A7BEC00183279 /* CapivaraWidget.intentdefinition in Sources */,
+				5BC89B01276A7E7500183279 /* View+BackgroundColor.swift in Sources */,
+				5BC89B09276A808700183279 /* UserRepository.swift in Sources */,
+				5BC89B0A276A81B400183279 /* UserRepositoryMock.swift in Sources */,
+				5BC89AF1276A7D9000183279 /* CapivaraControlWidget.swift in Sources */,
+				5BC89B05276A7EA900183279 /* EventRepositoryMock.swift in Sources */,
+				5BC89AF9276A7DCD00183279 /* Game.swift in Sources */,
+				5BC89AF4276A7D9C00183279 /* LargeWidgetView.swift in Sources */,
+				5BC89AF2276A7D9400183279 /* CapivaraEntry.swift in Sources */,
+				5BC89AFB276A7DF900183279 /* GameMock.swift in Sources */,
+				5BC89B02276A7E8000183279 /* Presentable.swift in Sources */,
+				5BC89AFE276A7E2000183279 /* EventRepositoryProtocol.swift in Sources */,
+				5BC89B06276A7EDC00183279 /* URLSession+Get&Post.swift in Sources */,
+				5BC89AF8276A7DCB00183279 /* User.swift in Sources */,
+				5BC89B00276A7E2A00183279 /* UserRepositoryProtocol.swift in Sources */,
+				5BC89AFF276A7E2600183279 /* GameRepositoryProtocol.swift in Sources */,
+				5BC89AFA276A7DED00183279 /* EventMock.swift in Sources */,
+				5BC89AF5276A7DA000183279 /* SmallWidgetView.swift in Sources */,
+				5BC89B07276A805A00183279 /* AuthenticationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BD88C4B2748415800036C35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1093,6 +1271,7 @@
 				5BC30FEC2758798F00800DEB /* Validator.swift in Sources */,
 				5B832AC82751716D009F5D5A /* RegisterEventTab.swift in Sources */,
 				5B832AA9274FEDFF009F5D5A /* UserMock.swift in Sources */,
+				5BC89ADB276A7BEC00183279 /* CapivaraWidget.intentdefinition in Sources */,
 				5B9D6D252755823E00008B7E /* HorizontalScrollView.swift in Sources */,
 				06DB5433276913B100B1EA9B /* URLSession+Get&Post.swift in Sources */,
 				5B9D6D19275568F800008B7E /* RegisterEventButton.swift in Sources */,
@@ -1188,6 +1367,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5BC89ADD276A7BEC00183279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BC89ACC276A7BEA00183279 /* CapivaraWidgetExtension */;
+			targetProxy = 5BC89ADC276A7BEC00183279 /* PBXContainerItemProxy */;
+		};
 		5BD88C612748415A00036C35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5BD88C4E2748415800036C35 /* Capivara */;
@@ -1206,6 +1390,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		5BC89AE0276A7BEC00183279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CapivaraWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WK7599VNDW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CapivaraWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CapivaraWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer.CapivaraWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BC89AE1276A7BEC00183279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CapivaraWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WK7599VNDW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CapivaraWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CapivaraWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gbrlcm.capivaragamer.CapivaraWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5BD88C712748415A00036C35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1551,6 +1791,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5BC89AE2276A7BEC00183279 /* Build configuration list for PBXNativeTarget "CapivaraWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC89AE0276A7BEC00183279 /* Debug */,
+				5BC89AE1276A7BEC00183279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BD88C4A2748415800036C35 /* Build configuration list for PBXProject "Capivara" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

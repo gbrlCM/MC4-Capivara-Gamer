@@ -20,6 +20,7 @@ final class AutheticationService: ObservableObject {
     private let keychainService: KeyChainServiceProtocol
     
     private let credentialKey = "userCredential"
+    private let accessGroup = "WK7599VNDW.com.gbrlcm.capivaragamer"
     private let serviceKey = "com.gbrlcm.capivara"
     
     
@@ -44,7 +45,7 @@ final class AutheticationService: ObservableObject {
                            appleId: userId)
         
         do {
-            try keychainService.set(userId, forKey: credentialKey, inService: serviceKey)
+            try keychainService.set(userId, forKey: credentialKey, inService: serviceKey, inGroup: accessGroup)
             let user = try await userRepository.login(newUser)
             userPublisher.send(user)
             
@@ -56,7 +57,7 @@ final class AutheticationService: ObservableObject {
     
     func login() async throws {
         do {
-            let userId = try keychainService.get(forKey: credentialKey, inService: serviceKey)
+            let userId = try keychainService.get(forKey: credentialKey, inService: serviceKey, inGroup: accessGroup)
             let user = try await userRepository.retrieveUser(userId: userId)
             userPublisher.send(user)
         } catch {
@@ -70,7 +71,7 @@ final class AutheticationService: ObservableObject {
         }
         
         do {
-            try keychainService.delete(forKey: credentialKey, inService: serviceKey)
+            try keychainService.delete(forKey: credentialKey, inService: serviceKey, inGroup: accessGroup)
             userPublisher.send(nil)
         } catch  {
             throw error
