@@ -50,6 +50,14 @@ final class MyEventsViewModel: ObservableObject{
         }
     }
     
+    @MainActor
+    func reloadEvents(for user: User) async {
+        guard let events = try? await repository.fetchUserEvents(of: user) else {
+            return
+        }
+        self.events = events
+    }
+    
     func goToRegister() {
         isRegisteringEvent = true
     }

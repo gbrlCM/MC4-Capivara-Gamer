@@ -121,7 +121,7 @@ struct CapivaraWidget: Widget {
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider(repository: repository,
                                                            authService: AutheticationService(repository: userMock,
-                                                                                             keychainService: KeyChainService()))) { entry in
+                                                                                             keychainService: KeychainService()))) { entry in
             CapivaraControlWidget(entry: entry)
         }
         .configurationDisplayName("Próximos eventos")

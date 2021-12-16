@@ -13,7 +13,7 @@ struct RootView: View {
     @State
     var isNotLoggedIn: Bool = false
     @StateObject
-    var autheticationService: AutheticationService = AutheticationService(repository: UserRepository(), keychainService: KeychainServiceMock())
+    var autheticationService: AutheticationService = AutheticationService(repository: UserRepository(), keychainService: KeychainService())
     
     var body: some View {
         TabView(selection: $selectedTab) {

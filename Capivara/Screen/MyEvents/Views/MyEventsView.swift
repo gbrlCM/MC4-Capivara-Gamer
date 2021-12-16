@@ -43,7 +43,7 @@ struct MyEventsView: View {
                     .task{
                         await viewModel.fetchEvents(for: user)
                     }.refreshable {
-                        await viewModel.fetchEvents(for: user)
+                        await viewModel.reloadEvents(for: user)
                     }
                     .toolbar{
                         ToolbarItem(placement: .navigationBarTrailing) {
@@ -55,6 +55,13 @@ struct MyEventsView: View {
                     .navigationTitle("Eventos")
                     .navigationBarTitleColor(ColorPalette.primaryText)
                     .backgroundColor(ColorPalette.backgroundColor)
+                    .sheet(isPresented: $viewModel.isRegisteringEvent, onDismiss: {
+                        Task {
+                            await viewModel.reloadEvents(for: user)
+                        }
+                    }) {
+                        RegisterEventView(viewModel: RegisterEventViewModel(gameRepository: GameRepository(), creator: user, isShowing: $viewModel.isRegisteringEvent, eventRepository: EventRepository()))
+                    }
                     } else {
                     VStack {
                         LoadingCircle()
@@ -63,8 +70,6 @@ struct MyEventsView: View {
                     .backgroundColor(ColorPalette.backgroundColor)
                 }
             
-        }.sheet(isPresented: $viewModel.isRegisteringEvent) {
-            RegisterEventView(viewModel: RegisterEventViewModel(gameRepository: GameRepository(), creator: UserMock.gamerCapibara, isShowing: $viewModel.isRegisteringEvent, eventRepository: EventRepositoryMock()))
         }.preferredColorScheme(.dark)
          .searchable(text: $viewModel.searchFieldText)
          .tabBarLabel(text: "Eventos", systemImage: "newspaper.fill")

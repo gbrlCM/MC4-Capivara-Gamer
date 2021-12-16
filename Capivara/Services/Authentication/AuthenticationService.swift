@@ -57,6 +57,7 @@ final class AutheticationService: ObservableObject {
     func login() async throws {
         do {
             let userId = try keychainService.get(forKey: credentialKey, inService: serviceKey, inGroup: accessGroup)
+            print("user ID: \(userId)")
             let user = try await userRepository.retrieveUser(userId: userId)
             userPublisher.send(user)
         } catch {

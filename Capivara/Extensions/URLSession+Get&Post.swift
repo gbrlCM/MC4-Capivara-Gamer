@@ -40,8 +40,18 @@ extension URLSession {
         else {
             throw NSError(domain: "Unvalid URL", code: 1, userInfo: nil)
         }
+        let yyyyMMdd: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            formatter.calendar = Calendar(identifier: .iso8601)
+            formatter.timeZone = TimeZone(secondsFromGMT: 0)
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            return formatter
+          }()
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .formatted(yyyyMMdd)
         var request = URLRequest(url: url)
-        let bodyData = try JSONEncoder().encode(body)
+        let bodyData = try encoder.encode(body)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
         request.httpBody = bodyData

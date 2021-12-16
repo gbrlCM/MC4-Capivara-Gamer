@@ -9,16 +9,6 @@ import Foundation
 
 actor EventRepository: EventRepositoryProtocol {
     func fetchUserEvents(of user: User) async throws -> [Event] {
-//        guard let url = URL(string: "https://capivara-back.herokuapp.com/event/user/\(String(describing: user.id))") // Mostra o caminho do back
-//        else {
-//            throw NSError(domain: "Unvalid URL", code: 1, userInfo: nil)
-//        }
-//
-//        let request = URLRequest(url: url) // Cria uma requisição com o caminho do back
-//        let (data, _) = try await URLSession.shared.data(for: request) // Executa a requisição e conecta com o back
-//        let decodedData = try JSONDecoder().decode([Event].self, from: data) // Decodifica o JSON para os tipos dentro do Swift
-//
-//        return decodedData
         let events = try await URLSession.shared.get(urlString: "https://capivara-back.herokuapp.com/event/user/\(user.id ?? "nil")", decodeTo: [Event].self)
         return events
     }
@@ -40,7 +30,6 @@ actor EventRepository: EventRepositoryProtocol {
     }
     
     func createEvent(_ event: Event) async throws {
-        
         try await URLSession.shared.post(urlString: "https://capivara-back.herokuapp.com/event/create", body: event)
         
     }
