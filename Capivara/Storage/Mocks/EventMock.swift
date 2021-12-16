@@ -8,9 +8,6 @@
 import Foundation
 
 enum EventMock {
-    
-    #warning("O email não funciona no contactLink - linha 33")
-    
     static var event: Event {
         Event(id: UUID().uuidString,
               name: "Venha jogar com a Capivara",

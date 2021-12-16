@@ -11,7 +11,7 @@ import Combine
 struct ContentView: View {
     var body: some View {
         
-        SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepositoryMock(), gameRepository: GameRepositoryMock(), user: nil, userPublisher: .init(nil)))
+        SearchView(viewModel: ExploreScreenViewModel(eventRepository: EventRepository(), gameRepository: GameRepository(), user: UserMock.gamerCapibara, userPublisher: .init(UserMock.gamerCapibara)))
     }
 }
 

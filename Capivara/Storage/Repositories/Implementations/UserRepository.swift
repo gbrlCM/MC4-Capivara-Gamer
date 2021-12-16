@@ -17,15 +17,21 @@ struct UserRepository: UserRepositoryProtocol {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
         let encoder = JSONEncoder()
-        print("body \n")
-        encoder.dateEncodingStrategy = .iso8601
+        let yyyyMMdd: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            formatter.calendar = Calendar(identifier: .iso8601)
+            formatter.timeZone = TimeZone(secondsFromGMT: 0)
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            return formatter
+          }()
+        encoder.dateEncodingStrategy = .formatted(yyyyMMdd)
         request.httpBody = try encoder.encode(user)
-        print(String(data: request.httpBody!, encoding: .utf8))
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(yyyyMMdd)
         
         let (data, _) = try await URLSession.shared.data(for: request)
-        print("response \n")
-        print(String(data: data, encoding: .utf8))
-        let decodedData = try JSONDecoder().decode(User.self, from: data)
+        let decodedData = try decoder.decode(User.self, from: data)
         return decodedData
     }
     

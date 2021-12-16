@@ -32,11 +32,13 @@ struct RulesRegisterEventView: View {
                                 try await viewModel.finishForm()
                                 dismiss()
                             } catch {
+                                viewModel.isSendingForm = false
                                 print(error.localizedDescription)
                                 showAlert = true
                             }
                         }
                     }
+                    .disabled(viewModel.isSendingForm)
                     .foregroundColor(.accentColor)
                 }
             }.alert("Um erro ocorreu ao tentar registrar o evento.", isPresented: $showAlert) {Button("OK", role: .cancel) { }

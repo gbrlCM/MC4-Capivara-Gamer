@@ -112,10 +112,8 @@ struct CapivaraWidgetEntryView : View {
 struct CapivaraWidget: Widget {
     let kind: String = "Capy"
     
-    @MainActor
-    let repository: EventRepositoryMock = EventRepositoryMock()
-    @MainActor
-    let userMock: UserRepositoryMock = .init()
+    let repository: EventRepositoryProtocol = EventRepository()
+    let userMock: UserRepositoryProtocol = UserRepository()
     
     
     var body: some WidgetConfiguration {

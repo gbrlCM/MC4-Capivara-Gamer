@@ -201,7 +201,6 @@
 		E9647D97276937AF000EBCE4 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5222767C08700176FD0 /* ErrorView.swift */; };
 		E9647D98276937B9000EBCE4 /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5262767C22400176FD0 /* LoadView.swift */; };
 		E9647D99276937C4000EBCE4 /* CapybaraEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625A5242767C14700176FD0 /* CapybaraEmptyView.swift */; };
-		E9A6D330276BB8C40058BF98 /* ImageUploaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96719827697CD800BAD919 /* ImageUploaderService.swift */; };
 		E9ADDEC22767B50C003FFF02 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADDEC12767B50C003FFF02 /* ImagePicker.swift */; };
 		E9C622C42757F482002C5615 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C622C32757F482002C5615 /* UserProfileViewModel.swift */; };
 		E9DC43DE2761549400B6BA69 /* SearchedEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DC43DD2761549400B6BA69 /* SearchedEventsView.swift */; };
@@ -1338,7 +1337,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = CapivaraWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = WK7599VNDW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CapivaraWidget/Info.plist;
@@ -1366,7 +1365,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = CapivaraWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = WK7599VNDW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CapivaraWidget/Info.plist;
@@ -1511,7 +1510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
 				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
@@ -1542,7 +1541,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Capivara/Capivara.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Capivara/Preview Content\"";
 				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
@@ -1573,7 +1572,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppClipEventInfo/AppClipEventInfo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"AppClipEventInfo/Preview Content\"";
 				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;
@@ -1609,7 +1608,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppClipEventInfo/AppClipEventInfo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"AppClipEventInfo/Preview Content\"";
 				DEVELOPMENT_TEAM = WK7599VNDW;
 				ENABLE_PREVIEWS = YES;

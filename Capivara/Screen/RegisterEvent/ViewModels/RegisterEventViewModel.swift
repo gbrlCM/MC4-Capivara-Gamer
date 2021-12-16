@@ -73,6 +73,8 @@ final class RegisterEventViewModel: ObservableObject {
     //MARK: Form Page Validation
     @Published
     var generalFormIsValid: Bool
+    @Published
+    var isSendingForm: Bool = false
     
     private var gameRepository: GameRepositoryProtocol
     private var eventRepository: EventRepositoryProtocol
@@ -145,7 +147,7 @@ final class RegisterEventViewModel: ObservableObject {
     
     @MainActor
     func finishForm() async throws {
-        
+        isSendingForm = true
         let imageUrl: String?
         
         if let image = coverImage, let jpegData = image.jpegData(compressionQuality: 0.5) {
